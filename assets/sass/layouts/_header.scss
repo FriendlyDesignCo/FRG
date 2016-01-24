@@ -1,0 +1,119 @@
+body:not(.home) {
+
+}
+
+body.home {
+    header#masthead {
+         &.not-scrolled {
+            position: absolute;
+            background-color: initial;
+            .hide-scroll {
+                display: block;
+            }
+            .show-scroll {
+                display: none;
+            }
+            #primary-nav {
+                width: 100%;
+                float: right;
+                position: relative;
+            }
+            .menu-menu-1-container {
+                text-align: center;
+                float: none;
+                ul {
+                    float: none;
+                }
+                a {
+                    color: $dark-red;
+                }
+                li {
+                    float: none;
+                    display: inline;
+                }
+                .sub-menu {
+                    //display: none;
+                    position: absolute;
+                    
+                    
+                    
+                }
+            }
+        }
+    }
+}
+
+header#masthead {
+    float: left;
+    width: 100%;
+    position: fixed;
+    transform: translate3d(0,0,0);
+    background-color: $dark-red;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    .hide-scroll {
+        display: none;
+    }
+    .show-scroll {
+        display: block;
+    }
+   
+}
+
+#primary-nav {
+    width: 80%;
+    float: right;
+    position: relative;
+}
+
+.menu-menu-1-container {
+    font-family: 'Gotham';
+    @include fontSize(16px);
+    //float: right;
+    a {
+        color: $tan;
+        text-transform: uppercase;
+    }
+    ul {
+        //float: right;
+        padding: 0;
+        margin: 0;
+        
+    }
+    li {
+        float: right;
+        display: inline;
+        padding: 15px 3%;
+        list-style-type: none;
+        position: relative;
+    }
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: $dark-red;
+    left: -50%;
+    right: -50%;
+    text-align: center;
+    margin: 0 auto !important;
+    width: 200px;
+    a {
+        color: $tan !important;
+    }
+    li {
+        display: block !important;
+        float: none;
+    }
+}
+
+.menu-list {
+    position: relative;
+    li:hover {
+        .sub-menu {
+            display: block;
+        }
+    }
+}
+

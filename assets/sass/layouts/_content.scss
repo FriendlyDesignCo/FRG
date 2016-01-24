@@ -1,0 +1,527 @@
+body {
+    background-color: $tan;
+}
+
+.spacer {
+    position: absolute;
+    height: 100px;
+    &.s1 {
+        top: 400px;
+    }
+    &.s2 {
+        top: 500px;   
+    }
+    &.s3 {
+        top: 600px;
+    }
+    &.s4 {
+        top: 700px;
+    }
+    &.s5 {
+        top: 800px;
+    }
+}
+
+.numbers-counting {
+    @include fontSize(177px);
+    margin: 0;
+    color: #FFFDD4;
+}
+
+.home-wrap {
+    //padding-top: 100px;
+    .slide-1 {
+        h2 {
+            @include fontSize(71px);
+        }
+    }
+    .slide-2 {
+        padding-top: 10vh;
+        background-position: 0 -150%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &:before {
+            content: "";
+            @include background-image(linear-gradient(to bottom, $tan 30%, rgba(0,0,0,0)));
+            position: absolute;
+            width: 100%;
+            height: 70%;
+            left: 0;
+            top: 0;
+        }
+        p, h2 {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .slide-3 { 
+        padding-bottom: 100px;
+        height: 140vh;
+        padding-top: 4vh;
+    }
+
+    .slide-4 {
+        .image-cookie {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.home-section, .section-wrap {
+    float: left;
+    width: 100%;
+    position: relative;
+    
+    text-align: center;
+    padding: 15vh 0;
+    p {
+        font-family: "Gotham";
+        @include fontSize(24px);
+    }
+}
+
+.home-section {
+    height: 100vh;
+    h2 {
+        
+    }
+    
+    &.hero {
+        background-position: center bottom;
+        background-size: 120%;
+    }
+    &.slide-2 {
+
+    }
+}
+
+.hero {
+    text-align: center;
+    padding-top: 30vh;
+    h3 {
+        font-family: $caslon;
+        color: #FFFDD4;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+
+.slide-8 {
+    h2 {
+        @include fontSize(40px);
+    }
+}
+
+.slide-8-block {
+    
+    display: inline-block;
+    
+    height: 0;
+    position: relative;
+    @include media($md) {
+        width: 32%;
+        padding-bottom: 32%;
+    }
+    
+    img {
+        position: relative;
+        z-index: 2;
+        width: 40px;
+        float: left;
+        margin-bottom: 15px;
+    }
+    &:before {
+        content: "";
+        background-color: $dark-red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: .8;
+    }
+    p, h4 {
+        color: $tan;
+        position: relative;
+        z-index: 2;
+        text-align: left;
+    }
+    h4 {
+        font-weight: 500;
+        text-transform: uppercase;
+        @include fontSize(23px);
+    }
+    &:nth-of-type(1) {
+        float: left;
+    }
+    &:nth-of-type(3) {
+        float: right;
+    }
+    p {
+        @include fontSize(18px);
+        line-height: 1.4em;
+    }
+    .slide-8-block-inner {
+        padding: 20px;
+        outline: 1px solid $tan;
+        outline-offset: -10px;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.flip-icons {
+    margin-top: 150px;
+}
+
+/* entire container, keeps perspective */
+.flip-icon-wrap {
+    perspective: 1000;
+    display: inline-block;
+}
+    /* flip the pane when hovered */
+    .flip-icon-wrap:hover .flip-icon, .flip-icon-wrap.hover .flip-icon {
+        //transform: rotateY(180deg);
+    }
+
+.flip-icon-wrap{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.back {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.flip-icon, .front, .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* flip speed goes here */
+.flip-icon {
+    //transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    background-color: $dark-red;
+    background-size: auto 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    background-color: $light-red;
+}
+
+.slide-5 {
+    h2 {
+        margin-bottom: 70px;
+    }
+}
+
+
+.ingredients-wrap {
+    background-color: rgba(139, 35, 50, .8);
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    z-index: 4;
+    @include media($md) {
+        padding: 50px 0;    
+    }
+}
+
+#cookie-trigger {
+    position: absolute;
+    top: 50vh;
+}
+#cookie-trigger-2 {
+    position: absolute;
+    top: 100vh;
+}
+
+.ingredients-inner {
+    @include media($md) {
+        @include outer-container(900px);   
+    }
+}
+
+#ingredient-trigger {
+    position: absolute;
+    top: 50vh;
+}
+
+#ingredient-bold-trigger {
+    position: absolute;
+    top: 50vh;
+}
+
+.ingredients-row {
+    float: left;
+    margin: 5px 0;
+    p {
+        color: $tan;
+        text-transform: uppercase;
+        font-family: "Gotham";
+        float: left;
+        padding: 0 17px;
+        margin: 0;
+        line-height: 1em;
+        opacity: 1;
+        &.highliged {
+            opacity: 1;
+        }
+    }
+    p + p {
+
+        border-left: 2px solid $tan;
+    }
+    &:nth-of-type(1) {
+        p {
+            @include fontSize(32px);
+        }
+    }
+    &:nth-of-type(2) {
+        p {
+            @include fontSize(24px);
+        }
+    }
+    &:nth-of-type(3) {
+        p {
+            @include fontSize(31px);
+        }
+    }
+    &:nth-of-type(4) {
+        p {
+            @include fontSize(27px);
+        }
+    }
+    &:nth-of-type(5) {
+        p {
+            @include fontSize(37px);
+        }
+    }
+    &:nth-of-type(6) {
+        p {
+            @include fontSize(27px);
+        }
+    }
+    &:nth-of-type(7) {
+        p {
+            @include fontSize(39px);
+        }
+    }
+    &:nth-of-type(8) {
+        p {
+            @include fontSize(34px);
+        }
+    }
+}
+
+
+ul.positions {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Gotham";
+    font-weight: 500;
+    @include fontSize(17px);
+    li {
+        position: relative !important;
+    }
+}
+
+.positions-header {
+    font-family: "Gotham";
+    text-transform: uppercase;
+    @include fontSize(19px);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.career-slide-wrap {
+    height: 100vh;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 0;
+    padding-top: 10vh;
+}
+
+.career-slide {
+    height: 100vh;
+    display: inline-block;
+    //float: left;
+    white-space: normal;
+    width: 100%;
+    position: relative;
+    
+    padding: 15vh 0;
+    p {
+        font-family: "Gotham";
+        @include fontSize(24px);
+    }
+}
+.careers-wrap {
+    .slide-1 {
+        //padding-top: 0;
+        h2 {
+            margin: 0;
+            text-align: left;
+        }
+        p {
+            text-align: left;
+        }
+    }
+    .careers-section {
+        text-align: left;
+        
+    }
+}
+
+h2.career-title {
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: 'Gotham';
+    font-weight: 500;
+}
+
+.position-wrap {
+    float: left;
+    margin-bottom: 20px;
+    @include media($md) {
+       width: 50%; 
+    }
+}
+
+.compensation-wrap {
+    border: 1px solid $dark-red;
+    float: right;
+    //top: 12%;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $dark-red;
+    @include media($md) {
+       //width: 50%; 
+    }
+    .compensation-header {
+        font-family: "Gotham";
+        @include fontSize(19px);
+        font-weight: 700;
+        margin: 0;
+    }
+    p {
+        font-family: "Gotham";
+        @include fontSize(36px);
+        font-weight: 700;
+        margin: 0;
+    }
+}
+.case-study-card-wrap {
+    width: 100%;
+    float: left;
+}
+.case-study-card {
+    background-color: $dark-red;
+    width: 48%;
+    float: right;
+    color: $tan;
+    font-family: "Gotham";
+    font-weight: 700;
+    &:first-of-type {
+        float: left;
+    }
+    p {
+        @include fontSize(14px);
+        margin: 0;
+    }
+    .case-study-card-image {
+        width: 25%;
+        padding-bottom: 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: left;
+    }
+}
+
+.case-study-card-blurb {
+    float: right;
+    width: 75%;
+    padding: 10px;
+}
+.case-study-card-expanded {
+    display: none;
+}
+
+.unslider-wrap {
+    height: 100vh;
+}
+
+.unslider-nav {
+    position: absolute;
+    left: 25%;
+    top: 0;
+
+}
+.unslider-nav ol li.unslider-active {
+    background: $dark-red;
+    width: 20px;
+    height: 20px;
+}
+
+.unslider-nav ol li {
+    border: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $light-red;
+}
+
+.sprinkler-animation {
+    position: absolute;
+    right: 5vw;
+    width: 30vw;
+    .water {
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 389px;
+        width: 336px;
+        transform: scale(.5);
+        transform-origin: center bottom;
+    }
+}

@@ -1,0 +1,287 @@
+/** @font-face **/
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Medium.eot');
+    src: local('☺'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamNarrow';
+  src: url('../fonts/GothamNarrow-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-Bold.otf')  format('opentype'),
+         url('../fonts/GothamNarrow-Bold.woff') format('woff'), url('../fonts/GothamNarrow-Bold.ttf')  format('truetype'), url('../fonts/GothamNarrow-Bold.svg#GothamNarrow-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*@font-face {
+  font-family: 'GothamNarrow';
+  src: url('../fonts/GothamNarrow-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-BoldItalic.otf')  format('opentype'),
+         url('../fonts/GothamNarrow-BoldItalic.woff') format('woff'), url('../fonts/GothamNarrow-BoldItalic.ttf')  format('truetype'), url('../fonts/GothamNarrow-BoldItalic.svg#GothamNarrow-BoldItalic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}*/
+
+@font-face {
+  font-family: 'GothamNarrow';
+  src: url('../fonts/GothamNarrow-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-Book.otf')  format('opentype'),
+         url('../fonts/GothamNarrow-Book.woff') format('woff'), url('../fonts/GothamNarrow-Book.ttf')  format('truetype'), url('../fonts/GothamNarrow-Book.svg#GothamNarrow-Book') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamNarrow';
+  src: url('../fonts/GothamNarrow-BookItalic.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-BookItalic.otf')  format('opentype'),
+         url('../fonts/GothamNarrow-BookItalic.woff') format('woff'), url('../fonts/GothamNarrow-BookItalic.ttf')  format('truetype'), url('../fonts/GothamNarrow-BookItalic.svg#GothamNarrow-BookItalic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GothamNarrow';
+  src: url('../fonts/GothamNarrow-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-Light.otf')  format('opentype'),
+         url('../fonts/GothamNarrow-Light.woff') format('woff'), url('../fonts/GothamNarrow-Light.ttf')  format('truetype'), url('../fonts/GothamNarrow-Light.svg#GothamNarrow-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamNarrow';
+  src: url('../fonts/GothamNarrow-LightItalic.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-LightItalic.otf')  format('opentype'),
+         url('../fonts/GothamNarrow-LightItalic.woff') format('woff'), url('../fonts/GothamNarrow-LightItalic.ttf')  format('truetype'), url('../fonts/GothamNarrow-LightItalic.svg#GothamNarrow-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GothamNarrow';
+  src: url('../fonts/GothamNarrow-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-Medium.otf')  format('opentype'),
+         url('../fonts/GothamNarrow-Medium.woff') format('woff'), url('../fonts/GothamNarrow-Medium.ttf')  format('truetype'), url('../fonts/GothamNarrow-Medium.svg#GothamNarrow-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamNarrow';
+  src: url('../fonts/GothamNarrow-MediumItalic.eot?#iefix') format('embedded-opentype'),  url('../fonts/GothamNarrow-MediumItalic.otf')  format('opentype'),
+         url('../fonts/GothamNarrow-MediumItalic.woff') format('woff'), url('../fonts/GothamNarrow-MediumItalic.ttf')  format('truetype'), url('../fonts/GothamNarrow-MediumItalic.svg#GothamNarrow-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Gotham-Bold.otf')  format('opentype'),
+         url('../fonts/Gotham-Bold.woff') format('woff'), url('../fonts/Gotham-Bold.ttf')  format('truetype'), url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/Gotham-Book.otf')  format('opentype'),
+         url('../fonts/Gotham-Book.woff') format('woff'), url('../fonts/Gotham-Book.ttf')  format('truetype'), url('../fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* =Typographical Mixins/Functions
+-------------------------------------------------------------- */
+
+/**
+ * PX to Rem Sizing
+ *
+ * How to use
+ * @include fontSize(20px);
+ *
+ * Ouputs —
+ * font-size: 20px;
+ * font-size: 1.25rem;
+ */
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+/* =Genericons and Dashicons
+-------------------------------------------------------------- */
+@mixin dashicons {
+    color: $icon-color;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 16px/1 'Dashicons';
+    vertical-align: middle;
+}
+
+@mixin genericons {
+    color: $icon-color;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 16px/1 'Genericons';
+    vertical-align: middle;
+}
+
+/* =Typography
+-------------------------------------------------------------- */
+html {
+    font-size: 100%;
+}
+
+body {
+    @include fontSize($base-font-size);
+    color: $primary-font-color;
+}
+h1, h2, h3, h4, h5, h6 {
+    @include clearfix;
+    clear: both;
+    float: none;
+    line-height: 1.25em;
+    margin-bottom: 20px;
+    color: $dark-red;
+    margin-top: 0;
+}
+h1 {
+    @include fontSize(75px);
+    font-family: $title;
+}
+h2 {
+    @include fontSize(50px);
+    font-family: $title;
+}
+h3 {
+    @include fontSize(35px);
+    font-family: $title;
+}
+h4 {
+    @include fontSize(24px);
+    font-family: $title;
+}
+h5 {
+    @include fontSize(20px);
+    font-family: $title;
+}
+h6 {
+    @include fontSize(18px);
+    font-family: $title;
+}
+blockquote {
+    background-color: darken($base-body-color, 3%);
+    @include border-left(solid 5px $link-color);
+    font-style: italic;
+    padding: 20px;
+}
+cite {
+    font-style: italic;
+}
+strong, b {
+    color: $primary-font-color;
+    font-family: $title;
+}
+a, a:visited {
+    @include transition (all 200ms ease-in-out);
+    color: $primary-font-color;
+    text-decoration: none;
+
+    &:hover {
+        @include transition (all 200ms ease-in-out);
+        color: $link-color;
+    text-decoration: underline;
+    }
+}
+ul {
+    @extend %default-ul; // Adds browser default spacing back
+    &:nth-child(n+2) {
+        margin-bottom: 0;
+    }
+}
+ol {
+    @extend %default-ol; // Adds browser default spacing back
+    &:nth-child(n+2) {
+        margin-bottom: 0;
+    }
+}
+.entry-title {
+    font-family: $title;
+    text-align: center;
+
+    @include media($sm) {
+        @include fontSize(40px);
+    }
+    @include media($smbg) {
+        @include fontSize(65px);
+    }
+    @include media($md) {
+        @include fontSize(100px);
+    }
+}
+#primary,
+#secondary {
+    font-family: $content;
+}
+
+
+.entry-content p {
+    @extend .body-text;
+}
+
+
+p {
+    line-height: 1.58em;
+}
+
+
+
+.body-text {
+    font-family: "GothamNarrow";
+    font-weight: 300;
+}
+
+.text-red {
+    color: $dark-red;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+h2 {
+    font-family: $caslon;
+    font-weight: bold;
+    font-style: italic;
+    &.large {
+        @include fontSize(81px);
+    }
+    &.small {
+        @include fontSize(62px);
+    }
+}
+
+h3 {
+    @include fontSize(36px);
+    font-family: "GothamNarrow";
+    font-weight: 300;
+} 
+
+h4 {
+    font-family: "Gotham";
+    &.large {
+        @include fontSize(24px);
+    }
+    &.small {
+        @include fontSize(16px);
+    }
+}
+
+.text-featured {
+    color: $dark-red;
+    font-family: "GothamNarrow";
+}
