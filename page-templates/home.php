@@ -267,19 +267,19 @@ get_header(); ?>
 			
 
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween("p#highlighted2", { x: "-135%", top: "-10px" })
+						.setTween("p#highlighted2", { x: "-135%", y: "20%", scale: 1.4 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween("p#highlighted6", { x: "10%", y: "20%" })
+						.setTween("p#highlighted6", { x: "10%", y: "60%", scale: 1.86 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween("p#highlighted9", { x: "80%", y: "20%" })
+						.setTween("p#highlighted9", { x: "80%", y: "70%", scale: 1.44 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween("p#highlighted20", { x: "-156%", y: "-320%" })
+						.setTween("p#highlighted20", { x: "-156%", y: "-210%", scale: 1.66 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween("p#highlighted21", { x: "-170%", y: "-180%" })
+						.setTween("p#highlighted21", { x: "-170%", y: "-50%", scale: 1.66 })
 						.addTo(controller);									
 		</script>
 		</div>
