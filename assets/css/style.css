@@ -1543,6 +1543,10 @@ body {
   position: absolute;
   top: 100vh; }
 
+#ingredient-position-trigger {
+  position: absolute;
+  top: 0; }
+
 @media screen and (min-width: 48em) {
   .ingredients-inner {
     max-width: 900px;
@@ -1563,8 +1567,10 @@ body {
 
 .ingredients-row {
   float: left;
-  margin: 5px 0; }
+  margin: 5px 0;
+  position: relative; }
   .ingredients-row p {
+    width: auto;
     color: #FFE7CC;
     text-transform: uppercase;
     font-family: "Gotham";

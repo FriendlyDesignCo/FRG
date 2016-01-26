@@ -185,7 +185,7 @@ get_header(); ?>
 			<img class="image-cookie" src="<?php the_field('slide_4_image'); ?>"> 
 
 			<script>
-				new ScrollMagic.Scene({triggerElement: "#cookie-trigger", duration: "300%"})
+				new ScrollMagic.Scene({triggerElement: "#cookie-trigger", duration: "290%"})
 							.setPin(".image-cookie")
 							.addTo(controller);
 				new ScrollMagic.Scene({triggerElement: "#cookie-trigger-2"})
@@ -203,12 +203,24 @@ get_header(); ?>
 				<div class="ingredients-inner">
 					<!-- cookie ingredient loop -->
 					<?php if( have_rows('cookie_ingredients') ): ?>
+					<?php $highlighted_number = 0; ?>
 					<?php while( have_rows('cookie_ingredients') ): the_row(); ?>
 						<div class="ingredients-row">
 						<?php if( have_rows('ingredient_row') ): ?>
 						<?php while( have_rows('ingredient_row') ): the_row(); ?>
+							
+							<?php $is_highlighted = get_sub_field('highlighted_ingredient');
+							 
+							if("highlighted" == get_sub_field('highlighted_ingredient')) {
+								 ?>
+								<p id="<?php echo "highlighted".$highlighted_number; ?>" class="<?php the_sub_field('highlighted_ingredient'); ?>"><?php the_sub_field('ingredient'); ?></p>
+								
+							<?php } else { 
+								++$highlighted_number; ?>
+								<p id="<?php echo "highlighted".$highlighted_number; ?>" class="<?php the_sub_field('highlighted_ingredient') ?>"><?php the_sub_field('ingredient') ?></p>
+							<?php } ?>
 
-							<p class="<?php the_sub_field('highlighted_ingredient') ?>"><?php the_sub_field('ingredient') ?></p>
+							
 
 						<?php endwhile ?>
 						<?php endif ?>
@@ -219,7 +231,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<script>
-				new ScrollMagic.Scene({triggerElement: "#ingredient-trigger", duration: "300%"})
+				new ScrollMagic.Scene({triggerElement: "#ingredient-trigger", duration: "200%"})
 							.setPin(".ingredients-wrap")
 							.addTo(controller);					
 			</script>
@@ -243,7 +255,33 @@ get_header(); ?>
 
 	<section class="home-section slide-7">
 		<div class="home-section-inner">
+			<div id="ingredient-position-trigger"></div>
 			<h2><?php the_field('slide_7_header'); ?></h2>
+			<script>
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".ingredients-row p:not(.highlighted)", { opacity: 0 })
+						.addTo(controller);	
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".ingredients-row p", { borderColor: "rgba(255,231,204, 0) "})
+						.addTo(controller);	
+			
+
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween("p#highlighted2", { x: "-135%", top: "-10px" })
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween("p#highlighted6", { x: "10%", y: "20%" })
+						.addTo(controller);			
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween("p#highlighted9", { x: "80%", y: "20%" })
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween("p#highlighted20", { x: "-156%", y: "-320%" })
+						.addTo(controller);			
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween("p#highlighted21", { x: "-170%", y: "-180%" })
+						.addTo(controller);									
+		</script>
 		</div>
 	</section>
 
