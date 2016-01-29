@@ -37,11 +37,13 @@
 	<!-- GSAP -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
 
 	<!-- scrollmagic -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
 
     <?php tha_head_bottom(); ?>
     <?php wp_head(); ?>
@@ -57,7 +59,13 @@
 	<header id="masthead" class="site-header wrap not-scrolled" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 
 	<?php tha_header_top(); ?>
-
+		<div class="logo">
+			<a href="<?php echo get_site_url(); ?>">
+				<img class="dark" src="<?php echo get_site_url(); ?>/wp-content/uploads/logos/frg-logo-dark.svg">
+				<img class="light" src="<?php echo get_site_url(); ?>/wp-content/uploads/logos/frg-logo-light.svg">
+			</a>
+			<img src="">
+		</div>
 		<nav id="primary-nav" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 	        <?php
 				wp_nav_menu(

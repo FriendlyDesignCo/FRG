@@ -15,34 +15,102 @@ get_header(); ?>
 			   //$('#fullpage').fullpage({
 			   // 	normalScrollElements: '.slide-1'
 			   //});
-			    var slider = $('.slide').unslider({
-			    	 animation: 'fade',  arrows: false
-		    	});
+			    
 			});
 		})(jQuery);
 		
 	</script>
+
 <div id="fullpage" class="careers-wrap page-wrap content-area">
-	
+	<?php if( have_rows('career_path') ): ?>
+	<?php $slide_anchor = 0; ?>
+	<?php while( have_rows('career_path') ): the_row(); ?>
+	<?php ++$slide_anchor ?>
+		<a class="dot-anchor" id="slide<?php echo $slide_anchor;?>"></a>
+	<?php endwhile; ?>
+	<?php endif; ?>
+	<style>
+		.arrow {
+			width: 100px;
+			height: 50px;
+			background-repeat: no-repeat;
+
+		}
+		.arrow-wrap {
+			margin-top: 40px;
+			position: relative;
+			bottom: 0;
+		}
+		.arrow-red {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/red-arrow.svg');
+			margin-bottom: -40px;
+		}
+	</style>
 	<section class="section careers-section slide-1 section-wrap">
 		<div class="section-inner">
 			<h2 class="small"><?php the_field('hero_header_line_1'); ?></h2>
 			<h2 class="small"><?php the_field('hero_header_line_2'); ?></h2>
 			<p class="text-red"><?php the_field('hero_paragraph'); ?></p>
+			<a class="button " href="<?php the_field('apply_link'); ?>">Apply</a>
 			<p class="text-red medium"><?php the_field('scroll_more_text'); ?></p>
+			<div class="arrow-wrap">
+				<div class="arrow arrow-red"></div>
+				<div class="arrow arrow-red"></div>
+				<div class="arrow arrow-red"></div>
+			</div>
 		</div>
 	</section>
+	<div id="career-trigger1" class="s0"></div>
+	<div id="career-trigger2" class=" s0"></div>
+	<div id="career-trigger3" class=" s0"></div>
+	<div id="career-trigger4" class=" s0"></div>
+	<div id="career-trigger5" class=" s0"></div>
+
+	<div id="dot-trigger1" class="s0"></div>
+	<div id="dot-trigger2" class=" s0"></div>
+	<div id="dot-trigger3" class=" s0"></div>
+	<div id="dot-trigger4" class=" s0"></div>
+	<div id="dot-trigger5" class=" s0"></div>
 	<section class="section careers-section career-slide-wrap section-wrap ">
-	<div class="slide">
-		<div class="sprinkler-animation">
-			<div class="water" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/water.svg')"></div>
-		</div>
-		<ul class="career-slide-list">
-			<?php if( have_rows('career_path') ): ?>
-			<?php while( have_rows('career_path') ): the_row(); ?>
+		
+		<div class="slide-wrap">
+			<div class="nav-dots">
+				<p>FRG CAREER PATH</p>
+				<ul class="">	
+				<?php if( have_rows('career_path') ): ?>
+				<?php $dot_number = 0; ?>
+				<?php while( have_rows('career_path') ): the_row(); ?>
+					<?php ++$dot_number ?>
+					<li class="dot-<?php echo $dot_number;?>"><a href="#slide<?php echo $dot_number;?>"></a></li>
+				<?php endwhile; ?>
+				<?php endif; ?>
+				</ul>
+			</div>
+			<div class="sprinkler-animation">
+				<div class="water" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/water.svg')"></div>
+			</div>
 			
-			<li class="section careers-section career-slide">
+			
+			<script>
+				// init controller
+				var controller = new ScrollMagic.Controller();
+				new ScrollMagic.Scene({triggerElement: "#career-trigger1", duration: "500%"})
+								.setPin(".slide-wrap")
+								.addIndicators()
+								.addTo(controller);
+				
+				
+			</script>
+			<?php if( have_rows('career_path') ): ?>
+			<?php $slide_number = 0; ?>
+			<?php while( have_rows('career_path') ): the_row(); ?>
+			<?php ++$slide_number ?>
+			
+			<div class="section careers-section career-slide career-slide-<?php echo $slide_number;?>">
+
+				
 				<div class="section-inner ">
+
 					<div class="case-study">
 
 						<!-- career loop -->
@@ -75,16 +143,20 @@ get_header(); ?>
 								<div class="case-study-card-image" style="background-image:url('<?php the_sub_field('case_study_image'); ?>')"></div>
 								<div class="case-study-card-blurb">
 									<p><?php the_sub_field('case_study_outer_blurb'); ?></p>
-									<div class="case-study-card-expanded">
-										<?php if( have_rows('case_study_path') ): ?>
-										<?php while( have_rows('case_study_path') ): the_row(); ?>
-											<p>Job: <?php the_sub_field('case_study_job'); ?></p>
-										<?php endwhile; ?>
-										<?php endif; ?>
-										<p><?php the_sub_field('case_study_inner_blurb'); ?></p> 
-										<p><?php the_sub_field('case_study_paragraph'); ?></p>
-									</div>
 								</div>
+								<div class="case-study-card-expanded">
+									<div class="close-button">Close</div>
+									<?php if( have_rows('case_study_path') ): ?>
+									<ul class="job-list-dots">
+									<?php while( have_rows('case_study_path') ): the_row(); ?>
+										<li><?php the_sub_field('case_study_job'); ?></li>
+									<?php endwhile; ?>
+									</ul>
+									<?php endif; ?>
+									<p class="inner-blurb"><?php the_sub_field('case_study_inner_blurb'); ?></p> 
+									<p class="case-study-paragraph"><?php the_sub_field('case_study_paragraph'); ?></p>
+								</div>
+								<div class='modal-bg'></div>
 							</div>
 							<?php endwhile; ?>
 							<?php endif; ?>
@@ -92,14 +164,42 @@ get_header(); ?>
 					</div>
 				</div>
 				<!-- end career loop -->
-			</li>
-			
+			</div>
+			<script>
+				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number+1;?>" })
+							.setTween(".career-slide-<?php echo $slide_number;?>", {opacity: 0})
+							.addIndicators()
+							.addTo(controller);
+				
+				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>", duration: "100%"})
+							.setClassToggle(".dot-<?php echo $slide_number;?>", "active") // add class toggle
+							.addTo(controller);
+			</script>
 		
-			<?php endwhile; ?>
-			<?php endif; ?>
-			</ul>
+		<?php endwhile; ?>
+		<?php endif; ?>
+		<script>
+			controller.scrollTo(function (newpos) {
+				TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
+			});
+
+			(function($) {$(document).on("click", "a[href^='#']", function (e) {
+				var id = $(this).attr("href");
+				if ($(id).length > 0) {
+					e.preventDefault();
+
+					// trigger scroll
+					controller.scrollTo(id);
+
+						// if supported by the browser we can even update the URL.
+					if (window.history && window.history.pushState) {
+						history.pushState("", document.title, id);
+					}
+				}
+			});})( jQuery );
+		</script>
 		</div>
 	</section>
 </div><!-- .page-wrap -->
-<?php get_footer(); ?>
+
 

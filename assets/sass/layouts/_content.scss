@@ -2,6 +2,18 @@ body {
     background-color: $tan;
 }
 
+.left {
+    @include media($md) {
+        float: left;
+    }
+}
+
+.right {
+    @include media($md) {
+        float: right;
+    }
+}
+
 .spacer {
     position: absolute;
     height: 100px;
@@ -23,16 +35,22 @@ body {
 }
 
 .numbers-counting {
-    @include fontSize(177px);
+    @include fontSize(40px);
     margin: 0;
     color: #FFFDD4;
+    @include media($md) {
+        @include fontSize(177px);    
+    }
 }
 
 .home-wrap {
     //padding-top: 100px;
     .slide-1 {
         h2 {
-            @include fontSize(71px);
+            @include fontSize(31px);
+            @include media($md) {
+                @include fontSize(71px);    
+            }
         }
     }
     .slide-2 {
@@ -75,24 +93,32 @@ body {
     float: left;
     width: 100%;
     position: relative;
-    
     text-align: center;
     padding: 15vh 0;
     p {
         font-family: "Gotham";
-        @include fontSize(24px);
+        @include fontSize(18px);
+        @include media($md) {
+            @include fontSize(24px);
+        }
     }
 }
 
 .home-section {
-    height: 100vh;
+    @include media($md) {
+        height: 100vh;
+    }
     h2 {
         
     }
     
     &.hero {
-        background-position: center bottom;
-        background-size: 120%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include media($md) {
+            background-position: center;    
+            background-size: 110%;
+        }
     }
     &.slide-2 {
 
@@ -180,7 +206,10 @@ body {
 }
 
 .flip-icons {
-    margin-top: 150px;
+    margin-top: 40px;
+    @include media($md) {
+        margin-top: 150px;
+    }
 }
 
 /* entire container, keeps perspective */
@@ -194,10 +223,14 @@ body {
     }
 
 .flip-icon-wrap{
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     padding: 10px;
+    @include media($md) {
+        width: 70px;
+        height: 70px;   
+    }
 }
 
 .back {
@@ -368,6 +401,7 @@ ul.positions {
     @include fontSize(17px);
     li {
         position: relative !important;
+        line-height: 1.2em;
     }
 }
 
@@ -380,29 +414,76 @@ ul.positions {
 }
 
 .career-slide-wrap {
-    height: 100vh;
-
-    overflow-x: scroll;
-    overflow-y: hidden;
+    height: auto;
+    position: relative;
+    
     white-space: nowrap;
     padding: 0;
-    padding-top: 10vh;
 }
+
+
 
 .career-slide {
     height: 100vh;
-    display: inline-block;
+    display: block;
     //float: left;
     white-space: normal;
     width: 100%;
-    position: relative;
-    
-    padding: 15vh 0;
+    top: 0;
+    left: 0;
+    background-color: $tan;
+    position: absolute;
+    padding: 5vh 0;
+    @include media($md) {
+        padding: 30vh 0 0;
+    }
     p {
         font-family: "Gotham";
         @include fontSize(24px);
     }
+    &.active-slide {
+        z-index: 8;
+    }
 }
+
+
+
+#career-trigger1,
+#career-trigger2,
+#career-trigger3,
+#career-trigger4,
+#career-trigger5 {
+    position: absolute;
+}
+
+#career-trigger1 {
+    top: 150vh;
+}
+
+#career-trigger2 {
+    top: 250vh;
+}
+
+#career-trigger3 {
+    top: 350vh;
+}
+
+.career-slide-1 {
+    z-index: 6;
+}
+.career-slide-2 {
+    z-index: 5;
+}
+.career-slide-3 {
+    z-index: 4;
+}
+.career-slide-4 {
+    z-index: 4;
+}
+.career-slide-5 {
+    z-index: 3;
+}
+
 .careers-wrap {
     .slide-1 {
         //padding-top: 0;
@@ -412,11 +493,12 @@ ul.positions {
         }
         p {
             text-align: left;
+            line-height: 1.4em;
         }
     }
     .careers-section {
         text-align: left;
-        
+        height: 100vh;
     }
 }
 
@@ -470,6 +552,7 @@ h2.career-title {
     color: $tan;
     font-family: "Gotham";
     font-weight: 700;
+    position: relative;
     &:first-of-type {
         float: left;
     }
@@ -484,6 +567,9 @@ h2.career-title {
         background-size: cover;
         float: left;
     }
+    .case-study-card-image, .case-study-card-blurb, .close-button {
+        cursor: pointer;
+    }
 }
 
 .case-study-card-blurb {
@@ -492,26 +578,110 @@ h2.career-title {
     padding: 10px;
 }
 .case-study-card-expanded {
-    display: none;
-}
-
-.unslider-wrap {
-    height: 100vh;
-}
-
-.unslider-nav {
     position: absolute;
-    left: 25%;
-    top: 0;
+    background-color: $dark-red;
+    color: $tan;
+    display: block;
+    left: 20px;
+    bottom: 0;
+    width: 75vw;
+    z-index: 99;
+    transition: all .3s;
+    transform: scale(0);
+    transform-origin: bottom left;
+    padding: 70px 70px 0;
+    &.expanded {
+        transform: scale(1);
+    }
+    .close-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $light-red;
+        color: $tan;
+        text-transform: uppercase;
+        @include fontSize(14px);
+        padding: 0 25px;
+    }
+    .inner-blurb {
+        float: left;
+        font-family: $caslon;
+        font-style: italic;
+        background-color: $light-red;
+        line-height: 1em;
+        @include media($md) {
+            @include fontSize(24px);
+            font-weight: 500;
+            width: 30%;   
+            padding: 20px; 
+            height: 175px;
+        }
+    }
+    .case-study-paragraph {
+        float: right;
+        font-family: "GothamNarrow";
+        font-weight: 300;
 
+        @include media($md) {
+            width: 70%;    
+            @include fontSize(17px);
+            line-height: 1.4em;
+            padding: 0 50px;
+            height: 175px;
+        }
+    }
 }
-.unslider-nav ol li.unslider-active {
+
+.job-list-dots {
+    width: 100%;
+    display: table;
+    margin-bottom: 40px;
+    li {
+        display: table-cell;
+        position: relative;
+        @include fontSize(14px);
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1em;
+        vertical-align: top;
+        @include media($md) {
+            width: 150px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background-color: $tan;
+            left: 0;
+            right: 0;
+            top: -45px;
+            width: 30px;
+            height: 30px;
+            margin: 0 auto 25px;
+        }
+    }
+    li + li {
+        &:after {
+            content: "";
+            position: absolute;
+            background-color: $tan;
+            width: 100%;
+            height: 3px;
+            right: 50%;
+            top: -31px;
+        }
+    }
+}
+
+
+
+.nav-dots ul li.active {
     background: $dark-red;
     width: 20px;
     height: 20px;
 }
 
-.unslider-nav ol li {
+.nav-dots ul li {
     border: 0;
     width: 15px;
     height: 15px;
@@ -523,6 +693,7 @@ h2.career-title {
     position: absolute;
     right: 5vw;
     width: 30vw;
+    z-index: 8;
     .water {
         background-position: center;
         background-repeat: no-repeat;
@@ -532,3 +703,92 @@ h2.career-title {
         transform-origin: center bottom;
     }
 }
+
+
+.nav-dots {
+    position: absolute;
+    top: 20vh;
+    left: 10%;
+    z-index: 10;
+    border-top: 2px solid $dark-red;
+    border-bottom: 2px solid $dark-red;
+    width: 55%;
+    p {
+        @include fontSize(16px);
+        font-family: "Gotham";
+        font-weight: bold;
+        color: $dark-red;
+        text-transform: uppercase;
+        vertical-align: middle;
+        float: left;
+        line-height: 2.4em;
+        margin: 0 20px 0 0;
+    }
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+.nav-dots ul {
+  list-style: none;
+  text-align: left;
+}
+.nav-dots ul li {
+  display: inline-block;
+  margin: 0 10px;
+  overflow: hidden;
+  text-indent: -999em;
+  cursor: pointer;
+  vertical-align: middle; 
+}
+
+.dot-anchor {
+    position: absolute;
+    &#slide1 {
+        top: 100vh;
+    }
+    &#slide2 {
+        top: 200vh;
+    }
+    &#slide3 {
+        top: 300vh;
+    }
+    &#slide4 {
+        top: 400vh;
+    }
+}
+
+
+/********* post **********/
+
+#content {
+    .hero-image {
+        margin-bottom: 35px;
+        height: 391px;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .sub-title {
+        border-bottom: 1px solid $dark-red;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+
+.modal-bg {
+    position: fixed;
+    z-index: 90;
+    background-color: rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+    transition: all 2s;
+    &.open {
+         width: 100%;
+        height: 100%;
+    }
+}
+

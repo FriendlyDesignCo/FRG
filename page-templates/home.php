@@ -28,7 +28,7 @@ get_header(); ?>
 		}
 		.arrow-wrap {
 			position: absolute;
-			bottom: 5vh;
+			bottom: 10vh;
 			left: 0;
 			right: 0;
 		}
@@ -128,6 +128,7 @@ get_header(); ?>
 			<script>
 				// init controller
 				var controller = new ScrollMagic.Controller();
+				
 				new ScrollMagic.Scene({triggerElement: "#trigger1" ,duration: 300})
 							//.setVelocity(".flip-icon", {opacity: 0}, {duration: 400})
 							.setTween(".flip-icon-wrap", {width: 140, height: 140}) // the tween durtion can be omitted and defaults to 1

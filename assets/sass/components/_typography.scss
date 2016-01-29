@@ -210,9 +210,10 @@ ol {
     }
 }
 .entry-title {
-    font-family: $title;
-    text-align: center;
-
+    font-family: $caslon;
+    text-align: left;
+    line-height: 1em;
+    margin-bottom: 0;
     @include media($sm) {
         @include fontSize(40px);
     }
@@ -220,7 +221,7 @@ ol {
         @include fontSize(65px);
     }
     @include media($md) {
-        @include fontSize(100px);
+        @include fontSize(82px);
     }
 }
 #primary,
@@ -231,6 +232,7 @@ ol {
 
 .entry-content p {
     @extend .body-text;
+    @include fontSize(20px);
 }
 
 
@@ -284,4 +286,11 @@ h4 {
 .text-featured {
     color: $dark-red;
     font-family: "GothamNarrow";
+}
+
+#content {
+    h4 {
+        text-transform: uppercase;
+    }
+
 }
