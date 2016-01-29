@@ -7,35 +7,15 @@
 <?php tha_entry_before(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemType="http://schema.org/BlogPosting" >
 	<?php tha_entry_top(); ?>
-	<header class="entry-header">
-
-		<h2 class="entry-title" itemprop="name" ><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-
-	<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<span class="genericon genericon-time"></span> <?php some_like_it_neat_posted_on(); ?>
-			<span itemprop="dateModified" style="display:none;"><?php printf( __( 'Last modified:', 'some-like-it-neat' ) ); ?> <?php the_modified_date(); ?></span>
-		</div><!-- .entry-meta -->
-	<?php
-endif; ?>
-	</header><!-- .entry-header -->
+	<h2 class="entry-title" itemprop="name" ><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+	<h3 class="sub-title"><?php the_field('subheader'); ?></h3>
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-summary" itemprop="description">
 	<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 	<?php else : ?>
-	<div class="entry-content" itemprop="articleBody">
-	<?php
-	the_content(
-		sprintf(
-			__( 'Continue reading%s &rarr;', 'some-like-it-neat' ),
-			'<span class="screen-reader-text">  '.get_the_title().'</span>'
-		)
-	);
-	?>
-
-	</div><!-- .entry-content -->
+	
 	<?php
 endif; ?>
 
@@ -65,10 +45,7 @@ endif; ?>
 	<?php
 	endif; // End if 'post' == get_post_type() ?>
 
-	<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link" itemprop="comment" ><?php comments_popup_link( __( 'Leave a comment', 'some-like-it-neat' ), __( '1 Comment', 'some-like-it-neat' ), __( '% Comments', 'some-like-it-neat' ) ); ?></span>
-	<?php
-endif; ?>
+	
 
 	<?php edit_post_link( __( 'Edit', 'some-like-it-neat' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->

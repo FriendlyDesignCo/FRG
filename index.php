@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="" class="content-area">
 		<div id="content" class="site-content">
 
 		<?php if ( have_posts() ) : ?>
@@ -42,5 +42,5 @@ endif; ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

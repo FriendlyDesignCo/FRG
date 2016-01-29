@@ -79,9 +79,9 @@ get_header(); ?>
 			<h2><?php the_field('slide_1_header'); ?></h2>
 			<?php the_field('slide_1_paragraph'); ?>
 			<div class="arrow-wrap">
-				<div class="arrow arrow-red"></div>
-				<div class="arrow arrow-red"></div>
-				<div class="arrow arrow-red"></div>
+				<div class="arrow arrow-red arrow-1"></div>
+				<div class="arrow arrow-red arrow-2"></div>
+				<div class="arrow arrow-red arrow-3"></div>
 			</div>
 		</div>
 	</section>
@@ -292,23 +292,29 @@ get_header(); ?>
 			<div class="slide-8-block-wrap">
 				<div class="slide-8-block" style="background-image:url('<?php the_field('block_1_background'); ?>')">
 					<div class="slide-8-block-inner">
-						<img src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_1_icon'); ?>">
-						<h4><?php the_field('block_1_header'); ?></h4>
-						<p><?php the_field('block_1_paragraph'); ?></p>	
+						<div class="slide-8-header">
+							<img class="" src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_1_icon'); ?>">
+							<h4 class=""><?php the_field('block_1_header'); ?></h4>
+						</div>
+						<p class="move-text"><?php the_field('block_1_paragraph'); ?></p>	
 					</div>
 				</div>
 				<div class="slide-8-block" style="background-image:url('<?php the_field('block_2_background'); ?>')">
 					<div class="slide-8-block-inner">
-						<img src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_2_icon'); ?>">
-						<h4><?php the_field('block_2_header'); ?></h4>
-						<p><?php the_field('block_2_paragraph'); ?></p>
+						<div class="slide-8-header">
+							<img class="" src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_2_icon'); ?>">
+							<h4 class=""><?php the_field('block_2_header'); ?></h4>
+						</div>
+						<p class="move-text"><?php the_field('block_2_paragraph'); ?></p>
 					</div>
 				</div>
 				<div class="slide-8-block" style="background-image:url('<?php the_field('block_3_background'); ?>')">
 					<div class="slide-8-block-inner">	
-						<img src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_3_icon'); ?>"> 
-						<h4><?php the_field('block_2_header'); ?></h4>
-						<p><?php the_field('block_2_paragraph'); ?></p>
+						<div class="slide-8-header">
+							<img class="" src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_3_icon'); ?>"> 
+							<h4 class=""><?php the_field('block_2_header'); ?></h4>
+						</div>
+						<p class="move-text"><?php the_field('block_2_paragraph'); ?></p>
 					</div>
 				</div>
 			</div>

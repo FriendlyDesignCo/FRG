@@ -75,16 +75,18 @@ get_header(); ?>
 		
 		<div class="slide-wrap">
 			<div class="nav-dots">
-				<p>FRG CAREER PATH</p>
-				<ul class="">	
-				<?php if( have_rows('career_path') ): ?>
-				<?php $dot_number = 0; ?>
-				<?php while( have_rows('career_path') ): the_row(); ?>
-					<?php ++$dot_number ?>
-					<li class="dot-<?php echo $dot_number;?>"><a href="#slide<?php echo $dot_number;?>"></a></li>
-				<?php endwhile; ?>
-				<?php endif; ?>
-				</ul>
+				<div class="nav-dots-inner">
+					<p>FRG CAREER PATH</p>
+					<ul class="">	
+					<?php if( have_rows('career_path') ): ?>
+					<?php $dot_number = 0; ?>
+					<?php while( have_rows('career_path') ): the_row(); ?>
+						<?php ++$dot_number ?>
+						<li class="dot-<?php echo $dot_number;?>"><a href="#slide<?php echo $dot_number;?>"></a></li>
+					<?php endwhile; ?>
+					<?php endif; ?>
+					</ul>
+				</div>
 			</div>
 			<div class="sprinkler-animation">
 				<div class="water" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/water.svg')"></div>
@@ -145,6 +147,7 @@ get_header(); ?>
 									<p><?php the_sub_field('case_study_outer_blurb'); ?></p>
 								</div>
 								<div class="case-study-card-expanded">
+									<div class="case-study-card-image" style="background-image:url('<?php the_sub_field('case_study_image'); ?>')"></div>
 									<div class="close-button">Close</div>
 									<?php if( have_rows('case_study_path') ): ?>
 									<ul class="job-list-dots">
@@ -168,9 +171,11 @@ get_header(); ?>
 			<script>
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number+1;?>" })
 							.setTween(".career-slide-<?php echo $slide_number;?>", {opacity: 0})
-							.addIndicators()
+							//.addIndicators()
 							.addTo(controller);
-				
+				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number+1;?>",duration:"20px" })
+							.setTween(".career-slide-<?php echo $slide_number;?>", { delay: 0.3,zIndex:0})
+							.addTo(controller);
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>", duration: "100%"})
 							.setClassToggle(".dot-<?php echo $slide_number;?>", "active") // add class toggle
 							.addTo(controller);

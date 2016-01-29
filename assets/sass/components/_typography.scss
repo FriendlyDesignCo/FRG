@@ -214,6 +214,9 @@ ol {
     text-align: left;
     line-height: 1em;
     margin-bottom: 0;
+    a {
+        color: $dark-red;
+    }
     @include media($sm) {
         @include fontSize(40px);
     }
@@ -241,6 +244,19 @@ p {
 }
 
 
+.blog {
+    .entry-title {
+        @include media($md) {
+            @include fontSize(48px);
+        }
+    }
+    .sub-title {
+        color: black;
+        @include media($md) {
+            @include fontSize(20px);
+        }
+    }
+}
 
 .body-text {
     font-family: "GothamNarrow";

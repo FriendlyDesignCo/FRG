@@ -10,15 +10,15 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<section id="" class="content-area">
 		<div id="content" class="site-content">
 
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">
+				<h2 class="page-title">
 					<?php echo get_the_archive_title(); ?>
-				</h1>
+				</h2>
 				<?php
 					// Show an optional term description.
 				if ( function_exists( 'get_the_archive_description' ) ) :
@@ -56,5 +56,5 @@ get_header(); ?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
