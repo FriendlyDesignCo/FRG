@@ -18,19 +18,19 @@ body {
     position: absolute;
     height: 100px;
     &.s1 {
-        top: 400px;
+        top: 40%;
     }
     &.s2 {
-        top: 500px;   
+        top: 45%;   
     }
     &.s3 {
-        top: 600px;
+        top: 50%;
     }
     &.s4 {
-        top: 700px;
+        top: 55%;
     }
     &.s5 {
-        top: 800px;
+        top: 60%;
     }
 }
 
@@ -54,18 +54,26 @@ body {
         }
     }
     .slide-2 {
-        padding-top: 10vh;
-        background-position: 0 -150%;
+        
         background-size: cover;
         background-repeat: no-repeat;
+        height: auto;
+        @include media($md) {
+            padding-top: 10vh;    
+            height: 100vh;
+        }
         &:before {
             content: "";
-            @include background-image(linear-gradient(to bottom, $tan 30%, rgba(0,0,0,0)));
+            @include background-image(linear-gradient(to bottom, $tan 50%, rgba(255, 231, 204, .1) 98%, rgba(0,0,0,0) 100%));
             position: absolute;
             width: 100%;
-            height: 70%;
+            height: 100%;
             left: 0;
             top: 0;
+            @include media($md) {
+                @include background-image(linear-gradient(to bottom, $tan 30%, rgba(0,0,0,0)));
+                height: 70%;
+            }
         }
         p, h2 {
             position: relative;
@@ -75,15 +83,22 @@ body {
 
     .slide-3 { 
         padding-bottom: 100px;
-        height: 140vh;
-        padding-top: 4vh;
+        //height: 140vh;
+        padding-top: 300px;
+        @include media($md) {
+            padding-top: 4vh;
+            height: 140vh;
+        }
     }
 
     .slide-4 {
         .image-cookie {
-            width: 50%;
+            width: 95%;
             display: block;
             margin: 0 auto;
+            @include media($md) {
+                width: 50%;
+            }
         }
     }
 }
@@ -93,11 +108,15 @@ body {
     float: left;
     width: 100%;
     position: relative;
-    text-align: center;
-    padding: 15vh 0;
+    
+    padding: 5vh 5% 0;
+    @include media($md) {
+        text-align: center;
+        padding: 15vh 0;    
+    }
     p {
         font-family: "Gotham";
-        @include fontSize(18px);
+        @include fontSize(16px);
         @include media($md) {
             @include fontSize(24px);
         }
@@ -105,8 +124,9 @@ body {
 }
 
 .home-section {
+    height: 100vh;
     @include media($md) {
-        height: 100vh;
+        
     }
     h2 {
         
@@ -117,7 +137,7 @@ body {
         background-size: cover;
         @include media($md) {
             background-position: center;    
-            background-size: 110%;
+            //background-size: 110%;
         }
     }
     &.slide-2 {
@@ -137,8 +157,12 @@ body {
 }
 
 .slide-8 {
+    height: auto;
     h2 {
-        @include fontSize(40px);
+        @include fontSize(32px);
+        @include media($md) {
+            @include fontSize(40px);
+        }
     }
 }
 
@@ -148,6 +172,9 @@ body {
     overflow: hidden;
     height: 0;
     position: relative;
+    width: 100%;
+    height: 350px;
+    float: none;
     @include media($md) {
         width: 32%;
         padding-bottom: 32%;
@@ -209,10 +236,14 @@ body {
     }
     
     &:nth-of-type(1) {
-        float: left;
+        @include media($md) {
+            float: left;    
+        }
     }
     &:nth-of-type(3) {
-        float: right;
+        @include media($md) {
+            float: right;    
+        }
     }
     p {
         @include fontSize(18px);
@@ -233,7 +264,10 @@ body {
 
 .flip-icons {
     margin-top: 40px;
+    transform: translateY(300px);
+    text-align: center;
     @include media($md) {
+        transform: translateY(0px);
         margin-top: 150px;
     }
 }
@@ -249,13 +283,19 @@ body {
     }
 
 .flip-icon-wrap{
-    width: 150px;
-    height: 150px;
+    width: 29vw;
+    height: 29vw;
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
+    max-width: 200px;
+    max-height: 200px;
     @include media($md) {
+        padding: 10px;
         width: 70px;
         height: 70px;   
+    }
+    &:first-of-type {
+        margin-left: 3%;
     }
 }
 
@@ -293,7 +333,7 @@ body {
     z-index: 2;
     /* for firefox 31 */
     transform: rotateY(0deg);
-    background-color: $dark-red;
+    background-color: $light-red;
     background-size: auto 60%;
     background-position: center;
     background-repeat: no-repeat;
@@ -363,7 +403,10 @@ body {
         text-transform: uppercase;
         font-family: "Gotham";
         float: left;
-        padding: 0 17px;
+        padding: 0 3.18vw;;
+        @include media($md) {
+            padding: 0 17px;
+        }
         margin: 0;
         line-height: 1em;
         opacity: 1;
@@ -377,42 +420,66 @@ body {
     }
     &:nth-of-type(1) {
         p {
-            @include fontSize(32px);
+            font-size: 3.14vw;
+            @include media($md) {
+                @include fontSize(32px);   
+            }
         }
     }
     &:nth-of-type(2) {
         p {
-            @include fontSize(24px);
+            font-size: 2.1vw;   
+            @include media($md) {
+                @include fontSize(24px);
+            }
         }
     }
     &:nth-of-type(3) {
         p {
-            @include fontSize(31px);
+            font-size: 3.05vw;   
+            @include media($md) {
+                @include fontSize(31px);
+            }
         }
     }
     &:nth-of-type(4) {
         p {
-            @include fontSize(27px);
+            font-size: 2.54vw;
+            @include media($md) {
+                @include fontSize(27px);
+            }
         }
     }
     &:nth-of-type(5) {
         p {
-            @include fontSize(37px);
+            font-size: 3.85vw;
+            @include media($md) {
+                @include fontSize(37px);
+            }
         }
     }
     &:nth-of-type(6) {
         p {
-            @include fontSize(27px);
+            font-size: 2.6vw;   
+            @include media($md) {
+                @include fontSize(27px);
+            }
         }
     }
     &:nth-of-type(7) {
         p {
-            @include fontSize(39px);
+            font-size: 3.9vw;
+            @include media($md) {
+                @include fontSize(39px);
+            }
         }
     }
     &:nth-of-type(8) {
         p {
-            @include fontSize(34px);
+            font-size: 3.57vw;   
+            @include media($md) {
+                @include fontSize(34px);
+            }
         }
     }
 }
@@ -424,7 +491,10 @@ ul.positions {
     padding: 0;
     font-family: "Gotham";
     font-weight: 500;
-    @include fontSize(17px);
+    @include fontSize(14px);
+    @include media($md) {
+        @include fontSize(17px);
+    }
     li {
         position: relative !important;
         line-height: 1.2em;
@@ -434,9 +504,12 @@ ul.positions {
 .positions-header {
     font-family: "Gotham";
     text-transform: uppercase;
-    @include fontSize(19px);
+    @include fontSize(16px);
     font-weight: 600;
     margin-bottom: 0;
+    @include media($md) {
+        @include fontSize(19px);
+    }
 }
 
 .career-slide-wrap {
@@ -459,13 +532,16 @@ ul.positions {
     left: 0;
     background-color: $tan;
     position: absolute;
-    padding: 5vh 0;
+    padding: 5vh 5%;
     @include media($md) {
         padding: 30vh 0 0;
     }
     p {
         font-family: "Gotham";
-        @include fontSize(24px);
+        @include fontSize(14px);
+        @include media($md) {
+            @include fontSize(24px);
+        }
     }
     &.active-slide {
         z-index: 8;
@@ -510,6 +586,16 @@ ul.positions {
     z-index: 3;
 }
 
+.careers-section, .beverages-section {
+    text-align: left;
+    min-height: 100vh;
+    @include media($md) {
+        height: 100vh;
+        min-height: none;    
+    }
+    
+}
+
 .careers-wrap {
     .slide-1 {
         //padding-top: 0;
@@ -523,8 +609,7 @@ ul.positions {
         }
     }
     .careers-section {
-        text-align: left;
-        height: 100vh;
+        
     }
 }
 
@@ -533,6 +618,10 @@ h2.career-title {
     text-transform: uppercase;
     font-family: 'Gotham';
     font-weight: 500;
+    @include fontSize(20px);
+    @include media($md) {
+        @include fontSize(42px);
+    }
 }
 
 .position-wrap {
@@ -545,7 +634,7 @@ h2.career-title {
 
 .compensation-wrap {
     border: 1px solid $dark-red;
-    float: right;
+    float: left;
     //top: 12%;
     padding: 10px;
     text-transform: uppercase;
@@ -553,18 +642,25 @@ h2.career-title {
     color: $dark-red;
     @include media($md) {
        //width: 50%; 
+       float: right;
     }
     .compensation-header {
         font-family: "Gotham";
-        @include fontSize(19px);
+        @include fontSize(11px);
         font-weight: 700;
         margin: 0;
+        @include media($md) {
+            @include fontSize(19px);
+        }
     }
     p {
         font-family: "Gotham";
-        @include fontSize(36px);
+        @include fontSize(21px);
         font-weight: 700;
         margin: 0;
+        @include media($md) {
+            @include fontSize(36px);
+        }
     }
 }
 .case-study-card-wrap {
@@ -573,18 +669,25 @@ h2.career-title {
 }
 .case-study-card {
     background-color: $dark-red;
-    width: 48%;
-    float: right;
+    width: 100%;
+    float: left;
     color: $tan;
     font-family: "Gotham";
     font-weight: 700;
     position: relative;
+    @include media($md) {
+        width: 48%;
+        float: right;
+    }
     &:first-of-type {
         float: left;
     }
     p {
-        @include fontSize(14px);
+        @include fontSize(11px);
         margin: 0;
+        @include media($md) {
+            @include fontSize(14px);
+        }
     }
     .case-study-card-image {
         width: 25%;
@@ -601,7 +704,10 @@ h2.career-title {
 .case-study-card-blurb {
     float: right;
     width: 75%;
-    padding: 10px;
+    padding: 15px;
+    @include media($md) {
+        padding: 10px;
+    }
 }
 .case-study-card-expanded {
     position: absolute;
@@ -609,24 +715,39 @@ h2.career-title {
     color: $tan;
     display: block;
     left: 20px;
-    bottom: 0;
-    width: 75vw;
+    
+    bottom: -70px;
     z-index: 99;
     transition: all .3s;
     transform: scale(0);
     transform-origin: bottom left;
-    padding: 70px 70px 0;
+    padding: 70px 10px 0;
+    height: 85vh;
+    width: 75vw;
+    @include media($md) {
+        bottom: 0;
+        padding: 70px 70px 0;
+        height: auto;
+        width: 75vw;
+    }
     &.expanded {
         transform: scale(1);
     }
     .case-study-card-image {
         position: absolute;
-        left: -100px;
-        bottom: 0;
-        width: 175px;
-        height: 175px;
+        top: 0;
         cursor: inherit;
         padding: 0;
+        left: 0;
+        width: 70px;
+        height: 70px;
+        @include media($md) {
+            top: initial;
+            left: -100px;
+            bottom: 0;
+            width: 175px;
+            height: 175px;
+        }
     }
     .close-button {
         position: absolute;
@@ -671,16 +792,20 @@ ul.job-list-dots {
     width: 100%;
     display: table;
     margin-bottom: 70px;
+    list-style-type: none;
     li {
-        display: table-cell;
+        
         position: relative;
         @include fontSize(14px);
         text-transform: uppercase;
-        text-align: center;
+        
         line-height: 1em;
-        vertical-align: top;
+        
         @include media($md) {
+            display: table-cell;
             width: 150px;
+            text-align: center;
+            vertical-align: top;
         }
         &:before {
             content: "";
@@ -692,7 +817,8 @@ ul.job-list-dots {
             top: -45px;
             width: 30px;
             height: 30px;
-            margin: 0 auto 25px;
+            margin: 0 auto 25px; 
+            
         }
     }
     li + li {
@@ -700,10 +826,13 @@ ul.job-list-dots {
             content: "";
             position: absolute;
             background-color: $tan;
-            width: 100%;
-            height: 3px;
-            right: 50%;
-            top: -31px;
+            
+            @include media($md) {
+                width: 100%;
+                height: 3px;
+                right: 50%;
+                top: -31px;
+            }
         }
     }
 }
@@ -727,6 +856,7 @@ ul.job-list-dots {
 .sprinkler-animation {
     position: absolute;
     right: 5vw;
+    top: 30vh;
     width: 30vw;
     z-index: 8;
     .water {
@@ -734,8 +864,33 @@ ul.job-list-dots {
         background-repeat: no-repeat;
         height: 389px;
         width: 336px;
-        transform: scale(.5);
+        transform: scale(0);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
         transform-origin: center bottom;
+    }
+    .sprinkler {
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 50px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        //transform: scale(0);
+        transform-origin: center bottom;
+    }
+    .step-1, .step-2 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
     }
 }
 
@@ -753,8 +908,8 @@ ul.job-list-dots {
     right:0;
     margin: 0 auto;
     z-index: 10;
-    
     width: 100%;
+    display: none;
     p {
         @include fontSize(16px);
         font-family: "Gotham";
@@ -772,6 +927,7 @@ ul.job-list-dots {
         height: 100%;
     }
     @include media($md) {
+        display: block;
         @include outer-container(1060px);   
     }
 }
@@ -836,4 +992,171 @@ ul.job-list-dots {
         height: 100%;
     }
 }
+
+.categories-list {
+    background-color: #efcfbb;
+    text-align: right;
+    a {
+        text-transform: uppercase;
+        color: $light-red;
+        font-family: "Gotham";
+        @include fontSize(18px);
+        font-weight: bold;
+    }
+    li {
+        list-style-type: none;
+    }
+    h3 {
+        font-family: $caslon;
+        font-weight: 500;
+        font-style: italic;
+        margin-bottom: 0;
+    }
+    @include media($md) {
+        padding: 20px 20px 40px;
+        width: 295px;
+        position: absolute;
+        left: 0;
+        top: 150px;    
+    }
+}
+
+.blog-list {
+    @include media($md) {
+        padding-left: 300px;
+    }
+    .blog-item {
+        padding: 10px 0;
+        float: left;
+        width: 100%;
+    }
+}
+
+.beverages-section {
+    h2 {
+        @include fontSize(28px);
+        @include media($md) {
+            @include fontSize(62px);
+        }
+    }
+    &.slide-1 {
+        p {
+            color: $dark-red;
+            line-height: 1.4em;
+        }
+    }
+}
+
+.beverage-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30%;
+    float: left;
+    height: 200px;
+    @include media($md) {
+        height: 100%;
+        width: 25%;
+        
+    }
+}
+
+.beverage-slide {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-size: cover;
+    background-position: center;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 231, 204, 0.6);
+    }
+    .section-inner {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.beverage-info {
+    width: 100%;
+    position: relative;
+    @include media($md) {
+        height: 100%;
+        width: 75%;
+        float: right;
+    }
+    h2 {
+        font-family: "Gotham";
+        @include fontSize(24px);
+        font-weight: 500;
+        font-style: normal;
+        clear: none;
+        &:after {
+            clear: none;
+        }
+        @include media($md) {
+            clear: none;
+            @include fontSize(42px);
+        }
+    }
+    p {
+        font-family: "GothamNarrow";
+        font-weight: 300;
+        @include fontSize(20px);
+        line-height: 1.4em;
+    }
+    .intro-text {
+        font-family: "Gotham";
+        font-weight: bold;
+        @include fontSize(24px);
+        color: $dark-red;
+    }
+}
+
+.drink-block {
+    position: relative;
+    width: 48%;
+    display: inline-block;
+    background-color: #FFE7CC;
+    border: 1px solid $dark-red;
+    padding: 15px;
+    margin-bottom: 15px;
+    vertical-align: top;
+    @include media($md) {
+        width: 31%;
+    }
+    p {
+        margin: 0;
+        font-family: "GothamNarrow";
+        @include fontSize(15px);
+    }
+    span {
+        float: left;
+        display: inline;
+    }
+    span + span {
+        border-right: 1px solid black;
+
+    }
+    &:nth-of-type(3n-1) {
+        @include media($md) {
+            margin-left: 2%;    
+        }
+        
+    }
+    &:nth-of-type(3n) {
+        @include media($md) {
+            margin-left: 2%;    
+        }
+        
+    }
+}
+
+
+
 

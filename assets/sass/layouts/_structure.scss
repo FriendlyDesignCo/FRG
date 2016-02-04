@@ -26,7 +26,11 @@ html {
 }
 #page {
      @include outer-container;
-
+     overflow: hidden;
+     padding-top: 50px;
+     @include media($md) {
+        padding-top: 0;
+     }
 }
 .wrap {}
 
@@ -96,3 +100,11 @@ html {
         padding: 0;
     }
 }
+
+.interior-page {
+    padding-top: 100px;
+    .site-content {
+        position: relative;
+    }
+}
+

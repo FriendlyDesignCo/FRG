@@ -40,6 +40,7 @@ get_header(); ?>
 	<section class="home-section hero" style="background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/2016/01/home-hero.jpg');">
 		<script>
 			(function($) {
+				
 			    $(document).ready(function() {
 				    
 				    // home counter
@@ -51,13 +52,23 @@ get_header(); ?>
 					console.log(e);
 					s=function(){
 						var s=$(window).scrollTop();
-						s>e?$(window).width()>768&&( $("header#masthead ").removeClass("not-scrolled"),
+						s>e?$(window).width() > 768 &&( $("header#masthead ").removeClass("not-scrolled"),
 							setTimeout(function() {$(".nav").addClass("fixed")}, 100)
 							) : 
 							$(window).width() > 768 && ( $("header#masthead ").addClass("not-scrolled")/*, $("#page").css("padding-top","0px")*/)
 					};
 				});
 
+			    var body = $("body"); 
+
+
+			    // add class for mobile or desktop screen sizes
+			    if ($(window).width() < 1059) {
+		             $('body').addClass("mobile-screen");
+		        }
+		        else {
+		        	$('body').addClass("desktop-screen");	
+		        }
 
 				$(window).scroll( function(){
 					// call home scroll function
@@ -126,14 +137,15 @@ get_header(); ?>
 				</div>
 			</div>
 			<script>
-				// init controller
-				var controller = new ScrollMagic.Controller();
 				
-				new ScrollMagic.Scene({triggerElement: "#trigger1" ,duration: 300})
+				var controller = new ScrollMagic.Controller();  
+				
+				new ScrollMagic.Scene({triggerElement: "#trigger1" ,duration: "50%"})
 							//.setVelocity(".flip-icon", {opacity: 0}, {duration: 400})
-							.setTween(".flip-icon-wrap", {width: 140, height: 140}) // the tween durtion can be omitted and defaults to 1
+							.setTween(".desktop-screen .flip-icon-wrap", {width: 200, height: 200}) // the tween durtion can be omitted and defaults to 1
 							//.setClassToggle(".flip-icon-wrap", "hover") // add class toggle
 							.addTo(controller);
+
 				
 			</script>
 		</div>
@@ -150,31 +162,34 @@ get_header(); ?>
 			<?php the_field('slide_3_paragraph'); ?>
 			
 			<script>
-				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 800})
-							.setPin(".flip-icons")
+				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%"})
+							.setPin(".desktop-screen .flip-icons")
 							.addTo(controller);
-				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 800})
-							.setPin(".slide-3 p")
+				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%"})
+							.setPin(".desktop-screen .slide-3 p")
 							.addTo(controller);
 			</script>
 		</div>
 		
 		<script>
+			// desktop
 			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
-						.setTween(".icon-1 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.setTween(".desktop-screen .icon-1 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#icon-trigger-2"})
-						.setTween(".icon-2 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.setTween(".desktop-screen .icon-2 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#icon-trigger-3"})
-						.setTween(".icon-3 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.setTween(".desktop-screen .icon-3 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#icon-trigger-4"})
-						.setTween(".icon-4 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.setTween(".desktop-screen .icon-4 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#icon-trigger-5"})
-						.setTween(".icon-5 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
-						.addTo(controller);						
+						.setTween(".desktop-screen .icon-5 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.addTo(controller);	
+
+						
 		</script>
 	</section>
 
@@ -233,7 +248,10 @@ get_header(); ?>
 			</div>
 			<script>
 				new ScrollMagic.Scene({triggerElement: "#ingredient-trigger", duration: "200%"})
-							.setPin(".ingredients-wrap")
+							.setPin(".desktop-screen .ingredients-wrap")
+							.addTo(controller);					
+				new ScrollMagic.Scene({triggerElement: "#ingredient-trigger", duration: "220%"})
+							.setPin(".mobile-screen .ingredients-wrap")
 							.addTo(controller);					
 			</script>
 		</div>
@@ -259,6 +277,7 @@ get_header(); ?>
 			<div id="ingredient-position-trigger"></div>
 			<h2><?php the_field('slide_7_header'); ?></h2>
 			<script>
+			// desktop and mobile 
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".ingredients-row p:not(.highlighted)", { opacity: 0 })
 						.addTo(controller);	
@@ -266,22 +285,38 @@ get_header(); ?>
 						.setTween(".ingredients-row p", { borderColor: "rgba(255,231,204, 0) "})
 						.addTo(controller);	
 			
-
+			// desktop 
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween("p#highlighted2", { x: "-135%", y: "20%", scale: 1.4 })
+						.setTween(".desktop-screen p#highlighted2", { x: "-135%", y: "20%", scale: 1.4 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween("p#highlighted6", { x: "10%", y: "60%", scale: 1.86 })
+						.setTween(".desktop-screen p#highlighted6", { x: "10%", y: "60%", scale: 1.86 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween("p#highlighted9", { x: "80%", y: "70%", scale: 1.44 })
+						.setTween(".desktop-screen p#highlighted9", { x: "80%", y: "70%", scale: 1.44 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween("p#highlighted20", { x: "-156%", y: "-210%", scale: 1.66 })
+						.setTween(".desktop-screen p#highlighted20", { x: "-156%", y: "-210%", scale: 1.66 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween("p#highlighted21", { x: "-170%", y: "-50%", scale: 1.66 })
-						.addTo(controller);									
+						.setTween(".desktop-screen p#highlighted21", { x: "-170%", y: "-50%", scale: 1.66 })
+						.addTo(controller);		
+			// mobile 	
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".mobile-screen p#highlighted2", { x: "-105%", y: "20%", scale: 1.4 })
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".mobile-screen p#highlighted6", { x: "15%", y: "50%", scale: 1.86 })
+						.addTo(controller);			
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".mobile-screen p#highlighted9", { x: "80%", y: "50%", scale: 1.44 })
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".mobile-screen p#highlighted20", { x: "-135%", y: "-380%", scale: 1.66 })
+						.addTo(controller);			
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".mobile-screen p#highlighted21", { x: "-170%", y: "-150%", scale: 1.66 })
+						.addTo(controller);							
 		</script>
 		</div>
 	</section>

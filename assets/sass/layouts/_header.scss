@@ -71,7 +71,17 @@ header#masthead {
         display: none;
     }
     .show-scroll {
-        display: block;
+        transition: all .4s;
+        position: absolute;
+        display: none;
+        background-color: $light-red;
+        height: calc(100vh - 50px);
+        @include media($md) {
+            background-color: none;
+            position: relative;
+            display: block;
+            height: auto;
+        }
     }
    
 }

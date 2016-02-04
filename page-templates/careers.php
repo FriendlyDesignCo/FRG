@@ -89,7 +89,10 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="sprinkler-animation">
+				<div class="step-1" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-1.svg')"></div>
+				<div class="step-2" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-2.svg')"></div>
 				<div class="water" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/water.svg')"></div>
+				<div class="sprinkler" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/sprinkler.svg')"></div>
 			</div>
 			
 			
@@ -118,10 +121,7 @@ get_header(); ?>
 						<!-- career loop -->
 						<h2 class="career-title"><?php the_sub_field('career_title'); ?></h2>
 						<p class="text-red"><?php the_sub_field('career_description'); ?></p>
-						<div class="compensation-wrap">
-							<h3 class="compensation-header">Compensation</h3>
-							<p>$<?php the_sub_field('career_compensation'); ?></p>	
-						</div>
+						
 						
 
 						<!-- positions loop -->
@@ -135,6 +135,10 @@ get_header(); ?>
 							</ul>
 						</div>
 						<?php endif; ?>
+						<div class="compensation-wrap">
+							<h3 class="compensation-header">Compensation</h3>
+							<p>$<?php the_sub_field('career_compensation'); ?></p>	
+						</div>
 						<!-- end positions loop -->
 
 						
@@ -176,6 +180,24 @@ get_header(); ?>
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number+1;?>",duration:"20px" })
 							.setTween(".career-slide-<?php echo $slide_number;?>", { delay: 0.3,zIndex:0})
 							.addTo(controller);
+				
+				// sprinkler animations
+				new ScrollMagic.Scene({triggerElement: "#career-trigger1" })
+							.setTween(".sprinkler-animation .step-1", { scale: 1.1, opacity: 1})
+							.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: "#career-trigger2" })
+							.setTween(".sprinkler-animation .step-1", { scale: 1, opacity: 0})
+							.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: "#career-trigger2" })
+							.setTween(".sprinkler-animation .step-2", { scale: 1.1, opacity: 1})
+							.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: "#career-trigger3" })
+							.setTween(".sprinkler-animation .step-2", { scale: 1, opacity: 0})
+							.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: "#career-trigger3" })
+							.setTween(".water", { scale: 1.4, opacity: 0})
+							.addTo(controller);			
+
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>", duration: "100%"})
 							.setClassToggle(".dot-<?php echo $slide_number;?>", "active") // add class toggle
 							.addTo(controller);
