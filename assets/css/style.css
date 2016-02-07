@@ -798,14 +798,14 @@ h2 {
         font-size: 62px;
         font-size: 3.875rem; } }
 
+.slide-2 h2, .slide-4 h2, .slide-5 h2, .slide-6 h2 {
+  font-size: 32px;
+  font-size: 2rem; }
+
 @media screen and (min-width: 48em) {
   .slide-2 h2 {
     font-size: 60px;
     font-size: 3.75rem; } }
-
-.slide-2 h2, .slide-4 h2, .slide-5 h2, .slide-6 h2 {
-  font-size: 32px;
-  font-size: 2rem; }
 
 @media screen and (min-width: 48em) {
   .slide-4 h2 {
@@ -1021,6 +1021,9 @@ header#masthead {
   float: left;
   width: 100%;
   position: fixed;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   background-color: #8B2332;
@@ -1796,7 +1799,8 @@ ul.positions {
 #career-trigger2,
 #career-trigger3,
 #career-trigger4,
-#career-trigger5 {
+#career-trigger5,
+#career-trigger6 {
   position: absolute; }
 
 #career-trigger1 {
@@ -1808,6 +1812,15 @@ ul.positions {
 #career-trigger3 {
   top: 350vh; }
 
+#career-trigger4 {
+  top: 450vh; }
+
+#career-trigger5 {
+  top: 550vh; }
+
+#career-trigger6 {
+  top: 650vh; }
+
 .career-slide-1 {
   z-index: 6; }
 
@@ -1818,10 +1831,13 @@ ul.positions {
   z-index: 4; }
 
 .career-slide-4 {
-  z-index: 4; }
+  z-index: 3; }
 
 .career-slide-5 {
-  z-index: 3; }
+  z-index: 2; }
+
+.career-slide-6 {
+  z-index: 1; }
 
 .careers-section, .beverages-section {
   text-align: left;
@@ -1993,7 +2009,7 @@ h2.career-title {
         font-size: 24px;
         font-size: 1.5rem;
         font-weight: 500;
-        width: 30%;
+        width: 40%;
         padding: 20px;
         height: 175px; } }
   .case-study-card-expanded .case-study-paragraph {
@@ -2002,7 +2018,7 @@ h2.career-title {
     font-weight: 300; }
     @media screen and (min-width: 48em) {
       .case-study-card-expanded .case-study-paragraph {
-        width: 70%;
+        width: 60%;
         font-size: 17px;
         font-size: 1.0625rem;
         line-height: 1.4em;

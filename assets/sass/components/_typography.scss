@@ -303,17 +303,19 @@ h2 {
     }
 }
 
+
+
+.slide-2, .slide-4, .slide-5, .slide-6 { 
+    h2 {
+        @include fontSize(32px);
+    }
+}
+
 .slide-2 { 
     h2 {
         @include media($md) {
             @include fontSize(60px);
         }
-    }
-}
-
-.slide-2, .slide-4, .slide-5, .slide-6 { 
-    h2 {
-        @include fontSize(32px);
     }
 }
 

@@ -62,11 +62,13 @@ header#masthead {
     float: left;
     width: 100%;
     position: fixed;
+    transition: transform .4s;
     transform: translate3d(0,0,0);
     background-color: $dark-red;
     top: 0;
     left: 0;
     z-index: 999;
+
     .hide-scroll {
         display: none;
     }

@@ -554,7 +554,8 @@ ul.positions {
 #career-trigger2,
 #career-trigger3,
 #career-trigger4,
-#career-trigger5 {
+#career-trigger5,
+#career-trigger6 {
     position: absolute;
 }
 
@@ -570,6 +571,21 @@ ul.positions {
     top: 350vh;
 }
 
+#career-trigger4 {
+    top: 450vh;
+}
+
+#career-trigger5 {
+    top: 550vh;
+}
+
+#career-trigger6 {
+    top: 650vh;
+}
+
+
+
+
 .career-slide-1 {
     z-index: 6;
 }
@@ -580,10 +596,14 @@ ul.positions {
     z-index: 4;
 }
 .career-slide-4 {
-    z-index: 4;
+    z-index: 3;
 }
 .career-slide-5 {
-    z-index: 3;
+    z-index: 2;
+}
+
+.career-slide-6 {
+    z-index: 1;
 }
 
 .careers-section, .beverages-section {
@@ -768,7 +788,7 @@ h2.career-title {
         @include media($md) {
             @include fontSize(24px);
             font-weight: 500;
-            width: 30%;   
+            width: 40%;   
             padding: 20px; 
             height: 175px;
         }
@@ -779,7 +799,7 @@ h2.career-title {
         font-weight: 300;
 
         @include media($md) {
-            width: 70%;    
+            width: 60%;    
             @include fontSize(17px);
             line-height: 1.4em;
             padding: 0 50px;

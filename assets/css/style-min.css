@@ -65,8 +65,9 @@ ul:nth-child(n+2){margin-bottom:0}ol:nth-child(n+2){margin-bottom:0}.entry-title
 }.body-text,.entry-content p{font-family:"GothamNarrow";font-weight:300}
 .text-red{color:#8b2332}.medium{font-weight:500}h2{font-family:"adobe-caslon-pro";font-weight:bold;font-style:italic}
 h2.large{font-size:81px;font-size:5.0625rem}h2.small{font-size:32px;font-size:2rem}
-@media screen and (min-width:48em){h2.small{font-size:62px;font-size:3.875rem}}@media screen and (min-width:48em){.slide-2 h2{font-size:60px;font-size:3.75rem}
-}.slide-2 h2,.slide-4 h2,.slide-5 h2,.slide-6 h2{font-size:32px;font-size:2rem}@media screen and (min-width:48em){.slide-4 h2{font-size:54px;font-size:3.375rem}
+@media screen and (min-width:48em){h2.small{font-size:62px;font-size:3.875rem}}.slide-2 h2,.slide-4 h2,.slide-5 h2,.slide-6 h2{font-size:32px;font-size:2rem}
+@media screen and (min-width:48em){.slide-2 h2{font-size:60px;font-size:3.75rem}}
+@media screen and (min-width:48em){.slide-4 h2{font-size:54px;font-size:3.375rem}
 }@media screen and (min-width:48em){.slide-5 h2,.slide-6 h2{font-size:49px;font-size:3.0625rem}
 }h3{font-size:36px;font-size:2.25rem;font-family:"GothamNarrow";font-weight:300}
 h4{font-family:"Gotham"}h4.large{font-size:24px;font-size:1.5rem}
@@ -98,7 +99,7 @@ body.home header#masthead.not-scrolled .menu-menu-1-container{text-align:center;
 body.home header#masthead.not-scrolled .menu-menu-1-container ul{float:none}body.home header#masthead.not-scrolled .menu-menu-1-container a{color:#8b2332}
 body.home header#masthead.not-scrolled .menu-menu-1-container li{float:none;display:inline;padding-left:1%;padding-right:1%}
 body.home header#masthead.not-scrolled .menu-menu-1-container .sub-menu{position:absolute}
-header#masthead{float:left;width:100%;position:fixed;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);background-color:#8b2332;top:0;left:0;z-index:999}
+header#masthead{float:left;width:100%;position:fixed;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);background-color:#8b2332;top:0;left:0;z-index:999}
 header#masthead .hide-scroll{display:none}header#masthead .show-scroll{transition:all .4s;position:absolute;display:none;background-color:#9d4446;height:calc(100vh - 50px)}
 @media screen and (min-width:48em){header#masthead .show-scroll{background-color:none;position:relative;display:block;height:auto}
 }#primary-nav{width:80%;float:right;position:relative}.menu-menu-1-container{font-family:'Gotham';font-size:16px;font-size:1rem}
@@ -200,10 +201,11 @@ header#masthead .hide-scroll{display:none}header#masthead .show-scroll{transitio
 }.career-slide-wrap{height:auto;position:relative;white-space:nowrap;padding:0}.career-slide{height:100vh;display:block;white-space:normal;width:100%;top:0;left:0;background-color:#ffe7cc;position:absolute;padding:5vh 5%}
 @media screen and (min-width:48em){.career-slide{padding:30vh 0 0}}.career-slide p{font-family:"Gotham";font-size:14px;font-size:.875rem}
 @media screen and (min-width:48em){.career-slide p{font-size:24px;font-size:1.5rem}
-}.career-slide.active-slide{z-index:8}#career-trigger1,#career-trigger2,#career-trigger3,#career-trigger4,#career-trigger5{position:absolute}
+}.career-slide.active-slide{z-index:8}#career-trigger1,#career-trigger2,#career-trigger3,#career-trigger4,#career-trigger5,#career-trigger6{position:absolute}
 #career-trigger1{top:150vh}#career-trigger2{top:250vh}#career-trigger3{top:350vh}
-.career-slide-1{z-index:6}.career-slide-2{z-index:5}.career-slide-3{z-index:4}.career-slide-4{z-index:4}
-.career-slide-5{z-index:3}.careers-section,.beverages-section{text-align:left;min-height:100vh}
+#career-trigger4{top:450vh}#career-trigger5{top:550vh}#career-trigger6{top:650vh}
+.career-slide-1{z-index:6}.career-slide-2{z-index:5}.career-slide-3{z-index:4}.career-slide-4{z-index:3}
+.career-slide-5{z-index:2}.career-slide-6{z-index:1}.careers-section,.beverages-section{text-align:left;min-height:100vh}
 @media screen and (min-width:48em){.careers-section,.beverages-section{height:100vh;min-height:none}
 }.careers-wrap .slide-1 h2{margin:0;text-align:left}.careers-wrap .slide-1 p{text-align:left;line-height:1.4em}
 h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';font-weight:500;font-size:20px;font-size:1.25rem}
@@ -227,9 +229,9 @@ h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';
 @media screen and (min-width:48em){.case-study-card-expanded .case-study-card-image{top:initial;left:-100px;bottom:0;width:175px;height:175px}
 }.case-study-card-expanded .close-button{position:absolute;top:0;right:0;background-color:#9d4446;color:#ffe7cc;text-transform:uppercase;font-size:14px;font-size:.875rem;padding:0 25px}
 .case-study-card-expanded .inner-blurb{float:left;font-family:"adobe-caslon-pro";font-style:italic;background-color:#9d4446;line-height:1em}
-@media screen and (min-width:48em){.case-study-card-expanded .inner-blurb{font-size:24px;font-size:1.5rem;font-weight:500;width:30%;padding:20px;height:175px}
+@media screen and (min-width:48em){.case-study-card-expanded .inner-blurb{font-size:24px;font-size:1.5rem;font-weight:500;width:40%;padding:20px;height:175px}
 }.case-study-card-expanded .case-study-paragraph{float:right;font-family:"GothamNarrow";font-weight:300}
-@media screen and (min-width:48em){.case-study-card-expanded .case-study-paragraph{width:70%;font-size:17px;font-size:1.0625rem;line-height:1.4em;padding:0 50px;height:175px}
+@media screen and (min-width:48em){.case-study-card-expanded .case-study-paragraph{width:60%;font-size:17px;font-size:1.0625rem;line-height:1.4em;padding:0 50px;height:175px}
 }ul.job-list-dots{width:100%;display:table;margin-bottom:70px;list-style-type:none}
 ul.job-list-dots li{position:relative;font-size:14px;font-size:.875rem;text-transform:uppercase;line-height:1em}
 @media screen and (min-width:48em){ul.job-list-dots li{display:table-cell;width:150px;text-align:center;vertical-align:top}

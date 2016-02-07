@@ -52,9 +52,8 @@ get_header(); ?>
 					console.log(e);
 					s=function(){
 						var s=$(window).scrollTop();
-						s>e?$(window).width() > 768 &&( $("header#masthead ").removeClass("not-scrolled"),
-							setTimeout(function() {$(".nav").addClass("fixed")}, 100)
-							) : 
+						s>e?$(window).width() > 768 &&( 
+							$("header#masthead ").removeClass("not-scrolled")) : 
 							$(window).width() > 768 && ( $("header#masthead ").addClass("not-scrolled")/*, $("#page").css("padding-top","0px")*/)
 					};
 				});
