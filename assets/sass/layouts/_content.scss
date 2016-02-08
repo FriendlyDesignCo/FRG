@@ -539,6 +539,7 @@ ul.positions {
     p {
         font-family: "Gotham";
         @include fontSize(14px);
+        line-height: 1.4em;
         @include media($md) {
             @include fontSize(24px);
         }
@@ -613,7 +614,10 @@ ul.positions {
         height: 100vh;
         min-height: none;    
     }
-    
+    &.last-slide {
+        position: absolute;
+        top: 800vh;
+    }
 }
 
 .careers-wrap {
@@ -657,11 +661,13 @@ h2.career-title {
     float: left;
     //top: 12%;
     padding: 10px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     text-align: center;
     color: $dark-red;
     @include media($md) {
        //width: 50%; 
+       max-width: 250px;
        float: right;
     }
     .compensation-header {
@@ -678,8 +684,9 @@ h2.career-title {
         @include fontSize(21px);
         font-weight: 700;
         margin: 0;
+        line-height: 1em;
         @include media($md) {
-            @include fontSize(36px);
+            @include fontSize(25px);
         }
     }
 }
@@ -719,6 +726,13 @@ h2.career-title {
     .case-study-card-image, .case-study-card-blurb, .close-button {
         cursor: pointer;
     }
+    &:nth-of-type(2n) {
+        .case-study-card-expanded {
+            transform-origin: bottom left;
+            right: -200px;
+            left: initial;
+        }
+    }
 }
 
 .case-study-card-blurb {
@@ -735,7 +749,6 @@ h2.career-title {
     color: $tan;
     display: block;
     left: 20px;
-    
     bottom: -70px;
     z-index: 99;
     transition: all .3s;
@@ -744,6 +757,7 @@ h2.career-title {
     padding: 70px 10px 0;
     height: 85vh;
     width: 75vw;
+
     @include media($md) {
         bottom: 0;
         padding: 70px 70px 0;
@@ -876,28 +890,31 @@ ul.job-list-dots {
 .sprinkler-animation {
     position: absolute;
     right: 5vw;
-    top: 30vh;
+    top: 0;
+    height: 100%;
     width: 30vw;
-    z-index: 8;
+    z-index: 2;
     .water {
         background-position: center;
         background-repeat: no-repeat;
         height: 389px;
         width: 336px;
         transform: scale(0);
-        left: 0;
-        right: 0;
-        margin: 0 auto;
         transform-origin: center bottom;
+        position: absolute;
+        right: 0px;
+        //margin: 0 auto;
+        bottom: 20vh;
     }
     .sprinkler {
         background-position: center;
         background-repeat: no-repeat;
         height: 50px;
         width: 50px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
+        position: absolute;
+        right: 70px;
+        //margin: 0 auto;
+        bottom: 20vh;
         //transform: scale(0);
         transform-origin: center bottom;
     }
@@ -907,10 +924,34 @@ ul.job-list-dots {
         height: 200px;
         left: 0;
         right: 0;
+        bottom: 0;
         margin: 0 auto;
         background-position: center;
         background-repeat: no-repeat;
+    }
+    
+    .step-2 {
         opacity: 0;
+    }
+    .corn {
+        position: absolute;
+        width: 200px;
+        height: 100%;
+        left: 0;
+        right: 0;
+        bottom: 20vh;
+        margin: 0 auto;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        opacity: 0;
+    }
+    &.step-1 {
+        opacity: 1;
+    }
+    &.step-6 .corn {
+        transform: rotate(30deg);
+        background-position: center;
+        height: 400px;
     }
 }
 
@@ -977,6 +1018,12 @@ ul.job-list-dots {
     }
     &#slide4 {
         top: 400vh;
+    }
+    &#slide5 {
+        top: 500vh;
+    }
+    &#slide6 {
+        top: 600vh;
     }
 }
 

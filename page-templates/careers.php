@@ -45,6 +45,24 @@ get_header(); ?>
 			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/red-arrow.svg');
 			margin-bottom: -40px;
 		}
+		.step-1 .corn {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-1.svg');
+		}
+		.step-2 .corn {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-2.svg');
+		}
+		.step-3 .corn {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-3.svg');
+		}
+		.step-4 .corn {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-3.svg');
+		}
+		.step-5 .corn {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-4.svg');
+		}
+		.step-6 .corn {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-5.svg');
+		}
 	</style>
 	<section class="section careers-section slide-1 section-wrap">
 		<div class="section-inner">
@@ -90,12 +108,12 @@ get_header(); ?>
 					</ul>
 				</div>
 			</div>
-			<div class="sprinkler-animation">
+			<!--<div class="sprinkler-animation">
 				<div class="step-1" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-1.svg')"></div>
 				<div class="step-2" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-2.svg')"></div>
 				<div class="water" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/water.svg')"></div>
 				<div class="sprinkler" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/sprinkler.svg')"></div>
-			</div>
+			</div>-->
 			
 			
 			<script>
@@ -117,7 +135,11 @@ get_header(); ?>
 
 				
 				<div class="section-inner ">
-
+					<div class="sprinkler-animation step-<?php echo $slide_number ?>">
+						<div class="corn"></div>
+						<div class="water" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/water.svg')"></div>
+						<div class="sprinkler" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/sprinkler.svg')"></div>
+					</div>
 					<div class="case-study">
 
 						<!-- career loop -->
@@ -187,11 +209,16 @@ get_header(); ?>
 							.addTo(controller);
 				
 				// sprinkler animations
-				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number+1;?>" })
-							.setTween(".water", { scale: 1.4, opacity: 0})
+				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
+							.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .water", { scale: 1.4, opacity: 0})
+							//.addIndicators()
+							.addTo(controller);	
+				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
+							.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .corn", { delay: 0.3, opacity: 1})
+							//.addIndicators()
 							.addTo(controller);	
 
-				new ScrollMagic.Scene({triggerElement: "#career-trigger1" })
+				/*new ScrollMagic.Scene({triggerElement: "#career-trigger1" })
 							.setTween(".sprinkler-animation .step-1", { scale: 1.1, opacity: 1})
 							.addTo(controller);
 				new ScrollMagic.Scene({triggerElement: "#career-trigger2" })
@@ -202,7 +229,7 @@ get_header(); ?>
 							.addTo(controller);
 				new ScrollMagic.Scene({triggerElement: "#career-trigger3" })
 							.setTween(".sprinkler-animation .step-2", { scale: 1, opacity: 0})
-							.addTo(controller);
+							.addTo(controller);*/
 						
 
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>", duration: "100%"})
@@ -234,7 +261,10 @@ get_header(); ?>
 		</script>
 		</div>
 	</section>
-	
+	<section class="section careers-section last-slide section-wrap">
+		<div class="section-inner">
+			<h2 class="small">Ready to start your journey?</h2>
+	</section>
 </div><!-- .page-wrap -->
 
 

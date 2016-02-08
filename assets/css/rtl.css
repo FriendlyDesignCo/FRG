@@ -1789,7 +1789,8 @@ ul.positions {
   .career-slide p {
     font-family: "Gotham";
     font-size: 14px;
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    line-height: 1.4em; }
     @media screen and (min-width: 48em) {
       .career-slide p {
         font-size: 24px;
@@ -1848,6 +1849,9 @@ ul.positions {
     .careers-section, .beverages-section {
       height: 100vh;
       min-height: none; } }
+  .careers-section.last-slide, .beverages-section.last-slide {
+    position: absolute;
+    top: 800vh; }
 
 .careers-wrap .slide-1 h2 {
   margin: 0;
@@ -1880,11 +1884,13 @@ h2.career-title {
   border: 1px solid #8B2332;
   float: left;
   padding: 10px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
   color: #8B2332; }
   @media screen and (min-width: 48em) {
     .compensation-wrap {
+      max-width: 250px;
       float: right; } }
   .compensation-wrap .compensation-header {
     font-family: "Gotham";
@@ -1901,11 +1907,12 @@ h2.career-title {
     font-size: 21px;
     font-size: 1.3125rem;
     font-weight: 700;
-    margin: 0; }
+    margin: 0;
+    line-height: 1em; }
     @media screen and (min-width: 48em) {
       .compensation-wrap p {
-        font-size: 36px;
-        font-size: 2.25rem; } }
+        font-size: 25px;
+        font-size: 1.5625rem; } }
 
 .case-study-card-wrap {
   width: 100%;
@@ -1941,6 +1948,11 @@ h2.career-title {
     float: left; }
   .case-study-card .case-study-card-image, .case-study-card .case-study-card-blurb, .case-study-card .close-button {
     cursor: pointer; }
+  .case-study-card:nth-of-type(2n) .case-study-card-expanded {
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    right: -200px;
+    left: initial; }
 
 .case-study-card-blurb {
   float: right;
@@ -2081,9 +2093,10 @@ ul.job-list-dots {
 .sprinkler-animation {
   position: absolute;
   right: 5vw;
-  top: 30vh;
+  top: 0;
+  height: 100%;
   width: 30vw;
-  z-index: 8; }
+  z-index: 2; }
   .sprinkler-animation .water {
     background-position: center;
     background-repeat: no-repeat;
@@ -2091,19 +2104,19 @@ ul.job-list-dots {
     width: 336px;
     -webkit-transform: scale(0);
             transform: scale(0);
-    left: 0;
-    right: 0;
-    margin: 0 auto;
     -webkit-transform-origin: center bottom;
-            transform-origin: center bottom; }
+            transform-origin: center bottom;
+    position: absolute;
+    right: 0px;
+    bottom: 20vh; }
   .sprinkler-animation .sprinkler {
     background-position: center;
     background-repeat: no-repeat;
     height: 50px;
     width: 50px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    position: absolute;
+    right: 70px;
+    bottom: 20vh;
     -webkit-transform-origin: center bottom;
             transform-origin: center bottom; }
   .sprinkler-animation .step-1, .sprinkler-animation .step-2 {
@@ -2112,10 +2125,30 @@ ul.job-list-dots {
     height: 200px;
     left: 0;
     right: 0;
+    bottom: 0;
     margin: 0 auto;
     background-position: center;
+    background-repeat: no-repeat; }
+  .sprinkler-animation .step-2 {
+    opacity: 0; }
+  .sprinkler-animation .corn {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 20vh;
+    margin: 0 auto;
+    background-position: center bottom;
     background-repeat: no-repeat;
     opacity: 0; }
+  .sprinkler-animation.step-1 {
+    opacity: 1; }
+  .sprinkler-animation.step-6 .corn {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+    background-position: center;
+    height: 400px; }
 
 .nav-dots-inner {
   border-top: 2px solid #8B2332;
@@ -2180,6 +2213,10 @@ ul.job-list-dots {
     top: 300vh; }
   .dot-anchor#slide4 {
     top: 400vh; }
+  .dot-anchor#slide5 {
+    top: 500vh; }
+  .dot-anchor#slide6 {
+    top: 600vh; }
 
 /********* post **********/
 #content .hero-image {
