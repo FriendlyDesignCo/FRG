@@ -966,14 +966,18 @@ body {
     .site-content {
       padding: 150px 7% 0; } }
 
-.entry-content {
+.entry-content, .mobile-padding {
   padding: 0 5%; }
   @media screen and (min-width: 48em) {
-    .entry-content {
+    .entry-content, .mobile-padding {
       padding: 0; } }
 
 .interior-page {
+  padding-top: 50px;
   position: relative; }
+  @media screen and (min-width: 48em) {
+    .interior-page {
+      padding-top: 0; } }
   .interior-page .site-content {
     position: relative; }
 
@@ -2425,37 +2429,44 @@ ul.job-list-dots {
     .drink-block:nth-of-type(3n) {
       margin-left: 2%; } }
 
-.cookbook-logo img {
-  display: block;
-  margin: 0 auto; }
-  @media screen and (min-width: 48em) {
-    .cookbook-logo img {
-      max-width: 500px; } }
+.cookbook-logo {
+  padding-bottom: 50px; }
+  .cookbook-logo img {
+    display: block;
+    margin: 0 auto; }
+    @media screen and (min-width: 48em) {
+      .cookbook-logo img {
+        max-width: 500px; } }
 
 .cookbook-text {
   width: 100%;
-  position: relative; }
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px; }
   .cookbook-text p {
     margin-top: 0;
     font-family: "GothamNarrow";
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 18px;
+    font-size: 1.125rem; }
     @media screen and (min-width: 48em) {
       .cookbook-text p {
         font-size: 20px;
         font-size: 1.25rem; } }
   @media screen and (min-width: 48em) {
     .cookbook-text {
-      padding: 50px 50px; } }
+      padding: 50px 100px; } }
   @media screen and (min-width: 48em) {
     .cookbook-text .text-left {
       display: inline-block;
-      width: 49%;
+      width: 48%;
       vertical-align: top; } }
   @media screen and (min-width: 48em) {
     .cookbook-text .text-right {
+      float: right;
       vertical-align: top;
       display: inline-block;
-      width: 49%; } }
+      width: 48%; } }
   .cookbook-text:before, .cookbook-text:after {
     content: "";
     width: 70%;
@@ -2479,12 +2490,16 @@ ul.job-list-dots {
   position: relative;
   padding: 50px 0; }
   .images-wrap .image {
-    width: 24%;
-    padding-bottom: 24%;
+    width: 49%;
+    padding-bottom: 49%;
     display: inline-block;
     position: relative;
     background-size: cover;
     background-position: center; }
+    @media screen and (min-width: 48em) {
+      .images-wrap .image {
+        width: 24%;
+        padding-bottom: 24%; } }
   .images-wrap img {
     position: absolute;
     top: 0;
@@ -2506,36 +2521,49 @@ ul.job-list-dots {
 .qa-item {
   position: relative; }
 
-.plus-minus {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 50px;
-  background-color: #8B2332;
-  height: 100%; }
+@media screen and (min-width: 48em) {
+  .plus-minus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    background-color: #8B2332;
+    height: 100%; } }
 
 .qa-list-item {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
-  position: relative; }
+  position: relative;
+  font-family: "GothamNarrow"; }
   .qa-list-item .question {
     background-color: rgba(139, 35, 50, 0.2);
     min-height: 50px;
     position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 60px;
+    padding: 10px;
     cursor: pointer;
-    font-family: "GothamNarrow";
-    font-size: 24px;
-    font-size: 1.5rem; }
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.4em; }
+    @media screen and (min-width: 48em) {
+      .qa-list-item .question {
+        padding-left: 60px;
+        font-size: 24px;
+        font-size: 1.5rem; } }
     .qa-list-item .question.active {
       font-weight: bold; }
   .qa-list-item .answer {
     background-color: transparent;
-    padding-left: 60px;
-    display: none; }
+    padding: 10px;
+    display: none;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.4em; }
+    @media screen and (min-width: 48em) {
+      .qa-list-item .answer {
+        padding-left: 60px;
+        font-size: 24px;
+        font-size: 1.5rem; } }
 
 /*--------------------------------------------------------------
     6.4 Page Templates

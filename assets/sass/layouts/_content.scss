@@ -1233,6 +1233,7 @@ ul.job-list-dots {
             max-width: 500px;
         }
     }
+    padding-bottom: 50px;
 }
 
 .cookbook-text {
@@ -1242,27 +1243,30 @@ ul.job-list-dots {
         margin-top: 0;
         font-family: "GothamNarrow";
         font-weight: 300;
+        @include fontSize(18px);
         @include media($md) {
             @include fontSize(20px);
         }
     }
+    padding-top: 50px;
+    padding-bottom: 50px;
     @include media($md) {
-        padding: 50px 50px;
+        padding: 50px 100px;
     }
     .text-left {
         @include media($md) {
             //float: left;
             display: inline-block;
-            width: 49%;
+            width: 48%;
             vertical-align: top;
         }
     }
     .text-right {
         @include media($md) {
-            //float: right;
+            float: right;
             vertical-align: top;
             display: inline-block;
-            width: 49%;
+            width: 48%;
         }
     }
     &:before, &:after {
@@ -1293,12 +1297,17 @@ ul.job-list-dots {
     position: relative;
     padding: 50px 0;
     .image {
-        width: 24%;
-        padding-bottom: 24%;
+        width: 49%;
+        padding-bottom: 49%;
         display: inline-block;
         position: relative;
         background-size: cover;
         background-position: center;
+
+        @include media($md) {
+            width: 24%;
+            padding-bottom: 24%;
+        }
     }
     img {
         
@@ -1328,13 +1337,15 @@ ul.job-list-dots {
 }
 
 .plus-minus {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50px;
-    background-color: $dark-red;
-    height: 100%;
     
+    @include media($md) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50px;
+        background-color: $dark-red;
+        height: 100%;
+    }
 }
 
 .qa-list-item {
@@ -1342,16 +1353,19 @@ ul.job-list-dots {
     margin-left: 0;
     padding-left: 0;
     position: relative;
+    font-family: "GothamNarrow";
     .question {
         background-color: rgba(139,35,50,.2);
         min-height: 50px;
         position: relative;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 60px;
+        padding: 10px;
         cursor: pointer;
-        font-family: "GothamNarrow";
-        @include fontSize(24px);
+        @include fontSize(18px);
+        line-height: 1.4em;
+        @include media($md) {
+            padding-left: 60px;
+            @include fontSize(24px);
+        }
         &.active {
            // font-family: "Gotham";
             font-weight: bold;
@@ -1359,9 +1373,14 @@ ul.job-list-dots {
     }
     .answer {
         background-color: transparent;
-        padding-left: 60px;
+        padding: 10px;
         display: none;
-        //transition: all .3s;
+        @include fontSize(18px);
+        line-height: 1.4em;
+        @include media($md) {
+            padding-left: 60px;
+            @include fontSize(24px);
+        }
     }
 }
 

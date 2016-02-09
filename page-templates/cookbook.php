@@ -12,7 +12,7 @@ get_header(); ?>
 
 <div id="" class="cookbook-page content-area ">
 	
-	<div id="content" class="site-content">
+	<div id="content" class="site-content mobile-padding interior-page">
 		<div class="cookbook-logo">
 			<img src="<?php the_field('cookbook_logo'); ?>">
 		</div>
