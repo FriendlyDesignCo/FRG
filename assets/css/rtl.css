@@ -961,7 +961,7 @@ body {
         width: 70%; } }
 
 .site-content {
-  padding-top: 50px; }
+  padding: 50px 5% 0; }
   @media screen and (min-width: 48em) {
     .site-content {
       padding: 150px 7% 0; } }
@@ -975,9 +975,6 @@ body {
 .interior-page {
   padding-top: 50px;
   position: relative; }
-  @media screen and (min-width: 48em) {
-    .interior-page {
-      padding-top: 0; } }
   .interior-page .site-content {
     position: relative; }
 
@@ -2521,14 +2518,48 @@ ul.job-list-dots {
 .qa-item {
   position: relative; }
 
-@media screen and (min-width: 48em) {
-  .plus-minus {
+.plus-minus {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  width: 20px; }
+  .plus-minus .horizontal {
+    width: 10px;
+    height: 1px;
+    background-color: #8B2332;
+    top: 50%;
     position: absolute;
     left: 0;
-    top: 0;
-    width: 50px;
+    right: 0;
+    margin: 0 auto; }
+    @media screen and (min-width: 48em) {
+      .plus-minus .horizontal {
+        background-color: #FFE7CC;
+        width: 20px; } }
+  .plus-minus .vertical {
+    height: 10px;
+    width: 1px;
     background-color: #8B2332;
-    height: 100%; } }
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: opacity .3s; }
+    @media screen and (min-width: 48em) {
+      .plus-minus .vertical {
+        background-color: #FFE7CC;
+        height: 20px; } }
+  @media screen and (min-width: 48em) {
+    .plus-minus {
+      background-color: #8B2332;
+      bottom: initial;
+      right: initial;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 100%; } }
 
 .qa-list-item {
   list-style-type: none;
@@ -2540,7 +2571,7 @@ ul.job-list-dots {
     background-color: rgba(139, 35, 50, 0.2);
     min-height: 50px;
     position: relative;
-    padding: 10px;
+    padding: 10px 20px 10px 10px;
     cursor: pointer;
     font-size: 18px;
     font-size: 1.125rem;
@@ -2550,8 +2581,8 @@ ul.job-list-dots {
         padding-left: 60px;
         font-size: 24px;
         font-size: 1.5rem; } }
-    .qa-list-item .question.active {
-      font-weight: bold; }
+  .qa-list-item.active .vertical {
+    opacity: 0; }
   .qa-list-item .answer {
     background-color: transparent;
     padding: 10px;

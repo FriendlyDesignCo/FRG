@@ -12,8 +12,8 @@ get_header(); ?>
 
 <div id="" class="cookbook-page content-area ">
 	
-	<div id="content" class="site-content mobile-padding interior-page">
-		<div class="cookbook-logo">
+	<div id="content" class="site-content">
+		<div class="cookbook-logo ">
 			<img src="<?php the_field('cookbook_logo'); ?>">
 		</div>
 		<div class="cookbook-text">
@@ -38,7 +38,10 @@ get_header(); ?>
 			<div class="qa-item">
 				<ul class="qa-list-item">
 					<li class="question">
-						<div class="plus-minus"></div>
+						<div class="plus-minus">
+							<div class="horizontal"></div>
+							<div class="vertical"></div>
+						</div>
 						<?php the_sub_field('question'); ?>
 					</li>
 					<li class="answer"><?php the_sub_field('answer'); ?></li>
