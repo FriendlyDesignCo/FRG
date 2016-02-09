@@ -214,7 +214,7 @@ get_header(); ?>
 							//.addIndicators()
 							.addTo(controller);	
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
-							.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .corn", { delay: 0.3, opacity: 1})
+							.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .corn", { delay: 0.5, opacity: 1})
 							//.addIndicators()
 							.addTo(controller);	
 

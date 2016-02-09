@@ -9,6 +9,7 @@
   padding: 15px 40px;
   @include fontSize(17px);
   font-family: "Gotham";
+  font-weight: 500;
   transition: all .3s;
   &:hover {
     background-color: $light-red;

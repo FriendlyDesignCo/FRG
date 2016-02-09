@@ -702,12 +702,8 @@ strong, b {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
 a, a:visited {
-  transition: all 200ms ease-in-out;
-  color: #000;
   text-decoration: none; }
   a:hover, a:visited:hover {
-    transition: all 200ms ease-in-out;
-    color: #f00;
     text-decoration: underline; }
 
 ul:nth-child(n+2) {
@@ -852,6 +848,7 @@ h4 {
   font-size: 17px;
   font-size: 1.0625rem;
   font-family: "Gotham";
+  font-weight: 500;
   transition: all .3s; }
   .button:hover {
     background-color: #9D4446;
@@ -981,41 +978,48 @@ body {
 /*--------------------------------------------------------------
     6.1 Layout and Structure
     --------------------------------------------------------------*/
+body:not(.home) #secondary-nav {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px); }
+
 body.home header#masthead.not-scrolled {
-  position: absolute;
-  background-color: initial; }
-  body.home header#masthead.not-scrolled .logo {
-    float: none;
-    padding: 0;
-    margin: 0 auto;
-    margin-top: 20px; }
-  body.home header#masthead.not-scrolled .logo .dark {
-    display: block; }
-  body.home header#masthead.not-scrolled .logo .light {
-    display: none; }
-  body.home header#masthead.not-scrolled .hide-scroll {
-    display: block; }
-  body.home header#masthead.not-scrolled .show-scroll {
-    display: none; }
-  body.home header#masthead.not-scrolled #primary-nav {
-    width: 100%;
-    float: right;
-    position: relative;
-    padding-top: 2vh; }
-  body.home header#masthead.not-scrolled .menu-menu-1-container {
-    text-align: center;
-    float: none; }
-    body.home header#masthead.not-scrolled .menu-menu-1-container ul {
-      float: none; }
-    body.home header#masthead.not-scrolled .menu-menu-1-container a {
-      color: #8B2332; }
-    body.home header#masthead.not-scrolled .menu-menu-1-container li {
-      float: none;
-      display: inline;
-      padding-left: 1%;
-      padding-right: 1%; }
-    body.home header#masthead.not-scrolled .menu-menu-1-container .sub-menu {
+  position: fixed; }
+  @media screen and (min-width: 48em) {
+    body.home header#masthead.not-scrolled {
       position: absolute; }
+      body.home header#masthead.not-scrolled .logo {
+        display: block;
+        float: none;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 20px; }
+      body.home header#masthead.not-scrolled .logo .dark {
+        display: block; }
+      body.home header#masthead.not-scrolled .logo .light {
+        display: none; }
+      body.home header#masthead.not-scrolled .hide-scroll {
+        display: block; }
+      body.home header#masthead.not-scrolled .show-scroll {
+        display: none; }
+      body.home header#masthead.not-scrolled #primary-nav {
+        width: 100%;
+        float: right;
+        position: relative;
+        padding-top: 2vh; }
+      body.home header#masthead.not-scrolled .menu-menu-1-container {
+        text-align: center;
+        float: none; }
+        body.home header#masthead.not-scrolled .menu-menu-1-container ul {
+          float: none; }
+        body.home header#masthead.not-scrolled .menu-menu-1-container a {
+          color: #8B2332; }
+        body.home header#masthead.not-scrolled .menu-menu-1-container li {
+          float: none;
+          display: inline;
+          padding-left: 1%;
+          padding-right: 1%; }
+        body.home header#masthead.not-scrolled .menu-menu-1-container .sub-menu {
+          position: absolute; } }
 
 header#masthead {
   float: left;
@@ -1026,7 +1030,6 @@ header#masthead {
   transition: transform .4s, -webkit-transform .4s;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
-  background-color: #8B2332;
   top: 0;
   left: 0;
   z-index: 999; }
@@ -1046,9 +1049,12 @@ header#masthead {
         height: auto; } }
 
 #primary-nav {
-  width: 80%;
-  float: right;
   position: relative; }
+
+#secondary-nav {
+  background-color: #8B2332;
+  float: left;
+  width: 100%; }
 
 .menu-menu-1-container {
   font-family: 'Gotham';
@@ -1067,12 +1073,27 @@ header#masthead {
     list-style-type: none;
     position: relative; }
 
+.menu-menu-2 > li {
+  border-top: 3px solid #8B2332; }
+  .menu-menu-2 > li:hover {
+    border-top: 3px solid #FFE7CC; }
+
+.menu-list {
+  position: relative; }
+  .menu-list li:hover .sub-menu {
+    display: block; }
+  .menu-list li:hover > a {
+    color: #FFE7CC;
+    font-weight: bold;
+    text-decoration: none; }
+
 .sub-menu {
   display: none;
   position: absolute;
   background-color: #8B2332;
   left: -50%;
   right: -50%;
+  top: 50px;
   text-align: center;
   margin: 0 auto !important;
   width: 200px; }
@@ -1081,24 +1102,46 @@ header#masthead {
   .sub-menu li {
     display: block !important;
     float: none; }
+    .sub-menu li:hover {
+      background-color: #9D4446; }
 
-.menu-list {
-  position: relative; }
-  .menu-list li:hover .sub-menu {
-    display: block; }
-
-.logo {
-  width: 180px;
-  position: relative;
-  padding: 10px;
-  float: left;
-  width: 121px; }
-  .logo a {
-    display: block; }
-  .logo .dark {
+#primary-nav {
+  display: none; }
+  @media screen and (min-width: 48em) {
+    #primary-nav {
+      display: block; } }
+  #primary-nav .logo {
+    width: 180px;
+    position: relative;
+    padding: 10px;
+    float: left;
     display: none; }
-  .logo .light {
-    display: block; }
+    #primary-nav .logo a {
+      display: block; }
+    #primary-nav .logo .light {
+      display: block; }
+
+#secondary-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all .4s; }
+  @media screen and (min-width: 48em) {
+    #secondary-nav {
+      -webkit-transform: translateY(-60px);
+              transform: translateY(-60px); } }
+  #secondary-nav .logo {
+    width: 180px;
+    position: relative;
+    padding: 10px;
+    float: left;
+    width: 121px; }
+    #secondary-nav .logo a {
+      display: block; }
+  #secondary-nav.slide-down {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
 
 /*--------------------------------------------------------------
     6.2 Navigation
@@ -1888,7 +1931,7 @@ h2.career-title {
   color: #8B2332; }
   @media screen and (min-width: 48em) {
     .compensation-wrap {
-      max-width: 250px;
+      width: 250px;
       float: right; } }
   .compensation-wrap .compensation-header {
     font-family: "Gotham";
@@ -1898,8 +1941,9 @@ h2.career-title {
     margin: 0; }
     @media screen and (min-width: 48em) {
       .compensation-wrap .compensation-header {
-        font-size: 19px;
-        font-size: 1.1875rem; } }
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-size: 1rem; } }
   .compensation-wrap p {
     font-family: "Gotham";
     font-size: 21px;
@@ -2098,25 +2142,23 @@ ul.job-list-dots {
   .sprinkler-animation .water {
     background-position: center;
     background-repeat: no-repeat;
-    height: 389px;
-    width: 336px;
+    height: 400px;
+    width: 100%;
     -webkit-transform: scale(0);
             transform: scale(0);
     -webkit-transform-origin: center bottom;
             transform-origin: center bottom;
     position: absolute;
-    right: 0px;
-    bottom: 20vh; }
+    left: 125px;
+    bottom: 30vh; }
   .sprinkler-animation .sprinkler {
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     height: 50px;
-    width: 50px;
+    width: 100%;
     position: absolute;
     right: 70px;
-    bottom: 20vh;
-    -webkit-transform-origin: center bottom;
-            transform-origin: center bottom; }
+    bottom: 20vh; }
   .sprinkler-animation .step-1, .sprinkler-animation .step-2 {
     position: absolute;
     width: 200px;
@@ -2131,7 +2173,7 @@ ul.job-list-dots {
     opacity: 0; }
   .sprinkler-animation .corn {
     position: absolute;
-    width: 200px;
+    width: 150px;
     height: 100%;
     left: 0;
     right: 0;
@@ -2380,6 +2422,118 @@ ul.job-list-dots {
   @media screen and (min-width: 48em) {
     .drink-block:nth-of-type(3n) {
       margin-left: 2%; } }
+
+.cookbook-logo img {
+  display: block;
+  margin: 0 auto; }
+  @media screen and (min-width: 48em) {
+    .cookbook-logo img {
+      max-width: 500px; } }
+
+.cookbook-text {
+  width: 100%;
+  position: relative; }
+  .cookbook-text p {
+    margin-top: 0;
+    font-family: "GothamNarrow";
+    font-weight: 300; }
+    @media screen and (min-width: 48em) {
+      .cookbook-text p {
+        font-size: 20px;
+        font-size: 1.25rem; } }
+  @media screen and (min-width: 48em) {
+    .cookbook-text {
+      padding: 50px 50px; } }
+  @media screen and (min-width: 48em) {
+    .cookbook-text .text-left {
+      display: inline-block;
+      width: 49%;
+      vertical-align: top; } }
+  @media screen and (min-width: 48em) {
+    .cookbook-text .text-right {
+      vertical-align: top;
+      display: inline-block;
+      width: 49%; } }
+  .cookbook-text:before, .cookbook-text:after {
+    content: "";
+    width: 70%;
+    height: 1px;
+    background-color: #8B2332;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+  .cookbook-text:before {
+    top: 0; }
+  .cookbook-text:after {
+    bottom: 0; }
+  .cookbook-text .button {
+    text-align: center;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto; }
+
+.images-wrap {
+  position: relative;
+  padding: 50px 0; }
+  .images-wrap .image {
+    width: 24%;
+    padding-bottom: 24%;
+    display: inline-block;
+    position: relative;
+    background-size: cover;
+    background-position: center; }
+  .images-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .images-wrap:after {
+    content: "";
+    width: 70%;
+    height: 1px;
+    background-color: #8B2332;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto; }
+
+.qa-wrap {
+  padding: 50px 0; }
+
+.qa-item {
+  position: relative; }
+
+.plus-minus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  background-color: #8B2332;
+  height: 100%; }
+
+.qa-list-item {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  position: relative; }
+  .qa-list-item .question {
+    background-color: rgba(139, 35, 50, 0.2);
+    min-height: 50px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    cursor: pointer;
+    font-family: "GothamNarrow";
+    font-size: 24px;
+    font-size: 1.5rem; }
+    .qa-list-item .question.active {
+      font-weight: bold; }
+  .qa-list-item .answer {
+    background-color: transparent;
+    padding-left: 60px;
+    display: none; }
 
 /*--------------------------------------------------------------
     6.4 Page Templates

@@ -25,6 +25,13 @@
 			$(".sprinkler-animation").css("opacity","1");
 			$(".modal-bg").removeClass("open");
 			$(".case-study-card-expanded").removeClass("expanded");
+		});
+
+
+		// QA item
+		$(".question").click(function() {
+			$(this).parent().find(".answer").slideToggle(300);
+			$(this).parent().toggleClass("active");
 		})
 
 	});

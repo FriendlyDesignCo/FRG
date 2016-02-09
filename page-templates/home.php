@@ -53,8 +53,9 @@ get_header(); ?>
 					s=function(){
 						var s=$(window).scrollTop();
 						s>e?$(window).width() > 768 &&( 
-							$("header#masthead ").removeClass("not-scrolled")) : 
-							$(window).width() > 768 && ( $("header#masthead ").addClass("not-scrolled")/*, $("#page").css("padding-top","0px")*/)
+							$("header#masthead ").removeClass("not-scrolled"),$(".secondary-nav").addClass("slide-down")) : 
+							$(window).width() > 768 && ( $("header#masthead ").addClass("not-scrolled"),$(".secondary-nav").removeClass("slide-down"));
+
 					};
 				});
 
@@ -72,6 +73,7 @@ get_header(); ?>
 				$(window).scroll( function(){
 					// call home scroll function
 					s();
+
 				});	
 			})(jQuery);
 			

@@ -59,14 +59,13 @@
 	<header id="masthead" class="site-header wrap not-scrolled" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 
 	<?php tha_header_top(); ?>
-		<div class="logo">
-			<a href="<?php echo get_site_url(); ?>">
-				<img class="dark" src="<?php echo get_site_url(); ?>/wp-content/uploads/logos/frg-logo-dark.svg">
-				<img class="light" src="<?php echo get_site_url(); ?>/wp-content/uploads/logos/frg-logo-light.svg">
-			</a>
-			<img src="">
-		</div>
+		
 		<nav id="primary-nav" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+			<div class="logo">
+				<a href="<?php echo get_site_url(); ?>">
+					<img class="dark" src="<?php echo get_site_url(); ?>/wp-content/uploads/logos/frg-logo-dark.svg">
+				</a>
+			</div>
 	        <?php
 				wp_nav_menu(
 					array(
@@ -74,7 +73,15 @@
 						'menu_class' => 'hide-scroll menu-list', //Adding the class for FlexNav
 						'items_wrap' => '<ul data-breakpoint=" '. esc_attr( get_theme_mod( 'some_like_it_neat_mobile_min_width', '768' ) ) .' " id="%1$s" class="%2$s">%3$s</ul>', // Adding data-breakpoint for FlexNav
 					)
-				);
+				); ?>
+		</nav>
+		<nav id="secondary-nav" class="secondary-nav">
+			<div class="logo">
+				<a href="<?php echo get_site_url(); ?>">
+					<img class="light" src="<?php echo get_site_url(); ?>/wp-content/uploads/logos/frg-logo-light.svg">
+				</a>
+			</div>
+			<?php 
 				wp_nav_menu(
 					array(
 						'reverse' => true,

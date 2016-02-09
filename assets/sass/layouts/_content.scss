@@ -667,7 +667,7 @@ h2.career-title {
     color: $dark-red;
     @include media($md) {
        //width: 50%; 
-       max-width: 250px;
+       width: 250px;
        float: right;
     }
     .compensation-header {
@@ -676,7 +676,8 @@ h2.career-title {
         font-weight: 700;
         margin: 0;
         @include media($md) {
-            @include fontSize(19px);
+            margin-bottom: 5px;
+            @include fontSize(16px);
         }
     }
     p {
@@ -897,26 +898,26 @@ ul.job-list-dots {
     .water {
         background-position: center;
         background-repeat: no-repeat;
-        height: 389px;
-        width: 336px;
+        height: 400px;
+        width: 100%;
         transform: scale(0);
         transform-origin: center bottom;
         position: absolute;
-        right: 0px;
+        left: 125px;
         //margin: 0 auto;
-        bottom: 20vh;
+        bottom: 30vh;
     }
     .sprinkler {
-        background-position: center;
+        background-position: right;
         background-repeat: no-repeat;
         height: 50px;
-        width: 50px;
+        width:  100%;
         position: absolute;
         right: 70px;
         //margin: 0 auto;
         bottom: 20vh;
         //transform: scale(0);
-        transform-origin: center bottom;
+        //transform-origin: center bottom;
     }
     .step-1, .step-2 {
         position: absolute;
@@ -935,7 +936,7 @@ ul.job-list-dots {
     }
     .corn {
         position: absolute;
-        width: 200px;
+        width: 150px;
         height: 100%;
         left: 0;
         right: 0;
@@ -1223,6 +1224,147 @@ ul.job-list-dots {
         
     }
 }
+
+.cookbook-logo {
+    img {
+        display: block;
+        margin: 0 auto;
+        @include media($md) {
+            max-width: 500px;
+        }
+    }
+}
+
+.cookbook-text {
+    width: 100%;
+    position: relative;
+    p {
+        margin-top: 0;
+        font-family: "GothamNarrow";
+        font-weight: 300;
+        @include media($md) {
+            @include fontSize(20px);
+        }
+    }
+    @include media($md) {
+        padding: 50px 50px;
+    }
+    .text-left {
+        @include media($md) {
+            //float: left;
+            display: inline-block;
+            width: 49%;
+            vertical-align: top;
+        }
+    }
+    .text-right {
+        @include media($md) {
+            //float: right;
+            vertical-align: top;
+            display: inline-block;
+            width: 49%;
+        }
+    }
+    &:before, &:after {
+        content: "";
+        width: 70%;
+        height: 1px;
+        background-color: $dark-red;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    &:before {
+        top: 0;
+    }
+    &:after {
+        bottom: 0;
+    }
+    .button {
+        text-align: center;
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+.images-wrap {
+    position: relative;
+    padding: 50px 0;
+    .image {
+        width: 24%;
+        padding-bottom: 24%;
+        display: inline-block;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+    }
+    img {
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+     &:after {
+        content: "";
+        width: 70%;
+        height: 1px;
+        background-color: $dark-red;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+}
+
+.qa-wrap {
+    padding: 50px 0;
+}
+
+.qa-item {
+    position: relative;
+}
+
+.plus-minus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    background-color: $dark-red;
+    height: 100%;
+    
+}
+
+.qa-list-item {
+    list-style-type: none; 
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+    .question {
+        background-color: rgba(139,35,50,.2);
+        min-height: 50px;
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 60px;
+        cursor: pointer;
+        font-family: "GothamNarrow";
+        @include fontSize(24px);
+        &.active {
+           // font-family: "Gotham";
+            font-weight: bold;
+        }
+    }
+    .answer {
+        background-color: transparent;
+        padding-left: 60px;
+        display: none;
+        //transition: all .3s;
+    }
+}
+
 
 
 
