@@ -973,7 +973,7 @@ body {
       padding: 0; } }
 
 .interior-page {
-  padding-top: 100px; }
+  position: relative; }
   .interior-page .site-content {
     position: relative; }
 

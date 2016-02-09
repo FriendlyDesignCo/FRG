@@ -89,7 +89,7 @@ h4.small{font-size:16px;font-size:1rem}.text-featured{color:#8b2332;font-family:
 }.home-section-inner .case-study,.section-inner .case-study{position:relative}@media screen and (min-width:48em){.home-section-inner .case-study,.section-inner .case-study{width:70%}
 }.site-content{padding-top:50px}@media screen and (min-width:48em){.site-content{padding:150px 7% 0}
 }.entry-content{padding:0 5%}@media screen and (min-width:48em){.entry-content{padding:0}
-}.interior-page{padding-top:100px}.interior-page .site-content{position:relative}
+}.interior-page{position:relative}.interior-page .site-content{position:relative}
 body:not(.home) #secondary-nav{-webkit-transform:translateY(0);transform:translateY(0)}
 body.home header#masthead.not-scrolled{position:fixed}@media screen and (min-width:48em){body.home header#masthead.not-scrolled{position:absolute}
 body.home header#masthead.not-scrolled .logo{display:block;float:none;padding:0;margin:0 auto;margin-top:20px}
