@@ -76,11 +76,20 @@
 				); ?>
 		</nav>
 		<nav id="secondary-nav" class="secondary-nav">
+
 			<div class="logo">
 				<a href="<?php echo get_site_url(); ?>">
 					<img class="light" src="<?php echo get_site_url(); ?>/wp-content/uploads/logos/frg-logo-light.svg">
 				</a>
 			</div>
+			<label for="showblock" class="">
+            <ul class='hamburger'>
+	                <li class="one"></li>
+	                <li class="two"></li>
+	                <li class="three"></li>
+	            </ul>
+	        </label>
+	        <input type="checkbox" id="showblock" />
 			<?php 
 				wp_nav_menu(
 					array(

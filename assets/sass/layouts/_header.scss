@@ -85,10 +85,12 @@ header#masthead {
     .show-scroll {
         transition: all .4s;
         position: absolute;
-        display: none;
+        ///////////display: none;
         background-color: $light-red;
         height: calc(100vh - 50px);
+        width: 100%;
         @include media($md) {
+            width: auto;
             background-color: none;
             position: relative;
             display: block;
@@ -126,8 +128,11 @@ header#masthead {
         
     }
     li {
-        float: right;
-        display: inline;
+        @include media($md) {
+            display: inline;
+            float: right;
+        }
+        
         padding: 15px 3%;
         list-style-type: none;
         position: relative;
@@ -230,5 +235,60 @@ header#masthead {
     &.slide-down {
         transform: translateY(0px);
     }
+    .menu-menu-1-container {
+        width: 90%;
+        background-color: $light-red;
+        position: absolute;
+        height: 100vh;
+        top: 63px;
+        right: 0;
+        transition: all .3s;
+        transform: translateX(100vw);
+        @include media($md) {
+            transform: translateX(0);
+            top: 0px;
+            background-color: $dark-red;
+            height: auto;
+        }
+    }
 }
 
+
+header label {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px 10px;
+    z-index: 130;
+    height: 100%;
+    margin: 0;
+    width: 50px;
+}
+
+.hamburger {
+    position: relative;
+    top: 0;
+    z-index: 100;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @include media($md) {
+        display: none;
+    }
+}
+
+.hamburger li {
+    width: 100%;
+    background-color: $tan;
+    height: 3px;
+    margin-bottom: 5px;
+    transition: all .3s;
+}
+
+#showblock {
+  display: none;
+}
+
+#showblock:checked + .menu-menu-1-container {
+    transform: translateX(0px);
+}

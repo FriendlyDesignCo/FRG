@@ -31,6 +31,7 @@ get_header(); ?>
 		<?php endwhile; ?>
 		<?php endif; ?>
 		</div>
+		
 		<?php if( have_rows('faq') ): ?>
 		<div class="qa-wrap">
 		<h3>Frequently Asked Questions</h3>
