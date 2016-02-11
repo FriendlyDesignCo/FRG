@@ -173,6 +173,23 @@ get_header(); ?>
 		</div>
 		
 		<script>
+			// mobile
+			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
+						.setTween(".mobile-screen .icon-1 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
+						.setTween(".mobile-screen .icon-2 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
+						.setTween(".mobile-screen .icon-3 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
+						.setTween(".mobile-screen .icon-4 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
+						.setTween(".mobile-screen .icon-5 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.addTo(controller);	
+
 			// desktop
 			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
 						.setTween(".desktop-screen .icon-1 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
