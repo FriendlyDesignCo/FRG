@@ -19,14 +19,26 @@
 			$(".sprinkler-animation").css("opacity","1");
 			$(".modal-bg").removeClass("open");
 			$(".case-study-card-expanded").removeClass("expanded");
+
+			$(".team-member-expanded").removeClass("expanded");
 		});
 		$(".modal-bg").click(function() {
 			$(".nav-dots").css("opacity","1");
 			$(".sprinkler-animation").css("opacity","1");
 			$(".modal-bg").removeClass("open");
 			$(".case-study-card-expanded").removeClass("expanded");
+
+			$(".team-member-expanded").removeClass("expanded");
 		});
 
+		$(".team-member-item .image").click(function() {
+			$(".modal-bg").addClass("open");
+			$(this).parent().find(".team-member-expanded").addClass("expanded");
+		});
+		$(".team-member-item .text").click(function() {
+			$(".modal-bg").addClass("open");
+			$(this).parent().find(".team-member-expanded").addClass("expanded");
+		});
 
 		// QA item
 		$(".question").click(function() {
