@@ -1473,8 +1473,8 @@ body {
     top: 60%; }
 
 .numbers-counting {
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-size: 70px;
+  font-size: 4.375rem;
   margin: 0;
   color: #FFFDD4; }
   @media screen and (min-width: 48em) {
@@ -1916,7 +1916,8 @@ ul.positions {
 #career-trigger3,
 #career-trigger4,
 #career-trigger5,
-#career-trigger6 {
+#career-trigger6,
+#career-trigger7 {
   position: absolute; }
 
 #career-trigger1 {
@@ -1936,6 +1937,9 @@ ul.positions {
 
 #career-trigger6 {
   top: 650vh; }
+
+#career-trigger7 {
+  top: 750vh; }
 
 .career-slide-1 {
   z-index: 6; }
@@ -2030,7 +2034,8 @@ h2.career-title {
 
 .case-study-card-wrap {
   width: 100%;
-  float: left; }
+  float: left;
+  position: relative; }
 
 .case-study-card {
   background-color: #8B2332;
@@ -2038,8 +2043,7 @@ h2.career-title {
   float: left;
   color: #FFE7CC;
   font-family: "Gotham";
-  font-weight: 700;
-  position: relative; }
+  font-weight: 700; }
   @media screen and (min-width: 48em) {
     .case-study-card {
       width: 48%;
@@ -2060,13 +2064,11 @@ h2.career-title {
     background-repeat: no-repeat;
     background-size: cover;
     float: left; }
-  .case-study-card .case-study-card-image, .case-study-card .case-study-card-blurb, .case-study-card .close-button {
+  .case-study-card .case-study-card-image, .case-study-card .case-study-card-blurb {
     cursor: pointer; }
   .case-study-card:nth-of-type(2n) .case-study-card-expanded {
-    -webkit-transform-origin: bottom left;
-            transform-origin: bottom left;
-    right: -200px;
-    left: initial; }
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center; }
 
 .case-study-card-blurb {
   float: right;
@@ -2082,7 +2084,7 @@ h2.career-title {
   color: #FFE7CC;
   display: block;
   left: 20px;
-  bottom: -70px;
+  bottom: 0px;
   z-index: 99;
   transition: all .3s;
   -webkit-transform: scale(0);
@@ -2154,7 +2156,8 @@ h2.career-title {
   font-weight: bold;
   font-size: 14px;
   font-size: 0.875rem;
-  padding: 0 25px; }
+  padding: 0 25px;
+  cursor: pointer; }
 
 ul.job-list-dots {
   width: 100%;
@@ -2352,8 +2355,7 @@ ul.job-list-dots {
   z-index: 90;
   background-color: rgba(0, 0, 0, 0.8);
   top: 0;
-  left: 0;
-  transition: all 2s; }
+  left: 0; }
   .modal-bg.open {
     width: 100%;
     height: 100%; }
@@ -2737,9 +2739,9 @@ ul.job-list-dots {
 
 .team-member-item {
   display: inline-block;
-  height: 350px;
   width: 49%;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-bottom: 20px; }
   @media screen and (min-width: 48em) {
     .team-member-item {
       width: 22%; } }
@@ -2750,25 +2752,30 @@ ul.job-list-dots {
     background-color: #8B2332; }
   .team-member-item .image {
     width: 100%;
-    height: 250px;
+    height: 300px;
     background-size: cover;
-    background-color: #939292;
-    cursor: pointer; }
+    background-color: #939292; }
     .team-member-item .image img {
       height: 0;
       width: 0; }
+  .team-member-item > .image, .team-member-item > .text {
+    cursor: pointer; }
   .team-member-item .text {
     background-color: #9D4446;
     text-align: center;
     transition: all .3s;
-    padding: 20px;
-    cursor: pointer; }
+    padding: 20px 5px; }
+    @media screen and (min-width: 48em) {
+      .team-member-item .text {
+        padding: 20px; } }
   .team-member-item .name {
     font-family: "Gotham";
     font-weight: bold;
     color: #FFE7CC;
     text-transform: uppercase;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 16px;
+    font-size: 1rem; }
     @media screen and (min-width: 48em) {
       .team-member-item .name {
         font-size: 18px;
@@ -2777,7 +2784,9 @@ ul.job-list-dots {
     font-family: "GothamNarrow";
     font-weight: 300;
     color: #FFE7CC;
-    margin: 0; }
+    margin: 0;
+    font-size: 16px;
+    font-size: 1rem; }
     @media screen and (min-width: 48em) {
       .team-member-item .job-title {
         font-size: 15px;
@@ -2794,8 +2803,11 @@ ul.job-list-dots {
   transition: all .3s;
   -webkit-transform: scale(0);
           transform: scale(0);
-  padding: 50px;
+  padding: 50px 10px;
   overflow-y: scroll; }
+  @media screen and (min-width: 48em) {
+    .team-member-expanded {
+      padding: 50px; } }
   .team-member-expanded p {
     line-height: 1.4em; }
   .team-member-expanded:before {
@@ -2832,23 +2844,31 @@ ul.job-list-dots {
   .team-member-expanded .name {
     font-family: "adobe-caslon-pro";
     font-style: italic;
-    text-transform: none; }
+    text-transform: none;
+    color: #8B2332;
+    font-size: 22px;
+    font-size: 1.375rem; }
     @media screen and (min-width: 48em) {
       .team-member-expanded .name {
+        color: #FFE7CC;
         font-size: 62px;
         font-size: 3.875rem; } }
   .team-member-expanded .highlighted-text {
     font-family: "GothamNarrow";
     color: #8B2332;
     margin: 0;
-    line-height: 1.4em; }
+    line-height: 1.4em;
+    font-size: 20px;
+    font-size: 1.25rem; }
     @media screen and (min-width: 48em) {
       .team-member-expanded .highlighted-text {
         font-size: 26px;
         font-size: 1.625rem; } }
   .team-member-expanded .bio p {
     font-family: "GothamNarrow";
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 18px;
+    font-size: 1.125rem; }
     @media screen and (min-width: 48em) {
       .team-member-expanded .bio p {
         font-size: 20px;
