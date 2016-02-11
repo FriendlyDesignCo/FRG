@@ -164,15 +164,15 @@ header#masthead {
     }
 }
 
-.sub-menu {
+ul.sub-menu {
     display: none;
     position: absolute;
     background-color: $dark-red;
-    left: -50%;
-    right: -50%;
-    top: 50px;
+    //width: 220px;
+    left: 50%;
+    margin-left: -100px;
     text-align: center;
-    margin: 0 auto !important;
+    //margin: 0 auto !important;
     width: 200px;
     a {
         color: $tan !important;

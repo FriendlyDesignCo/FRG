@@ -110,9 +110,9 @@ header#masthead .hide-scroll{display:none}header#masthead .show-scroll{transitio
 @media screen and (min-width:48em){.menu-menu-1-container li{display:inline;float:right}
 }#menu-menu-2>li{border-top:3px solid #8b2332}#menu-menu-2>li:hover{border-top:3px solid #ffe7cc}
 .menu-list{position:relative}.menu-list li:hover .sub-menu{display:block}.menu-list li:hover>a{color:#ffe7cc;font-weight:bold;text-decoration:none}
-.sub-menu{display:none;position:absolute;background-color:#8b2332;left:-50%;right:-50%;top:50px;text-align:center;margin:0 auto !important;width:200px}
-.sub-menu a{color:#ffe7cc !important}.sub-menu li{display:block !important;float:none}
-.sub-menu li:hover{background-color:#9d4446}#primary-nav{display:none}@media screen and (min-width:48em){#primary-nav{display:block}
+ul.sub-menu{display:none;position:absolute;background-color:#8b2332;left:50%;margin-left:-100px;text-align:center;width:200px}
+ul.sub-menu a{color:#ffe7cc !important}ul.sub-menu li{display:block !important;float:none}
+ul.sub-menu li:hover{background-color:#9d4446}#primary-nav{display:none}@media screen and (min-width:48em){#primary-nav{display:block}
 }#primary-nav .logo{width:180px;position:relative;padding:10px;float:left;display:none}
 #primary-nav .logo a{display:block}#primary-nav .logo .light{display:block}#secondary-nav{display:block;position:fixed;top:0;left:0;transition:all .4s}
 @media screen and (min-width:48em){#secondary-nav{-webkit-transform:translateY(-60px);transform:translateY(-60px)}

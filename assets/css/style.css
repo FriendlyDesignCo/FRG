@@ -1093,22 +1093,20 @@ header#masthead {
     font-weight: bold;
     text-decoration: none; }
 
-.sub-menu {
+ul.sub-menu {
   display: none;
   position: absolute;
   background-color: #8B2332;
-  left: -50%;
-  right: -50%;
-  top: 50px;
+  left: 50%;
+  margin-left: -100px;
   text-align: center;
-  margin: 0 auto !important;
   width: 200px; }
-  .sub-menu a {
+  ul.sub-menu a {
     color: #FFE7CC !important; }
-  .sub-menu li {
+  ul.sub-menu li {
     display: block !important;
     float: none; }
-    .sub-menu li:hover {
+    ul.sub-menu li:hover {
       background-color: #9D4446; }
 
 #primary-nav {
