@@ -2670,11 +2670,20 @@ ul.job-list-dots {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  transition: all .1s; }
   @media screen and (min-width: 48em) {
     .press-item {
       padding: 0 50px;
       width: 49%; } }
+  .press-item:hover {
+    opacity: .6; }
+  .press-item a {
+    text-decoration: none; }
+    .press-item a:hover {
+      text-decoration: none; }
+  .press-item p {
+    color: black; }
   .press-item .quote {
     position: relative;
     padding: 10px 0; }

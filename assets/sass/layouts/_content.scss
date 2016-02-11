@@ -1460,6 +1460,19 @@ ul.job-list-dots {
         padding: 0 50px;
         width: 49%;    
     }
+    transition: all .1s;
+    &:hover {
+        opacity: .6;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    p {
+         color: black;
+    }
     .quote {
         position: relative;
         padding: 10px 0;

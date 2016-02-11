@@ -319,9 +319,10 @@ ul.job-list-dots li+li:after{content:"";position:absolute;background-color:#ffe7
 @media screen and (min-width:48em){.qa-list-item .question{padding-left:60px;font-size:24px;font-size:1.5rem}
 }.qa-list-item.active .vertical{opacity:0}.qa-list-item .answer{background-color:transparent;padding:10px;display:none;font-size:18px;font-size:1.125rem;line-height:1.4em}
 @media screen and (min-width:48em){.qa-list-item .answer{padding-left:60px;font-size:24px;font-size:1.5rem}
-}.press-item{display:inline-block;vertical-align:top;text-align:center;margin-bottom:25px}
-@media screen and (min-width:48em){.press-item{padding:0 50px;width:49%}}.press-item .quote{position:relative;padding:10px 0}
-.press-item .quote:before,.press-item .quote:after{content:"";position:absolute;width:80%;height:1px;background-color:#8b2332;left:0;right:0;margin:0 auto}
+}.press-item{display:inline-block;vertical-align:top;text-align:center;margin-bottom:25px;transition:all .1s}
+@media screen and (min-width:48em){.press-item{padding:0 50px;width:49%}}.press-item:hover{opacity:.6}
+.press-item a{text-decoration:none}.press-item a:hover{text-decoration:none}.press-item p{color:black}
+.press-item .quote{position:relative;padding:10px 0}.press-item .quote:before,.press-item .quote:after{content:"";position:absolute;width:80%;height:1px;background-color:#8b2332;left:0;right:0;margin:0 auto}
 .press-item .quote:before{top:0}.press-item .quote:after{bottom:0}.press-item .publication{font-family:"Gotham";font-weight:300;text-transform:uppercase;color:#9d4446}
 @media screen and (min-width:48em){.press-item .publication{font-size:22px;font-size:1.375rem}
 }.press-item .headline{font-family:"adobe-caslon-pro";font-weight:600;font-style:italic}
