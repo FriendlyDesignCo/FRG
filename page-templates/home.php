@@ -358,5 +358,3 @@ get_header(); ?>
 	</section>
 
 </div><!-- #primary -->
-
-<?php get_footer(); ?>
