@@ -14,6 +14,14 @@ body {
     }
 }
 
+ul.alm-listing {
+    padding-left: 0;
+}
+
+button#load-more.done {
+    display: none;
+}
+
 .spacer {
     position: absolute;
     height: 100px;
@@ -932,6 +940,12 @@ ul.job-list-dots {
         left: 125px;
         //margin: 0 auto;
         bottom: 30vh;
+        transition: all 1.5s;
+        transition-delay: .2s;
+        &.animated {
+            transform: scale(1);
+            opacity: 0;
+        }
     }
     .sprinkler {
         background-position: right;
@@ -1088,6 +1102,7 @@ ul.job-list-dots {
 }
 
 .categories-list {
+    display: none;
     background-color: #efcfbb;
     text-align: right;
     a {
@@ -1107,6 +1122,7 @@ ul.job-list-dots {
         margin-bottom: 0;
     }
     @include media($md) {
+        display: block;
         padding: 20px 20px 40px;
         width: 295px;
         position: absolute;
@@ -1123,6 +1139,28 @@ ul.job-list-dots {
         padding: 10px 0;
         float: left;
         width: 100%;
+    }
+    .category a {
+        color: $light-red;
+    }
+    .sub-title {
+        @include fontSize(16px);
+        @include media($md) {
+            @include fontSize(20px);
+        }
+    }
+}
+
+.sidebar-text {
+    background-color: $light-red;
+    color: $tan;
+    border-radius: 20px;
+    line-height: 1.2em;
+    font-family: $caslon;
+    font-style: italic;
+    @include media($md) {
+        width: 250px;
+        padding: 20px;
     }
 }
 

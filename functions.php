@@ -381,3 +381,10 @@ return $menu;
 }
 add_filter('wp_nav_menu_objects', 'my_reverse_nav_menu', 10, 2);
 
+// sidebar shortcode support
+function sidebar_text( $atts, $content = null ) {
+	$blog_ID = get_the_ID ();
+	$sidebar_content = get_field('quote_text', $blog_ID);
+    return '<div class="sidebar-text right">'.$sidebar_content.'</div>';
+}
+add_shortcode("sidebar_text", "sidebar_text");

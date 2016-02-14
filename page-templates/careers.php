@@ -205,12 +205,13 @@ get_header(); ?>
 							.setTween(".career-slide-<?php echo $slide_number;?>", { zIndex:0})
 							.addTo(controller);
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number+1;?>",duration:"20px" })
-							.setTween(".career-slide-<?php echo $slide_number+1;?>", { opacity:1, delay: 0.3,zIndex:8})
+							.setTween(".career-slide-<?php echo $slide_number+1;?>", { opacity:1, delay: 0.5,zIndex:8})
 							.addTo(controller);
 				
 				// sprinkler animations
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
-							.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .water", { scale: 1.4, opacity: 0})
+							//.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .water", { scale: 1.4, opacity: 0})
+							.setClassToggle(".sprinkler-animation.step-<?php echo $slide_number;?> .water", "animated") // add class toggle
 							//.addIndicators()
 							.addTo(controller);	
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
