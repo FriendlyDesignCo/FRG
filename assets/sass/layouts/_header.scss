@@ -52,6 +52,9 @@ body.home {
                         display: inline;
                         padding-left: 1%;
                         padding-right: 1%;
+                        &.menu-item-has-children {
+                            padding-bottom: 15px;    
+                        }
                     }
                     .sub-menu {
                         //display: none;
@@ -119,6 +122,8 @@ header#masthead {
         color: $tan;
         text-transform: uppercase;
         
+        
+        
     }
     ul {
         //float: right;
@@ -132,16 +137,28 @@ header#masthead {
             float: right;
         }
         
-        padding: 15px 3%;
+        //padding: 15px 3%;
         list-style-type: none;
         position: relative;
     }
 }
 #menu-menu-2 {
+    a {
+        display: block;
+        padding: 15px 25px;
+    }
     > li {
-        border-top: 3px solid $dark-red;
+        a {
+            @include media($md) {
+                border-top: 3px solid $dark-red;    
+            }
+            
+        }
         &:hover {
-            border-top: 3px solid $tan;
+             > a {
+                border-top: 3px solid $tan;    
+            }
+            
         }
     }
 }
@@ -169,6 +186,7 @@ ul.sub-menu {
     position: absolute;
     background-color: $dark-red;
     //width: 220px;
+    top: 30px;
     left: 50%;
     margin-left: -100px;
     text-align: center;
@@ -176,6 +194,8 @@ ul.sub-menu {
     width: 200px;
     a {
         color: $tan !important;
+        display: block;
+        padding: 15px 25px;
     }
     li {
         display: block !important;
@@ -249,6 +269,9 @@ ul.sub-menu {
             background-color: $dark-red;
             height: auto;
         }
+    }
+    .sub-menu {
+        top: 63px;
     }
 }
 

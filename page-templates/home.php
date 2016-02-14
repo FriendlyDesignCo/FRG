@@ -163,7 +163,7 @@ get_header(); ?>
 			<?php the_field('slide_3_paragraph'); ?>
 			
 			<script>
-				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%"})
+				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%",offset: "-50"})
 							.setPin(".desktop-screen .flip-icons")
 							.addTo(controller);
 				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%"})
