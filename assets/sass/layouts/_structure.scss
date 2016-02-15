@@ -25,12 +25,15 @@ html {
     }
 }
 #page {
-     @include outer-container;
-     overflow: hidden;
-     padding-top: 50px;
-     @include media($md) {
-        padding-top: 0;
-     }
+    //@include outer-container;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding-top: 50px;
+    @include media($md) {
+    padding-top: 0;
+}
 }
 .wrap {}
 

@@ -75,10 +75,9 @@ h4.small{font-size:16px;font-size:1rem}.text-featured{color:#8b2332;font-family:
 #content h4{text-transform:uppercase}.button,#load-more{border-radius:5px;background-color:#8b2332;color:#ffe7cc !important;text-transform:uppercase;display:inline-block;padding:15px 40px;font-size:17px;font-size:1.0625rem;font-family:"Gotham";font-weight:500;transition:all .3s}
 .button:hover,#load-more:hover{background-color:#9d4446;text-decoration:none}.infinite-scroll #navigation,.infinite-scroll.neverending #footer{display:none}
 .infinity-end.neverending #footer{display:block}body{background-color:#fff;color:#000;font-family:"Georgia","Cambria","Times New Roman","Times",serif;line-height:1.5em;word-break:break-word}
-#page{max-width:71.25em;margin-left:auto;margin-right:auto;overflow:hidden;padding-top:50px}
-#page::after{clear:both;content:"";display:table}@media screen and (min-width:48em){#page{padding-top:0}
-}#primary{margin:0 auto;width:100%}#primary::after{clear:both;content:"";display:table}
-@media screen and (min-width:0){#primary{float:left;display:block;margin-right:14.28571%;width:100%}
+#page{max-width:100%;margin-left:auto;margin-right:auto;overflow:hidden;padding-top:50px}
+@media screen and (min-width:48em){#page{padding-top:0}}#primary{margin:0 auto;width:100%}
+#primary::after{clear:both;content:"";display:table}@media screen and (min-width:0){#primary{float:left;display:block;margin-right:14.28571%;width:100%}
 #primary:last-child{margin-right:0}}@media screen and (min-width:48em){#primary{float:left;display:block;margin-right:4.34783%;width:65.21739%;margin-right:0}
 #primary:last-child{margin-right:0}}#primary ul{list-style:none}#primary ul li{list-style-type:square}
 #secondary{margin:20px auto;padding:0 30px 0 0;width:100%}@media screen and (min-width:0){#secondary{float:left;display:block;margin-right:14.28571%;width:100%;padding:30px}
