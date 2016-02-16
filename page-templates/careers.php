@@ -12,11 +12,28 @@ get_header(); ?>
 	<script>
 		(function($) {
 		    $(document).ready(function() {
-			   //$('#fullpage').fullpage({
-			   // 	normalScrollElements: '.slide-1'
-			   //});
-			    
+
+		    	if ($(window).width() < 1059) {
+		             $('body').addClass("mobile-screen");
+		        }
+		        else {
+		        	$('body').addClass("desktop-screen");	
+		        }
+				var slide_height_1 = $(".slide-1").height() + $(window).height()/2;
+				var slide_height_2 = $(".slide-1").height() + $(window).height()*2/2;
+				var slide_height_3 = $(".slide-1").height() + $(window).height()*3/2;
+				var slide_height_4 = $(".slide-1").height() + $(window).height()*4/2;
+				var slide_height_5 = $(".slide-1").height() + $(window).height()*5/2;
+				var slide_height_6 = $(".slide-1").height() + $(window).height()*6/2;
+				$(".mobile-screen #career-trigger1").css("top", slide_height_1+"px");
+				$(".mobile-screen #career-trigger2").css("top", slide_height_2+"px");
+				$(".mobile-screen #career-trigger3").css("top", slide_height_3+"px");
+				$(".mobile-screen #career-trigger4").css("top", slide_height_4+"px");
+				$(".mobile-screen #career-trigger5").css("top", slide_height_5+"px");
+				$(".mobile-screen #career-trigger6").css("top", slide_height_6+"px");
+
 			});
+
 		})(jQuery);
 		
 	</script>

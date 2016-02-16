@@ -702,7 +702,8 @@ strong, b {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
 a, a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #8B2332; }
   a:hover, a:visited:hover {
     text-decoration: underline; }
 
@@ -1932,26 +1933,45 @@ ul.positions {
 #career-trigger7 {
   position: absolute; }
 
-#career-trigger1 {
-  top: 150vh; }
+@media screen and (min-width: 48em) {
+  #career-trigger1 {
+    top: 150vh; } }
 
 #career-trigger2 {
   top: 250vh; }
+  @media screen and (min-width: 48em) {
+    #career-trigger2 {
+      top: 250vh; } }
 
 #career-trigger3 {
   top: 350vh; }
+  @media screen and (min-width: 48em) {
+    #career-trigger3 {
+      top: 350vh; } }
 
 #career-trigger4 {
   top: 450vh; }
+  @media screen and (min-width: 48em) {
+    #career-trigger4 {
+      top: 450vh; } }
 
 #career-trigger5 {
   top: 550vh; }
+  @media screen and (min-width: 48em) {
+    #career-trigger5 {
+      top: 550vh; } }
 
 #career-trigger6 {
   top: 650vh; }
+  @media screen and (min-width: 48em) {
+    #career-trigger6 {
+      top: 650vh; } }
 
 #career-trigger7 {
   top: 750vh; }
+  @media screen and (min-width: 48em) {
+    #career-trigger7 {
+      top: 750vh; } }
 
 .career-slide-1 {
   z-index: 6; }
@@ -2003,10 +2023,10 @@ h2.career-title {
       font-size: 2.625rem; } }
 
 .position-wrap {
-  float: left;
   margin-bottom: 20px; }
   @media screen and (min-width: 48em) {
     .position-wrap {
+      float: left;
       width: 50%; } }
 
 .compensation-wrap {
@@ -2016,7 +2036,8 @@ h2.career-title {
   margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
-  color: #8B2332; }
+  color: #8B2332;
+  width: 50%; }
   @media screen and (min-width: 48em) {
     .compensation-wrap {
       width: 250px;
@@ -2034,8 +2055,8 @@ h2.career-title {
         font-size: 1rem; } }
   .compensation-wrap p {
     font-family: "Gotham";
-    font-size: 21px;
-    font-size: 1.3125rem;
+    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     margin: 0;
     line-height: 1em; }
@@ -2055,12 +2076,15 @@ h2.career-title {
   float: left;
   color: #FFE7CC;
   font-family: "Gotham";
-  font-weight: 700; }
+  font-weight: 700;
+  display: none; }
   @media screen and (min-width: 48em) {
     .case-study-card {
+      display: block;
       width: 48%;
       float: right; } }
   .case-study-card:first-of-type {
+    display: block;
     float: left; }
   .case-study-card p {
     font-size: 11px;
@@ -2574,6 +2598,12 @@ ul.job-list-dots {
   @media screen and (min-width: 48em) {
     .drink-block:nth-of-type(3n) {
       margin-left: 2%; } }
+
+.arrow-wrap {
+  margin-bottom: 50px; }
+  @media screen and (min-width: 48em) {
+    .arrow-wrap {
+      margin-bottom: 10px; } }
 
 .cookbook-logo {
   padding-bottom: 50px; }

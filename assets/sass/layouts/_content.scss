@@ -586,31 +586,52 @@ ul.positions {
 }
 
 #career-trigger1 {
-    top: 150vh;
+    //top: 150vh;
+    @include media($md) {
+        top: 150vh;
+    }
 }
 
 #career-trigger2 {
     top: 250vh;
+    @include media($md) {
+        top: 250vh;
+    }
 }
 
 #career-trigger3 {
     top: 350vh;
+    @include media($md) {
+        top: 350vh;
+    }
 }
 
 #career-trigger4 {
     top: 450vh;
+    @include media($md) {
+        top: 450vh;
+    }
 }
 
 #career-trigger5 {
     top: 550vh;
+    @include media($md) {
+        top: 550vh;
+    }
 }
 
 #career-trigger6 {
     top: 650vh;
+    @include media($md) {
+        top: 650vh;
+    }
 }
 
 #career-trigger7 {
     top: 750vh;
+    @include media($md) {
+        top: 750vh;
+    }
 }
 
 
@@ -677,10 +698,10 @@ h2.career-title {
 }
 
 .position-wrap {
-    float: left;
     margin-bottom: 20px;
     @include media($md) {
-       width: 50%; 
+        float: left;
+        width: 50%; 
     }
 }
 
@@ -693,8 +714,8 @@ h2.career-title {
     text-transform: uppercase;
     text-align: center;
     color: $dark-red;
+    width: 50%; 
     @include media($md) {
-       //width: 50%; 
        width: 250px;
        float: right;
     }
@@ -710,7 +731,7 @@ h2.career-title {
     }
     p {
         font-family: "Gotham";
-        @include fontSize(21px);
+        @include fontSize(16px);
         font-weight: 700;
         margin: 0;
         line-height: 1em;
@@ -732,11 +753,14 @@ h2.career-title {
     font-family: "Gotham";
     font-weight: 700;
     //position: relative;
+    display: none;
     @include media($md) {
+        display: block;
         width: 48%;
         float: right;
     }
     &:first-of-type {
+        display: block;
         float: left;
     }
     p {
@@ -1324,6 +1348,13 @@ ul.job-list-dots {
             margin-left: 2%;    
         }
         
+    }
+}
+
+.arrow-wrap {
+    margin-bottom: 50px;
+    @include media($md) {
+        margin-bottom: 10px;
     }
 }
 

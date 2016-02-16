@@ -27,7 +27,7 @@ get_header(); ?>
 			</div>
 			<div class="team-member-expanded">
 				<div class="close-button">Close</div>
-				<div class="image">
+				<div class="image" style="background-image:url('<?php the_sub_field('photo'); ?>')">
 					<img src="<?php the_sub_field('photo'); ?>">	
 				</div>
 				<div class="text">
