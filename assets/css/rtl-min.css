@@ -219,7 +219,8 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 @media screen and (min-width:48em){ul.positions{font-size:17px;font-size:1.0625rem}
 }ul.positions li{position:relative !important;line-height:1.2em}.positions-header{font-family:"Gotham";text-transform:uppercase;font-size:16px;font-size:1rem;font-weight:600;margin-bottom:0}
 @media screen and (min-width:48em){.positions-header{font-size:19px;font-size:1.1875rem}
-}.career-slide-wrap{height:auto;position:relative;white-space:nowrap;padding:0}.career-slide{height:100vh;display:block;white-space:normal;width:100%;top:0;left:0;background-color:#ffe7cc;position:absolute;padding:5vh 5%}
+}.slide-wrap{height:700vh}.career-wrap{height:100vh;width:100%;top:0;left:0}.career-slide-wrap{height:auto;position:relative;white-space:nowrap;padding:0}
+.career-slide{height:100vh;display:block;white-space:normal;width:100%;top:0;left:0;background-color:#ffe7cc;position:absolute;padding:5vh 5%}
 @media screen and (min-width:48em){.career-slide{padding:30vh 0 0}}.career-slide p{font-family:"Gotham";font-size:14px;font-size:.875rem;line-height:1.4em}
 @media screen and (min-width:48em){.career-slide p{font-size:24px;font-size:1.5rem}
 }.career-slide.active-slide{z-index:8}#career-trigger1,#career-trigger2,#career-trigger3,#career-trigger4,#career-trigger5,#career-trigger6,#career-trigger7{position:absolute}
@@ -229,11 +230,11 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 @media screen and (min-width:48em){#career-trigger4{top:450vh}}#career-trigger5{top:550vh}
 @media screen and (min-width:48em){#career-trigger5{top:550vh}}#career-trigger6{top:650vh}
 @media screen and (min-width:48em){#career-trigger6{top:650vh}}#career-trigger7{top:750vh}
-@media screen and (min-width:48em){#career-trigger7{top:750vh}}.career-slide-1{z-index:6}
-.career-slide-2{z-index:5}.career-slide-3{z-index:4}.career-slide-4{z-index:3}.career-slide-5{z-index:2}
-.career-slide-6{z-index:1}.careers-section,.beverages-section{text-align:left;min-height:100vh}
+@media screen and (min-width:48em){#career-trigger7{top:750vh}}.career-slide-1{z-index:7}
+.career-slide-2{z-index:6}.career-slide-3{z-index:5}.career-slide-4{z-index:4}.career-slide-5{z-index:3}
+.career-slide-6{z-index:2}.careers-section,.beverages-section{text-align:left;min-height:100vh}
 @media screen and (min-width:48em){.careers-section,.beverages-section{height:100vh;min-height:none}
-}.careers-section.last-slide,.beverages-section.last-slide{position:absolute;top:800vh}
+}.careers-section.last-slide,.beverages-section.last-slide{position:absolute;padding-top:0;top:800vh}
 .careers-wrap .slide-1 h2{margin:0;text-align:left}.careers-wrap .slide-1 p{text-align:left;line-height:1.4em}
 h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';font-weight:500;font-size:20px;font-size:1.25rem}
 @media screen and (min-width:48em){h2.career-title{font-size:42px;font-size:2.625rem}
@@ -245,14 +246,14 @@ h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';
 @media screen and (min-width:48em){.compensation-wrap p{font-size:25px;font-size:1.5625rem}
 }.case-study-card-wrap{width:100%;float:left;position:relative}.case-study-card{background-color:#8b2332;width:100%;float:left;color:#ffe7cc;font-family:"Gotham";font-weight:700;display:none}
 @media screen and (min-width:48em){.case-study-card{display:block;width:48%;float:right}
-}.case-study-card:first-of-type{display:block;float:left}.case-study-card p{font-size:11px;font-size:.6875rem;margin:0}
+}.case-study-card:first-of-type{display:block;float:left}.case-study-card p{font-size:14px;font-size:.875rem;margin:0}
 @media screen and (min-width:48em){.case-study-card p{font-size:14px;font-size:.875rem}
 }.case-study-card .case-study-card-image{width:25%;padding-bottom:25%;background-repeat:no-repeat;background-size:cover;float:left}
 .case-study-card .case-study-card-image,.case-study-card .case-study-card-blurb{cursor:pointer}
 .case-study-card:nth-of-type(2n) .case-study-card-expanded{-webkit-transform-origin:bottom center;transform-origin:bottom center}
 .case-study-card-blurb{float:right;width:75%;padding:15px}@media screen and (min-width:48em){.case-study-card-blurb{padding:10px}
-}.case-study-card-expanded{position:absolute;background-color:#8b2332;color:#ffe7cc;display:block;left:20px;bottom:0;z-index:99;transition:all .3s;-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:bottom left;transform-origin:bottom left;padding:70px 10px 0;height:85vh;width:75vw}
-@media screen and (min-width:48em){.case-study-card-expanded{bottom:0;padding:70px 70px 0;height:auto;width:75vw}
+}.case-study-card-expanded{position:absolute;background-color:#8b2332;color:#ffe7cc;display:block;left:0;bottom:-50px;z-index:99;transition:all .3s;-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:bottom left;transform-origin:bottom left;padding:70px 10px 0;height:75vh;width:90vw;overflow-y:scroll}
+@media screen and (min-width:48em){.case-study-card-expanded{left:100px;bottom:0;padding:70px 70px 0;height:auto;width:75vw;overflow:visible}
 }.case-study-card-expanded.expanded{-webkit-transform:scale(1);transform:scale(1)}
 .case-study-card-expanded .case-study-card-image{position:absolute;top:0;cursor:inherit;padding:0;left:0;width:70px;height:70px}
 @media screen and (min-width:48em){.case-study-card-expanded .case-study-card-image{top:initial;left:-100px;bottom:0;width:175px;height:175px}
@@ -261,22 +262,25 @@ h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';
 }.case-study-card-expanded .case-study-paragraph{float:right;font-family:"GothamNarrow";font-weight:300}
 @media screen and (min-width:48em){.case-study-card-expanded .case-study-paragraph{width:60%;font-size:17px;font-size:1.0625rem;line-height:1.4em;padding:0 50px;height:175px}
 }.close-button{position:absolute;top:0;right:0;background-color:#9d4446;color:#ffe7cc;text-transform:uppercase;font-family:"Gotham";font-weight:bold;font-size:14px;font-size:.875rem;padding:0 25px;cursor:pointer}
-ul.job-list-dots{width:100%;display:table;margin-bottom:70px;list-style-type:none}
-ul.job-list-dots li{position:relative;font-size:14px;font-size:.875rem;text-transform:uppercase;line-height:1em}
-@media screen and (min-width:48em){ul.job-list-dots li{display:table-cell;width:150px;text-align:center;vertical-align:top}
-}ul.job-list-dots li:before{content:"";position:absolute;border-radius:50%;background-color:#ffe7cc;left:0;right:0;top:-45px;width:30px;height:30px;margin:0 auto 25px}
-ul.job-list-dots li+li:after{content:"";position:absolute;background-color:#ffe7cc}
-@media screen and (min-width:48em){ul.job-list-dots li+li:after{width:100%;height:3px;right:50%;top:-31px}
-}.nav-dots ul li.active{background:#8b2332;width:20px;height:20px}.nav-dots ul li{border:0;width:15px;height:15px;border-radius:50%;background:#9d4446}
+ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none;float:right}
+@media screen and (min-width:48em){ul.job-list-dots{float:none;margin-bottom:70px;width:100%;display:table}
+}ul.job-list-dots li{position:relative;font-size:14px;font-size:.875rem;text-transform:uppercase;padding-left:50px;line-height:1em;padding-bottom:30px}
+@media screen and (min-width:48em){ul.job-list-dots li{padding-bottom:0;padding-left:0;display:table-cell;width:150px;text-align:center;vertical-align:top}
+}ul.job-list-dots li:before{content:"";position:absolute;border-radius:50%;background-color:#ffe7cc;width:20px;height:20px;left:0;top:-3px}
+@media screen and (min-width:48em){ul.job-list-dots li:before{top:0;left:0;right:0;top:-45px;width:30px;height:30px;margin:0 auto 25px}
+}ul.job-list-dots li:after{content:"";height:100%;width:3px;left:9px;position:absolute;background-color:#ffe7cc}
+@media screen and (min-width:48em){ul.job-list-dots li:after{content:"";position:absolute;background-color:#ffe7cc;width:100%;height:3px;left:50%;top:-31px}
+}ul.job-list-dots li:last-of-type:after{content:none}.nav-dots ul li.active{background:#8b2332;width:20px;height:20px}
+.nav-dots ul li{border:0;width:15px;height:15px;border-radius:50%;background:#9d4446}
 .sprinkler-animation{position:absolute;right:5vw;top:0;height:100%;width:30vw;z-index:2}
 .sprinkler-animation .water{background-position:center;background-repeat:no-repeat;height:400px;width:100%;-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:center bottom;transform-origin:center bottom;position:absolute;left:125px;bottom:30vh;transition:all 1.5s;transition-delay:.2s}
 .sprinkler-animation .water.animated{-webkit-transform:scale(1);transform:scale(1);opacity:0}
 .sprinkler-animation .sprinkler{background-position:right;background-repeat:no-repeat;height:50px;width:100%;position:absolute;right:70px;bottom:20vh}
 .sprinkler-animation .step-1,.sprinkler-animation .step-2{position:absolute;width:200px;height:200px;left:0;right:0;bottom:0;margin:0 auto;background-position:center;background-repeat:no-repeat}
-.sprinkler-animation .step-2{opacity:0}.sprinkler-animation .corn{position:absolute;width:150px;height:100%;left:0;right:0;bottom:20vh;margin:0 auto;background-position:center bottom;background-repeat:no-repeat;opacity:0}
+.sprinkler-animation .step-2{opacity:0}.sprinkler-animation .corn{position:absolute;width:150px;height:80%;left:0;right:0;bottom:20%;margin:0 auto;background-position:center bottom;background-repeat:no-repeat;opacity:0}
 .sprinkler-animation.step-1{opacity:1}.sprinkler-animation.step-6 .corn{-webkit-transform:rotate(30deg);transform:rotate(30deg);background-position:center;height:400px}
 .nav-dots-inner{border-top:2px solid #8b2332;border-bottom:2px solid #8b2332;width:70%;height:40px}
-.nav-dots{position:absolute;top:20vh;left:0;right:0;margin:0 auto;z-index:10;width:100%;display:none}
+.nav-dots{position:absolute;top:15vh;left:0;right:0;margin:0 auto;z-index:10;width:100%;display:none}
 .nav-dots p{font-size:16px;font-size:1rem;font-family:"Gotham";font-weight:bold;color:#8b2332;text-transform:uppercase;vertical-align:middle;float:left;line-height:2.4em;margin:0 20px 0 0}
 .nav-dots a{display:block;width:100%;height:100%}@media screen and (min-width:48em){.nav-dots{display:block;max-width:1060px;margin-left:auto;margin-right:auto}
 .nav-dots::after{clear:both;content:"";display:table}}.nav-dots ul{list-style:none;text-align:left}

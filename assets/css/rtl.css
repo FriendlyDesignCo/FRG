@@ -1893,6 +1893,15 @@ ul.positions {
       font-size: 19px;
       font-size: 1.1875rem; } }
 
+.slide-wrap {
+  height: 700vh; }
+
+.career-wrap {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
 .career-slide-wrap {
   height: auto;
   position: relative;
@@ -1974,22 +1983,22 @@ ul.positions {
       top: 750vh; } }
 
 .career-slide-1 {
-  z-index: 6; }
+  z-index: 7; }
 
 .career-slide-2 {
-  z-index: 5; }
+  z-index: 6; }
 
 .career-slide-3 {
-  z-index: 4; }
+  z-index: 5; }
 
 .career-slide-4 {
-  z-index: 3; }
+  z-index: 4; }
 
 .career-slide-5 {
-  z-index: 2; }
+  z-index: 3; }
 
 .career-slide-6 {
-  z-index: 1; }
+  z-index: 2; }
 
 .careers-section, .beverages-section {
   text-align: left;
@@ -2000,6 +2009,7 @@ ul.positions {
       min-height: none; } }
   .careers-section.last-slide, .beverages-section.last-slide {
     position: absolute;
+    padding-top: 0;
     top: 800vh; }
 
 .careers-wrap .slide-1 h2 {
@@ -2087,8 +2097,8 @@ h2.career-title {
     display: block;
     float: left; }
   .case-study-card p {
-    font-size: 11px;
-    font-size: 0.6875rem;
+    font-size: 14px;
+    font-size: 0.875rem;
     margin: 0; }
     @media screen and (min-width: 48em) {
       .case-study-card p {
@@ -2119,8 +2129,8 @@ h2.career-title {
   background-color: #8B2332;
   color: #FFE7CC;
   display: block;
-  left: 20px;
-  bottom: 0px;
+  left: 0;
+  bottom: -50px;
   z-index: 99;
   transition: all .3s;
   -webkit-transform: scale(0);
@@ -2128,14 +2138,17 @@ h2.career-title {
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
   padding: 70px 10px 0;
-  height: 85vh;
-  width: 75vw; }
+  height: 75vh;
+  width: 90vw;
+  overflow-y: scroll; }
   @media screen and (min-width: 48em) {
     .case-study-card-expanded {
+      left: 100px;
       bottom: 0;
       padding: 70px 70px 0;
       height: auto;
-      width: 75vw; } }
+      width: 75vw;
+      overflow: visible; } }
   .case-study-card-expanded.expanded {
     -webkit-transform: scale(1);
             transform: scale(1); }
@@ -2196,18 +2209,29 @@ h2.career-title {
   cursor: pointer; }
 
 ul.job-list-dots {
-  width: 100%;
+  width: 70%;
   display: table;
   margin-bottom: 70px;
-  list-style-type: none; }
+  list-style-type: none;
+  float: right; }
+  @media screen and (min-width: 48em) {
+    ul.job-list-dots {
+      float: none;
+      margin-bottom: 70px;
+      width: 100%;
+      display: table; } }
   ul.job-list-dots li {
     position: relative;
     font-size: 14px;
     font-size: 0.875rem;
     text-transform: uppercase;
-    line-height: 1em; }
+    padding-left: 50px;
+    line-height: 1em;
+    padding-bottom: 30px; }
     @media screen and (min-width: 48em) {
       ul.job-list-dots li {
+        padding-bottom: 0px;
+        padding-left: 0px;
         display: table-cell;
         width: 150px;
         text-align: center;
@@ -2217,22 +2241,37 @@ ul.job-list-dots {
       position: absolute;
       border-radius: 50%;
       background-color: #FFE7CC;
+      width: 20px;
+      height: 20px;
       left: 0;
-      right: 0;
-      top: -45px;
-      width: 30px;
-      height: 30px;
-      margin: 0 auto 25px; }
-  ul.job-list-dots li + li:after {
+      top: -3px; }
+      @media screen and (min-width: 48em) {
+        ul.job-list-dots li:before {
+          top: 0;
+          left: 0;
+          right: 0;
+          top: -45px;
+          width: 30px;
+          height: 30px;
+          margin: 0 auto 25px; } }
+  ul.job-list-dots li:after {
     content: "";
+    height: 100%;
+    width: 3px;
+    left: 9px;
     position: absolute;
     background-color: #FFE7CC; }
     @media screen and (min-width: 48em) {
-      ul.job-list-dots li + li:after {
+      ul.job-list-dots li:after {
+        content: "";
+        position: absolute;
+        background-color: #FFE7CC;
         width: 100%;
         height: 3px;
-        right: 50%;
+        left: 50%;
         top: -31px; } }
+  ul.job-list-dots li:last-of-type:after {
+    content: none; }
 
 .nav-dots ul li.active {
   background: #8B2332;
@@ -2294,10 +2333,10 @@ ul.job-list-dots {
   .sprinkler-animation .corn {
     position: absolute;
     width: 150px;
-    height: 100%;
+    height: 80%;
     left: 0;
     right: 0;
-    bottom: 20vh;
+    bottom: 20%;
     margin: 0 auto;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -2318,7 +2357,7 @@ ul.job-list-dots {
 
 .nav-dots {
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   left: 0;
   right: 0;
   margin: 0 auto;

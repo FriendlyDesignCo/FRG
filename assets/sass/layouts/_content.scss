@@ -535,7 +535,16 @@ ul.positions {
         @include fontSize(19px);
     }
 }
-
+.slide-wrap {
+    height: 700vh;
+}
+.career-wrap {
+    height: 100vh;
+    //position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 .career-slide-wrap {
     height: auto;
     position: relative;
@@ -637,23 +646,23 @@ ul.positions {
 
 
 .career-slide-1 {
-    z-index: 6;
+    z-index: 7;
 }
 .career-slide-2 {
-    z-index: 5;
+    z-index: 6;
 }
 .career-slide-3 {
-    z-index: 4;
+    z-index: 5;
 }
 .career-slide-4 {
-    z-index: 3;
+    z-index: 4;
 }
 .career-slide-5 {
-    z-index: 2;
+    z-index: 3;
 }
 
 .career-slide-6 {
-    z-index: 1;
+    z-index: 2;
 }
 
 .careers-section, .beverages-section {
@@ -665,6 +674,7 @@ ul.positions {
     }
     &.last-slide {
         position: absolute;
+        padding-top: 0;
         top: 800vh;
     }
 }
@@ -744,6 +754,9 @@ h2.career-title {
     width: 100%;
     float: left;
     position: relative;
+    @include media($md) {
+
+    }
 }
 .case-study-card {
     background-color: $dark-red;
@@ -764,7 +777,7 @@ h2.career-title {
         float: left;
     }
     p {
-        @include fontSize(11px);
+        @include fontSize(14px);
         margin: 0;
         @include media($md) {
             @include fontSize(14px);
@@ -802,21 +815,23 @@ h2.career-title {
     background-color: $dark-red;
     color: $tan;
     display: block;
-    left: 20px;
-    bottom: 0px;
+    left: 0;
+    bottom: -50px;
     z-index: 99;
     transition: all .3s;
     transform: scale(0);
     transform-origin: bottom left;
     padding: 70px 10px 0;
-    height: 85vh;
-    width: 75vw;
-
+    height: 75vh;
+    width: 90vw;
+    overflow-y: scroll;
     @include media($md) {
+        left: 100px;
         bottom: 0;
         padding: 70px 70px 0;
         height: auto;
         width: 75vw;
+        overflow: visible;
     }
     &.expanded {
         transform: scale(1);
@@ -882,19 +897,29 @@ h2.career-title {
 }
 
 ul.job-list-dots {
-    width: 100%;
+    width: 70%;
     display: table;
     margin-bottom: 70px;
     list-style-type: none;
+    float: right;
+    @include media($md) {
+        float: none;
+        margin-bottom: 70px;
+        width: 100%;
+        display: table;
+    }
     li {
         
         position: relative;
         @include fontSize(14px);
         text-transform: uppercase;
-        
+        padding-left: 50px;
         line-height: 1em;
-        
+        padding-bottom: 30px;
+
         @include media($md) {
+            padding-bottom: 0px;
+            padding-left: 0px;
             display: table-cell;
             width: 150px;
             text-align: center;
@@ -905,29 +930,46 @@ ul.job-list-dots {
             position: absolute;
             border-radius: 50%;
             background-color: $tan;
+            width: 20px;
+            height: 20px;
             left: 0;
-            right: 0;
-            top: -45px;
-            width: 30px;
-            height: 30px;
-            margin: 0 auto 25px; 
-            
-        }
-    }
-    li + li {
-        &:after {
-            content: "";
-            position: absolute;
-            background-color: $tan;
-            
+            top: -3px;
             @include media($md) {
-                width: 100%;
-                height: 3px;
-                right: 50%;
-                top: -31px;
+                top: 0;
+                left: 0;
+                right: 0;
+                top: -45px;
+                width: 30px;
+                height: 30px;
+                margin: 0 auto 25px;     
             }
         }
     }
+    li {
+        &:after {
+            content: "";
+            height: 100%;
+            width: 3px;
+            left: 9px;
+            position: absolute;
+            background-color: $tan;
+            @include media($md) {
+                content: "";
+                position: absolute;
+                background-color: $tan;
+                width: 100%;
+                height: 3px;
+                left: 50%;
+                top: -31px;
+            }
+        }
+        &:last-of-type {
+            &:after {
+                content: none;
+            }
+        }
+    }
+    
 }
 
 
@@ -953,6 +995,9 @@ ul.job-list-dots {
     height: 100%;
     width: 30vw;
     z-index: 2;
+    @include media($md) {
+
+    }
     .water {
         background-position: center;
         background-repeat: no-repeat;
@@ -1001,14 +1046,17 @@ ul.job-list-dots {
     .corn {
         position: absolute;
         width: 150px;
-        height: 100%;
+        height: 80%;
         left: 0;
         right: 0;
-        bottom: 20vh;
+        bottom: 20%;
         margin: 0 auto;
         background-position: center bottom;
         background-repeat: no-repeat;
         opacity: 0;
+        @include media($md) {
+
+        }
     }
     &.step-1 {
         opacity: 1;
@@ -1029,7 +1077,7 @@ ul.job-list-dots {
 
 .nav-dots {
     position: absolute;
-    top: 20vh;
+    top: 15vh;
     left: 0;
     right:0;
     margin: 0 auto;

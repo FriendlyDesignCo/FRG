@@ -111,6 +111,7 @@ get_header(); ?>
 	<section class="section careers-section career-slide-wrap section-wrap ">
 		
 		<div class="slide-wrap">
+		<div class="career-wrap">
 			<div class="nav-dots">
 				<div class="nav-dots-inner">
 					<p>FRG CAREER PATH</p>
@@ -137,7 +138,7 @@ get_header(); ?>
 				// init controller
 				var controller = new ScrollMagic.Controller();
 				new ScrollMagic.Scene({triggerElement: "#career-trigger1", duration: "600%"})
-								.setPin(".slide-wrap")
+								.setPin(".career-wrap")
 								.addIndicators()
 								.addTo(controller);
 				
@@ -277,6 +278,7 @@ get_header(); ?>
 				}
 			});})( jQuery );
 		</script>
+		</div>
 		</div>
 	</section>
 	<section class="section careers-section last-slide section-wrap">
