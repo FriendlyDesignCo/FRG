@@ -25,13 +25,14 @@ get_header(); ?>
 				var slide_height_4 = $(".slide-1").height() + $(window).height()*4/2;
 				var slide_height_5 = $(".slide-1").height() + $(window).height()*5/2;
 				var slide_height_6 = $(".slide-1").height() + $(window).height()*6/2;
+				var last_slide_height = $(".slide-1").height() + $(window).height()*7;
 				$(".mobile-screen #career-trigger1").css("top", slide_height_1+"px");
 				$(".mobile-screen #career-trigger2").css("top", slide_height_2+"px");
 				$(".mobile-screen #career-trigger3").css("top", slide_height_3+"px");
 				$(".mobile-screen #career-trigger4").css("top", slide_height_4+"px");
 				$(".mobile-screen #career-trigger5").css("top", slide_height_5+"px");
 				$(".mobile-screen #career-trigger6").css("top", slide_height_6+"px");
-
+				$(".mobile-screen .careers-section.last-slide").css("top", last_slide_height+"px");
 			});
 
 		})(jQuery);
@@ -108,7 +109,7 @@ get_header(); ?>
 	<div id="dot-trigger4" class=" s0"></div>
 	<div id="dot-trigger5" class=" s0"></div>
 	<div id="dot-trigger6" class=" s0"></div>
-	<section class="section careers-section career-slide-wrap section-wrap ">
+	<section class="section careers-section career-slide-wrap section-wrap slide-wrap">
 		
 		<div class="slide-wrap">
 		<div class="career-wrap">

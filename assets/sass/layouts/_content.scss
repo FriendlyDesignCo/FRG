@@ -674,8 +674,12 @@ ul.positions {
     }
     &.last-slide {
         position: absolute;
-        padding-top: 0;
-        top: 800vh;
+        
+        
+        @include media($md) {
+            top: 800vh;
+            padding-top: 0;
+        }
     }
 }
 
@@ -750,12 +754,18 @@ h2.career-title {
         }
     }
 }
+
+.case-study {
+    height: 100%;
+}
 .case-study-card-wrap {
     width: 100%;
     float: left;
-    position: relative;
+    position: absolute;
+    bottom: 15%;
     @include media($md) {
-
+        position: relative;
+        bottom: 0;
     }
 }
 .case-study-card {

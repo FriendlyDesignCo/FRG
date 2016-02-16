@@ -2008,9 +2008,11 @@ ul.positions {
       height: 100vh;
       min-height: none; } }
   .careers-section.last-slide, .beverages-section.last-slide {
-    position: absolute;
-    padding-top: 0;
-    top: 800vh; }
+    position: absolute; }
+    @media screen and (min-width: 48em) {
+      .careers-section.last-slide, .beverages-section.last-slide {
+        top: 800vh;
+        padding-top: 0; } }
 
 .careers-wrap .slide-1 h2 {
   margin: 0;
@@ -2075,10 +2077,18 @@ h2.career-title {
         font-size: 25px;
         font-size: 1.5625rem; } }
 
+.case-study {
+  height: 100%; }
+
 .case-study-card-wrap {
   width: 100%;
   float: left;
-  position: relative; }
+  position: absolute;
+  bottom: 15%; }
+  @media screen and (min-width: 48em) {
+    .case-study-card-wrap {
+      position: relative;
+      bottom: 0; } }
 
 .case-study-card {
   background-color: #8B2332;
