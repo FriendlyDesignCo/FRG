@@ -53,7 +53,13 @@ get_header(); ?>
 					<h3 class="sub-title"><?php the_field('subheader'); ?></h3>
 				</div>
 
-		<?php endwhile; ?>
+		<?php endwhile; 
+		if( is_category() ) {
+				$cat = get_queried_object();
+			echo do_shortcode("[ajax_load_more post_type='post' category='".$cat->slug."' offset='6' posts_per_page='6' pause='true' scroll='false']");
+		}
+		?>
+
 		</div>
 			<?php else : ?>
 
