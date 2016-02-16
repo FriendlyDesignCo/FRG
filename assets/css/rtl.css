@@ -2431,11 +2431,43 @@ ul.job-list-dots {
   border-radius: 20px;
   line-height: 1.2em;
   font-family: "adobe-caslon-pro";
-  font-style: italic; }
+  font-style: italic;
+  position: relative; }
   @media screen and (min-width: 48em) {
     .sidebar-text {
       width: 250px;
-      padding: 20px; } }
+      padding: 20px 20px 50px; } }
+  .sidebar-text.right {
+    margin-left: 20px; }
+  .sidebar-text.left {
+    margin-right: 20px; }
+  .sidebar-text .twitter-icon {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    right: 20px;
+    bottom: 10px; }
+
+.quote-attribution {
+  margin-top: 10px; }
+  .quote-attribution p {
+    margin: 0;
+    line-height: 1.2em; }
+  .quote-attribution .name {
+    font-family: "Gotham";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    font-size: 0.875rem; }
+  .quote-attribution .position {
+    font-family: "Gotham";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 11px;
+    font-size: 0.6875rem; }
 
 .beverages-section h2 {
   font-size: 28px;

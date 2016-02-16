@@ -11,7 +11,9 @@
 get_header(); ?>
 
 <div id="" class="blog-page content-area interior-page">
+	<style>
 	
+	</style>
 	<div id="content" class="site-content">
 		<div class="categories-list">
 			<h3>Categories</h3>

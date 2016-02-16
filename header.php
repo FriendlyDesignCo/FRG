@@ -25,6 +25,9 @@
 				display: none;
 			}
 		<?php endif; ?>
+		.twitter-icon {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/icons/twitter-icon.svg');
+		}
 	</style>
 	<!-- Typekit -->
 	<script src="https://use.typekit.net/zwk6xpd.js"></script>

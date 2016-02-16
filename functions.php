@@ -382,9 +382,27 @@ return $menu;
 add_filter('wp_nav_menu_objects', 'my_reverse_nav_menu', 10, 2);
 
 // sidebar shortcode support
+
+function sidebar_text( $atts, $content = null ) {
+	$blog_ID = get_the_ID ();
+	$sidebar_content = get_field('quote_text', $blog_ID);
+	if(get_field('quote_attribution_name', $blog_ID) != "") {
+		$quote_attribution_name = get_field('quote_attribution_name', $blog_ID);
+		$quote_attribution_position = get_field('quote_attribution_position', $blog_ID);
+		return '<div class="sidebar-text right">'.$sidebar_content.'<div class="quote-attribution"><p class="name">'. $quote_attribution_name .'</p><p class="position">'. $quote_attribution_position .'</p></div><div class="twitter-icon"></div></div>';
+	}
+	else {
+		return '<div class="sidebar-text right">'.$sidebar_content.'</div>';
+	}
+    
+}
+add_shortcode("sidebar_text", "sidebar_text");
+
+// sidebar shortcode support
+/*
 function sidebar_text( $atts, $content = null ) {
 	$blog_ID = get_the_ID ();
 	$sidebar_content = get_field('quote_text', $blog_ID);
     return '<div class="sidebar-text right">'.$sidebar_content.'</div>';
 }
-add_shortcode("sidebar_text", "sidebar_text");
+add_shortcode("sidebar_text", "sidebar_text");*/

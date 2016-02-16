@@ -1158,9 +1158,47 @@ ul.job-list-dots {
     line-height: 1.2em;
     font-family: $caslon;
     font-style: italic;
+    position: relative;
     @include media($md) {
         width: 250px;
-        padding: 20px;
+        padding: 20px 20px 50px;
+    }
+    &.right {
+        margin-left: 20px;
+    }
+    &.left {
+        margin-right: 20px;
+    }
+    .twitter-icon {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        background-position: center;
+        //background-color: black;
+        right: 20px;
+        bottom: 10px;
+    }
+}
+
+.quote-attribution {
+    margin-top: 10px;
+    p {
+        margin: 0;
+        line-height: 1.2em;
+    }
+    .name {
+        font-family: "Gotham";
+        font-weight: 500;
+        font-style: normal;
+        @include fontSize(14px);
+    }
+    .position {
+        font-family: "Gotham";
+        font-weight: 500;
+        font-style: normal;
+        @include fontSize(11px);
     }
 }
 
