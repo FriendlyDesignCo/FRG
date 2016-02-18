@@ -1793,6 +1793,7 @@ ul.job-list-dots {
         padding: 20px 5px;
         @include media($md) {
             padding: 20px;
+            min-height: 110px;
         }
     }
     .name {
@@ -1854,6 +1855,7 @@ ul.job-list-dots {
         transform: scale(1);
     }
     .image {
+        height: 350px;
         position: relative;
         z-index: 2;
         @include media($md) {

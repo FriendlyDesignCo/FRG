@@ -368,7 +368,8 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 }.team-member-item:hover>.text{background-color:#8b2332}.team-member-item .image{width:100%;height:300px;background-size:cover;background-color:#939292}
 .team-member-item .image img{height:0;width:0}.team-member-item>.image,.team-member-item>.text{cursor:pointer}
 .team-member-item .text{background-color:#9d4446;text-align:center;transition:all .3s;padding:20px 5px}
-@media screen and (min-width:48em){.team-member-item .text{padding:20px}}.team-member-item .name{font-family:"Gotham";font-weight:bold;color:#ffe7cc;text-transform:uppercase;margin-bottom:0;font-size:16px;font-size:1rem}
+@media screen and (min-width:48em){.team-member-item .text{padding:20px;min-height:110px}
+}.team-member-item .name{font-family:"Gotham";font-weight:bold;color:#ffe7cc;text-transform:uppercase;margin-bottom:0;font-size:16px;font-size:1rem}
 @media screen and (min-width:48em){.team-member-item .name{font-size:18px;font-size:1.125rem}
 }.team-member-item .job-title{font-family:"GothamNarrow";font-weight:300;color:#ffe7cc;margin:0;font-size:16px;font-size:1rem}
 @media screen and (min-width:48em){.team-member-item .job-title{font-size:15px;font-size:.9375rem}
@@ -376,7 +377,7 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 @media screen and (min-width:48em){.team-member-expanded{padding:50px}}.team-member-expanded p{line-height:1.4em}
 .team-member-expanded:before{content:"";background-color:#8b2332;position:absolute;left:0;top:0;width:100%;height:70px}
 @media screen and (min-width:48em){.team-member-expanded:before{height:120px}}.team-member-expanded.expanded{-webkit-transform:scale(1);transform:scale(1)}
-.team-member-expanded .image{position:relative;z-index:2}@media screen and (min-width:48em){.team-member-expanded .image{width:30%;float:left}
+.team-member-expanded .image{height:350px;position:relative;z-index:2}@media screen and (min-width:48em){.team-member-expanded .image{width:30%;float:left}
 }.team-member-expanded .text{z-index:2;position:relative;background-color:initial;text-align:left}
 @media screen and (min-width:48em){.team-member-expanded .text{width:70%;float:right;padding-top:0}
 }.team-member-expanded .name{font-family:"adobe-caslon-pro";font-style:italic;text-transform:none;color:#8b2332;font-size:22px;font-size:1.375rem}

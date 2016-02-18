@@ -2976,7 +2976,8 @@ ul.job-list-dots {
     padding: 20px 5px; }
     @media screen and (min-width: 48em) {
       .team-member-item .text {
-        padding: 20px; } }
+        padding: 20px;
+        min-height: 110px; } }
   .team-member-item .name {
     font-family: "Gotham";
     font-weight: bold;
@@ -3034,6 +3035,7 @@ ul.job-list-dots {
     -webkit-transform: scale(1);
             transform: scale(1); }
   .team-member-expanded .image {
+    height: 350px;
     position: relative;
     z-index: 2; }
     @media screen and (min-width: 48em) {
