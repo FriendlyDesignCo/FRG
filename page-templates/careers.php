@@ -112,7 +112,7 @@ get_header(); ?>
 	<section class="section careers-section career-slide-wrap section-wrap slide-wrap">
 		
 		<div class="slide-wrap">
-		<div class="career-wrap">
+		<div class="career-wrap slide-wrap">
 			<div class="nav-dots">
 				<div class="nav-dots-inner">
 					<p>FRG CAREER PATH</p>
@@ -231,6 +231,11 @@ get_header(); ?>
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
 							//.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .water", { scale: 1.4, opacity: 0})
 							.setClassToggle(".sprinkler-animation.step-<?php echo $slide_number;?> .water", "animated") // add class toggle
+							//.addIndicators()
+							.addTo(controller);	
+				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
+							//.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .water", { scale: 1.4, opacity: 0})
+							.setClassToggle(".sprinkler-animation.step-<?php echo $slide_number;?> .sprinkler", "animated") // add class toggle
 							//.addIndicators()
 							.addTo(controller);	
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })

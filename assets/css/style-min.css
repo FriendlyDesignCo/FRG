@@ -234,6 +234,7 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 .career-slide-6{z-index:2}.careers-section,.beverages-section{text-align:left;min-height:100vh}
 @media screen and (min-width:48em){.careers-section,.beverages-section{height:100vh;min-height:none}
 }.careers-section.last-slide,.beverages-section.last-slide{position:absolute}@media screen and (min-width:48em){.careers-section.last-slide,.beverages-section.last-slide{top:800vh;padding-top:0}
+}@media screen and (min-width:48em){.careers-section.slide-wrap,.beverages-section.slide-wrap{height:700vh}
 }.careers-wrap .slide-1 h2{margin:0;text-align:left}.careers-wrap .slide-1 p{text-align:left;line-height:1.4em}
 h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';font-weight:500;font-size:20px;font-size:1.25rem}
 @media screen and (min-width:48em){h2.career-title{font-size:42px;font-size:2.625rem}
@@ -253,8 +254,9 @@ h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';
 .case-study-card .case-study-card-image,.case-study-card .case-study-card-blurb{cursor:pointer}
 .case-study-card:nth-of-type(2n) .case-study-card-expanded{-webkit-transform-origin:bottom center;transform-origin:bottom center}
 .case-study-card-blurb{float:right;width:75%;padding:15px}@media screen and (min-width:48em){.case-study-card-blurb{padding:10px}
-}.case-study-card-expanded{position:absolute;background-color:#8b2332;color:#ffe7cc;display:block;left:0;bottom:-50px;z-index:99;transition:all .3s;-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:bottom left;transform-origin:bottom left;padding:70px 10px 0;height:75vh;width:90vw;overflow-y:scroll}
-@media screen and (min-width:48em){.case-study-card-expanded{left:100px;bottom:0;padding:70px 70px 0;height:auto;width:75vw;overflow:visible}
+}.case-study-card-expanded{position:absolute;background-color:#8b2332;color:#ffe7cc;display:block;left:0;bottom:0;z-index:99;transition:all .3s;-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:bottom left;transform-origin:bottom left;padding:70px 10px 0;height:75vh;width:90vw;overflow-y:scroll}
+.case-study-card-expanded p{font-size:18px;font-size:1.125rem}@media screen and (min-width:48em){.case-study-card-expanded p{font-size:14px;font-size:.875rem}
+}@media screen and (min-width:48em){.case-study-card-expanded{left:100px;bottom:0;padding:70px 70px 0;height:auto;width:75vw;overflow:visible}
 }.case-study-card-expanded.expanded{-webkit-transform:scale(1);transform:scale(1)}
 .case-study-card-expanded .case-study-card-image{position:absolute;top:0;cursor:inherit;padding:0;left:0;width:70px;height:70px}
 @media screen and (min-width:48em){.case-study-card-expanded .case-study-card-image{top:initial;left:-100px;bottom:0;width:175px;height:175px}
@@ -269,17 +271,20 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 @media screen and (min-width:48em){ul.job-list-dots li{padding-bottom:0;padding-left:0;display:table-cell;width:150px;text-align:center;vertical-align:top}
 }ul.job-list-dots li:before{content:"";position:absolute;border-radius:50%;background-color:#ffe7cc;width:20px;height:20px;left:0;top:-3px}
 @media screen and (min-width:48em){ul.job-list-dots li:before{top:0;left:0;right:0;top:-45px;width:30px;height:30px;margin:0 auto 25px}
-}ul.job-list-dots li:after{content:"";height:100%;width:3px;left:9px;position:absolute;background-color:#ffe7cc}
+}ul.job-list-dots li:after{content:"";height:100%;width:3px;left:9px;top:0;position:absolute;background-color:#ffe7cc}
 @media screen and (min-width:48em){ul.job-list-dots li:after{content:"";position:absolute;background-color:#ffe7cc;width:100%;height:3px;left:50%;top:-31px}
 }ul.job-list-dots li:last-of-type:after{content:none}.nav-dots ul li.active{background:#8b2332;width:20px;height:20px}
 .nav-dots ul li{border:0;width:15px;height:15px;border-radius:50%;background:#9d4446}
-.sprinkler-animation{position:absolute;right:5vw;top:0;height:100%;width:30vw;z-index:2}
-.sprinkler-animation .water{background-position:center;background-repeat:no-repeat;height:400px;width:100%;-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:center bottom;transform-origin:center bottom;position:absolute;left:125px;bottom:30vh;transition:all 1.5s;transition-delay:.2s}
-.sprinkler-animation .water.animated{-webkit-transform:scale(1);transform:scale(1);opacity:0}
-.sprinkler-animation .sprinkler{background-position:right;background-repeat:no-repeat;height:50px;width:100%;position:absolute;right:70px;bottom:20vh}
-.sprinkler-animation .step-1,.sprinkler-animation .step-2{position:absolute;width:200px;height:200px;left:0;right:0;bottom:0;margin:0 auto;background-position:center;background-repeat:no-repeat}
-.sprinkler-animation .step-2{opacity:0}.sprinkler-animation .corn{position:absolute;width:150px;height:80%;left:0;right:0;bottom:20%;margin:0 auto;background-position:center bottom;background-repeat:no-repeat;opacity:0}
-.sprinkler-animation.step-1{opacity:1}.sprinkler-animation.step-6 .corn{-webkit-transform:rotate(30deg);transform:rotate(30deg);background-position:center;height:400px}
+.sprinkler-animation{position:absolute;right:5vw;top:0;height:80%;width:30vw;z-index:2}
+@media screen and (min-width:48em){.sprinkler-animation{height:100%}}.sprinkler-animation .water{background-position:center;background-repeat:no-repeat;height:400px;width:100%;-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:center bottom;transform-origin:center bottom;position:absolute;display:none;bottom:30vh;transition:all 1.5s;transition-delay:.2s}
+@media screen and (min-width:48em){.sprinkler-animation .water{display:block;left:125px}
+}.sprinkler-animation .water.animated{-webkit-transform:scale(1);transform:scale(1);opacity:0}
+.sprinkler-animation .sprinkler{background-position:right;background-repeat:no-repeat;height:0;width:100%;position:absolute;right:70px;display:none;bottom:20vh}
+.sprinkler-animation .sprinkler.animated{height:50px}@media screen and (min-width:48em){.sprinkler-animation .sprinkler{display:block}
+}.sprinkler-animation .step-1,.sprinkler-animation .step-2{position:absolute;width:200px;height:200px;left:0;right:0;bottom:0;margin:0 auto;background-position:center;background-repeat:no-repeat}
+.sprinkler-animation .step-2{opacity:0}.sprinkler-animation .corn{position:absolute;width:100%;height:100%;left:0;right:0;bottom:20%;margin:0 auto;background-position:center bottom;background-repeat:no-repeat;opacity:0}
+@media screen and (min-width:48em){.sprinkler-animation .corn{width:150px;height:80%}
+}.sprinkler-animation.step-1{opacity:1}.sprinkler-animation.step-6 .corn{-webkit-transform:rotate(30deg);transform:rotate(30deg);background-position:center;height:400px;bottom:0}
 .nav-dots-inner{border-top:2px solid #8b2332;border-bottom:2px solid #8b2332;width:70%;height:40px}
 .nav-dots{position:absolute;top:15vh;left:0;right:0;margin:0 auto;z-index:10;width:100%;display:none}
 .nav-dots p{font-size:16px;font-size:1rem;font-family:"Gotham";font-weight:bold;color:#8b2332;text-transform:uppercase;vertical-align:middle;float:left;line-height:2.4em;margin:0 20px 0 0}
