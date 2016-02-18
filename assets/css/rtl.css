@@ -1925,7 +1925,7 @@ ul.positions {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 231, 204, 0.6);
+    background-color: rgba(255, 231, 204, 0.7);
     z-index: 0; }
   @media screen and (min-width: 48em) {
     .career-slide {
@@ -2455,8 +2455,6 @@ ul.job-list-dots {
 .nav-dots ul li {
   display: inline-block;
   margin: 0 10px;
-  overflow: hidden;
-  text-indent: -999em;
   cursor: pointer;
   vertical-align: middle; }
 
@@ -3084,6 +3082,109 @@ ul.job-list-dots {
       .team-member-expanded .bio p {
         font-size: 20px;
         font-size: 1.25rem; } }
+
+@-webkit-keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1em);
+    transform: translateY(1em); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1em);
+    transform: translateY(1em); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+.tooltip-attached {
+  position: relative; }
+  .tooltip-attached:hover .tooltip {
+    visibility: visible;
+    -webkit-animation: slide-up 0.3s;
+    animation: slide-up 0.3s; }
+
+.tooltip {
+  left: 50%;
+  bottom: 100%;
+  width: 12em;
+  margin-left: -6em;
+  padding: .5em .75em;
+  box-shadow: 0 0.05em 0.15em rgba(139, 35, 50, 0.1);
+  text-align: center;
+  font-family: "Gotham";
+  white-space: normal;
+  line-height: 1.2em;
+  font-size: 12px;
+  font-size: 0.75rem; }
+  .tooltip.tooltip-border {
+    position: absolute;
+    box-sizing: border-box;
+    margin-bottom: 0.75em;
+    background-color: white;
+    cursor: default;
+    visibility: hidden;
+    border: 0.1em solid #ccc;
+    color: #333; }
+    .tooltip.tooltip-border:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-top: 0.65em solid white;
+      border-left: 0.65em solid transparent;
+      border-right: 0.65em solid transparent;
+      margin-left: -0.65em; }
+    .tooltip.tooltip-border:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-top: 0.75em solid #ccc;
+      border-left: 0.75em solid transparent;
+      border-right: 0.75em solid transparent;
+      margin-left: -0.75em; }
+  .tooltip.tooltip-no-border {
+    position: absolute;
+    box-sizing: border-box;
+    margin-bottom: 0.5em;
+    background-color: #8B2332;
+    cursor: default;
+    visibility: hidden;
+    border: 0 solid false;
+    color: #FFE7CC; }
+    .tooltip.tooltip-no-border:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-top: 0.5em solid #8B2332;
+      border-left: 0.5em solid transparent;
+      border-right: 0.5em solid transparent;
+      margin-left: -0.5em; }
+    .tooltip.tooltip-no-border:before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-top: 0.5em solid false;
+      border-left: 0.5em solid transparent;
+      border-right: 0.5em solid transparent;
+      margin-left: -0.5em; }
 
 /*--------------------------------------------------------------
     6.4 Page Templates

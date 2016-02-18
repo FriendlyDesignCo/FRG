@@ -84,11 +84,13 @@ get_header(); ?>
 	</style>
 	<section class="section careers-section slide-1 section-wrap">
 		<div class="section-inner">
+		
 			<h2 class="small"><?php the_field('hero_header_line_1'); ?></h2>
 			<h2 class="small"><?php the_field('hero_header_line_2'); ?></h2>
 			<p class="text-red"><?php the_field('hero_paragraph'); ?></p>
 			<a class="button " href="<?php the_field('apply_link'); ?>">Apply</a>
 			<p class="text-red medium"><?php the_field('scroll_more_text'); ?></p>
+
 			<div class="arrow-wrap">
 				<div class="arrow arrow-red"></div>
 				<div class="arrow arrow-red"></div>
@@ -121,7 +123,7 @@ get_header(); ?>
 					<?php $dot_number = 0; ?>
 					<?php while( have_rows('career_path') ): the_row(); ?>
 						<?php ++$dot_number ?>
-						<li class="dot-<?php echo $dot_number;?>"><a href="#slide<?php echo $dot_number;?>"></a></li>
+						<li class="dot-<?php echo $dot_number;?> tooltip-attached"><a href="#slide<?php echo $dot_number;?>"></a><span class="tooltip tooltip-no-border"><?php the_sub_field('career_title'); ?></span></li>
 					<?php endwhile; ?>
 					<?php endif; ?>
 					</ul>

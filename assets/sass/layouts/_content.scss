@@ -576,7 +576,7 @@ ul.positions {
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 231, 204,.6);
+        background-color: rgba(255, 231, 204,.7);
         z-index: 0;
     }
     @include media($md) {
@@ -1169,8 +1169,8 @@ ul.job-list-dots {
 .nav-dots ul li {
   display: inline-block;
   margin: 0 10px;
-  overflow: hidden;
-  text-indent: -999em;
+  //overflow: hidden;
+  //text-indent: -999em;
   cursor: pointer;
   vertical-align: middle; 
 }
@@ -1903,3 +1903,126 @@ ul.job-list-dots {
         }
     }
 }
+
+
+
+
+
+// tooltip
+// Mixins
+
+@mixin tooltip($background-color: white,
+               $arrow-base: 2em,
+               $arrow-length: 1em,
+               $border-width: 0,
+               $border-color: false) {
+  
+  position: absolute;
+  box-sizing: border-box;
+  margin-bottom: $arrow-length;
+  background-color: $background-color;
+  cursor: default;
+  visibility: hidden;
+  
+  &:after {
+    content: "";
+    position: absolute;
+    top: 100%; left: 50%;
+    width: 0; height: 0;
+    border-top: ($arrow-length - $border-width) solid $background-color;
+    border-left: ($arrow-base / 2 - $border-width) solid transparent;
+    border-right: ($arrow-base / 2 - $border-width) solid transparent;
+    margin-left: ($border-width - $arrow-base / 2);
+  }
+  
+  @if $border-width {
+    border: $border-width solid $border-color;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: 100%; left: 50%;
+      width: 0; height: 0;
+      border-top: $arrow-length solid $border-color;
+      border-left: ($arrow-base / 2) solid transparent;
+      border-right: ($arrow-base / 2) solid transparent;    
+      margin-left: ($arrow-base / -2);
+    }
+  }
+}
+
+// Mixins for prefixes
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($animation-values) {
+  -webkit-animation: $animation-values;
+  animation: $animation-values;
+}
+
+@mixin transform($transform-values...) {
+  -webkit-transform: $transform-values;
+  transform: $transform-values;
+}
+
+// Animations
+
+@include keyframes(slide-up) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(1em));
+  }
+  100% {
+    opacity: 1;
+    @include transform(translateY(0));
+  }
+}
+
+// Example
+
+
+.tooltip-attached {
+  position: relative;
+  
+  &:hover {
+    .tooltip {
+      visibility: visible;
+      @include animation(slide-up .3s);
+    }
+  }
+}
+
+.tooltip {
+  left: 50%;
+  bottom: 100%; // on top
+  width: 12em;
+  margin-left: -6em; // center the tooltip
+  padding: .5em .75em;
+  box-shadow: 0 .05em .15em rgba($dark-red, .1);
+  text-align: center;
+  font-family: "Gotham";
+  white-space: normal;
+  line-height: 1.2em;
+  @include fontSize(12px);
+  &.tooltip-border {
+    @include tooltip(white, 1.5em, .75em, .1em, #ccc);
+    color: #333;
+  }
+  
+  &.tooltip-no-border {
+    @include tooltip($dark-red, 1em, .5em);
+    color: $tan;
+  }
+}
+
+
+
+
