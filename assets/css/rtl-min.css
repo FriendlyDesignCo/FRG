@@ -264,7 +264,7 @@ h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';
 }.case-study-card-expanded .inner-blurb{float:left;font-family:"adobe-caslon-pro";font-style:italic;background-color:#9d4446;line-height:1em}
 @media screen and (min-width:48em){.case-study-card-expanded .inner-blurb{font-size:24px;font-size:1.5rem;font-weight:500;width:40%;padding:20px;height:175px}
 }.case-study-card-expanded .case-study-paragraph{float:right;font-family:"GothamNarrow";font-weight:300}
-@media screen and (min-width:48em){.case-study-card-expanded .case-study-paragraph{width:60%;font-size:17px;font-size:1.0625rem;line-height:1.4em;padding:0 50px;height:175px}
+@media screen and (min-width:48em){.case-study-card-expanded .case-study-paragraph{width:60%;font-size:17px;font-size:1.0625rem;line-height:1.4em;padding:0 20px 0 50px;height:175px}
 }.close-button{position:absolute;top:0;right:0;background-color:#9d4446;color:#ffe7cc;text-transform:uppercase;font-family:"Gotham";font-weight:bold;font-size:14px;font-size:.875rem;padding:0 25px;cursor:pointer}
 ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none;float:right}
 @media screen and (min-width:48em){ul.job-list-dots{float:none;margin-bottom:70px;width:100%;display:table}
