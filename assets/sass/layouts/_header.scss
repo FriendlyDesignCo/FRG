@@ -88,7 +88,7 @@ header#masthead {
         transition: all .4s;
         position: absolute;
         ///////////display: none;
-        background-color: $light-red;
+        //background-color: $light-red;
         height: calc(100vh - 50px);
         width: 100%;
         @include media($md) {
@@ -97,6 +97,8 @@ header#masthead {
             position: relative;
             display: block;
             height: auto;
+            //overflow-x: hidden;
+            float: right;
         }
     }
    
@@ -135,6 +137,7 @@ header#masthead {
         @include media($md) {
             display: inline;
             float: right;
+            float: left;
         }
         
         //padding: 15px 3%;
@@ -160,6 +163,12 @@ header#masthead {
             }
             
         }
+    }
+    .sub-menu {
+        a {
+            padding: 20px 25px;
+        }
+
     }
 }
 .menu-list {
@@ -193,9 +202,11 @@ ul.sub-menu {
     //margin: 0 auto !important;
     width: 200px;
     a {
+        border-top: none !important;
         color: $tan !important;
         display: block;
         padding: 15px 25px;
+        line-height: 1.2em;
     }
     li {
         display: block !important;

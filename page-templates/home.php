@@ -265,9 +265,11 @@ get_header(); ?>
 				</div>
 			</div>
 			<script>
+
 				new ScrollMagic.Scene({triggerElement: "#ingredient-trigger", duration: "200%"})
 							.setPin(".desktop-screen .ingredients-wrap")
-							.addTo(controller);					
+							.addTo(controller);	
+						
 				new ScrollMagic.Scene({triggerElement: "#ingredient-trigger", duration: "220%"})
 							.setPin(".mobile-screen .ingredients-wrap")
 							.addTo(controller);					
@@ -277,9 +279,6 @@ get_header(); ?>
 
 	<section class="home-section slide-6">
 		<div id="ingredient-bold-trigger"></div>
-		<div class="home-section-inner">
-			<h2><?php the_field('slide_6_header'); ?></h2>
-		</div>
 		<script>
 			new ScrollMagic.Scene({triggerElement: "#ingredient-trigger"})
 						.setTween(".ingredients-row p", {opacity: .2, borderColor: "rgba(255,231,204, 0.2)" })

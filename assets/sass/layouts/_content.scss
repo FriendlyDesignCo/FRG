@@ -166,9 +166,14 @@ button#load-more.done {
 }
 
 .slide-8 {
+    
+    @include media($md) {
+        padding-top: 20vh;    
+    }
     height: auto;
     h2 {
         @include fontSize(32px);
+        margin-bottom: 50px;
         @include media($md) {
             @include fontSize(40px);
         }

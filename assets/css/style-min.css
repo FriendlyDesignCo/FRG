@@ -101,18 +101,19 @@ body.home header#masthead.not-scrolled .menu-menu-1-container li{float:none;disp
 body.home header#masthead.not-scrolled .menu-menu-1-container li.menu-item-has-children{padding-bottom:15px}
 body.home header#masthead.not-scrolled .menu-menu-1-container .sub-menu{position:absolute}
 }header#masthead{float:left;width:100%;position:fixed;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);top:0;left:0;z-index:999}
-header#masthead .hide-scroll{display:none}header#masthead .show-scroll{transition:all .4s;position:absolute;background-color:#9d4446;height:calc(100vh - 50px);width:100%}
-@media screen and (min-width:48em){header#masthead .show-scroll{width:auto;background-color:none;position:relative;display:block;height:auto}
+header#masthead .hide-scroll{display:none}header#masthead .show-scroll{transition:all .4s;position:absolute;height:calc(100vh - 50px);width:100%}
+@media screen and (min-width:48em){header#masthead .show-scroll{width:auto;background-color:none;position:relative;display:block;height:auto;float:right}
 }#primary-nav{position:relative}#secondary-nav{background-color:#8b2332;float:left;width:100%}
 .menu-menu-1-container{font-family:'Gotham';font-size:16px;font-size:1rem}
 .menu-menu-1-container a{color:#ffe7cc;text-transform:uppercase}.menu-menu-1-container ul{padding:0;margin:0}
-.menu-menu-1-container li{list-style-type:none;position:relative}@media screen and (min-width:48em){.menu-menu-1-container li{display:inline;float:right}
+.menu-menu-1-container li{list-style-type:none;position:relative}@media screen and (min-width:48em){.menu-menu-1-container li{display:inline;float:right;float:left}
 }#menu-menu-2 a{display:block;padding:15px 25px}@media screen and (min-width:48em){#menu-menu-2>li a{border-top:3px solid #8b2332}
-}#menu-menu-2>li:hover>a{border-top:3px solid #ffe7cc}.menu-list{position:relative}
-.menu-list li:hover .sub-menu{display:block}.menu-list li:hover>a{color:#ffe7cc;font-weight:bold;text-decoration:none}
+}#menu-menu-2>li:hover>a{border-top:3px solid #ffe7cc}#menu-menu-2 .sub-menu a{padding:20px 25px}
+.menu-list{position:relative}.menu-list li:hover .sub-menu{display:block}.menu-list li:hover>a{color:#ffe7cc;font-weight:bold;text-decoration:none}
 ul.sub-menu{display:none;position:absolute;background-color:#8b2332;top:30px;left:50%;margin-left:-100px;text-align:center;width:200px}
-ul.sub-menu a{color:#ffe7cc !important;display:block;padding:15px 25px}ul.sub-menu li{display:block !important;float:none}
-ul.sub-menu li:hover{background-color:#9d4446}#primary-nav{display:none}@media screen and (min-width:48em){#primary-nav{display:block}
+ul.sub-menu a{border-top:none !important;color:#ffe7cc !important;display:block;padding:15px 25px;line-height:1.2em}
+ul.sub-menu li{display:block !important;float:none}ul.sub-menu li:hover{background-color:#9d4446}
+#primary-nav{display:none}@media screen and (min-width:48em){#primary-nav{display:block}
 }#primary-nav .logo{width:180px;position:relative;padding:10px;float:left;display:none}
 #primary-nav .logo a{display:block}#primary-nav .logo .light{display:block}#secondary-nav{display:block;position:fixed;top:0;left:0;transition:all .4s}
 @media screen and (min-width:48em){#secondary-nav{-webkit-transform:translateY(-60px);transform:translateY(-60px)}
@@ -173,7 +174,8 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 }.home-section{height:100vh}.home-section.hero{background-repeat:no-repeat;background-size:cover}
 @media screen and (min-width:48em){.home-section.hero{background-position:center}
 }.hero{text-align:center;padding-top:30vh}.hero h3{font-family:"adobe-caslon-pro";color:#fffdd4;text-transform:uppercase;margin:0}
-.slide-8{height:auto}.slide-8 h2{font-size:32px;font-size:2rem}@media screen and (min-width:48em){.slide-8 h2{font-size:40px;font-size:2.5rem}
+.slide-8{height:auto}@media screen and (min-width:48em){.slide-8{padding-top:20vh}
+}.slide-8 h2{font-size:32px;font-size:2rem;margin-bottom:50px}@media screen and (min-width:48em){.slide-8 h2{font-size:40px;font-size:2.5rem}
 }.slide-8-block{display:inline-block;overflow:hidden;background-size:cover;position:relative;width:100%;height:550px;float:none}
 @media screen and (min-width:48em){.slide-8-block{height:0;width:32%;padding-bottom:32%}
 }.slide-8-block .slide-8-header{transition:all .3s;position:relative}@media screen and (min-width:48em){.slide-8-block .slide-8-header{top:60%}

@@ -376,7 +376,9 @@ add_action( 'tha_head_bottom', 'some_like_it_neat_add_selectivizr' );
 
 function my_reverse_nav_menu($menu, $args) {
 if (isset($args->reverse) && $args->reverse) {
-return array_reverse($menu);
+	
+	return array_reverse($menu);
+
 }
 return $menu;
 }
