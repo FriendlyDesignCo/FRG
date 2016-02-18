@@ -2310,10 +2310,14 @@ ul.job-list-dots {
   top: 0;
   height: 80%;
   width: 30vw;
-  z-index: 2; }
+  z-index: 2;
+  overflow-y: hidden; }
   @media screen and (min-width: 48em) {
     .sprinkler-animation {
-      height: 100%; } }
+      right: initial;
+      left: 70vw;
+      height: 70%;
+      bottom: 30vh; } }
   .sprinkler-animation .water {
     background-position: center;
     background-repeat: no-repeat;
@@ -2325,28 +2329,32 @@ ul.job-list-dots {
             transform-origin: center bottom;
     position: absolute;
     display: none;
-    bottom: 30vh;
+    bottom: 10%;
     transition: all 1.5s;
     transition-delay: .2s; }
     @media screen and (min-width: 48em) {
       .sprinkler-animation .water {
         display: block;
-        left: 125px; } }
+        left: 30%; } }
     .sprinkler-animation .water.animated {
       -webkit-transform: scale(1);
               transform: scale(1);
       opacity: 0; }
   .sprinkler-animation .sprinkler {
-    background-position: right;
+    background-position: center bottom;
     background-repeat: no-repeat;
-    height: 0;
+    height: 50px;
     width: 100%;
     position: absolute;
-    right: 70px;
     display: none;
-    bottom: 20vh; }
+    bottom: 0;
+    left: 30%;
+    transition: all .3s;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px); }
     .sprinkler-animation .sprinkler.animated {
-      height: 50px; }
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
     @media screen and (min-width: 48em) {
       .sprinkler-animation .sprinkler {
         display: block; } }
@@ -2375,7 +2383,9 @@ ul.job-list-dots {
     opacity: 0; }
     @media screen and (min-width: 48em) {
       .sprinkler-animation .corn {
-        width: 150px;
+        bottom: 0;
+        width: 100%;
+        background-size: 150px;
         height: 80%; } }
   .sprinkler-animation.step-1 {
     opacity: 1; }
