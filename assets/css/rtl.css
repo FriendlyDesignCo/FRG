@@ -3215,7 +3215,11 @@ footer {
   float: right ;
   margin: 0 auto;
   padding: 0 40px;
-  width: 100%; }
+  width: 100%;
+  background-color: #8B2332;
+  color: #FFE7CC; }
+  footer p {
+    margin: 0; }
   footer .site-info {
     margin: auto;
     width: 100%; }
@@ -3241,6 +3245,24 @@ footer {
     text-align: left; }
     footer .footer-right:last-child {
       margin-right: 0; }
+  footer .copyright {
+    font-size: 12px;
+    font-size: 0.75rem;
+    font-family: "Gotham"; }
+
+.menu-footer-menu-container {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: "Gotham";
+  text-transform: uppercase; }
+  .menu-footer-menu-container ul {
+    list-style-type: none;
+    padding: 0; }
+  .menu-footer-menu-container li {
+    padding-right: 10px;
+    display: inline-block; }
+  .menu-footer-menu-container a {
+    color: #FFE7CC; }
 
 /*--------------------------------------------------------------
     6.7 Accessibility

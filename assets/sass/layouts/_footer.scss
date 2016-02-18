@@ -3,6 +3,11 @@ footer {
     margin: 0 auto;
     padding: 0 40px;
     width: 100%;
+    background-color: $dark-red;
+    color: $tan;
+    p {
+        margin: 0;
+    }
     .site-info {
         margin: auto;
         width: 100%;
@@ -20,5 +25,26 @@ footer {
         margin-bottom: 40px;
         padding: 10px;
         @include text-align(right);
+    }
+    .copyright {
+        @include fontSize(12px);
+        font-family: "Gotham";
+    }
+}
+
+.menu-footer-menu-container {
+    @include fontSize(14px);
+    font-family: "Gotham";
+    text-transform: uppercase;
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        padding-right: 10px;
+        display: inline-block;
+    }
+    a {
+        color: $tan;
     }
 }

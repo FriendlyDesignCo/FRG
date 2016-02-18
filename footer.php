@@ -20,18 +20,18 @@
 		<?php tha_footer_top(); ?>
 
 			<section class="site-info">
-
-				<?php do_action( 'some_like_it_neat_credits' ); ?>
-
-				<?php if ( 'no' === get_theme_mod( 'some-like-it-neat_hide_WordPress_credits' ) ) : ?>
-					<a class="wordpress" href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s WordPress', 'some-like-it-neat' ), '<span class="genericon genericon-wordpress"></span>' ); ?></a>
-					<span class="sep"> | </span>
-				<?php endif; ?>
-
-				<?php echo esc_attr( get_theme_mod( 'some_like_it_neat_footer_colophon', __( 'Some Like it Neat, by Alex Vasquez', 'some-like-it-neat' ) ) );  ?><br />
-
-				<?php tha_footer_bottom(); ?>
-
+				<div class="footer-left">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'footer-navigation',
+							'menu_class' => 'hide-scroll menu-list', //Adding the class for FlexNav
+							'items_wrap' => '<ul data-breakpoint=" '. esc_attr( get_theme_mod( 'some_like_it_neat_mobile_min_width', '768' ) ) .' " id="%1$s" class="%2$s">%3$s</ul>', // Adding data-breakpoint for FlexNav
+						)
+					); ?>
+					<p class="copyright">Copyright &#169; <?php echo date("Y") ?> Farmers Restaurant Group | Restaurant Consulting</p>
+				</div>
+				
 			</section><!-- .site-info -->
 
 		</footer><!-- #colophon -->

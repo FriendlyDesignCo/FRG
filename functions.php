@@ -69,6 +69,7 @@ if ( ! function_exists( 'some_like_it_neat_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menu( 'primary-navigation', __( 'Primary Menu', 'some-like-it-neat' ) );
+		register_nav_menu( 'footer-navigation', __( 'Footer Menu', 'some-like-it-neat' ) );
 
 		// Enable support for Post Formats.
 		if ( 'yes' === get_theme_mod( 'some-like-it-neat_post_format_support' ) ) {
