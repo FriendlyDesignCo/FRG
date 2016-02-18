@@ -376,7 +376,7 @@ add_action( 'tha_head_bottom', 'some_like_it_neat_add_selectivizr' );
 
 function my_reverse_nav_menu($menu, $args) {
 if (isset($args->reverse) && $args->reverse) {
-	
+
 	return array_reverse($menu);
 
 }
@@ -389,10 +389,18 @@ add_filter('wp_nav_menu_objects', 'my_reverse_nav_menu', 10, 2);
 function sidebar_text( $atts, $content = null ) {
 	$blog_ID = get_the_ID ();
 	$sidebar_content = get_field('quote_text', $blog_ID);
+	if (strlen($sidebar_content) > 113) {
+		$sidebar_content_trimed = substr( $sidebar_content, 0, 112)."..";
+	}
+	else {
+		$sidebar_content_trimed =  $sidebar_content;
+	}
+	
 	if(get_field('quote_attribution_name', $blog_ID) != "") {
 		$quote_attribution_name = get_field('quote_attribution_name', $blog_ID);
 		$quote_attribution_position = get_field('quote_attribution_position', $blog_ID);
-		return '<div class="sidebar-text right">'.$sidebar_content.'<div class="quote-attribution"><p class="name">'. $quote_attribution_name .'</p><p class="position">'. $quote_attribution_position .'</p></div><div class="twitter-icon"></div></div>';
+		return "<div class='sidebar-text right'><a href=\"
+	https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink()) ?>&related=twitterapi%2Ctwitter&text=" . htmlspecialchars(urlencode(html_entity_decode(strip_tags($sidebar_content_trimed ), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8'). " \"onclick=\"javascript:void window.open('https://twitter.com/intent/tweet?url=". urlencode(get_permalink()). "&related=twitterapi%2Ctwitter&text=" . htmlspecialchars(urlencode(html_entity_decode(strip_tags($sidebar_content_trimed), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8') . "','1449506432730','width=845,height=500,toolbar=0,menubar=0,location=0,status=1,scrollbars=1,resizable=1,left=0,top=0');return false;\">".$sidebar_content."<div class='quote-attribution'><p class='name'>". $quote_attribution_name ."</p><p class='position'>". $quote_attribution_position ."</p></div><div class='twitter-icon'></div></a></div>";
 	}
 	else {
 		return '<div class="sidebar-text right">'.$sidebar_content.'</div>';

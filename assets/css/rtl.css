@@ -2564,8 +2564,11 @@ ul.job-list-dots {
   position: relative; }
   @media screen and (min-width: 48em) {
     .sidebar-text {
-      width: 250px;
-      padding: 20px 20px 50px; } }
+      width: 250px; } }
+  .sidebar-text a {
+    display: block;
+    padding: 20px 20px 50px;
+    color: #FFE7CC; }
   .sidebar-text.right {
     margin-left: 20px; }
   .sidebar-text.left {

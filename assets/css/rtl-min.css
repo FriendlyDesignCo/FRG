@@ -310,8 +310,8 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .blog-list .category a{color:#9d4446}.blog-list .sub-title{font-size:16px;font-size:1rem}
 @media screen and (min-width:48em){.blog-list .sub-title{font-size:20px;font-size:1.25rem}
 }.sidebar-text{background-color:#9d4446;color:#ffe7cc;border-radius:20px;line-height:1.2em;font-family:"adobe-caslon-pro";font-style:italic;position:relative}
-@media screen and (min-width:48em){.sidebar-text{width:250px;padding:20px 20px 50px}
-}.sidebar-text.right{margin-left:20px}.sidebar-text.left{margin-right:20px}.sidebar-text .twitter-icon{content:"";position:absolute;width:20px;height:20px;background-size:cover;background-position:center;right:20px;bottom:10px}
+@media screen and (min-width:48em){.sidebar-text{width:250px}}.sidebar-text a{display:block;padding:20px 20px 50px;color:#ffe7cc}
+.sidebar-text.right{margin-left:20px}.sidebar-text.left{margin-right:20px}.sidebar-text .twitter-icon{content:"";position:absolute;width:20px;height:20px;background-size:cover;background-position:center;right:20px;bottom:10px}
 .quote-attribution{margin-top:10px}.quote-attribution p{margin:0;line-height:1.2em}
 .quote-attribution .name{font-family:"Gotham";font-weight:500;font-style:normal;font-size:14px;font-size:.875rem}
 .quote-attribution .position{font-family:"Gotham";font-weight:500;font-style:normal;font-size:11px;font-size:.6875rem}

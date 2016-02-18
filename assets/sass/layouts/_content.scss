@@ -1295,7 +1295,11 @@ ul.job-list-dots {
     position: relative;
     @include media($md) {
         width: 250px;
+    }
+    a {
+        display: block;
         padding: 20px 20px 50px;
+        color: $tan;
     }
     &.right {
         margin-left: 20px;
