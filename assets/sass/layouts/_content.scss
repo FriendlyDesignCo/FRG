@@ -413,6 +413,11 @@ button#load-more.done {
     }
 }
 
+.hidden-ingredient {
+    transform: scale(0);
+    position: absolute;
+}
+
 #ingredient-trigger {
     position: absolute;
     top: 50vh;

@@ -876,8 +876,7 @@ body {
   background-color: #fff;
   color: #000;
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  line-height: 1.5em;
-  word-break: break-word; }
+  line-height: 1.5em; }
 
 #page {
   max-width: 100%;
@@ -1794,6 +1793,11 @@ button#load-more.done {
       clear: both;
       content: "";
       display: table; } }
+
+.hidden-ingredient {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute; }
 
 #ingredient-trigger {
   position: absolute;

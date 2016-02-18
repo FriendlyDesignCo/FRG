@@ -262,6 +262,10 @@ get_header(); ?>
 					<?php endwhile ?>
 					<?php endif ?>
 					<!-- end cookie ingredient loop -->
+					<div class="ingredients-row">
+						<p class="highlighted hidden-ingredient hidden-1"><?php the_field('hidden_ingredient_1'); ?></p>
+						<p class="highlighted hidden-ingredient hidden-2"><?php the_field('hidden_ingredient_2'); ?></p>
+					</div>
 				</div>
 			</div>
 			<script>
@@ -317,7 +321,13 @@ get_header(); ?>
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".desktop-screen p#highlighted21", { x: "-170%", y: "-50%", scale: 1.66 })
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".desktop-screen p.hidden-1", { x: "-460%", y: "-50%", scale: 1.86 })
 						.addTo(controller);		
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".desktop-screen p.hidden-2", { x: "-360%", y: "-220%", scale: 1.86 })
+						.addTo(controller);				
 			// mobile 	
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".mobile-screen p#highlighted2", { x: "-105%", y: "20%", scale: 1.4 })

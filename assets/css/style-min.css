@@ -74,7 +74,7 @@ h4{font-family:"Gotham"}h4.large{font-size:24px;font-size:1.5rem}
 h4.small{font-size:16px;font-size:1rem}.text-featured{color:#8b2332;font-family:"GothamNarrow"}
 #content h4{text-transform:uppercase}.button,#load-more{border-radius:5px;background-color:#8b2332;color:#ffe7cc !important;text-transform:uppercase;display:inline-block;padding:15px 40px;font-size:17px;font-size:1.0625rem;font-family:"Gotham";font-weight:500;transition:all .3s}
 .button:hover,#load-more:hover{background-color:#9d4446;text-decoration:none}.infinite-scroll #navigation,.infinite-scroll.neverending #footer{display:none}
-.infinity-end.neverending #footer{display:block}body{background-color:#fff;color:#000;font-family:"Georgia","Cambria","Times New Roman","Times",serif;line-height:1.5em;word-break:break-word}
+.infinity-end.neverending #footer{display:block}body{background-color:#fff;color:#000;font-family:"Georgia","Cambria","Times New Roman","Times",serif;line-height:1.5em}
 #page{max-width:100%;margin-left:auto;margin-right:auto;overflow:hidden;padding-top:50px}
 @media screen and (min-width:48em){#page{padding-top:0}}#primary{margin:0 auto;width:100%}
 #primary::after{clear:both;content:"";display:table}@media screen and (min-width:0){#primary{float:left;display:block;margin-right:14.28571%;width:100%}
@@ -204,7 +204,8 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 #cookie-trigger-2{position:absolute;top:100vh}#ingredient-position-trigger{position:absolute;top:0}
 @media screen and (min-width:48em){.ingredients-inner{max-width:900px;margin-left:auto;margin-right:auto}
 .ingredients-inner::after{clear:both;content:"";display:table}
-}#ingredient-trigger{position:absolute;top:50vh}#ingredient-bold-trigger{position:absolute;top:50vh}
+}.hidden-ingredient{-webkit-transform:scale(0);transform:scale(0);position:absolute}
+#ingredient-trigger{position:absolute;top:50vh}#ingredient-bold-trigger{position:absolute;top:50vh}
 .ingredients-row{float:left;margin:5px 0;position:relative}.ingredients-row p{width:auto;color:#ffe7cc;text-transform:uppercase;font-family:"Gotham";float:left;padding:0 3.18vw;margin:0;line-height:1em;opacity:1}
 @media screen and (min-width:48em){.ingredients-row p{padding:0 17px}}.ingredients-row p.highliged{opacity:1}
 .ingredients-row p+p{border-left:2px solid #ffe7cc}.ingredients-row:nth-of-type(1) p{font-size:3.14vw}

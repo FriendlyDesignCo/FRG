@@ -1797,6 +1797,11 @@ button#load-more.done {
       content: "";
       display: table; } }
 
+.hidden-ingredient {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute; }
+
 #ingredient-trigger {
   position: absolute;
   top: 50vh; }
