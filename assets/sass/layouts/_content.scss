@@ -43,7 +43,8 @@ button#load-more.done {
 }
 
 .numbers-counting {
-    @include fontSize(70px);
+    //@include fontSize(70px);
+    font-size: 22vw;
     margin: 0;
     color: #FFFDD4;
     @include media($md) {
@@ -178,7 +179,7 @@ button#load-more.done {
     
     display: inline-block;
     overflow: hidden;
-    
+    background-size: cover;
     position: relative;
     width: 100%;
     height: 550px;
@@ -563,9 +564,21 @@ ul.positions {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: $tan;
+    //background-color: $tan;
     position: absolute;
     padding: 5vh 5%;
+    
+    background-size: cover;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 231, 204,.6);
+        z-index: 0;
+    }
     @include media($md) {
         padding: 30vh 0 0;
     }

@@ -150,7 +150,7 @@ get_header(); ?>
 			<?php while( have_rows('career_path') ): the_row(); ?>
 			<?php ++$slide_number ?>
 			
-			<div class="section careers-section career-slide career-slide-<?php echo $slide_number;?>">
+			<div class="section careers-section career-slide career-slide-<?php echo $slide_number;?>" style="background-image: url('<?php the_field('background_image'); ?>')">
 
 				
 				<div class="section-inner ">
