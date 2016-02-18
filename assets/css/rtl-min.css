@@ -258,7 +258,7 @@ h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';
 .case-study-card-blurb{float:right;width:75%;padding:15px}@media screen and (min-width:48em){.case-study-card-blurb{padding:10px}
 }.case-study-card-expanded{position:absolute;background-color:#8b2332;color:#ffe7cc;display:block;left:0;bottom:0;z-index:99;transition:all .3s;-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:bottom left;transform-origin:bottom left;padding:70px 10px 0;height:75vh;width:90vw;overflow-y:scroll}
 .case-study-card-expanded p{font-size:18px;font-size:1.125rem}@media screen and (min-width:48em){.case-study-card-expanded p{font-size:14px;font-size:.875rem}
-}@media screen and (min-width:48em){.case-study-card-expanded{left:100px;bottom:0;padding:70px 70px 0;height:auto;width:75vw;overflow:visible}
+}@media screen and (min-width:48em){.case-study-card-expanded{left:100px;bottom:0;padding:140px 70px 0;height:auto;width:75vw;overflow:visible}
 }.case-study-card-expanded.expanded{-webkit-transform:scale(1);transform:scale(1)}
 .case-study-card-expanded .case-study-card-image{position:absolute;top:0;cursor:inherit;padding:0;left:0;width:70px;height:70px}
 @media screen and (min-width:48em){.case-study-card-expanded .case-study-card-image{top:initial;left:-100px;bottom:0;width:175px;height:175px}
