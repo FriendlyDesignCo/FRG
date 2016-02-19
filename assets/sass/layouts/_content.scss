@@ -1367,10 +1367,11 @@ ul.job-list-dots {
     width: 30%;
     float: left;
     height: 200px;
-    transition: all 1.5s;
-    transform: translateY(-150px);
-    opacity: 0;
+    
     @include media($md) {
+        transition: all 1.5s;
+        transform: translateY(-150px);
+        opacity: 0;
         height: 100%;
         width: 25%;
         

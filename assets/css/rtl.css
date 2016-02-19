@@ -1088,8 +1088,9 @@ header#masthead {
   #menu-menu-2 > li a {
     border-top: 3px solid #8B2332; } }
 
-#menu-menu-2 > li:hover > a {
-  border-top: 3px solid #FFE7CC; }
+@media screen and (min-width: 48em) {
+  #menu-menu-2 > li:hover > a {
+    border-top: 3px solid #FFE7CC; } }
 
 #menu-menu-2 .sub-menu a {
   padding: 20px 25px; }
@@ -2624,13 +2625,13 @@ ul.job-list-dots {
   background-position: center;
   width: 30%;
   float: left;
-  height: 200px;
-  transition: all 1.5s;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  opacity: 0; }
+  height: 200px; }
   @media screen and (min-width: 48em) {
     .beverage-image {
+      transition: all 1.5s;
+      -webkit-transform: translateY(-150px);
+              transform: translateY(-150px);
+      opacity: 0;
       height: 100%;
       width: 25%; } }
   .beverage-image.slide-down {

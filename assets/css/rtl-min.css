@@ -108,9 +108,9 @@ header#masthead .hide-scroll{display:none}header#masthead .show-scroll{transitio
 .menu-menu-1-container a{color:#ffe7cc;text-transform:uppercase}.menu-menu-1-container ul{padding:0;margin:0}
 .menu-menu-1-container li{list-style-type:none;position:relative}@media screen and (min-width:48em){.menu-menu-1-container li{display:inline;float:right;float:left}
 }#menu-menu-2 a{display:block;padding:15px 25px}@media screen and (min-width:48em){#menu-menu-2>li a{border-top:3px solid #8b2332}
-}#menu-menu-2>li:hover>a{border-top:3px solid #ffe7cc}#menu-menu-2 .sub-menu a{padding:20px 25px}
-.menu-list{position:relative}.menu-list li:hover .sub-menu{display:block}.menu-list li:hover>a{color:#ffe7cc;font-weight:bold;text-decoration:none}
-ul.sub-menu{display:none;position:absolute;background-color:#8b2332;top:30px;left:50%;margin-left:-100px;text-align:center;width:200px}
+}@media screen and (min-width:48em){#menu-menu-2>li:hover>a{border-top:3px solid #ffe7cc}
+}#menu-menu-2 .sub-menu a{padding:20px 25px}.menu-list{position:relative}.menu-list li:hover .sub-menu{display:block}
+.menu-list li:hover>a{color:#ffe7cc;font-weight:bold;text-decoration:none}ul.sub-menu{display:none;position:absolute;background-color:#8b2332;top:30px;left:50%;margin-left:-100px;text-align:center;width:200px}
 ul.sub-menu a{border-top:none !important;color:#ffe7cc !important;display:block;padding:15px 25px;line-height:1.2em}
 ul.sub-menu li{display:block !important;float:none}ul.sub-menu li:hover{background-color:#9d4446}
 #primary-nav{display:none}@media screen and (min-width:48em){#primary-nav{display:block}
@@ -317,8 +317,9 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .quote-attribution .name{font-family:"Gotham";font-weight:500;font-style:normal;font-size:14px;font-size:.875rem}
 .quote-attribution .position{font-family:"Gotham";font-weight:500;font-style:normal;font-size:11px;font-size:.6875rem}
 .beverages-section h2{font-size:28px;font-size:1.75rem}@media screen and (min-width:48em){.beverages-section h2{font-size:62px;font-size:3.875rem}
-}.beverages-section.slide-1 p{color:#8b2332;line-height:1.4em}.beverage-image{background-size:contain;background-repeat:no-repeat;background-position:center;width:30%;float:left;height:200px;transition:all 1.5s;-webkit-transform:translateY(-150px);transform:translateY(-150px);opacity:0}
-@media screen and (min-width:48em){.beverage-image{height:100%;width:25%}}.beverage-image.slide-down{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}
+}.beverages-section.slide-1 p{color:#8b2332;line-height:1.4em}.beverage-image{background-size:contain;background-repeat:no-repeat;background-position:center;width:30%;float:left;height:200px}
+@media screen and (min-width:48em){.beverage-image{transition:all 1.5s;-webkit-transform:translateY(-150px);transform:translateY(-150px);opacity:0;height:100%;width:25%}
+}.beverage-image.slide-down{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}
 .beverage-slide{padding-top:15vh;padding-bottom:5vh;background-size:cover;background-position:center;overflow:hidden}
 .beverage-slide:after{content:"";position:absolute;left:0;top:0;z-index:1;width:100%;height:100%;background-color:rgba(255,231,204,0.8)}
 .beverage-slide .section-inner{position:relative;z-index:2}.beverage-info{width:100%;position:relative}

@@ -159,7 +159,9 @@ header#masthead {
         }
         &:hover {
              > a {
-                border-top: 3px solid $tan;    
+                @include media($md) {
+                    border-top: 3px solid $tan;        
+                }
             }
             
         }
