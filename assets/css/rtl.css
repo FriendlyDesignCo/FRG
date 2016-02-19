@@ -2624,17 +2624,26 @@ ul.job-list-dots {
   background-position: center;
   width: 30%;
   float: left;
-  height: 200px; }
+  height: 200px;
+  transition: all 1.5s;
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  opacity: 0; }
   @media screen and (min-width: 48em) {
     .beverage-image {
       height: 100%;
       width: 25%; } }
+  .beverage-image.slide-down {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1; }
 
 .beverage-slide {
   padding-top: 15vh;
   padding-bottom: 5vh;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  overflow: hidden; }
   .beverage-slide:after {
     content: "";
     position: absolute;
@@ -2643,7 +2652,7 @@ ul.job-list-dots {
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 231, 204, 0.6); }
+    background-color: rgba(255, 231, 204, 0.8); }
   .beverage-slide .section-inner {
     position: relative;
     z-index: 2; }

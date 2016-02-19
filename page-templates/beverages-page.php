@@ -15,10 +15,29 @@ get_header(); ?>
 		(function($) {
 			
 		    $(document).ready(function() {
-			    
-			   	 $('#fullpage').fullpage({
+			    if ($(window).width() < 1059) {
+		             $('body').addClass("mobile-screen");
+		        }
+		        else {
+		        	$('body').addClass("desktop-screen");	
+		        }
+			   	 $('.desktop-screen #fullpage').fullpage({
 			   	 	verticalCentered: false,
-			   	 	sectionSelector: '.beverages-section'
+			   	 	sectionSelector: '.beverages-section',
+			   	 	onLeave: function(index, nextIndex, direction){
+			            var leavingSection = $(this);
+
+			            $(".slide-"+nextIndex+" .beverage-image").addClass("slide-down");
+			            $(".slide-"+index+" .beverage-image").removeClass("slide-down");
+			            //after leaving section 2
+			            if(index == 2 && direction =='down'){
+			                //alert("Going to section 3!");
+			            }
+
+			            else if(index == 2 && direction == 'up'){
+			                //alert("Going to section 1!");
+			            }
+			        }
 			   	 });
 			});
 			    
@@ -57,7 +76,7 @@ get_header(); ?>
 		<?php if( have_rows('drinks') ): ?>
 		<?php $slide_number = 2; ?>
 		<?php while( have_rows('drinks') ): the_row(); ?>
-		<section class="section beverages-section beverage-slide section-wrap slide-"  style="background-image:url('<?php echo the_sub_field('background_image'); ?>')">
+		<section class="section beverages-section beverage-slide section-wrap slide-<?php echo $slide_number ?>"  style="background-image:url('<?php echo the_sub_field('background_image'); ?>')">
 			<div class="section-inner ">
 				<div class="beverage-image" style="background-image:url('<?php echo the_sub_field('drink_image'); ?>')">
 				</div>
@@ -94,7 +113,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-		<?php endwhile; ?>
+		<?php ++$slide_number; endwhile; ?>
 		<?php endif; ?>
 	</div>
 </div>
