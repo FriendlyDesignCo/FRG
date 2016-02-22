@@ -91,10 +91,12 @@ button#load-more.done {
     }
 
     .slide-3 { 
-        padding-bottom: 100px;
+        
         //height: 140vh;
         padding-top: 300px;
+        height: auto;
         @include media($md) {
+            padding-bottom: 100px;
             padding-top: 4vh;
             height: 140vh;
         }
@@ -105,6 +107,7 @@ button#load-more.done {
             width: 95%;
             display: block;
             margin: 0 auto;
+            z-index: 2;
             @include media($md) {
                 width: 50%;
             }
@@ -516,6 +519,15 @@ button#load-more.done {
                 @include fontSize(34px);
             }
         }
+    }
+    .hidden-1, .hidden-2 {
+        
+            font-size: 3.57vw;   
+            transform: scale(0);
+            @include media($md) {
+                @include fontSize(34px);
+            }
+        
     }
 }
 

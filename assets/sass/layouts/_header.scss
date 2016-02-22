@@ -123,8 +123,19 @@ header#masthead {
     a {
         color: $tan;
         text-transform: uppercase;
-        
-        
+        line-height: 1.2em;
+        @include media($md) {
+            line-height: 1.5em;
+        }
+        &:after {
+            content: ">";
+            position: absolute;
+            right: 10px;
+            color: $tan;
+            @include media($md) {
+                display: none;
+            }
+        }
         
     }
     ul {
@@ -148,14 +159,17 @@ header#masthead {
 #menu-menu-2 {
     a {
         display: block;
-        padding: 15px 25px;
+        padding: 10px 25px;
+        @include media($md) {
+            padding: 15px 25px;
+        }
     }
     > li {
         a {
+            border-top: 2px solid $dark-red;
             @include media($md) {
                 border-top: 3px solid $dark-red;    
             }
-            
         }
         &:hover {
              > a {
@@ -166,9 +180,20 @@ header#masthead {
             
         }
     }
+    .menu-item-has-children {
+        > a {
+            display: none;
+            @include media($md) {
+                display: block;
+            }
+        }
+    }
     .sub-menu {
         a {
-            padding: 20px 25px;
+            padding: 10px 25px;
+            @include media($md) {
+                padding: 20px 25px;
+            }
         }
 
     }
@@ -193,22 +218,36 @@ header#masthead {
 }
 
 ul.sub-menu {
-    display: none;
-    position: absolute;
-    background-color: $dark-red;
-    //width: 220px;
-    top: 30px;
-    left: 50%;
-    margin-left: -100px;
-    text-align: center;
+    display: block;
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: left;
+    top: 0;
+    background-color: $light-red;
+    @include media($md) {
+        display: none;
+        position: absolute;
+        background-color: $dark-red;
+        //width: 220px;
+        top: 30px;
+        left: 50%;
+        margin-left: -100px;
+        text-align: center;    
+        width: 200px;
+    }
     //margin: 0 auto !important;
-    width: 200px;
+    
     a {
-        border-top: none !important;
+        border-top: 2px solid $dark-red;
         color: $tan !important;
         display: block;
         padding: 15px 25px;
         line-height: 1.2em;
+        @include media($md) {
+            border-top: none !important;
+        }
     }
     li {
         display: block !important;
@@ -284,9 +323,12 @@ ul.sub-menu {
         }
     }
     .sub-menu {
-        top: 63px;
+        @include media($md) {
+            top: 63px;    
+        }
     }
 }
+
 
 
 header label {

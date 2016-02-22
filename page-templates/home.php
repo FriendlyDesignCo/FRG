@@ -327,22 +327,30 @@ get_header(); ?>
 						.addTo(controller);		
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".desktop-screen p.hidden-2", { x: "-360%", y: "-220%", scale: 1.86 })
-						.addTo(controller);				
+						.addTo(controller);		
+
+
 			// mobile 	
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p#highlighted2", { x: "-105%", y: "20%", scale: 1.4 })
+						.setTween(".mobile-screen p#highlighted2", { x: "-106%", y: "90%", scale: 1.4 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p#highlighted6", { x: "15%", y: "50%", scale: 1.86 })
+						.setTween(".mobile-screen p#highlighted6", { x: "15%", y: "170%", scale: 2 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p#highlighted9", { x: "80%", y: "50%", scale: 1.44 })
+						.setTween(".mobile-screen p#highlighted9", { x: "80%", y: "100%", scale: 1.44 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p#highlighted20", { x: "-135%", y: "-380%", scale: 1.66 })
+						.setTween(".mobile-screen p#highlighted20", { x: "-135%", y: "-350%", scale: 1.66 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p#highlighted21", { x: "-170%", y: "-150%", scale: 1.66 })
+						.setTween(".mobile-screen p#highlighted21", { x: "-178%", y: "-130%", scale: 1.66 })
+						.addTo(controller);	
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".mobile-screen p.hidden-1", { x: "-340%", y: "-120%", scale: 1.28 })
+						.addTo(controller);		
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".mobile-screen p.hidden-2", { x: "-270%", y: "-280%", scale: 1.28 })
 						.addTo(controller);							
 		</script>
 		</div>

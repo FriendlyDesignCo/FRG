@@ -1064,7 +1064,19 @@ header#masthead {
   font-size: 1rem; }
   .menu-menu-1-container a {
     color: #FFE7CC;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: 1.2em; }
+    @media screen and (min-width: 48em) {
+      .menu-menu-1-container a {
+        line-height: 1.5em; } }
+    .menu-menu-1-container a:after {
+      content: ">";
+      position: absolute;
+      right: 10px;
+      color: #FFE7CC; }
+      @media screen and (min-width: 48em) {
+        .menu-menu-1-container a:after {
+          display: none; } }
   .menu-menu-1-container ul {
     padding: 0;
     margin: 0; }
@@ -1079,18 +1091,32 @@ header#masthead {
 
 #menu-menu-2 a {
   display: block;
-  padding: 15px 25px; }
+  padding: 10px 25px; }
+  @media screen and (min-width: 48em) {
+    #menu-menu-2 a {
+      padding: 15px 25px; } }
 
-@media screen and (min-width: 48em) {
-  #menu-menu-2 > li a {
-    border-top: 3px solid #8B2332; } }
+#menu-menu-2 > li a {
+  border-top: 2px solid #8B2332; }
+  @media screen and (min-width: 48em) {
+    #menu-menu-2 > li a {
+      border-top: 3px solid #8B2332; } }
 
 @media screen and (min-width: 48em) {
   #menu-menu-2 > li:hover > a {
     border-top: 3px solid #FFE7CC; } }
 
+#menu-menu-2 .menu-item-has-children > a {
+  display: none; }
+  @media screen and (min-width: 48em) {
+    #menu-menu-2 .menu-item-has-children > a {
+      display: block; } }
+
 #menu-menu-2 .sub-menu a {
-  padding: 20px 25px; }
+  padding: 10px 25px; }
+  @media screen and (min-width: 48em) {
+    #menu-menu-2 .sub-menu a {
+      padding: 20px 25px; } }
 
 .menu-list {
   position: relative; }
@@ -1102,20 +1128,33 @@ header#masthead {
     text-decoration: none; }
 
 ul.sub-menu {
-  display: none;
-  position: absolute;
-  background-color: #8B2332;
-  top: 30px;
-  left: 50%;
-  margin-left: -100px;
-  text-align: center;
-  width: 200px; }
+  display: block;
+  position: relative;
+  left: 0;
+  width: 100%;
+  margin-left: 0;
+  text-align: left;
+  top: 0;
+  background-color: #9D4446; }
+  @media screen and (min-width: 48em) {
+    ul.sub-menu {
+      display: none;
+      position: absolute;
+      background-color: #8B2332;
+      top: 30px;
+      left: 50%;
+      margin-left: -100px;
+      text-align: center;
+      width: 200px; } }
   ul.sub-menu a {
-    border-top: none !important;
+    border-top: 2px solid #8B2332;
     color: #FFE7CC !important;
     display: block;
     padding: 15px 25px;
     line-height: 1.2em; }
+    @media screen and (min-width: 48em) {
+      ul.sub-menu a {
+        border-top: none !important; } }
   ul.sub-menu li {
     display: block !important;
     float: none; }
@@ -1176,8 +1215,9 @@ ul.sub-menu {
         top: 0px;
         background-color: #8B2332;
         height: auto; } }
-  #secondary-nav .sub-menu {
-    top: 63px; }
+  @media screen and (min-width: 48em) {
+    #secondary-nav .sub-menu {
+      top: 63px; } }
 
 header label {
   position: absolute;
@@ -1531,17 +1571,19 @@ button#load-more.done {
     z-index: 2; }
 
 .home-wrap .slide-3 {
-  padding-bottom: 100px;
-  padding-top: 300px; }
+  padding-top: 300px;
+  height: auto; }
   @media screen and (min-width: 48em) {
     .home-wrap .slide-3 {
+      padding-bottom: 100px;
       padding-top: 4vh;
       height: 140vh; } }
 
 .home-wrap .slide-4 .image-cookie {
   width: 95%;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 2; }
   @media screen and (min-width: 48em) {
     .home-wrap .slide-4 .image-cookie {
       width: 50%; } }
@@ -1875,6 +1917,14 @@ button#load-more.done {
     font-size: 3.57vw; }
     @media screen and (min-width: 48em) {
       .ingredients-row:nth-of-type(8) p {
+        font-size: 34px;
+        font-size: 2.125rem; } }
+  .ingredients-row .hidden-1, .ingredients-row .hidden-2 {
+    font-size: 3.57vw;
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+    @media screen and (min-width: 48em) {
+      .ingredients-row .hidden-1, .ingredients-row .hidden-2 {
         font-size: 34px;
         font-size: 2.125rem; } }
 
