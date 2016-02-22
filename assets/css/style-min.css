@@ -97,7 +97,7 @@ body.home header#masthead.not-scrolled .hide-scroll{display:block}body.home head
 body.home header#masthead.not-scrolled #primary-nav{width:100%;float:right;position:relative;padding-top:2vh}
 body.home header#masthead.not-scrolled .menu-menu-1-container{text-align:center;float:none}
 body.home header#masthead.not-scrolled .menu-menu-1-container ul{float:none}body.home header#masthead.not-scrolled .menu-menu-1-container a{color:#8b2332}
-body.home header#masthead.not-scrolled .menu-menu-1-container li{float:none;display:inline;padding-left:1%;padding-right:1%}
+body.home header#masthead.not-scrolled .menu-menu-1-container li{float:none;display:inline-block;padding-left:1%;padding-right:1%}
 body.home header#masthead.not-scrolled .menu-menu-1-container li.menu-item-has-children{padding-bottom:15px}
 body.home header#masthead.not-scrolled .menu-menu-1-container .sub-menu{position:absolute}
 }header#masthead{float:left;width:100%;position:fixed;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);top:0;left:0;z-index:999}
