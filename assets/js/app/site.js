@@ -44,7 +44,35 @@
 		$(".question").click(function() {
 			$(this).parent().find(".answer").slideToggle(300);
 			$(this).parent().toggleClass("active");
-		})
+		});
+
+
+		//dropdown
+
+		$('html').click(function() {
+		  $('.dropdown ul').slideUp();
+		  $('.dropdown').removeClass('active');
+		});
+
+		$('.dropdown').click( function(event) {
+			if($( window ).width() > 900) {
+				$(this).children('ul').slideToggle();	
+			}
+			
+			event.stopPropagation();
+		});
+		$(".dropdown select option").each( function(i) {
+			$(this).parent().parent().find(".dropdown-list").append("<li>"+$(this).text()+"</li>");
+		});
+		$('.dropdown ul li').click(function() {
+			var text = $(this).text();
+		    $(this).parent().parent().children().children("h3").html(text);
+		    $(this).parent().parent().find(".source").val(text);
+		    if($("select.res-time").prop('selectedIndex') > 3) {
+		    	console.log("more than 3");
+		    }
+		});
+		
 
 	});
 

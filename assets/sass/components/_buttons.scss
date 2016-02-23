@@ -16,3 +16,9 @@
     text-decoration: none;
   }
 }
+
+input[type="submit"] {
+  @include appearance(none);
+  border: 0;
+  width: 100%;
+}
