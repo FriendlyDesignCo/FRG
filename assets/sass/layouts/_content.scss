@@ -2425,8 +2425,9 @@ select.source {
     overflow-y:scroll;
     list-style-type: none;
     li {
-        padding: 10px;
+        padding: 20px 10px;
         cursor: pointer;
+        line-height: 1em;
         transition: all .3s;
         &:hover {
             background-color: $light-red;

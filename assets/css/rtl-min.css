@@ -445,8 +445,8 @@ input.datepicker{position:relative}.OT_searchWrapperAll{display:none}.form_wrap-
 .form-group input .drop,.form-group.dropdown .drop{padding-left:10px}.form-group input::-webkit-input-placeholder{color:#8b2332}
 .form-group input::-moz-placeholder{color:#8b2332}.form-group input:-ms-input-placeholder{color:#8b2332}
 .form-group input:-moz-placeholder{color:#8b2332}.dropdown-list{width:100%;position:absolute;top:55px;background-color:#8b2332;color:#ffe7cc;z-index:3;height:300px;overflow-y:scroll;list-style-type:none}
-.dropdown-list li{padding:10px;cursor:pointer;transition:all .3s}.dropdown-list li:hover{background-color:#9d4446}
-.page-template-page-templatestemplate-left-col-php h1.entry-title{margin:0;text-align:right}
+.dropdown-list li{padding:20px 10px;cursor:pointer;line-height:1em;transition:all .3s}
+.dropdown-list li:hover{background-color:#9d4446}.page-template-page-templatestemplate-left-col-php h1.entry-title{margin:0;text-align:right}
 @media screen and (min-width:48em){.page-template-page-templatestemplate-left-col-php #main{display:-webkit-flex;display:-ms-flexbox;display:flex}
 }@media screen and (min-width:0){.page-template-page-templatestemplate-left-col-php #main #primary{float:left;display:block;margin-right:14.28571%;width:214.28571%}
 .page-template-page-templatestemplate-left-col-php #main #primary:last-child{margin-right:0}

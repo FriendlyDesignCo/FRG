@@ -3618,8 +3618,9 @@ select.source {
   overflow-y: scroll;
   list-style-type: none; }
   .dropdown-list li {
-    padding: 10px;
+    padding: 20px 10px;
     cursor: pointer;
+    line-height: 1em;
     transition: all .3s; }
     .dropdown-list li:hover {
       background-color: #9D4446; }
