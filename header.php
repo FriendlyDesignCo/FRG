@@ -73,7 +73,7 @@
 		
 		<nav id="primary-nav" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 			<div class="reservation-widget">
-				<a href="">Reserve A Table</a>
+				<a href="/reservations">Reserve A Table</a>
 			</div>
 			<div class="logo">
 				<a href="<?php echo get_site_url(); ?>">

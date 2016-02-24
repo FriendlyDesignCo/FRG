@@ -93,6 +93,7 @@ body.home header#masthead.not-scrolled .logo{display:block;float:none;padding:0;
 body.home header#masthead.not-scrolled .logo .dark{display:block}body.home header#masthead.not-scrolled .logo .light{display:none}
 body.home header#masthead.not-scrolled .hide-scroll{display:block}body.home header#masthead.not-scrolled .show-scroll{display:none}
 body.home header#masthead.not-scrolled #primary-nav{width:100%;float:right;position:relative;padding-top:2vh}
+body.home header#masthead.not-scrolled #primary-nav .reservation-widget{display:block}
 body.home header#masthead.not-scrolled .menu-menu-1-container{text-align:center;float:none}
 body.home header#masthead.not-scrolled .menu-menu-1-container ul{float:none}body.home header#masthead.not-scrolled .menu-menu-1-container a{color:#8b2332}
 body.home header#masthead.not-scrolled .menu-menu-1-container li{float:none;display:inline-block;padding-left:1%;padding-right:1%}
@@ -121,15 +122,15 @@ ul.sub-menu li:hover{background-color:#9d4446}.reservation-widget{position:absol
 @media screen and (min-width:48em){.reservation-widget{width:200px;font-size:16px;font-size:1rem}
 }.reservation-widget a{background-color:#9d4446;color:#ffe7cc;display:block;padding:10px}
 .reservation-widget:hover a{background-color:#8b2332;text-decoration:none}#primary-nav{display:none}
-@media screen and (min-width:48em){#primary-nav{display:block}}#primary-nav .reservation-widget{width:200px;left:50px}
+@media screen and (min-width:48em){#primary-nav{display:block}}#primary-nav .reservation-widget{display:none;width:200px;left:50px}
 #primary-nav .logo{width:180px;position:relative;padding:10px;float:left;display:none}
 #primary-nav .logo a{display:block}#primary-nav .logo .light{display:block}#secondary-nav{display:block;position:fixed;top:0;left:0;transition:all .4s}
 @media screen and (min-width:48em){#secondary-nav{-webkit-transform:translateY(-140px);transform:translateY(-140px)}
 }#secondary-nav .reservation-widget{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);width:300px;right:0;top:63px}
-#secondary-nav .reservation-widget .widget-wrap{display:none;background-color:#8b2332;padding:10px;width:100%;position:absolute;top:50px}
+#secondary-nav .reservation-widget .widget-wrap{position:relative;text-align:left;display:none;background-color:#8b2332;padding:10px;width:100%;position:absolute;top:50px}
 #secondary-nav .logo{position:relative;padding:10px;float:left;width:140px;height:63px}
 #secondary-nav .logo a{display:block}#secondary-nav.slide-down{-webkit-transform:translateY(0);transform:translateY(0)}
-#secondary-nav .menu-menu-1-container{width:90%;background-color:#9d4446;position:absolute;height:100vh;top:63px;right:0;transition:all .3s;-webkit-transform:translateX(100vw);transform:translateX(100vw)}
+#secondary-nav .menu-menu-1-container{width:80%;background-color:#9d4446;position:absolute;height:100vh;top:63px;right:0;transition:all .3s;-webkit-transform:translateX(100vw);transform:translateX(100vw)}
 @media screen and (min-width:48em){#secondary-nav .menu-menu-1-container{-webkit-transform:translateX(0);transform:translateX(0);top:0;background-color:#8b2332;height:auto}
 }@media screen and (min-width:48em){#secondary-nav .sub-menu{top:63px}}header label{position:absolute;right:0;top:0;padding:20px 10px;z-index:130;height:100%;margin:0;width:50px}
 .hamburger{position:relative;top:0;z-index:100;list-style-type:none;padding:0;margin:0}
@@ -443,7 +444,7 @@ input.datepicker{position:relative}.OT_searchWrapperAll{display:none}.form_wrap-
 .bootstrap-datetimepicker-widget table thead tr:first-child th:hover{background:#f1ddcb;color:#8b2332}
 .bootstrap-datetimepicker-widget table td.day:hover,.bootstrap-datetimepicker-widget table td.hour:hover,.bootstrap-datetimepicker-widget table td.minute:hover,.bootstrap-datetimepicker-widget table td.second:hover{background:#f1ddcb;color:#8b2332}
 .bootstrap-datetimepicker-widget table td span:hover,.bootstrap-datetimepicker-widget table td span.active{background:#f1ddcb;color:#8b2332;border-radius:0}
-.list-unstyled{list-style-type:none;padding-left:0;margin:0}.bootstrap-datetimepicker-widget.dropdown-menu{position:absolute;z-index:3}
+.list-unstyled{list-style-type:none;padding-left:0;margin:0}.bootstrap-datetimepicker-widget.dropdown-menu{bottom:0;position:absolute;z-index:3}
 .datepicker td,.datepicker th{width:auto !important;height:auto !important}select.source{display:none}
 .form-group{position:relative}.dropdown{cursor:pointer}.form-group input,.form-group.dropdown{position:relative;background-color:#ffe7cc;color:#8b2332;border-radius:0;border:0;height:55px;line-height:55px;font-family:"Gotham";font-size:22px;font-size:1.375rem;margin-bottom:10px;width:100%}
 .form-group input h3,.form-group.dropdown h3{margin:0;line-height:55px;font-family:"Gotham";font-size:22px;font-size:1.375rem}

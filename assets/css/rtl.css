@@ -1014,6 +1014,8 @@ body.home header#masthead.not-scrolled {
         float: right;
         position: relative;
         padding-top: 2vh; }
+        body.home header#masthead.not-scrolled #primary-nav .reservation-widget {
+          display: block; }
       body.home header#masthead.not-scrolled .menu-menu-1-container {
         text-align: center;
         float: none; }
@@ -1197,6 +1199,7 @@ ul.sub-menu {
     #primary-nav {
       display: block; } }
   #primary-nav .reservation-widget {
+    display: none;
     width: 200px;
     left: 50px; }
   #primary-nav .logo {
@@ -1226,6 +1229,8 @@ ul.sub-menu {
     right: 0;
     top: 63px; }
     #secondary-nav .reservation-widget .widget-wrap {
+      position: relative;
+      text-align: left;
       display: none;
       background-color: #8B2332;
       padding: 10px;
@@ -1244,7 +1249,7 @@ ul.sub-menu {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); }
   #secondary-nav .menu-menu-1-container {
-    width: 90%;
+    width: 80%;
     background-color: #9D4446;
     position: absolute;
     height: 100vh;
@@ -3589,6 +3594,7 @@ input.datepicker {
   margin: 0; }
 
 .bootstrap-datetimepicker-widget.dropdown-menu {
+  bottom: 0;
   position: absolute;
   z-index: 3; }
 
