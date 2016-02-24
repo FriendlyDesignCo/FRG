@@ -2,6 +2,12 @@
 
 
 	$(document).ready(function() {
+
+		$("#secondary-nav .reservation-widget a").click(function(e) {
+			e.preventDefault();
+			$(this).parent().children(".widget-wrap").toggle();
+		});
+
 		$(".case-study-card-image").click(function(){
 			$(".nav-dots").css("opacity","0");
 			$(".sprinkler-animation").css("opacity","0");

@@ -1171,11 +1171,34 @@ ul.sub-menu {
     ul.sub-menu li:hover {
       background-color: #9D4446; }
 
+.reservation-widget {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Gotham";
+  transition: all .3s; }
+  @media screen and (min-width: 48em) {
+    .reservation-widget {
+      width: 200px;
+      font-size: 16px;
+      font-size: 1rem; } }
+  .reservation-widget a {
+    background-color: #9D4446;
+    color: #FFE7CC;
+    display: block;
+    padding: 10px; }
+  .reservation-widget:hover a {
+    background-color: #8B2332;
+    text-decoration: none; }
+
 #primary-nav {
   display: none; }
   @media screen and (min-width: 48em) {
     #primary-nav {
       display: block; } }
+  #primary-nav .reservation-widget {
+    width: 200px;
+    left: 50px; }
   #primary-nav .logo {
     width: 180px;
     position: relative;
@@ -1195,8 +1218,20 @@ ul.sub-menu {
   transition: all .4s; }
   @media screen and (min-width: 48em) {
     #secondary-nav {
-      -webkit-transform: translateY(-60px);
-              transform: translateY(-60px); } }
+      -webkit-transform: translateY(-140px);
+              transform: translateY(-140px); } }
+  #secondary-nav .reservation-widget {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 300px;
+    right: 0;
+    top: 63px; }
+    #secondary-nav .reservation-widget .widget-wrap {
+      display: none;
+      background-color: #8B2332;
+      padding: 10px;
+      width: 100%;
+      position: absolute;
+      top: 50px; }
   #secondary-nav .logo {
     position: relative;
     padding: 10px;

@@ -125,17 +125,7 @@ get_header(); ?>
 
 				</form>		
 				<h3 class="contact-text">Can’t get the reservation time you’re looking for online? Please call us, we might be able to help. 202-555-5555</h3>
-			</div> 
-			<!-- 
-					http://www.opentable.com/opentables.aspx?
-					rid=24712
-					&restref=24712
-					&m=0
-					&t=single
-					&p=4
-					&d=2/26/2016%2010:30%20PM
-					&rtype=ism_mod
-					-->
+			</div>
 			<script>
 				
 				(function($) {

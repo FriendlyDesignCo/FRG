@@ -259,12 +259,40 @@ ul.sub-menu {
     }
 }
 
+.reservation-widget {
+    position: absolute;   
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Gotham";
+    transition: all .3s;
+    @include media($md) {
+        width: 200px;
+        @include fontSize(16px);
+    }
+    a {
 
+        background-color: $light-red;
+        color: $tan;
+        display: block;
+        padding: 10px;
+    }
+    &:hover {
+        
+        a {
+            background-color: $dark-red;
+            text-decoration: none;
+        }
+    }
+}
 
 #primary-nav {
     display: none;
     @include media($md) {
         display: block;
+    }
+    .reservation-widget {
+        width: 200px;
+        left: 50px;
     }
     .logo {
         width: 180px;
@@ -292,7 +320,21 @@ ul.sub-menu {
     transition: all .4s;
     
     @include media($md) {
-        transform: translateY(-60px);    
+        transform: translateY(-140px);    
+    }
+    .reservation-widget {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 300px;
+        right: 0;
+        top: 63px;
+        .widget-wrap {
+            display: none;
+            background-color: $dark-red;
+            padding: 10px;
+            width: 100%;
+            position: absolute;
+            top: 50px;
+        }
     }
     .logo {
         //width: 180px;
