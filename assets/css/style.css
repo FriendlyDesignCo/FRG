@@ -1061,6 +1061,7 @@ header#masthead {
 
 #secondary-nav {
   background-color: #8B2332;
+  height: 63px;
   float: left;
   width: 100%; }
 
@@ -1194,11 +1195,11 @@ ul.sub-menu {
       -webkit-transform: translateY(-60px);
               transform: translateY(-60px); } }
   #secondary-nav .logo {
-    width: 180px;
     position: relative;
     padding: 10px;
     float: left;
-    width: 121px; }
+    width: 140px;
+    height: 63px; }
     #secondary-nav .logo a {
       display: block; }
   #secondary-nav.slide-down {

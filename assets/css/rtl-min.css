@@ -101,7 +101,7 @@ body.home header#masthead.not-scrolled .menu-menu-1-container .sub-menu{position
 }header#masthead{float:left;width:100%;position:fixed;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);top:0;left:0;z-index:999}
 header#masthead .hide-scroll{display:none}header#masthead .show-scroll{transition:all .4s;position:absolute;height:calc(100vh - 50px);width:100%}
 @media screen and (min-width:48em){header#masthead .show-scroll{width:auto;background-color:none;position:relative;display:block;height:auto;float:right}
-}#primary-nav{position:relative}#secondary-nav{background-color:#8b2332;float:left;width:100%}
+}#primary-nav{position:relative}#secondary-nav{background-color:#8b2332;height:63px;float:left;width:100%}
 .menu-menu-1-container{font-family:'Gotham';font-size:16px;font-size:1rem}
 .menu-menu-1-container a{color:#ffe7cc;text-transform:uppercase;line-height:1.2em}
 @media screen and (min-width:48em){.menu-menu-1-container a{line-height:1.5em}}.menu-menu-1-container a:after{content:">";position:absolute;right:10px;color:#ffe7cc}
@@ -121,7 +121,7 @@ ul.sub-menu li:hover{background-color:#9d4446}#primary-nav{display:none}@media s
 }#primary-nav .logo{width:180px;position:relative;padding:10px;float:left;display:none}
 #primary-nav .logo a{display:block}#primary-nav .logo .light{display:block}#secondary-nav{display:block;position:fixed;top:0;left:0;transition:all .4s}
 @media screen and (min-width:48em){#secondary-nav{-webkit-transform:translateY(-60px);transform:translateY(-60px)}
-}#secondary-nav .logo{width:180px;position:relative;padding:10px;float:left;width:121px}
+}#secondary-nav .logo{position:relative;padding:10px;float:left;width:140px;height:63px}
 #secondary-nav .logo a{display:block}#secondary-nav.slide-down{-webkit-transform:translateY(0);transform:translateY(0)}
 #secondary-nav .menu-menu-1-container{width:90%;background-color:#9d4446;position:absolute;height:100vh;top:63px;right:0;transition:all .3s;-webkit-transform:translateX(100vw);transform:translateX(100vw)}
 @media screen and (min-width:48em){#secondary-nav .menu-menu-1-container{-webkit-transform:translateX(0);transform:translateX(0);top:0;background-color:#8b2332;height:auto}

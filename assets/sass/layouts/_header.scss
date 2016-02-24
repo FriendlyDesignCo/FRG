@@ -112,6 +112,7 @@ header#masthead {
 
 #secondary-nav {
     background-color: $dark-red;
+    height: 63px;
     float: left;
     width: 100%;
 }
@@ -294,11 +295,12 @@ ul.sub-menu {
         transform: translateY(-60px);    
     }
     .logo {
-        width: 180px;
+        //width: 180px;
         position: relative;
         padding: 10px;
         float: left;
-        width: 121px;
+        width: 140px;
+        height: 63px;
         a {
             display: block;
         }
