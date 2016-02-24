@@ -58,6 +58,7 @@
     <script type='text/javascript' src='http://www.wearefoundingfarmers.com/wp-content/themes/Founding-Farmers/assets/js/moment.js'></script>
 	<link rel="stylesheet" id="" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css" type="text/css" media="all">
 	<script src="http://www.wearefoundingfarmers.com/wp-content/themes/Founding-Farmers/assets/js/bootstrap-datetimepicker.min.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -200,6 +201,21 @@
 
 						</form>	
 					</div> 
+					<script>
+				
+					(function($) {
+					
+					   	$('input.datepicker').datetimepicker({
+							
+							format: 'MM/DD/YYYY',
+							useCurrent: false,
+							defaultDate: false
+						});
+						$('span.date-input').click();
+
+						    
+					})(jQuery);
+				</script>
 				</div>
 			</div>
 			<div class="logo">
