@@ -28,7 +28,7 @@ get_header(); ?>
 				     
 				          
 						<select name="RestaurantID" class="source form-control selectpicker" onchange="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value">
-							<option selected="selected" value="0" class="hidden">LOCATION</option>
+							<option value="0" class="hidden">LOCATION</option>
 							<option value="24712">DC</option>
 							<option value="70411">MOCO</option>
 							<option value="150769">TYSONS</option>
@@ -37,7 +37,7 @@ get_header(); ?>
 					</div>
 					<div class="form-group">
 						<span class="date-input">
-							<input type="text" name="startDate" class="form-control datepicker" placeholder="DATE" />
+							<input type="text" name="startDate" class="form-control datepicker" placeholder="DATE" autocomplete="off"/>
 							<span class="btn-caret"><i class="fa fa-angle-down"></i></span>
 						</span>
 					</div>
@@ -48,7 +48,7 @@ get_header(); ?>
 			            <ul class="dropdown-list list-unstyled" style="display: none;"></ul>
 				     
 						<select name="ResTime" class="source form-control res-time selectpicker">
-							<option selected="selected" value="0" class="hidden">TIME</option>
+							<option value="0" class="hidden">TIME</option>
 							<option value="7:00 AM">7:00 AM</option>
 							<option value="7:30 AM">7:30 AM</option>
 							<option value="8:00 AM">8:00 AM</option>
@@ -120,11 +120,22 @@ get_header(); ?>
 						<input type="hidden" id="RestaurantReferralID" name="RestaurantReferralID" value="0">
 						<input type="hidden" name="txtDateFormat" value="MM/dd/yyyy">
 						<input type="hidden" name="widget" value="reservpage">
-						<input type="submit" name="submit" value="SEARCH" class="button btn btn-submit" onmousedown="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value;fbq('track', 'Lead');" />
+						<input type="submit" name="submit" value="SEARCH" class="button btn btn-submit" onmousedown="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value;/*fbq('track', 'Lead');*/" />
 					</div>
+
 				</form>		
 				<h3 class="contact-text">Can’t get the reservation time you’re looking for online? Please call us, we might be able to help. 202-555-5555</h3>
 			</div> 
+			<!-- 
+					http://www.opentable.com/opentables.aspx?
+					rid=24712
+					&restref=24712
+					&m=0
+					&t=single
+					&p=4
+					&d=2/26/2016%2010:30%20PM
+					&rtype=ism_mod
+					-->
 			<script>
 				
 				(function($) {

@@ -66,8 +66,27 @@
 		});
 		$('.dropdown ul li').click(function() {
 			var text = $(this).text();
+			var index = $(this).index();
+			console.log(index);
 		    $(this).parent().parent().children().children("h3").html(text);
-		    $(this).parent().parent().find(".source").val(text);
+		    switch(text) {
+			    case "DC":
+			        $(this).parent().parent().children(".source").val(24712);
+			        break;
+			    case "MOCO":
+			        $(this).parent().parent().children(".source").val(70411);
+			        break;
+			    case "TYSONS":
+			        $(this).parent().parent().children(".source").val(150769);
+			        break;
+			    case "FARMERS FISHERS BAKERS":
+			        $(this).parent().parent().children(".source").val(93802);
+			        break;
+			    default:
+			        $(this).parent().parent().children(".source").val(text);
+			}
+		    
+		    //$(this).parent().parent().children(".source :nth-child("+ index+1 +")").prop('selected', true)
 		    if($("select.res-time").prop('selectedIndex') > 3) {
 		    	console.log("more than 3");
 		    }
