@@ -2373,6 +2373,10 @@ select.source {
     position: relative;
 }
 
+.dropdown {
+    cursor: pointer;
+}
+
 .form-group input, .form-group.dropdown {
     position: relative;
     background-color: $tan;
@@ -2420,7 +2424,14 @@ select.source {
     height: 300px;
     overflow-y:scroll;
     list-style-type: none;
-
+    li {
+        padding: 10px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            background-color: $light-red;
+        }
+    }
 }
 
 

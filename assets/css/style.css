@@ -1100,7 +1100,7 @@ header#masthead {
   padding: 10px 25px; }
   @media screen and (min-width: 48em) {
     #menu-menu-2 a {
-      padding: 15px 25px; } }
+      padding: 18px 25px; } }
 
 #menu-menu-2 > li a {
   border-top: 2px solid #8B2332; }
@@ -3563,6 +3563,9 @@ select.source {
 .form-group {
   position: relative; }
 
+.dropdown {
+  cursor: pointer; }
+
 .form-group input, .form-group.dropdown {
   position: relative;
   background-color: #FFE7CC;
@@ -3611,6 +3614,12 @@ select.source {
   height: 300px;
   overflow-y: scroll;
   list-style-type: none; }
+  .dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s; }
+    .dropdown-list li:hover {
+      background-color: #9D4446; }
 
 /*--------------------------------------------------------------
     6.4 Page Templates

@@ -50,13 +50,13 @@
 		//dropdown
 
 		$('html').click(function() {
-		  $('.dropdown ul').slideUp();
+		  $('.dropdown ul').hide();
 		  $('.dropdown').removeClass('active');
 		});
 
 		$('.dropdown').click( function(event) {
 			if($( window ).width() > 900) {
-				$(this).children('ul').slideToggle();	
+				$(this).children('ul').toggle();	
 			}
 			
 			event.stopPropagation();
