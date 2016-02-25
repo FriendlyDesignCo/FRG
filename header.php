@@ -202,19 +202,19 @@
 						</form>	
 						<script>
 				
-					(function($) {
-					
-					   	$('input.datepicker').datetimepicker({
+							(function($) {
 							
-							format: 'MM/DD/YYYY',
-							useCurrent: false,
-							defaultDate: false
-						});
-						$('span.date-input').click();
+							   	$('input.datepicker').datetimepicker({
+									
+									format: 'MM/DD/YYYY',
+									useCurrent: false,
+									defaultDate: false
+								});
+								$('span.date-input').click();
 
-						    
-					})(jQuery);
-				</script>
+								    
+							})(jQuery);
+						</script>
 					</div> 
 					
 				</div>

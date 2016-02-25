@@ -58,6 +58,9 @@ button#load-more.done {
         h2 {
             @include fontSize(31px);
             @include media($md) {
+                @include fontSize(51px);    
+            }
+            @include media($hg) {
                 @include fontSize(71px);    
             }
         }
@@ -108,7 +111,10 @@ button#load-more.done {
             display: block;
             margin: 0 auto;
             z-index: 2;
-            @include media($md) {
+            @include media($mdbg) {
+                width: 40%;
+            }
+            @include media($hg) {
                 width: 50%;
             }
         }
@@ -129,7 +135,10 @@ button#load-more.done {
     p {
         font-family: "Gotham";
         @include fontSize(16px);
-        @include media($md) {
+        @include media($mdbg) {
+            @include fontSize(20px);
+        }
+        @include media($hg) {
             @include fontSize(24px);
         }
     }
@@ -2100,239 +2109,15 @@ input.datepicker {
 
 .form-control {
     width: 100%;
-    height: 50px;
+    height: 55px;
     background-color: $tan;
     color: $dark-red;
     font-family: "Gotham";
     @include fontSize(22px);
-    margin-bottom: 10px;
+    border-radius: 0;
+    border-color: transparent
 }
 
-
- #OT_searchWrapperAll {
-     width: 100%;
-     position: relative;
-     margin: 0;
-     padding: 0;
- }
- 
- #OT_searchWrapper {
-     border: 0;
-     background: #fff;
-     font-family: Verdana, Arial, Helvetica, Sans-Serif;
-     font-size: 12px;
-     width: 100%;
-     height: 200px;
-     position: relative;
-     margin: 0
- }
- 
- #OT_searchWrapper .OT_feedTitle {
-     position: absolute;
-     top: 5px;
-     left: 0;
-     margin: 0 0 1px 5px;
-     font-size: 12px;
-     font-weight: normal;
-     line-height: normal
- }
- 
- #OT_searchWrapper dl {
-     position: absolute;
-     top: 0;
-     left: 0;
-     padding: 0;
-     margin: 0
- }
- 
- #OT_partySizeLbl {
-     position: absolute;
-     top: 25px;
-     left: 0;
-     margin: 0 0 0 5px;
-     padding: 3px 0;
-     text-align: right;
-     width: 75px;
-     display: block
- }
- 
- #OT_partySize {
-     position: absolute;
-     top: 25px;
-     left: 85px;
-     margin: 0;
-     padding: 0
- }
- 
- #OT_dateLbl {
-     position: absolute;
-     top: 55px;
-     left: 0;
-     margin: 0 0 0 5px;
-     padding: 3px 0;
-     text-align: right;
-     width: 75px
- }
- 
- #OT_date {
-     position: absolute;
-     top: 55px;
-     left: 85px;
-     width: 100px;
-     margin: 0;
-     padding: 0
- }
- 
- #OT_timeLbl {
-     position: absolute;
-     top: 95px;
-     left: 0;
-     width: 80px;
-     padding: 3px 0;
-     text-align: right
- }
- 
- #OT_time {
-     position: absolute;
-     top: 95px;
-     left: 85px;
-     margin: 0
- }
- 
- #OT_empty {
-     position: absolute;
-     width: 0;
-     height: 0;
-     padding: 0;
-     margin: 0;
-     top: 100px;
-     left: 0
- }
- 
- #OT_submitWrap {
-     position: relative;
-     top: 155px;
-     left: 155px;
-     margin: 0 5px 0 0;
-     z-index: 5
- }
- 
- #OT_logo {
-     position: absolute;
-     top: 155px;
-     left: 0;
-     width: 100%;
-     padding: 0;
-     margin: 0;
-     display: block;
-     background: #fff;
-     text-align: left
- }
- 
- #OT_logoLink {
-     position: absolute;
-     top: 130px;
-     left: 0;
-     width: 100%;
-     padding: 0 0 10px 0;
-     margin: 0;
-     font-size: 9px;
-     font-family: Verdana, Arial, Helvetica, Sans-Serif;
-     display: block;
-     background: #fff;
-     text-align: left
- }
- 
- #OT_logoLink a {
-     padding: 0 0 0 10px
- }
- 
- #OT_imglogo {
-     border: 0;
-     margin: 0 0 0 10px
- }
- 
- #OT_searchWrapper form {
-     margin: 0;
-     padding: 0
- }
- 
- #OT_searchWrapper input.hidden {
-     display: none
- }
- 
- #OT_searchWrapper .feedFormField,
- #OT_searchWrapper .feedFormField option {
-     font-size: 12px;
-     margin: 2px 2px 2px 2px
- }
- 
- #OT_searchWrapper #startDate,
- #OT_searchWrapper .OT_feedFormfieldCalendar {
-     font-family: Verdana, Arial, Helvetica, Sans-Serif;
-     font-size: 12px;
-     margin: 0;
-     width: 85px
- }
- 
- #OT_searchWrapper #dateDisplay {
-     font-size: 10px;
-     color: #999;
-     font-family: Verdana, Arial, Helvetica, Sans-Serif;
-     float: right;
-     margin: 0 30px 0 0;
-     display: inline
- }
- 
- #OT_searchWrapper .imgCal {
-     position: absolute;
-     display: none;
-     z-index: 100
- }
- 
- #OT_searchWrapper #imageCal table {
-     font-size: 12px;
-     width: 150px;
-     font-family: arial;
-     font-weight: bold;
-     background: #FFF
- }
- 
- #OT_searchWrapper #imageCal td {
-     padding: 0;
-     text-align: center
- }
- 
- #OT_searchWrapper .clickableDays {
-     color: #000;
-     text-decoration: none;
-     height: 18px
- }
- 
- #OT_searchWrapper .nonclickableDays {
-     color: #ccc;
-     height: 18px
- }
- 
- #OT_searchWrapper .months {
-     color: #fff;
-     text-decoration: none
- }
- 
- #OT_searchWrapper .weekdays {
-     color: #000;
-     text-decoration: none;
-     color: #666;
-     background-color: #efefef;
-     width: 14%
- }
- 
- .partOfCal img.partOfCal.spacer {
-     display: block;
-     height: 1px;
-     margin: 0;
-     padding: 0
- }
 
  .bootstrap-datetimepicker-widget.dropdown-menu{background-color:#8b2332}
 .bootstrap-datetimepicker-widget.dropdown-menu.bottom:before,
@@ -2379,6 +2164,16 @@ select.source {
     cursor: pointer;
 }
 
+.touch {
+    .drop {
+        display: none;
+    }
+    .source {
+        display: block !important;
+        @include appearance(none);
+    }
+}
+
 .form-group input, .form-group.dropdown {
     position: relative;
     background-color: $tan;
@@ -2413,6 +2208,13 @@ select.source {
     }
     &:-moz-placeholder { /* Firefox 18- */
       color: $dark-red;
+    }
+}
+
+.form-actions .button {
+    &:hover {
+        color: $dark-red !important;
+        background-color: $tan;
     }
 }
 

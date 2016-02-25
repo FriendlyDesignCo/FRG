@@ -60,7 +60,7 @@
 		  $('.dropdown').removeClass('active');
 		});
 
-		$('.dropdown').click( function(event) {
+		$('html:not(.touch) .dropdown').click( function(event) {
 			if($( window ).width() > 900) {
 				$(this).children('ul').toggle();	
 			}
