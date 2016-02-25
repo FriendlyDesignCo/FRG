@@ -323,10 +323,10 @@ get_header(); ?>
 						.setTween(".desktop-screen p#highlighted21", { x: "-170%", y: "-50%", scale: 1.66 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".desktop-screen p.hidden-1", { x: "-460%", y: "-50%", scale: 1.86 })
+						.setTween(".desktop-screen p.hidden-1", { x: "280%", y: "-150%", scale: 1.3 })
 						.addTo(controller);		
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".desktop-screen p.hidden-2", { x: "-360%", y: "-220%", scale: 1.86 })
+						.setTween(".desktop-screen p.hidden-2", { x: "200%", y: "-280%", scale: 1.3 })
 						.addTo(controller);		
 
 
@@ -347,10 +347,10 @@ get_header(); ?>
 						.setTween(".mobile-screen p#highlighted21", { x: "-178%", y: "-130%", scale: 1.66 })
 						.addTo(controller);	
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p.hidden-1", { x: "-340%", y: "-120%", scale: 1.28 })
+						.setTween(".mobile-screen p.hidden-1", { x: "280%", y: "-150%", scale: 1.3 })
 						.addTo(controller);		
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p.hidden-2", { x: "-270%", y: "-280%", scale: 1.28 })
+						.setTween(".mobile-screen p.hidden-2", { x: "-200%", y: "-280%", scale: 1.3 })
 						.addTo(controller);							
 		</script>
 		</div>

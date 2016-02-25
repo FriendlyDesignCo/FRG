@@ -217,7 +217,7 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 .ingredients-inner::after{clear:both;content:"";display:table}
 }.hidden-ingredient{-webkit-transform:scale(0);transform:scale(0);position:absolute}
 #ingredient-trigger{position:absolute;top:50vh}#ingredient-bold-trigger{position:absolute;top:50vh}
-.ingredients-row{float:left;margin:5px 0;position:relative}.ingredients-row p{width:auto;color:#ffe7cc;text-transform:uppercase;font-family:"Gotham";float:left;padding:0 3.18vw;margin:0;line-height:1em;opacity:1}
+.ingredients-row{float:left;margin:5px 0;position:relative;width:100%}.ingredients-row p{width:auto;color:#ffe7cc;text-transform:uppercase;font-family:"Gotham";float:left;padding:0 3.18vw;margin:0;line-height:1em;opacity:1}
 @media screen and (min-width:48em){.ingredients-row p{padding:0 17px}}.ingredients-row p.highliged{opacity:1}
 .ingredients-row p+p{border-left:2px solid #ffe7cc}.ingredients-row:nth-of-type(1) p{font-size:3.14vw}
 @media screen and (min-width:48em){.ingredients-row:nth-of-type(1) p{font-size:32px;font-size:2rem}
@@ -444,7 +444,7 @@ input.datepicker{position:relative}.OT_searchWrapperAll{display:none}.form_wrap-
 .bootstrap-datetimepicker-widget table thead tr:first-child th:hover{background:#f1ddcb;color:#8b2332}
 .bootstrap-datetimepicker-widget table td.day:hover,.bootstrap-datetimepicker-widget table td.hour:hover,.bootstrap-datetimepicker-widget table td.minute:hover,.bootstrap-datetimepicker-widget table td.second:hover{background:#f1ddcb;color:#8b2332}
 .bootstrap-datetimepicker-widget table td span:hover,.bootstrap-datetimepicker-widget table td span.active{background:#f1ddcb;color:#8b2332;border-radius:0}
-.list-unstyled{list-style-type:none;padding-left:0;margin:0}.bootstrap-datetimepicker-widget.dropdown-menu{bottom:0;position:absolute;z-index:3}
+.list-unstyled{list-style-type:none;padding-left:0;margin:0}.bootstrap-datetimepicker-widget.dropdown-menu{bottom:initial !important;position:absolute;z-index:3}
 .datepicker td,.datepicker th{width:auto !important;height:auto !important}select.source{display:none}
 .form-group{position:relative}.dropdown{cursor:pointer}.form-group input,.form-group.dropdown{position:relative;background-color:#ffe7cc;color:#8b2332;border-radius:0;border:0;height:55px;line-height:55px;font-family:"Gotham";font-size:22px;font-size:1.375rem;margin-bottom:10px;width:100%}
 .form-group input h3,.form-group.dropdown h3{margin:0;line-height:55px;font-family:"Gotham";font-size:22px;font-size:1.375rem}

@@ -435,6 +435,7 @@ button#load-more.done {
     float: left;
     margin: 5px 0;
     position: relative;
+    width: 100%;
     p {
         width: auto;
         color: $tan;
@@ -2356,7 +2357,7 @@ input.datepicker {
 }
 
 .bootstrap-datetimepicker-widget.dropdown-menu {
-    bottom: 0;
+    bottom: initial !important;
     position: absolute;
     z-index: 3;
 }

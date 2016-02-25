@@ -200,8 +200,7 @@
 							</div>
 
 						</form>	
-					</div> 
-					<script>
+						<script>
 				
 					(function($) {
 					
@@ -216,6 +215,8 @@
 						    
 					})(jQuery);
 				</script>
+					</div> 
+					
 				</div>
 			</div>
 			<div class="logo">

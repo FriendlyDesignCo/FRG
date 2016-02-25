@@ -1900,7 +1900,8 @@ button#load-more.done {
 .ingredients-row {
   float: left;
   margin: 5px 0;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   .ingredients-row p {
     width: auto;
     color: #FFE7CC;
@@ -3591,7 +3592,7 @@ input.datepicker {
   margin: 0; }
 
 .bootstrap-datetimepicker-widget.dropdown-menu {
-  bottom: 0;
+  bottom: initial !important;
   position: absolute;
   z-index: 3; }
 
