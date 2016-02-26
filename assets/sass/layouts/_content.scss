@@ -339,8 +339,8 @@ button#load-more.done {
     max-height: 200px;
     @include media($md) {
         padding: 10px;
-        width: 150px;
-        height: 150px;   
+        width: 120px;
+        height: 120px;   
     }
     @include media($mdbg) {
         padding: 10px;
@@ -480,7 +480,7 @@ button#load-more.done {
     &:nth-of-type(1) {
         p {
             font-size: 3.14vw;
-            @include media($md) {
+            @include media($mdbg) {
                 @include fontSize(32px);   
             }
         }
@@ -488,7 +488,7 @@ button#load-more.done {
     &:nth-of-type(2) {
         p {
             font-size: 2.1vw;   
-            @include media($md) {
+            @include media($mdbg) {
                 @include fontSize(24px);
             }
         }
@@ -496,7 +496,7 @@ button#load-more.done {
     &:nth-of-type(3) {
         p {
             font-size: 3.05vw;   
-            @include media($md) {
+            @include media($mdbg) {
                 @include fontSize(31px);
             }
         }
@@ -504,7 +504,7 @@ button#load-more.done {
     &:nth-of-type(4) {
         p {
             font-size: 2.54vw;
-            @include media($md) {
+            @include media($mdbg) {
                 @include fontSize(27px);
             }
         }
@@ -512,7 +512,7 @@ button#load-more.done {
     &:nth-of-type(5) {
         p {
             font-size: 3.85vw;
-            @include media($md) {
+            @include media($mdbg) {
                 @include fontSize(37px);
             }
         }
@@ -520,7 +520,7 @@ button#load-more.done {
     &:nth-of-type(6) {
         p {
             font-size: 2.6vw;   
-            @include media($md) {
+            @include media($mdbg) {
                 @include fontSize(27px);
             }
         }
@@ -528,7 +528,7 @@ button#load-more.done {
     &:nth-of-type(7) {
         p {
             font-size: 3.9vw;
-            @include media($md) {
+            @include media($mdbg) {
                 @include fontSize(39px);
             }
         }
@@ -536,7 +536,7 @@ button#load-more.done {
     &:nth-of-type(8) {
         p {
             font-size: 3.57vw;   
-            @include media($md) {
+            @include media($mdbg) {
                 @include fontSize(34px);
             }
         }
@@ -545,7 +545,7 @@ button#load-more.done {
         
             font-size: 3.57vw;   
             transform: scale(0);
-            @include media($md) {
+            @include media($mdbg) {
                 @include fontSize(34px);
             }
         

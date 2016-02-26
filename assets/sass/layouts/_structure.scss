@@ -80,7 +80,10 @@ html {
     
     height: 100%;
     @include media($md) {
-        @include outer-container(1060px);   
+        @include outer-container(768px);   
+    }
+    @include media($mdbg) {
+        @include outer-container(1024px);   
     }
     .case-study {
         position: relative;
