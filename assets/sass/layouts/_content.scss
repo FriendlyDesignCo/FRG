@@ -26,7 +26,10 @@ button#load-more.done {
     position: absolute;
     height: 100px;
     &.s1 {
-        top: 40%;
+        top: 0%;
+        @include media($mdbg) {
+            top: 40%;
+        }
     }
     &.s2 {
         top: 45%;   
@@ -111,6 +114,9 @@ button#load-more.done {
             display: block;
             margin: 0 auto;
             z-index: 2;
+            @include media($md) {
+                width: 50%;
+            }
             @include media($mdbg) {
                 width: 40%;
             }
@@ -135,7 +141,7 @@ button#load-more.done {
     p {
         font-family: "Gotham";
         @include fontSize(16px);
-        @include media($mdbg) {
+        @include media($md) {
             @include fontSize(20px);
         }
         @include media($hg) {
@@ -332,6 +338,11 @@ button#load-more.done {
     max-width: 200px;
     max-height: 200px;
     @include media($md) {
+        padding: 10px;
+        width: 150px;
+        height: 150px;   
+    }
+    @include media($mdbg) {
         padding: 10px;
         width: 70px;
         height: 70px;   

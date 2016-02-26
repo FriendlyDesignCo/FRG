@@ -52,9 +52,9 @@ get_header(); ?>
 					console.log(e);
 					s=function(){
 						var s=$(window).scrollTop();
-						s>e?$(window).width() > 768 &&( 
+						s>e?$(window).width() > 1024 &&( 
 							$("header#masthead ").removeClass("not-scrolled"),$(".secondary-nav").addClass("slide-down")) : 
-							$(window).width() > 768 && ( $("header#masthead ").addClass("not-scrolled"),$(".secondary-nav").removeClass("slide-down"));
+							$(window).width() > 1024 && ( $("header#masthead ").addClass("not-scrolled"),$(".secondary-nav").removeClass("slide-down"));
 
 					};
 				});
@@ -63,8 +63,11 @@ get_header(); ?>
 
 
 			    // add class for mobile or desktop screen sizes
-			    if ($(window).width() < 1059) {
+			    if ($(window).width() < 768) {
 		             $('body').addClass("mobile-screen");
+		        }
+		        else if ($(window).width() < 1024) {
+		             $('body').addClass("tablet-screen");
 		        }
 		        else {
 		        	$('body').addClass("desktop-screen");	
@@ -164,6 +167,13 @@ get_header(); ?>
 			
 			<script>
 				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%",offset: "-50"})
+							.setPin(".tablet-screen .flip-icons")
+							.addTo(controller);
+				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%"})
+							.setPin(".tablet-screen .slide-3 p")
+							.addTo(controller);
+
+				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%",offset: "-50"})
 							.setPin(".desktop-screen .flip-icons")
 							.addTo(controller);
 				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%"})
@@ -188,6 +198,23 @@ get_header(); ?>
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
 						.setTween(".mobile-screen .icon-5 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.addTo(controller);	
+
+			//tablet
+			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
+						.setTween(".tablet-screen .icon-1 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
+						.setTween(".tablet-screen .icon-2 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
+						.setTween(".tablet-screen .icon-3 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
+						.setTween(".tablet-screen .icon-4 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#icon-trigger-1"})
+						.setTween(".tablet-screen .icon-5 .flip-icon", {rotationY:180}) // the tween durtion can be omitted and defaults to 1
 						.addTo(controller);	
 
 			// desktop
@@ -273,6 +300,10 @@ get_header(); ?>
 				new ScrollMagic.Scene({triggerElement: "#ingredient-trigger", duration: "200%"})
 							.setPin(".desktop-screen .ingredients-wrap")
 							.addTo(controller);	
+
+				new ScrollMagic.Scene({triggerElement: "#ingredient-trigger", duration: "220%"})
+							.setPin(".tablet-screen .ingredients-wrap")
+							.addTo(controller);	
 						
 				new ScrollMagic.Scene({triggerElement: "#ingredient-trigger", duration: "220%"})
 							.setPin(".mobile-screen .ingredients-wrap")
@@ -329,7 +360,28 @@ get_header(); ?>
 						.setTween(".desktop-screen p.hidden-2", { x: "200%", y: "-280%", scale: 1.3 })
 						.addTo(controller);		
 
-
+			// tablet 	
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".tablet-screen p#highlighted2", { x: "-135%", y: "20%", scale: 1.4 })
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".tablet-screen p#highlighted6", { x: "10%", y: "60%", scale: 1.86 })
+						.addTo(controller);			
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".tablet-screen p#highlighted9", { x: "80%", y: "70%", scale: 1.44 })
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".tablet-screen p#highlighted20", { x: "-156%", y: "-210%", scale: 1.66 })
+						.addTo(controller);			
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".tablet-screen p#highlighted21", { x: "-170%", y: "-50%", scale: 1.66 })
+						.addTo(controller);
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".tablet-screen p.hidden-1", { x: "280%", y: "-150%", scale: 1.3 })
+						.addTo(controller);		
+			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
+						.setTween(".tablet-screen p.hidden-2", { x: "200%", y: "-280%", scale: 1.3 })
+						.addTo(controller);
 			// mobile 	
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".mobile-screen p#highlighted2", { x: "-106%", y: "90%", scale: 1.4 })

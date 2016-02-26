@@ -9,7 +9,7 @@ body.home {
          &.not-scrolled {
             position: fixed;
             //background-color: initial;
-            @include media($md) {
+            @include media($mdbg) {
                 position: absolute;
                 .logo {
                     display: block;
@@ -94,7 +94,7 @@ header#masthead {
         //background-color: $light-red;
         height: calc(100vh - 50px);
         width: 100%;
-        @include media($md) {
+        @include media($mdbg) {
             width: auto;
             background-color: none;
             position: relative;
@@ -128,7 +128,7 @@ header#masthead {
         color: $tan;
         text-transform: uppercase;
         line-height: 1.2em;
-        @include media($md) {
+        @include media($mdbg) {
             line-height: 1.5em;
         }
         &:after {
@@ -136,7 +136,7 @@ header#masthead {
             position: absolute;
             right: 10px;
             color: $tan;
-            @include media($md) {
+            @include media($mdbg) {
                 display: none;
             }
         }
@@ -149,7 +149,7 @@ header#masthead {
         
     }
     li {
-        @include media($md) {
+        @include media($mdbg) {
             display: inline;
             float: right;
             float: left;
@@ -164,20 +164,20 @@ header#masthead {
     a {
         display: block;
         padding: 10px 25px;
-        @include media($md) {
+        @include media($mdbg) {
             padding: 18px 25px;
         }
     }
     > li {
         a {
             border-top: 2px solid $dark-red;
-            @include media($md) {
+            @include media($mdbg) {
                 border-top: 3px solid $dark-red;    
             }
         }
         &:hover {
              > a {
-                @include media($md) {
+                @include media($mdbg) {
                     border-top: 3px solid $tan;        
                 }
             }
@@ -187,7 +187,7 @@ header#masthead {
     .menu-item-has-children {
         > a {
             display: none;
-            @include media($md) {
+            @include media($mdbg) {
                 display: block;
             }
         }
@@ -195,7 +195,7 @@ header#masthead {
     .sub-menu {
         a {
             padding: 10px 25px;
-            @include media($md) {
+            @include media($mdbg) {
                 padding: 20px 25px;
             }
         }
@@ -230,7 +230,7 @@ ul.sub-menu {
     text-align: left;
     top: 0;
     background-color: $light-red;
-    @include media($md) {
+    @include media($mdbg) {
         display: none;
         position: absolute;
         background-color: $dark-red;
@@ -249,7 +249,7 @@ ul.sub-menu {
         display: block;
         padding: 15px 25px;
         line-height: 1.2em;
-        @include media($md) {
+        @include media($mdbg) {
             border-top: none !important;
         }
     }
@@ -268,7 +268,7 @@ ul.sub-menu {
     text-transform: uppercase;
     font-family: "Gotham";
     transition: all .3s;
-    @include media($md) {
+    @include media($mdbg) {
         width: 200px;
         @include fontSize(16px);
     }
@@ -290,7 +290,7 @@ ul.sub-menu {
 
 #primary-nav {
     display: none;
-    @include media($md) {
+    @include media($mdbg) {
         display: block;
     }
     .reservation-widget {
@@ -323,7 +323,7 @@ ul.sub-menu {
     left: 0;
     transition: all .4s;
     
-    @include media($md) {
+    @include media($mdbg) {
         transform: translateY(-140px);    
     }
     .reservation-widget {
@@ -365,7 +365,7 @@ ul.sub-menu {
         right: 0;
         transition: all .3s;
         transform: translateX(100vw);
-        @include media($md) {
+        @include media($mdbg) {
             transform: translateX(0);
             top: 0px;
             background-color: $dark-red;
@@ -373,7 +373,7 @@ ul.sub-menu {
         }
     }
     .sub-menu {
-        @include media($md) {
+        @include media($mdbg) {
             top: 63px;    
         }
     }
@@ -399,7 +399,7 @@ header label {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    @include media($md) {
+    @include media($mdbg) {
         display: none;
     }
 }
