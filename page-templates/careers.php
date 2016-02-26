@@ -13,8 +13,11 @@ get_header(); ?>
 		(function($) {
 		    $(document).ready(function() {
 
-		    	if ($(window).width() < 1059) {
+		    	if ($(window).width() < 768) {
 		             $('body').addClass("mobile-screen");
+		        }
+		        else if ($(window).width() < 1024) {
+		             $('body').addClass("tablet-screen");
 		        }
 		        else {
 		        	$('body').addClass("desktop-screen");	
@@ -33,6 +36,8 @@ get_header(); ?>
 				$(".mobile-screen #career-trigger5").css("top", slide_height_5+"px");
 				$(".mobile-screen #career-trigger6").css("top", slide_height_6+"px");
 				$(".mobile-screen .careers-section.last-slide").css("top", last_slide_height+"px");
+
+				
 			});
 
 		})(jQuery);
@@ -84,7 +89,7 @@ get_header(); ?>
 	</style>
 	<section class="section careers-section slide-1 section-wrap">
 		<div class="section-inner">
-		
+
 			<h2 class="small"><?php the_field('hero_header_line_1'); ?></h2>
 			<h2 class="small"><?php the_field('hero_header_line_2'); ?></h2>
 			<p class="text-red"><?php the_field('hero_paragraph'); ?></p>

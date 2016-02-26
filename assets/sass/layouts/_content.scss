@@ -141,7 +141,7 @@ button#load-more.done {
     p {
         font-family: "Gotham";
         @include fontSize(16px);
-        @include media($md) {
+        @include media($mdbg) {
             @include fontSize(20px);
         }
         @include media($hg) {
@@ -412,6 +412,9 @@ button#load-more.done {
     left: 0;
     z-index: 4;
     @include media($md) {
+        padding: 20px 0;    
+    }
+    @include media($mdbg) {
         padding: 50px 0;    
     }
 }
@@ -623,6 +626,9 @@ ul.positions {
         z-index: 0;
     }
     @include media($md) {
+        padding: 25vh 0 0;
+    }
+    @include media($mdbg) {
         padding: 30vh 0 0;
     }
     p {
@@ -630,6 +636,9 @@ ul.positions {
         @include fontSize(14px);
         line-height: 1.4em;
         @include media($md) {
+            @include fontSize(20px);
+        }
+        @include media($mdbg) {
             @include fontSize(24px);
         }
     }
@@ -768,6 +777,9 @@ h2.career-title {
     font-weight: 500;
     @include fontSize(20px);
     @include media($md) {
+        @include fontSize(35px);
+    }
+    @include media($mdbg) {
         @include fontSize(42px);
     }
 }
@@ -1204,6 +1216,9 @@ ul.job-list-dots {
     }
     @include media($md) {
         display: block;
+        @include outer-container(768px);   
+    }
+    @include media($mdbg) {
         @include outer-container(1060px);   
     }
 }

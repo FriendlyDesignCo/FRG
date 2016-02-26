@@ -301,7 +301,7 @@ h2 {
     }
     &.small {
         @include fontSize(32px);
-        @include media($md) {
+        @include media($mdbg) {
             @include fontSize(62px);    
         }
     }

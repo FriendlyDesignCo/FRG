@@ -795,7 +795,7 @@ h2 {
   h2.small {
     font-size: 32px;
     font-size: 2rem; }
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 64em) {
       h2.small {
         font-size: 62px;
         font-size: 3.875rem; } }
@@ -1678,7 +1678,7 @@ button#load-more.done {
     font-family: "Gotham";
     font-size: 16px;
     font-size: 1rem; }
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 64em) {
       .home-section p, .section-wrap p {
         font-size: 20px;
         font-size: 1.25rem; } }
@@ -1899,6 +1899,9 @@ button#load-more.done {
   z-index: 4; }
   @media screen and (min-width: 48em) {
     .ingredients-wrap {
+      padding: 20px 0; } }
+  @media screen and (min-width: 64em) {
+    .ingredients-wrap {
       padding: 50px 0; } }
 
 #cookie-trigger {
@@ -2079,6 +2082,9 @@ ul.positions {
     z-index: 0; }
   @media screen and (min-width: 48em) {
     .career-slide {
+      padding: 25vh 0 0; } }
+  @media screen and (min-width: 64em) {
+    .career-slide {
       padding: 30vh 0 0; } }
   .career-slide p {
     font-family: "Gotham";
@@ -2086,6 +2092,10 @@ ul.positions {
     font-size: 0.875rem;
     line-height: 1.4em; }
     @media screen and (min-width: 48em) {
+      .career-slide p {
+        font-size: 20px;
+        font-size: 1.25rem; } }
+    @media screen and (min-width: 64em) {
       .career-slide p {
         font-size: 24px;
         font-size: 1.5rem; } }
@@ -2192,6 +2202,10 @@ h2.career-title {
   font-size: 20px;
   font-size: 1.25rem; }
   @media screen and (min-width: 48em) {
+    h2.career-title {
+      font-size: 35px;
+      font-size: 2.1875rem; } }
+  @media screen and (min-width: 64em) {
     h2.career-title {
       font-size: 42px;
       font-size: 2.625rem; } }
@@ -2592,6 +2606,15 @@ ul.job-list-dots {
   @media screen and (min-width: 48em) {
     .nav-dots {
       display: block;
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto; }
+      .nav-dots::after {
+        clear: both;
+        content: "";
+        display: table; } }
+  @media screen and (min-width: 64em) {
+    .nav-dots {
       max-width: 1060px;
       margin-left: auto;
       margin-right: auto; }
