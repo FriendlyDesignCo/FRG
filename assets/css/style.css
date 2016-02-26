@@ -193,6 +193,11 @@ td,
 th {
   vertical-align: middle; }
 
+/*$sm: new-breakpoint(min-width 0 2);
+$smbg: new-breakpoint(min-width em(480) 4);
+$md: new-breakpoint(min-width em(768) 6);
+$mdbg: new-breakpoint(min-width em(1024) 8);
+$hg: new-breakpoint(min-width em(1140) 12);*/
 html {
   box-sizing: border-box; }
 
@@ -913,8 +918,8 @@ body {
     #primary {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 65.21739%;
+      margin-right: 3.22581%;
+      width: 48.3871%;
       margin-right: 0; }
       #primary:last-child {
         margin-right: 0; } }
@@ -940,8 +945,8 @@ body {
     #secondary {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 30.43478%;
+      margin-right: 3.22581%;
+      width: 22.58065%;
       margin-right: 0; }
       #secondary:last-child {
         margin-right: 0; } }
@@ -3522,8 +3527,8 @@ select.source {
   .page-template-page-templatestemplate-left-col-php #main #primary {
     float: left;
     display: block;
-    margin-right: 4.34783%;
-    width: 65.21739%;
+    margin-right: 3.22581%;
+    width: 48.3871%;
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2; }
@@ -3544,8 +3549,8 @@ select.source {
     .page-template-page-templatestemplate-left-col-php #main #secondary {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 30.43478%;
+      margin-right: 3.22581%;
+      width: 22.58065%;
       -webkit-order: 1;
           -ms-flex-order: 1;
               order: 1; }
@@ -3575,8 +3580,8 @@ select.source {
     .page-template-page-templatestemplate-right-col-php #primary {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 65.21739%; }
+      margin-right: 3.22581%;
+      width: 48.3871%; }
       .page-template-page-templatestemplate-right-col-php #primary:last-child {
         margin-right: 0; } }
 
@@ -3596,8 +3601,8 @@ select.source {
     .page-template-page-templatestemplate-right-col-php #secondary {
       float: left;
       display: block;
-      margin-right: 4.34783%;
-      width: 30.43478%; }
+      margin-right: 3.22581%;
+      width: 22.58065%; }
       .page-template-page-templatestemplate-right-col-php #secondary:last-child {
         margin-right: 0; } }
 
