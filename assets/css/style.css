@@ -1681,8 +1681,8 @@ button#load-more.done {
         font-size: 1.25rem; } }
     @media screen and (min-width: 71.25em) {
       .home-section p, .section-wrap p {
-        font-size: 24px;
-        font-size: 1.5rem; } }
+        font-size: 22px;
+        font-size: 1.375rem; } }
 
 .home-section {
   height: 100vh; }
@@ -2877,6 +2877,8 @@ ul.job-list-dots {
   @media screen and (min-width: 48em) {
     .drink-block:nth-of-type(3n) {
       margin-left: 2%; } }
+  .drink-block h4 {
+    margin-bottom: 5px; }
 
 .arrow-wrap {
   margin-bottom: 50px; }

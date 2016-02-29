@@ -146,7 +146,7 @@ get_header(); ?>
 				
 				new ScrollMagic.Scene({triggerElement: "#trigger1" ,duration: "50%"})
 							//.setVelocity(".flip-icon", {opacity: 0}, {duration: 400})
-							.setTween(".desktop-screen .flip-icon-wrap", {width: 200, height: 200}) // the tween durtion can be omitted and defaults to 1
+							.setTween(".desktop-screen .flip-icon-wrap", {width: 180, height: 180}) // the tween durtion can be omitted and defaults to 1
 							//.setClassToggle(".flip-icon-wrap", "hover") // add class toggle
 							.addTo(controller);
 

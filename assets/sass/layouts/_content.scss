@@ -145,7 +145,7 @@ button#load-more.done {
             @include fontSize(20px);
         }
         @include media($hg) {
-            @include fontSize(24px);
+            @include fontSize(22px);
         }
     }
 }
@@ -1526,6 +1526,9 @@ ul.job-list-dots {
             margin-left: 2%;    
         }
         
+    }
+    h4 {
+        margin-bottom: 5px;
     }
 }
 
