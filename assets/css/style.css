@@ -1229,13 +1229,13 @@ ul.sub-menu {
   position: fixed;
   top: 0;
   left: 0;
-  transition: all .4s; }
+  transition: all .4s;
+  box-shadow: 0 5px 14px -6px black; }
   @media screen and (min-width: 64em) {
     #secondary-nav {
       -webkit-transform: translateY(-140px);
               transform: translateY(-140px); } }
   #secondary-nav .reservation-widget {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 300px;
     right: 0;
     top: 63px; }
@@ -1268,7 +1268,8 @@ ul.sub-menu {
     right: 0;
     transition: all .3s;
     -webkit-transform: translateX(100vw);
-            transform: translateX(100vw); }
+            transform: translateX(100vw);
+    box-shadow: 0 14px 20px -19px black; }
     @media screen and (min-width: 64em) {
       #secondary-nav .menu-menu-1-container {
         -webkit-transform: translateX(0);
@@ -1813,6 +1814,10 @@ button#load-more.done {
   text-align: center; }
   @media screen and (min-width: 48em) {
     .flip-icons {
+      position: absolute;
+      bottom: 30vh;
+      width: 100%;
+      left: 0;
       -webkit-transform: translateY(0px);
               transform: translateY(0px);
       margin-top: 10%; } }
@@ -2878,7 +2883,7 @@ ul.job-list-dots {
     .drink-block:nth-of-type(3n) {
       margin-left: 2%; } }
   .drink-block h4 {
-    margin-bottom: 5px; }
+    margin-bottom: 0; }
 
 .arrow-wrap {
   margin-bottom: 50px; }

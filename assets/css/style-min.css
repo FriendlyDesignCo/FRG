@@ -126,13 +126,12 @@ ul.sub-menu li:hover{background-color:#9d4446}.reservation-widget{position:absol
 .reservation-widget:hover a{background-color:#8b2332;text-decoration:none}#primary-nav{display:none}
 @media screen and (min-width:64em){#primary-nav{display:block}}#primary-nav .reservation-widget{display:none;width:200px;left:50px}
 #primary-nav .logo{width:180px;position:relative;padding:10px;float:left;display:none}
-#primary-nav .logo a{display:block}#primary-nav .logo .light{display:block}#secondary-nav{display:block;position:fixed;top:0;left:0;transition:all .4s}
+#primary-nav .logo a{display:block}#primary-nav .logo .light{display:block}#secondary-nav{display:block;position:fixed;top:0;left:0;transition:all .4s;box-shadow:0 5px 14px -6px black}
 @media screen and (min-width:64em){#secondary-nav{-webkit-transform:translateY(-140px);transform:translateY(-140px)}
-}#secondary-nav .reservation-widget{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);width:300px;right:0;top:63px}
-#secondary-nav .reservation-widget .widget-wrap{position:relative;text-align:left;display:none;background-color:#9d4446;padding:10px;width:100%;position:absolute;top:50px}
+}#secondary-nav .reservation-widget{width:300px;right:0;top:63px}#secondary-nav .reservation-widget .widget-wrap{position:relative;text-align:left;display:none;background-color:#9d4446;padding:10px;width:100%;position:absolute;top:50px}
 #secondary-nav .logo{position:relative;padding:10px;float:left;width:140px;height:63px}
 #secondary-nav .logo a{display:block}#secondary-nav.slide-down{-webkit-transform:translateY(0);transform:translateY(0)}
-#secondary-nav .menu-menu-1-container{width:80%;background-color:#9d4446;position:absolute;height:100vh;top:63px;right:0;transition:all .3s;-webkit-transform:translateX(100vw);transform:translateX(100vw)}
+#secondary-nav .menu-menu-1-container{width:80%;background-color:#9d4446;position:absolute;height:100vh;top:63px;right:0;transition:all .3s;-webkit-transform:translateX(100vw);transform:translateX(100vw);box-shadow:0 14px 20px -19px black}
 @media screen and (min-width:64em){#secondary-nav .menu-menu-1-container{-webkit-transform:translateX(0);transform:translateX(0);top:0;background-color:#8b2332;height:auto}
 }@media screen and (min-width:64em){#secondary-nav .sub-menu{top:63px}}header label{position:absolute;right:0;top:0;padding:20px 10px;z-index:130;height:100%;margin:0;width:50px}
 .hamburger{position:relative;top:0;z-index:100;list-style-type:none;padding:0;margin:0}
@@ -209,7 +208,7 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 }.slide-8-block p{font-size:18px;font-size:1.125rem;line-height:1.4em}.slide-8-block .slide-8-block-inner{padding:50% 20px 20px;outline:1px solid #ffe7cc;outline-offset:-10px;height:100%;width:100%;z-index:3;position:relative}
 @media screen and (min-width:48em){.slide-8-block .slide-8-block-inner{padding:20px;position:absolute;left:0;top:0}
 }.flip-icons{margin-top:40px;-webkit-transform:translateY(300px);transform:translateY(300px);text-align:center}
-@media screen and (min-width:48em){.flip-icons{-webkit-transform:translateY(0);transform:translateY(0);margin-top:10%}
+@media screen and (min-width:48em){.flip-icons{position:absolute;bottom:30vh;width:100%;left:0;-webkit-transform:translateY(0);transform:translateY(0);margin-top:10%}
 }.flip-icon-wrap{-webkit-perspective:1000;perspective:1000;display:inline-block}.flip-icon-wrap{width:29vw;height:29vw;border-radius:50%;padding:5px;max-width:200px;max-height:200px}
 @media screen and (min-width:48em){.flip-icon-wrap{padding:10px;width:120px;height:120px}
 }@media screen and (min-width:64em){.flip-icon-wrap{padding:10px;width:70px;height:70px}
@@ -357,7 +356,7 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .drink-block span{float:left;display:inline}.drink-block span+span{border-right:1px solid black}
 @media screen and (min-width:48em){.drink-block:nth-of-type(3n-1){margin-left:2%}
 }@media screen and (min-width:48em){.drink-block:nth-of-type(3n){margin-left:2%}}
-.drink-block h4{margin-bottom:5px}.arrow-wrap{margin-bottom:50px}@media screen and (min-width:48em){.arrow-wrap{margin-bottom:10px}
+.drink-block h4{margin-bottom:0}.arrow-wrap{margin-bottom:50px}@media screen and (min-width:48em){.arrow-wrap{margin-bottom:10px}
 }.cookbook-logo{padding-bottom:50px}.cookbook-logo img{display:block;margin:0 auto}
 @media screen and (min-width:48em){.cookbook-logo img{max-width:500px}}.cookbook-text{width:100%;position:relative;padding-top:50px;padding-bottom:50px}
 .cookbook-text p{margin-top:0;font-family:"GothamNarrow";font-weight:300;font-size:18px;font-size:1.125rem}

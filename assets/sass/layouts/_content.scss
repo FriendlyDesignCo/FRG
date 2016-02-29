@@ -315,6 +315,10 @@ button#load-more.done {
     transform: translateY(300px);
     text-align: center;
     @include media($md) {
+        position: absolute;
+        bottom: 30vh;
+        width: 100%;
+        left: 0;
         transform: translateY(0px);
         margin-top: 10%;//150px;
     }
@@ -1528,7 +1532,7 @@ ul.job-list-dots {
         
     }
     h4 {
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
 }
 
