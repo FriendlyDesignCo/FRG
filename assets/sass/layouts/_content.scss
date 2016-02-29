@@ -184,7 +184,9 @@ button#load-more.done {
 }
 
 .slide-8 {
-    
+    z-index: 4;
+    position: relative;
+    @include background-image(linear-gradient(to top, $tan 90%, transparent));
     @include media($md) {
         padding-top: 20vh;    
     }
@@ -416,6 +418,7 @@ button#load-more.done {
     left: 0;
     z-index: 4;
     @include media($md) {
+        top: 25vh;
         padding: 20px 0;    
     }
     @include media($mdbg) {

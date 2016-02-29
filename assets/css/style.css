@@ -1704,6 +1704,9 @@ button#load-more.done {
     margin: 0; }
 
 .slide-8 {
+  z-index: 4;
+  position: relative;
+  background-image: linear-gradient(to top, #FFE7CC 90%, transparent);
   height: auto; }
   @media screen and (min-width: 48em) {
     .slide-8 {
@@ -1901,6 +1904,7 @@ button#load-more.done {
   z-index: 4; }
   @media screen and (min-width: 48em) {
     .ingredients-wrap {
+      top: 25vh;
       padding: 20px 0; } }
   @media screen and (min-width: 64em) {
     .ingredients-wrap {
