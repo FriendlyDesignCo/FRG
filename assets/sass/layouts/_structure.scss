@@ -79,6 +79,9 @@ html {
 .home-section-inner, .section-inner {
     
     height: 100%;
+    @include media($smbg) {
+        @include outer-container(480px);   
+    }
     @include media($md) {
         @include outer-container(768px);   
     }

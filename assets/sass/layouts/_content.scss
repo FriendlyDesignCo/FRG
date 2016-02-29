@@ -134,15 +134,15 @@ button#load-more.done {
     position: relative;
     
     padding: 5vh 5% 0;
-    @include media($md) {
+    @include media($sm) {
         text-align: center;
-        padding: 15vh 0;    
+        padding: 15vh 10px;    
     }
     p {
         font-family: "Gotham";
         @include fontSize(16px);
-        @include media($mdbg) {
-            @include fontSize(20px);
+        @include media($md) {
+            @include fontSize(22px);
         }
         @include media($hg) {
             @include fontSize(22px);
@@ -207,18 +207,22 @@ button#load-more.done {
     background-size: cover;
     position: relative;
     width: 100%;
-    height: 550px;
+    //height: 550px;
     float: none;
     @include media($md) {
-        height: 0;
+        
         width: 32%;
+        
+    }
+    @include media($mdbg) {
+        height: 0;
         padding-bottom: 32%;
     }
     .slide-8-header {
         transition: all .3s;
         position: relative;
         
-        @include media($md) {
+        @include media($mdbg) {
             top: 60%;    
         }
     }
@@ -235,27 +239,31 @@ button#load-more.done {
     h4 {
         font-weight: 500;
         text-transform: uppercase;
-        @include fontSize(23px);
-
+        @include fontSize(18px);
+        @include media($mdbg) {
+            @include fontSize(23px);
+        }
     }
     .move-text {
         
-        @include media($md) {
+        @include media($mdbg) {
             transform: translateY(150%);   
             transition: all .3s;
         }
     }
     &:hover {
-        &:before {
-            //background-color: $dark-red;
-            transition: all .3s;
-            transform: translateY(-50%);
-        }
-        .move-text {
-            transform: translateY(0%);   
-        }
-        .slide-8-header {
-            top: 0%;
+        @include media($mdbg) {
+            &:before {
+                //background-color: $dark-red;
+                transition: all .3s;
+                transform: translateY(-50%);
+            }
+            .move-text {
+                transform: translateY(0%);   
+            }
+            .slide-8-header {
+                top: 0%;
+            }
         }
     }
     &:before {
@@ -270,7 +278,7 @@ button#load-more.done {
         height: 250%;
         z-index: 0;
         opacity: .8;
-        @include media($md) {
+        @include media($mdbg) {
             @include background-image(linear-gradient(to top, $dark-red 50%, rgba(255,255,255,0)));
         }
     }
@@ -292,18 +300,21 @@ button#load-more.done {
         }
     }
     p {
-        @include fontSize(18px);
+        @include fontSize(14px);
         line-height: 1.4em;
+        @include media($mdbg) {
+            @include fontSize(18px);
+        }
     }
     .slide-8-block-inner {
-        padding: 50% 20px 20px;
+        padding: 40% 20px 20px;
         outline: 1px solid $tan;
         outline-offset: -10px;
         height: 100%;
         width: 100%;
         z-index: 3;
         position: relative;
-        @include media($md) {
+        @include media($mdbg) {
             padding: 20px;
             position: absolute;
             left: 0;
@@ -314,7 +325,7 @@ button#load-more.done {
 
 .flip-icons {
     margin-top: 40px;
-    transform: translateY(300px);
+    transform: translateY(60vh);
     text-align: center;
     @include media($md) {
         position: absolute;
@@ -418,10 +429,11 @@ button#load-more.done {
     left: 0;
     z-index: 4;
     @include media($md) {
-        top: 25vh;
+        
         padding: 20px 0;    
     }
     @include media($mdbg) {
+        top: 25vh;
         padding: 50px 0;    
     }
 }

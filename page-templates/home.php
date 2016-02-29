@@ -434,9 +434,9 @@ get_header(); ?>
 					<div class="slide-8-block-inner">	
 						<div class="slide-8-header">
 							<img class="" src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_3_icon'); ?>"> 
-							<h4 class=""><?php the_field('block_2_header'); ?></h4>
+							<h4 class=""><?php the_field('block_3_header'); ?></h4>
 						</div>
-						<p class="move-text"><?php the_field('block_2_paragraph'); ?></p>
+						<p class="move-text"><?php the_field('block_3_paragraph'); ?></p>
 					</div>
 				</div>
 			</div>
