@@ -250,7 +250,7 @@ get_header(); ?>
 							.setPin(".image-cookie")
 							.addTo(controller);
 				new ScrollMagic.Scene({triggerElement: "#cookie-trigger-2"})
-							.setTween(".image-cookie", {y:180})
+							.setTween(".image-cookie", {y:"20%"})
 							.addTo(controller);							
 			</script>
 		</div>
