@@ -247,7 +247,7 @@
 				); ?>
 		</nav>
 		<nav id="secondary-nav" class="secondary-nav">
-			<?php if(!is_page( 'Reservations' ) ) { ?>
+			<?php if(!is_page( 'Reservations' ) && !is_page( 'Careers' )  ) { ?>
 				<div class="reservation-widget">
 					<a href="">Reserve A Table</a>
 					<div class="widget-wrap">

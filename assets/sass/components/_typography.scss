@@ -297,7 +297,10 @@ h2 {
     font-weight: bold;
     font-style: italic;
     &.large {
-        @include fontSize(81px);
+        @include fontSize(36px);
+        @include media($mdbg) {
+          @include fontSize(81px);
+        }
     }
     &.small {
         @include fontSize(32px);

@@ -61,10 +61,10 @@ ul:nth-child(n+2){margin-bottom:0}ol:nth-child(n+2){margin-bottom:0}.entry-title
 }.blog-item .sub-title{color:black}@media screen and (min-width:48em){.blog-item .sub-title{font-size:20px;font-size:1.25rem}
 }.body-text,.entry-content p{font-family:"GothamNarrow";font-weight:300}
 .text-red{color:#8b2332}.center-text{text-align:center}.medium{font-weight:500}h2{font-family:"adobe-caslon-pro";font-weight:bold;font-style:italic}
-h2.large{font-size:81px;font-size:5.0625rem}h2.small{font-size:32px;font-size:2rem}
-@media screen and (min-width:64em){h2.small{font-size:62px;font-size:3.875rem}}.slide-2 h2,.slide-4 h2,.slide-5 h2,.slide-6 h2{font-size:32px;font-size:2rem}
-@media screen and (min-width:48em){.slide-2 h2{font-size:60px;font-size:3.75rem}}
-@media screen and (min-width:48em){.slide-4 h2{font-size:54px;font-size:3.375rem}
+h2.large{font-size:36px;font-size:2.25rem}@media screen and (min-width:64em){h2.large{font-size:81px;font-size:5.0625rem}
+}h2.small{font-size:32px;font-size:2rem}@media screen and (min-width:64em){h2.small{font-size:62px;font-size:3.875rem}
+}.slide-2 h2,.slide-4 h2,.slide-5 h2,.slide-6 h2{font-size:32px;font-size:2rem}@media screen and (min-width:48em){.slide-2 h2{font-size:60px;font-size:3.75rem}
+}@media screen and (min-width:48em){.slide-4 h2{font-size:54px;font-size:3.375rem}
 }@media screen and (min-width:48em){.slide-5 h2,.slide-6 h2{font-size:49px;font-size:3.0625rem}
 }h3{font-size:36px;font-size:2.25rem;font-family:"GothamNarrow";font-weight:300}
 h4{font-family:"Gotham"}h4.large{font-size:24px;font-size:1.5rem}
