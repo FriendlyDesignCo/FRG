@@ -30,10 +30,10 @@ get_header(); ?>
 					          
 							<select name="RestaurantID" class="source form-control selectpicker location-picker" onchange="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value">
 								<option value="0" class="hidden">LOCATION</option>
-								<option value="24712">DC</option>
-								<option value="70411">MOCO</option>
-								<option value="150769">TYSONS</option>
-								<option value="93802" class="ffb">FARMERS FISHERS BAKERS</option>
+								<option value="24712">Founding Farmers DC</option>
+								<option value="70411">MoCo’s Founding Farmers</option>
+								<option value="150769">Founding Farmers Tysons</option>
+								<option value="93802" class="ffb">Farmers Fishers Bakers</option>
 							</select>
 						</div>
 						<div class="form-group date">
