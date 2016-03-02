@@ -98,6 +98,8 @@ html {
 
 .site-content {
     padding: 50px 5% 0;
+        float: left;
+    width: 100%;
     @include media($md) {
         padding: 150px 7% 0;
     }

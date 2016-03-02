@@ -990,7 +990,9 @@ body {
         width: 70%; } }
 
 .site-content {
-  padding: 50px 5% 0; }
+  padding: 50px 5% 0;
+  float: left;
+  width: 100%; }
   @media screen and (min-width: 48em) {
     .site-content {
       padding: 150px 7% 0; } }
@@ -3432,18 +3434,23 @@ input.datepicker {
   position: relative; }
 
 /********** form ***********/
-.OT_searchWrapperAll {
-  display: none; }
+@media screen and (min-width: 48em) {
+  .form_wrap-inner {
+    width: 50%; } }
 
-.form_wrap-inner {
-  width: 350px;
+@media screen and (min-width: 48em) {
+  .form_wrap-inner.left {
+    padding: 0 40px; } }
+
+.OT_searchWrapperAll {
+  width: 100%;
   background-color: #9D4446;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 300px;
   font-size: 22px;
   font-size: 1.375rem;
   font-family: "Gotham"; }
-  .form_wrap-inner .form-header {
+  .OT_searchWrapperAll .form-header {
     font-family: "Gotham";
     font-size: 22px;
     font-size: 1.375rem;
@@ -3452,12 +3459,14 @@ input.datepicker {
     text-align: center;
     font-weight: 400;
     text-transform: uppercase; }
-  .form_wrap-inner .contact-text {
+  .OT_searchWrapperAll .contact-text {
     color: #FFE7CC;
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 1.2em;
     text-align: center; }
+  .OT_searchWrapperAll form {
+    margin-bottom: 30px; }
 
 .form-control {
   width: 100%;
@@ -3560,7 +3569,7 @@ select.source {
     font-size: 22px;
     font-size: 1.375rem; }
   .form-group input .drop, .form-group.dropdown .drop {
-    padding-left: 10px; }
+    padding-left: 30px; }
 
 .form-group input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -3593,7 +3602,7 @@ select.source {
   overflow-y: scroll;
   list-style-type: none; }
   .dropdown-list li {
-    padding: 20px 10px;
+    padding: 20px 30px;
     cursor: pointer;
     line-height: 1em;
     transition: all .3s; }
@@ -3602,10 +3611,21 @@ select.source {
 
 .date-input {
   display: block; }
+  .date-input input {
+    padding-left: 30px; }
 
 .datepicker table tr td.today {
   background-image: none !important;
   background-color: #FFE7CC !important; }
+
+.reservation-page .form-wrap {
+  padding: 0 10vw; }
+
+.reservation_image_wrap {
+  width: 100%; }
+  @media screen and (min-width: 48em) {
+    .reservation_image_wrap {
+      width: 50%; } }
 
 /*--------------------------------------------------------------
     6.4 Page Templates

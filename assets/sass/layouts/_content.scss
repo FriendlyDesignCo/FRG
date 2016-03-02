@@ -2157,14 +2157,21 @@ input.datepicker {
 
 /********** form ***********/
 
-.OT_searchWrapperAll {
-    display: none;
+.form_wrap-inner {
+    @include media($md) {
+        width: 50%;
+    }
+    &.left {
+        @include media($md) {
+            padding: 0 40px;
+        }
+    }
 }
 
-.form_wrap-inner {
-    width: 350px;
+.OT_searchWrapperAll {
+    width: 100%;
     background-color: $light-red;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 300px;
     @include fontSize(22px);
     font-family: "Gotham";
@@ -2182,6 +2189,9 @@ input.datepicker {
         @include fontSize(18px);
         line-height: 1.2em;
         text-align: center;
+    }
+    form {
+        margin-bottom: 30px;
     }
 }
 
@@ -2271,7 +2281,7 @@ select.source {
         @include fontSize(22px);
     }
     .drop {
-        padding-left: 10px;
+        padding-left: 30px;
     }
 }
 .form-group input {
@@ -2307,7 +2317,7 @@ select.source {
     overflow-y:scroll;
     list-style-type: none;
     li {
-        padding: 20px 10px;
+        padding: 20px 30px;
         cursor: pointer;
         line-height: 1em;
         transition: all .3s;
@@ -2319,9 +2329,28 @@ select.source {
 
 .date-input {
     display: block;
+    input {
+        padding-left: 30px;
+    }
 }
 
 .datepicker table tr td.today {
     background-image: none !important;
     background-color: $tan !important;
+}
+
+.reservation-page {
+    .form-wrap {
+        padding: 0 10vw;
+    }
+}
+
+.reservation_image_wrap {
+    width: 100%;
+    @include media($md) {
+        width: 50%;
+    }
+    img {
+
+    }
 }

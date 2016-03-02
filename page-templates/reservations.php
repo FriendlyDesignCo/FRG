@@ -13,233 +13,263 @@ get_header(); ?>
 <div id="" class="reservation-page content-area ">
 	
 	<div id="content" class="site-content">
-		<div class="form_wrap-inner left">
-
-			<h2 class="form-header">Reserve a Table</h2>
+		<div class="form-wrap">
+			<div class="form_wrap-inner left">
+				<div class="OT_searchWrapperAll">
+					<h2 class="form-header">Reserve a Table</h2>
+					
 				
-			<div id="OT_searchWrapperAll">
-				<form name="ism" id="ism" class="clearfix" method="post" target="_blank" action="http://www.opentable.com/restaurant-search.aspx">
-					<div class="form-group dropdown">
-						
-			            <div class="drop"  style="">
-			            	<h3 class="left">LOCATION</h3>
-			            </div>
-			            <ul class="dropdown-list list-unstyled location-list" style="display: none;"></ul>
-				     
-				          
-						<select name="RestaurantID" class="source form-control selectpicker location-picker" onchange="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value">
-							<option value="0" class="hidden">LOCATION</option>
-							<option value="24712">DC</option>
-							<option value="70411">MOCO</option>
-							<option value="150769">TYSONS</option>
-							<option value="93802" class="ffb">FARMERS FISHERS BAKERS</option>
-						</select>
-					</div>
-					<div class="form-group date">
-						<span class="date-input">
-							<input type="text" name="startDate" class="form-control datepicker" placeholder="DATE" autocomplete="off"/>
-							<!--<input type="date" name="bday" min="2000-01-02">-->
-							<span class="btn-caret"><i class="fa fa-angle-down"></i></span>
-						</span>
-					</div>
-					<div class="form-group dropdown">
-						<div class="drop"  style="">
-			            	<h3 class="left">TIME</h3>
-			            </div>
-			            <ul class="dropdown-list list-unstyled time-list" style="display: none;"></ul>
-				     
-						<select name="ResTime" class="source form-control res-time selectpicker">
-							<option value="0" class="hidden">TIME</option>
-							<option value="7:00 AM">7:00 AM</option>
-							<option value="7:30 AM">7:30 AM</option>
-							<option value="8:00 AM">8:00 AM</option>
-							<option value="8:30 AM">8:30 AM</option>
-							<option value="9:00 AM">9:00 AM</option>
-							<option value="9:30 AM">9:30 AM</option>
-							<option value="10:00 AM">10:00 AM</option>
-							<option value="10:30 AM">10:30 AM</option>
-							<option value="11:00 AM">11:00 AM</option>
-							<option value="11:30 AM">11:30 AM</option>
-							<option value="12:00 PM">12:00 PM</option>
-							<option value="12:30 PM">12:30 PM</option>
-							<option value="1:00 PM">1:00 PM</option>
-							<option value="1:30 PM">1:30 PM</option>
-							<option value="2:00 PM">2:00 PM</option>
-							<option value="2:30 PM">2:30 PM</option>
-							<option value="3:00 PM">3:00 PM</option>
-							<option value="3:30 PM">3:30 PM</option>
-							<option value="4:00 PM">4:00 PM</option>
-							<option value="4:30 PM">4:30 PM</option>
-							<option value="5:00 PM">5:00 PM</option>
-							<option value="5:30 PM">5:30 PM</option>
-							<option value="6:00 PM">6:00 PM</option>
-							<option value="6:30 PM">6:30 PM</option>
-							<option value="7:00 PM">7:00 PM</option>
-							<option value="7:30 PM">7:30 PM</option>
-							<option value="8:00 PM">8:00 PM</option>
-							<option value="8:30 PM">8:30 PM</option>
-							<option value="9:00 PM">9:00 PM</option>
-							<option value="9:30 PM">9:30 PM</option>
-							<option value="10:00 PM">10:00 PM</option>
-							<option value="10:30 PM">10:30 PM</option>
-							<option value="11:00 PM">11:00 PM</option>
-							<option value="11:30 PM">11:30 PM</option>
-							<option value="12:00 AM">12:00 AM</option>
-						</select>
-					</div>
-					<div class="form-group dropdown">
-						<div class="drop"  style="">
-			            	<h3 class="left">SIZE</h3>
-			            </div>
-			            <ul class="dropdown-list list-unstyled party-size-list" style="display: none;"></ul>
-
-						<select name="PartySize" class="source form-control party-size selectpicker party-size-list">
-							<option value="0" class="hidden">SIZE</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-							<option value="12">12</option>
-							<option value="13">13</option>
-							<option value="14">14</option>
-							<option value="15">15</option>
-							<option value="16">16</option>
-							<option value="17">17</option>
-							<option value="18">18</option>
-							<option value="19">19</option>
-							<option value="20">20</option>
-						</select>
-					</div>
-					<div class="form-actions">
-						<input type="hidden" id="RestaurantReferralID" name="RestaurantReferralID" value="0">
-						<input type="hidden" name="txtDateFormat" value="MM/dd/yyyy">
-						<input type="hidden" name="widget" value="reservpage">
-						<input type="submit" name="submit" value="SEARCH" class="button btn btn-submit" onmousedown="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value;/*fbq('track', 'Lead');*/" />
-					</div>
-
-				</form>		
-				<h3 class="contact-text">Can’t get the reservation time you’re looking for online? Please call us, we might be able to help. 202-555-5555</h3>
-			</div>
-		</div>
-		<div class="reservation_image_wrap right">
-			<img src="<?php the_field('default_image') ?>">
-		</div>
-		<script>
-				
-				(function($) {
-
-					$(document).ready(function() {
-						selected_restaurant = 0;
-						var	selected_date = "weekday";
-						var	selected_time = "t1";
-						var	selected_party_size = "s1";
-
-						$('.dropdown ul li').click(function() {
-							// variables for what is selected
+					<form name="ism" id="ism" class="clearfix" method="post" target="_blank" action="http://www.opentable.com/restaurant-search.aspx">
+						<div class="form-group dropdown">
 							
+				            <div class="drop"  style="">
+				            	<h3 class="left">LOCATION</h3>
+				            </div>
+				            <ul class="dropdown-list list-unstyled location-list" style="display: none;"></ul>
+					     
+					          
+							<select name="RestaurantID" class="source form-control selectpicker location-picker" onchange="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value">
+								<option value="0" class="hidden">LOCATION</option>
+								<option value="24712">DC</option>
+								<option value="70411">MOCO</option>
+								<option value="150769">TYSONS</option>
+								<option value="93802" class="ffb">FARMERS FISHERS BAKERS</option>
+							</select>
+						</div>
+						<div class="form-group date">
+							<span class="date-input">
+								<input type="text" name="startDate" class="form-control datepicker" placeholder="DATE" autocomplete="off"/>
+								<!--<input type="date" name="bday" min="2000-01-02">-->
+								<span class="btn-caret"><i class="fa fa-angle-down"></i></span>
+							</span>
+						</div>
+						<div class="form-group dropdown">
+							<div class="drop"  style="">
+				            	<h3 class="left">TIME</h3>
+				            </div>
+				            <ul class="dropdown-list list-unstyled time-list" style="display: none;"></ul>
+					     
+							<select name="ResTime" class="source form-control res-time selectpicker">
+								<option value="0" class="hidden">TIME</option>
+								<option value="7:00 AM">7:00 AM</option>
+								<option value="7:30 AM">7:30 AM</option>
+								<option value="8:00 AM">8:00 AM</option>
+								<option value="8:30 AM">8:30 AM</option>
+								<option value="9:00 AM">9:00 AM</option>
+								<option value="9:30 AM">9:30 AM</option>
+								<option value="10:00 AM">10:00 AM</option>
+								<option value="10:30 AM">10:30 AM</option>
+								<option value="11:00 AM">11:00 AM</option>
+								<option value="11:30 AM">11:30 AM</option>
+								<option value="12:00 PM">12:00 PM</option>
+								<option value="12:30 PM">12:30 PM</option>
+								<option value="1:00 PM">1:00 PM</option>
+								<option value="1:30 PM">1:30 PM</option>
+								<option value="2:00 PM">2:00 PM</option>
+								<option value="2:30 PM">2:30 PM</option>
+								<option value="3:00 PM">3:00 PM</option>
+								<option value="3:30 PM">3:30 PM</option>
+								<option value="4:00 PM">4:00 PM</option>
+								<option value="4:30 PM">4:30 PM</option>
+								<option value="5:00 PM">5:00 PM</option>
+								<option value="5:30 PM">5:30 PM</option>
+								<option value="6:00 PM">6:00 PM</option>
+								<option value="6:30 PM">6:30 PM</option>
+								<option value="7:00 PM">7:00 PM</option>
+								<option value="7:30 PM">7:30 PM</option>
+								<option value="8:00 PM">8:00 PM</option>
+								<option value="8:30 PM">8:30 PM</option>
+								<option value="9:00 PM">9:00 PM</option>
+								<option value="9:30 PM">9:30 PM</option>
+								<option value="10:00 PM">10:00 PM</option>
+								<option value="10:30 PM">10:30 PM</option>
+								<option value="11:00 PM">11:00 PM</option>
+								<option value="11:30 PM">11:30 PM</option>
+								<option value="12:00 AM">12:00 AM</option>
+							</select>
+						</div>
+						<div class="form-group dropdown">
+							<div class="drop"  style="">
+				            	<h3 class="left">SIZE</h3>
+				            </div>
+				            <ul class="dropdown-list list-unstyled party-size-list" style="display: none;"></ul>
 
-							var text = $(this).text();
-							var index = $(this).index();
+							<select name="PartySize" class="source form-control party-size selectpicker party-size-list">
+								<option value="0" class="hidden">SIZE</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+							</select>
+						</div>
+						<div class="form-actions">
+							<input type="hidden" id="RestaurantReferralID" name="RestaurantReferralID" value="0">
+							<input type="hidden" name="txtDateFormat" value="MM/dd/yyyy">
+							<input type="hidden" name="widget" value="reservpage">
+							<input type="submit" name="submit" value="SEARCH" class="button btn btn-submit" onmousedown="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value;/*fbq('track', 'Lead');*/" />
+						</div>
 
-							console.log(index);
-						    $(this).parent().parent().children().children("h3").html(text);
-						    console.log("text "+ text);
-						    switch(text) {
-							    case "DC":
-							        $(this).parent().parent().children(".source").val(24712);
-							        // change to dc photo
-							        selected_restaurant = 0;
-							        $(".reservation_image_wrap img").attr("src", reservation_images[0]["image"] );
-							        break;
-							    case "MOCO":
-							    	console.log("moco");
-							        $(this).parent().parent().children(".source").val(70411);
-							        // change to moco photo
-							        selected_restaurant = 1;
-							        $(".reservation_image_wrap img").attr("src", reservation_images[1]["image"] );
-							        break;
-							    case "TYSONS":
-							        $(this).parent().parent().children(".source").val(150769);
-							        // change to tysons photo
-							        selected_restaurant = 2;
-							        $(".reservation_image_wrap img").attr("src", reservation_images[2]["image"] );
-							        break;
-							    case "FARMERS FISHERS BAKERS":
-							        $(this).parent().parent().children(".source").val(93802);
-							        // change to ffb photo
-							        selected_restaurant = 3;
-							        $(".reservation_image_wrap img").attr("src", reservation_images[3]["image"] );
-							        break;
-							    default:
-							        $(this).parent().parent().children(".source").val(text);
+					</form>		
+					<h3 class="contact-text">Can’t get the reservation time you’re looking for online? Please call us, we might be able to help. 202-555-5555</h3>
+				</div>
+			</div>
+			<div class="form_wrap-inner reservation_image_wrap right">
+				<img src="<?php the_field('default_image') ?>">
+			</div>
+			<script>
+					
+					(function($) {
+
+						$(document).ready(function() {
+							selected_restaurant = 0;
+							var	selected_date = "weekday";
+							var	selected_time = "t1";
+							var	selected_party_size = "s1";
+
+							$('.dropdown ul li').click(function() {
+								// variables for what is selected
+								
+
+								var text = $(this).text();
+								var index = $(this).index();
+
+								console.log(index);
+							    $(this).parent().parent().children().children("h3").html(text);
+							    console.log("text "+ text);
+							    switch(text) {
+								    case "DC":
+								        $(this).parent().parent().children(".source").val(24712);
+								        // change to dc photo
+								        selected_restaurant = 0;
+								        switchImages("url_1", reservation_images[0]["image"]);
+								        //$(".reservation_image_wrap img").attr("src", reservation_images[0]["image"] );
+								        break;
+								    case "MOCO":
+								    	console.log("moco");
+								        $(this).parent().parent().children(".source").val(70411);
+								        // change to moco photo
+								        selected_restaurant = 1;
+								        switchImages("url_1", reservation_images[1]["image"] );
+								        //$(".reservation_image_wrap img").attr("src", reservation_images[1]["image"] );
+								        break;
+								    case "TYSONS":
+								        $(this).parent().parent().children(".source").val(150769);
+								        // change to tysons photo
+								        selected_restaurant = 2;
+								        switchImages("url_1", reservation_images[2]["image"] );
+								        //$(".reservation_image_wrap img").attr("src", reservation_images[2]["image"] );
+								        break;
+								    case "FARMERS FISHERS BAKERS":
+								        $(this).parent().parent().children(".source").val(93802);
+								        // change to ffb photo
+								        selected_restaurant = 3;
+								        switchImages("url_1", reservation_images[3]["image"] );
+								        //$(".reservation_image_wrap img").attr("src", reservation_images[3]["image"] );
+								        break;
+								    default:
+								        $(this).parent().parent().children(".source").val(text);
+								}
+
+								if($(this).parent().hasClass("time-list")) {
+									console.log("time list");
+									if(index > 18) {
+										console.log("time after 3pm")
+								    	//console.log("time between 11am and 3pm")
+								    	selected_time = "t3";
+								    	switchImages("url_1", reservation_images[selected_restaurant]["images"][selected_time] );
+								    	//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
+								    } else if(index > 8) {
+								    	selected_time = "t2";
+								    	console.log("time between 11am and 3pm");
+								    	switchImages("url_1", reservation_images[selected_restaurant]["images"][selected_time] );
+								    	//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
+								    } else {
+								    	selected_time = "t1";
+								    	console.log("time between 7am and 11am");
+								    	switchImages("url_1", reservation_images[selected_restaurant]["images"][selected_time] );
+								    	//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
+								    }
+								}
+
+								if($(this).parent().hasClass("party-size-list")) {
+									if(index > 4) {
+										selected_party_size = "s2";
+										console.log("5 or more");
+										switchImages("url_1", reservation_images[selected_restaurant]["images"][selected_party_size] );
+										//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_party_size] );
+								    } else {
+								    	selected_party_size = "s1";
+								    	console.log("fewer than 4");
+								    	switchImages("url_1", reservation_images[selected_restaurant]["images"][selected_party_size] );
+								    	//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_party_size] );
+								    }
+								}
+
+							});
+
+							function switchImages(url_1, url_2) {
+								var $img = $(".reservation_image_wrap img");
+								var tl = new TimelineLite();
+								tl.to($img, .2, {
+									y: -50,
+									opacity: 0,
+									onComplete: function() {
+										$img.attr("src", url_2);		
+									}
+								})
+								.to($img, .4, {
+									delay: .4,
+									y: 0,
+									opacity: 1
+								});
+								//$img.attr("src", url_2);
 							}
-
-							if($(this).parent().hasClass("time-list")) {
-								console.log("time list");
-								if(index > 18) {
-									console.log("time after 3pm")
-							    	//console.log("time between 11am and 3pm")
-							    	selected_time = "t3";
-							    	$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
-							    } else if(index > 8) {
-							    	selected_time = "t2";
-							    	console.log("time between 11am and 3pm");
-							    	$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
-							    } else {
-							    	selected_time = "t1";
-							    	console.log("time between 7am and 11am");
-							    	$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
-							    }
-							}
-
-							if($(this).parent().hasClass("party-size-list")) {
-								if(index > 4) {
-									selected_party_size = "s2";
-									console.log("5 or more");
-									$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_party_size] );
-							    } else {
-							    	selected_party_size = "s1";
-							    	console.log("fewer than 4");
-							    	$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_party_size] );
-							    }
-							}
-
 						});
-					});
-				
-				   	$('input.datepicker').datetimepicker({
-						
-						format: 'MM/DD/YYYY',
-						useCurrent: false,
-						defaultDate: false,
-						debug: true
-					});
-					//$('span.date-input').click();
-
-
-
-					$(".date-input").click(function() {
-						$(".datepicker td").click(function() {
-							if($(this).hasClass("weekend")) {
-								//selected_date = "weekend";
-								console.log("weekend");
-								$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekend"] );
-							} else {
-								//selected_date = "weekday";
-								console.log("day");
-								$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekday"] );
-							}
+					
+					   	$('input.datepicker').datetimepicker({
+							
+							format: 'MM/DD/YYYY',
+							useCurrent: false,
+							defaultDate: false,
+							debug: true
 						});
-					});
-					    
-				})(jQuery);
+						//$('span.date-input').click();
+
+
+
+						$(".date-input").click(function() {
+							$(".datepicker td").click(function() {
+								if($(this).hasClass("weekend")) {
+									//selected_date = "weekend";
+									console.log("weekend");
+									switchImages("url_1", reservation_images[selected_restaurant]["images"]["weekend"]);
+									//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekend"] );
+								} else {
+									//selected_date = "weekday";
+									console.log("day");
+									switchImages("url_1", reservation_images[selected_restaurant]["images"]["weekday"]);
+									//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekday"] );
+								}
+							});
+						});
+						    
+					})(jQuery);
 			</script>
 			<div class="hide">
 				<script type="text/javascript">
@@ -396,6 +426,8 @@ get_header(); ?>
 				<?php */ ?>
 				</script>
 			</div>
+		</div>
+		
 	</div><!-- #content -->
 </div>
 
