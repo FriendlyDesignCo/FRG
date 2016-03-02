@@ -1592,6 +1592,35 @@ ul.job-list-dots {
     }
 }
 
+.arrow-1 {
+    @include animation-name(fadeOut);
+    @include animation-duration(2s);
+    @include animation-timing-function(ease);
+    @include animation-iteration-count(infinite);
+}
+
+.arrow-2 {
+    @include animation-name(fadeOut);
+    @include animation-duration(2s);
+    @include animation-timing-function(ease);
+    @include animation-iteration-count(infinite);
+    @include animation-delay(.3s);
+}
+
+.arrow-3 {
+    @include animation-name(fadeOut);
+    @include animation-duration(2s);
+    @include animation-timing-function(ease);
+    @include animation-iteration-count(infinite);
+    @include animation-delay(.6s);
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    33% {opacity: 0;}
+    66% {opacity: 1}
+}
+
 .cookbook-logo {
     img {
         display: block;

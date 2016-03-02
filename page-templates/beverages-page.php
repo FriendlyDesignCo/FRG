@@ -67,9 +67,9 @@ get_header(); ?>
 				<?php the_field('hero_paragraph'); ?>
 				<p class="text-red medium"><?php the_field('scroll_more_text'); ?></p>
 				<div class="arrow-wrap">
-					<div class="arrow arrow-red"></div>
-					<div class="arrow arrow-red"></div>
-					<div class="arrow arrow-red"></div>
+					<div class="arrow arrow-red arrow-1"></div>
+					<div class="arrow arrow-red arrow-2"></div>
+					<div class="arrow arrow-red arrow-3"></div>
 				</div>
 			</div>
 		</section>
