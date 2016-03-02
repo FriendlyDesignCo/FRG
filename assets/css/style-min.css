@@ -130,7 +130,7 @@ ul.sub-menu li:hover{background-color:#9d4446}.reservation-widget{position:absol
 #primary-nav .logo{width:180px;position:relative;padding:10px;float:left;display:none}
 #primary-nav .logo a{display:block}#primary-nav .logo .light{display:block}#secondary-nav{display:block;position:fixed;top:0;left:0;transition:all .4s;box-shadow:0 5px 14px -6px black}
 @media screen and (min-width:64em){#secondary-nav{-webkit-transform:translateY(-140px);transform:translateY(-140px)}
-}#secondary-nav .reservation-widget{width:300px;right:0;top:63px}#secondary-nav .reservation-widget .widget-wrap{position:relative;text-align:left;display:none;background-color:#9d4446;padding:10px;width:100%;position:absolute;top:50px}
+}#secondary-nav .reservation-widget{width:300px;right:0;top:63px}#secondary-nav .reservation-widget .widget-wrap{position:relative;text-align:left;display:none;background-color:#9d4446;width:100%;position:absolute;top:50px}
 #secondary-nav .logo{position:relative;padding:10px;float:left;width:140px;height:63px}
 #secondary-nav .logo a{display:block}#secondary-nav.slide-down{-webkit-transform:translateY(0);transform:translateY(0)}
 #secondary-nav .menu-menu-1-container{width:80%;background-color:#9d4446;position:absolute;height:100vh;top:63px;right:0;transition:all .3s;-webkit-transform:translateX(100vw);transform:translateX(100vw);box-shadow:0 14px 20px -19px black}
@@ -196,9 +196,9 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 }.home-section{height:100vh}.home-section.hero{background-repeat:no-repeat;background-size:cover}
 @media screen and (min-width:48em){.home-section.hero{background-position:center}
 }.hero{text-align:center;padding-top:30vh}.hero h3{font-family:"adobe-caslon-pro";color:#fffdd4;text-transform:uppercase;margin:0}
-.slide-8{z-index:4;position:relative;background-image:linear-gradient(to top,#ffe7cc 90%,transparent);height:auto}
-@media screen and (min-width:48em){.slide-8{padding-top:20vh}}.slide-8 h2{font-size:32px;font-size:2rem;margin-bottom:50px}
-@media screen and (min-width:48em){.slide-8 h2{font-size:40px;font-size:2.5rem}}.slide-8-block{display:inline-block;overflow:hidden;background-size:cover;position:relative;width:100%;float:none}
+.slide-8{z-index:4;position:relative;height:auto}@media screen and (min-width:48em){.slide-8{background-image:linear-gradient(to top,#ffe7cc 90%,transparent);padding-top:20vh}
+}.slide-8 h2{font-size:32px;font-size:2rem;margin-bottom:50px}@media screen and (min-width:48em){.slide-8 h2{font-size:40px;font-size:2.5rem}
+}.slide-8-block{display:inline-block;overflow:hidden;background-size:cover;position:relative;width:100%;float:none;margin-bottom:20px}
 @media screen and (min-width:48em){.slide-8-block{width:32%}}@media screen and (min-width:64em){.slide-8-block{height:0;padding-bottom:32%}
 }.slide-8-block .slide-8-header{transition:all .3s;position:relative}@media screen and (min-width:64em){.slide-8-block .slide-8-header{top:60%}
 }.slide-8-block img{position:relative;z-index:2;width:40px;float:left;margin-bottom:15px}
@@ -354,7 +354,7 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .beverage-slide:after{content:"";position:absolute;left:0;top:0;z-index:1;width:100%;height:100%;background-color:rgba(255,231,204,0.8)}
 .beverage-slide .section-inner{position:relative;z-index:2}.beverage-info{width:100%;position:relative}
 @media screen and (min-width:48em){.beverage-info{height:100%;width:75%;float:right}
-}.beverage-info h2{font-family:"Gotham";font-size:24px;font-size:1.5rem;font-weight:500;font-style:normal;clear:none}
+}.beverage-info h2{font-family:"Gotham";font-size:24px;font-size:1.5rem;font-weight:500;font-style:normal;clear:none;text-transform:uppercase}
 .beverage-info h2:after{clear:none}@media screen and (min-width:48em){.beverage-info h2{clear:none;font-size:42px;font-size:2.625rem}
 }.beverage-info p{font-family:"GothamNarrow";font-weight:300;font-size:20px;font-size:1.25rem;line-height:1.4em}
 .beverage-info .intro-text{font-family:"Gotham";font-weight:bold;font-size:24px;font-size:1.5rem;color:#8b2332}
@@ -363,9 +363,10 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .drink-block span{float:left;display:inline}.drink-block span+span{border-right:1px solid black}
 @media screen and (min-width:48em){.drink-block:nth-of-type(3n-1){margin-left:2%}
 }@media screen and (min-width:48em){.drink-block:nth-of-type(3n){margin-left:2%}}
-.drink-block h4{margin-bottom:0}.arrow-wrap{margin-bottom:50px}@media screen and (min-width:48em){.arrow-wrap{margin-bottom:10px}
-}.cookbook-logo{padding-bottom:50px}.cookbook-logo img{display:block;margin:0 auto}
-@media screen and (min-width:48em){.cookbook-logo img{max-width:500px}}.cookbook-text{width:100%;position:relative;padding-top:50px;padding-bottom:50px}
+.drink-block h4{margin-bottom:0;text-transform:uppercase}.arrow-wrap{margin-bottom:50px}
+@media screen and (min-width:48em){.arrow-wrap{margin-bottom:10px}}.cookbook-logo{padding-bottom:50px}
+.cookbook-logo img{display:block;margin:0 auto}@media screen and (min-width:48em){.cookbook-logo img{max-width:500px}
+}.cookbook-text{width:100%;position:relative;padding-top:50px;padding-bottom:50px}
 .cookbook-text p{margin-top:0;font-family:"GothamNarrow";font-weight:300;font-size:18px;font-size:1.125rem}
 @media screen and (min-width:48em){.cookbook-text p{font-size:20px;font-size:1.25rem}
 }@media screen and (min-width:48em){.cookbook-text{padding:50px 100px}}@media screen and (min-width:48em){.cookbook-text .text-left{display:inline-block;width:48%;vertical-align:top}
@@ -375,7 +376,7 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .images-wrap{position:relative;padding:50px 0}.images-wrap .image{width:49%;padding-bottom:49%;display:inline-block;position:relative;background-size:cover;background-position:center}
 @media screen and (min-width:48em){.images-wrap .image{width:24%;padding-bottom:24%}
 }.images-wrap img{position:absolute;top:0;left:0}.images-wrap:after{content:"";width:70%;height:1px;background-color:#8b2332;position:absolute;left:0;right:0;bottom:0;margin:0 auto}
-.qa-wrap{padding:50px 0}.qa-item{position:relative}.plus-minus{position:absolute;bottom:10px;right:5px;width:20px}
+.qa-wrap{padding:50px 0}.qa-item{position:relative}.plus-minus{position:absolute;bottom:20px;right:5px;width:20px}
 .plus-minus .horizontal{width:10px;height:1px;background-color:#8b2332;top:50%;position:absolute;left:0;right:0;margin:0 auto}
 @media screen and (min-width:48em){.plus-minus .horizontal{background-color:#ffe7cc;width:20px}
 }.plus-minus .vertical{height:10px;width:1px;background-color:#8b2332;top:0;bottom:0;position:absolute;left:0;right:0;margin:auto;transition:opacity .3s}
@@ -400,7 +401,7 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 }.team-page .site-content h2{margin-bottom:0}.team-page .site-content>h3{font-size:24px;font-size:1.5rem;margin-bottom:40px}
 .team-member-item{display:inline-block;width:49%;vertical-align:top;margin-bottom:20px}
 @media screen and (min-width:48em){.team-member-item{width:22%}}@media screen and (min-width:48em){.team-member-item:nth-of-type(4n),.team-member-item:nth-of-type(4n-1),.team-member-item:nth-of-type(4n-2){margin-left:1%}
-}.team-member-item:hover>.text{background-color:#8b2332}.team-member-item .image{width:100%;height:300px;background-size:cover;background-color:#939292}
+}.team-member-item:hover>.text{background-color:#8b2332}.team-member-item .image{width:100%;height:300px;background-size:cover;background-position:center;background-color:#939292}
 .team-member-item .image img{height:0;width:0}.team-member-item>.image,.team-member-item>.text{cursor:pointer}
 .team-member-item .text{background-color:#9d4446;text-align:center;transition:all .3s;padding:20px 5px}
 @media screen and (min-width:48em){.team-member-item .text{padding:20px;min-height:110px}
@@ -433,10 +434,11 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .tooltip.tooltip-no-border:after{content:"";position:absolute;top:100%;left:50%;width:0;height:0;border-top:.5em solid #8b2332;border-left:.5em solid transparent;border-right:.5em solid transparent;margin-left:-0.5em}
 .tooltip.tooltip-no-border:before{content:"";position:absolute;top:100%;left:50%;width:0;height:0;border-top:.5em solid false;border-left:.5em solid transparent;border-right:.5em solid transparent;margin-left:-0.5em}
 input.datepicker{position:relative}@media screen and (min-width:48em){.form_wrap-inner{width:50%}
-}@media screen and (min-width:48em){.form_wrap-inner.left{padding:0 40px}}.OT_searchWrapperAll{width:100%;background-color:#9d4446;padding:20px;margin-bottom:300px;font-size:22px;font-size:1.375rem;font-family:"Gotham"}
+}@media screen and (min-width:48em){.form_wrap-inner.left{padding:0 40px}}.OT_searchWrapperAll{width:100%;background-color:#9d4446;padding:20px 20px 5px;font-size:22px;font-size:1.375rem;font-family:"Gotham"}
 .OT_searchWrapperAll .form-header{font-family:"Gotham";font-size:22px;font-size:1.375rem;color:#ffe7cc;font-style:normal;text-align:center;font-weight:400;text-transform:uppercase}
-.OT_searchWrapperAll .contact-text{color:#ffe7cc;font-size:18px;font-size:1.125rem;line-height:1.2em;text-align:center}
-.OT_searchWrapperAll form{margin-bottom:30px}.form-control{width:100%;height:55px;background-color:#ffe7cc;color:#8b2332;font-family:"Gotham";font-size:22px;font-size:1.375rem;border-radius:0;border-color:transparent}
+.OT_searchWrapperAll .contact-text{color:#ffe7cc;font-size:16px;font-size:1rem;line-height:1.2em;text-align:center}
+.OT_searchWrapperAll form{margin-bottom:30px}.OT_searchWrapperAll .phone-number{display:block;font-size:18px;font-size:1.125rem;margin-top:20px;font-weight:500}
+.form-control{width:100%;height:45px;background-color:#ffe7cc;color:#8b2332;font-family:"Gotham";font-size:22px;font-size:1.375rem;border-radius:0;border-color:transparent}
 .bootstrap-datetimepicker-widget.dropdown-menu{background-color:#8b2332}.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before,.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after{content:none}
 .bootstrap-datetimepicker-widget table td,.bootstrap-datetimepicker-widget table th{border-radius:0}
 .bootstrap-datetimepicker-widget table td,.bootstrap-datetimepicker-widget table th,.bootstrap-datetimepicker-widget table td.day{color:#f1ddcb}
@@ -449,12 +451,12 @@ input.datepicker{position:relative}@media screen and (min-width:48em){.form_wrap
 .datepicker td,.datepicker th{width:auto !important;height:auto !important}select.source{display:none}
 .form-group{position:relative}.dropdown{cursor:pointer}.touch .drop{display:none}
 .touch .source{display:block !important;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none}
-.form-group input,.form-group.dropdown{position:relative;background-color:#ffe7cc;color:#8b2332;border-radius:0;border:0;height:55px;line-height:55px;font-family:"Gotham";font-size:22px;font-size:1.375rem;margin-bottom:10px;width:100%}
-.form-group input h3,.form-group.dropdown h3{margin:0;line-height:55px;font-family:"Gotham";font-size:22px;font-size:1.375rem}
-.form-group input .drop,.form-group.dropdown .drop{padding-left:30px}.form-group input::-webkit-input-placeholder{color:#8b2332}
-.form-group input::-moz-placeholder{color:#8b2332}.form-group input:-ms-input-placeholder{color:#8b2332}
-.form-group input:-moz-placeholder{color:#8b2332}.form-actions .button:hover{color:#8b2332 !important;background-color:#ffe7cc}
-.dropdown-list{width:100%;position:absolute;top:55px;background-color:#8b2332;color:#ffe7cc;z-index:3;height:300px;overflow-y:scroll;list-style-type:none}
+.form-group input,.form-group.dropdown{position:relative;background-color:#ffe7cc;color:#8b2332;border-radius:0;border:0;height:45px;line-height:45px;font-family:"Gotham";font-size:18px;font-size:1.125rem;margin-bottom:10px;width:100%}
+.form-group input h3,.form-group.dropdown h3{margin:0;line-height:45px;font-family:"Gotham";font-size:18px;font-size:1.125rem;overflow:hidden;height:45px}
+.form-group input .drop,.form-group.dropdown .drop{padding-left:30px;padding-right:20px}
+.form-group input::-webkit-input-placeholder{color:#8b2332}.form-group input::-moz-placeholder{color:#8b2332}
+.form-group input:-ms-input-placeholder{color:#8b2332}.form-group input:-moz-placeholder{color:#8b2332}
+.form-actions .button:hover{color:#8b2332 !important;background-color:#ffe7cc}.dropdown-list{width:100%;position:absolute;top:45px;background-color:#8b2332;color:#ffe7cc;z-index:3;height:300px;overflow-y:scroll;list-style-type:none}
 .dropdown-list li{padding:20px 30px;cursor:pointer;line-height:1em;transition:all .3s}
 .dropdown-list li:hover{background-color:#9d4446}.date-input{display:block}.date-input input{padding-left:30px}
 .datepicker table tr td.today{background-image:none !important;background-color:#ffe7cc !important}

@@ -23,7 +23,7 @@ get_header(); ?>
 						<div class="form-group dropdown">
 							
 				            <div class="drop"  style="">
-				            	<h3 class="left">LOCATION</h3>
+				            	<h3 class="">LOCATION</h3>
 				            </div>
 				            <ul class="dropdown-list list-unstyled location-list" style="display: none;"></ul>
 					     
@@ -45,7 +45,7 @@ get_header(); ?>
 						</div>
 						<div class="form-group dropdown">
 							<div class="drop"  style="">
-				            	<h3 class="left">TIME</h3>
+				            	<h3 class="">TIME</h3>
 				            </div>
 				            <ul class="dropdown-list list-unstyled time-list" style="display: none;"></ul>
 					     
@@ -90,7 +90,7 @@ get_header(); ?>
 						</div>
 						<div class="form-group dropdown">
 							<div class="drop"  style="">
-				            	<h3 class="left">SIZE</h3>
+				            	<h3 class="">SIZE</h3>
 				            </div>
 				            <ul class="dropdown-list list-unstyled party-size-list" style="display: none;"></ul>
 
@@ -126,7 +126,7 @@ get_header(); ?>
 						</div>
 
 					</form>		
-					<h3 class="contact-text">Can’t get the reservation time you’re looking for online? Please call us, we might be able to help. 202-555-5555</h3>
+					<h3 class="contact-text">Can’t get the reservation time you’re looking for online? Please call us, we might be able to help. <span class="phone-number">202-555-5555</span></h3>
 				</div>
 			</div>
 			<div class="form_wrap-inner reservation_image_wrap right">
@@ -136,137 +136,13 @@ get_header(); ?>
 					
 					(function($) {
 
-						$(document).ready(function() {
-							selected_restaurant = 0;
-							var	selected_date = "weekday";
-							var	selected_time = "t1";
-							var	selected_party_size = "s1";
-
-							$('.dropdown ul li').click(function() {
-								// variables for what is selected
-								
-
-								var text = $(this).text();
-								var index = $(this).index();
-
-								console.log(index);
-							    $(this).parent().parent().children().children("h3").html(text);
-							    console.log("text "+ text);
-							    switch(text) {
-								    case "DC":
-								        $(this).parent().parent().children(".source").val(24712);
-								        // change to dc photo
-								        selected_restaurant = 0;
-								        switchImages("url_1", reservation_images[0]["image"]);
-								        //$(".reservation_image_wrap img").attr("src", reservation_images[0]["image"] );
-								        break;
-								    case "MOCO":
-								    	console.log("moco");
-								        $(this).parent().parent().children(".source").val(70411);
-								        // change to moco photo
-								        selected_restaurant = 1;
-								        switchImages("url_1", reservation_images[1]["image"] );
-								        //$(".reservation_image_wrap img").attr("src", reservation_images[1]["image"] );
-								        break;
-								    case "TYSONS":
-								        $(this).parent().parent().children(".source").val(150769);
-								        // change to tysons photo
-								        selected_restaurant = 2;
-								        switchImages("url_1", reservation_images[2]["image"] );
-								        //$(".reservation_image_wrap img").attr("src", reservation_images[2]["image"] );
-								        break;
-								    case "FARMERS FISHERS BAKERS":
-								        $(this).parent().parent().children(".source").val(93802);
-								        // change to ffb photo
-								        selected_restaurant = 3;
-								        switchImages("url_1", reservation_images[3]["image"] );
-								        //$(".reservation_image_wrap img").attr("src", reservation_images[3]["image"] );
-								        break;
-								    default:
-								        $(this).parent().parent().children(".source").val(text);
-								}
-
-								if($(this).parent().hasClass("time-list")) {
-									console.log("time list");
-									if(index > 18) {
-										console.log("time after 3pm")
-								    	//console.log("time between 11am and 3pm")
-								    	selected_time = "t3";
-								    	switchImages("url_1", reservation_images[selected_restaurant]["images"][selected_time] );
-								    	//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
-								    } else if(index > 8) {
-								    	selected_time = "t2";
-								    	console.log("time between 11am and 3pm");
-								    	switchImages("url_1", reservation_images[selected_restaurant]["images"][selected_time] );
-								    	//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
-								    } else {
-								    	selected_time = "t1";
-								    	console.log("time between 7am and 11am");
-								    	switchImages("url_1", reservation_images[selected_restaurant]["images"][selected_time] );
-								    	//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
-								    }
-								}
-
-								if($(this).parent().hasClass("party-size-list")) {
-									if(index > 4) {
-										selected_party_size = "s2";
-										console.log("5 or more");
-										switchImages("url_1", reservation_images[selected_restaurant]["images"][selected_party_size] );
-										//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_party_size] );
-								    } else {
-								    	selected_party_size = "s1";
-								    	console.log("fewer than 4");
-								    	switchImages("url_1", reservation_images[selected_restaurant]["images"][selected_party_size] );
-								    	//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_party_size] );
-								    }
-								}
-
-							});
-
-							function switchImages(url_1, url_2) {
-								var $img = $(".reservation_image_wrap img");
-								var tl = new TimelineLite();
-								tl.to($img, .2, {
-									y: -50,
-									opacity: 0,
-									onComplete: function() {
-										$img.attr("src", url_2);		
-									}
-								})
-								.to($img, .4, {
-									delay: .4,
-									y: 0,
-									opacity: 1
-								});
-								//$img.attr("src", url_2);
-							}
-						});
-					
+						
 					   	$('input.datepicker').datetimepicker({
 							
 							format: 'MM/DD/YYYY',
 							useCurrent: false,
 							defaultDate: false,
 							debug: true
-						});
-						//$('span.date-input').click();
-
-
-
-						$(".date-input").click(function() {
-							$(".datepicker td").click(function() {
-								if($(this).hasClass("weekend")) {
-									//selected_date = "weekend";
-									console.log("weekend");
-									switchImages("url_1", reservation_images[selected_restaurant]["images"]["weekend"]);
-									//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekend"] );
-								} else {
-									//selected_date = "weekday";
-									console.log("day");
-									switchImages("url_1", reservation_images[selected_restaurant]["images"]["weekday"]);
-									//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekday"] );
-								}
-							});
 						});
 						    
 					})(jQuery);

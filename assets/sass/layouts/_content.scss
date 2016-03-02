@@ -216,8 +216,9 @@ button#load-more.done {
 .slide-8 {
     z-index: 4;
     position: relative;
-    @include background-image(linear-gradient(to top, $tan 90%, transparent));
+    
     @include media($md) {
+        @include background-image(linear-gradient(to top, $tan 90%, transparent));
         padding-top: 20vh;    
     }
     height: auto;
@@ -239,6 +240,7 @@ button#load-more.done {
     width: 100%;
     //height: 550px;
     float: none;
+    margin-bottom: 20px;
     @include media($md) {
         
         width: 32%;
@@ -1517,6 +1519,7 @@ ul.job-list-dots {
         font-weight: 500;
         font-style: normal;
         clear: none;
+        text-transform: uppercase;
         &:after {
             clear: none;
         }
@@ -1578,6 +1581,7 @@ ul.job-list-dots {
     }
     h4 {
         margin-bottom: 0;
+        text-transform: uppercase;
     }
 }
 
@@ -1733,7 +1737,7 @@ ul.job-list-dots {
         transition: opacity .3s;
     }
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     right: 5px;
     width: 20px;
     @include media($md) {
@@ -1902,6 +1906,7 @@ ul.job-list-dots {
         width: 100%;
         height: 300px;
         background-size: cover;
+        background-position: center;
         background-color: #939292;
         img {
             height: 0;
@@ -2171,8 +2176,7 @@ input.datepicker {
 .OT_searchWrapperAll {
     width: 100%;
     background-color: $light-red;
-    padding: 20px;
-    margin-bottom: 300px;
+    padding: 20px 20px 5px;
     @include fontSize(22px);
     font-family: "Gotham";
     .form-header {
@@ -2186,18 +2190,24 @@ input.datepicker {
     }
     .contact-text {
         color: $tan;
-        @include fontSize(18px);
+        @include fontSize(16px);
         line-height: 1.2em;
         text-align: center;
     }
     form {
         margin-bottom: 30px;
     }
+    .phone-number {
+        display: block;
+        @include fontSize(18px);
+        margin-top: 20px;
+        font-weight: 500;
+    }
 }
 
 .form-control {
     width: 100%;
-    height: 55px;
+    height: 45px;
     background-color: $tan;
     color: $dark-red;
     font-family: "Gotham";
@@ -2268,20 +2278,23 @@ select.source {
     color: $dark-red;
     border-radius: 0;
     border: 0;
-    height: 55px;
-    line-height: 55px;
+    height: 45px;
+    line-height: 45px;
     font-family: "Gotham";
-    @include fontSize(22px);
+    @include fontSize(18px);
     margin-bottom: 10px;
     width: 100%;
     h3 {
         margin: 0;
-        line-height: 55px;
+        line-height: 45px;
         font-family: "Gotham";
-        @include fontSize(22px);
+        @include fontSize(18px);
+        overflow: hidden;
+        height: 45px;
     }
     .drop {
         padding-left: 30px;
+        padding-right: 20px;
     }
 }
 .form-group input {
@@ -2309,7 +2322,7 @@ select.source {
 .dropdown-list {
     width: 100%;
     position: absolute;
-    top: 55px;
+    top: 45px;
     background-color: $dark-red;
     color: $tan;
     z-index: 3;

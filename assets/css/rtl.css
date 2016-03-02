@@ -1258,7 +1258,6 @@ ul.sub-menu {
       text-align: left;
       display: none;
       background-color: #9D4446;
-      padding: 10px;
       width: 100%;
       position: absolute;
       top: 50px; }
@@ -1745,10 +1744,10 @@ button#load-more.done {
 .slide-8 {
   z-index: 4;
   position: relative;
-  background-image: linear-gradient(to top, #FFE7CC 90%, transparent);
   height: auto; }
   @media screen and (min-width: 48em) {
     .slide-8 {
+      background-image: linear-gradient(to top, #FFE7CC 90%, transparent);
       padding-top: 20vh; } }
   .slide-8 h2 {
     font-size: 32px;
@@ -1765,7 +1764,8 @@ button#load-more.done {
   background-size: cover;
   position: relative;
   width: 100%;
-  float: none; }
+  float: none;
+  margin-bottom: 20px; }
   @media screen and (min-width: 48em) {
     .slide-8-block {
       width: 32%; } }
@@ -2884,7 +2884,8 @@ ul.job-list-dots {
     font-size: 1.5rem;
     font-weight: 500;
     font-style: normal;
-    clear: none; }
+    clear: none;
+    text-transform: uppercase; }
     .beverage-info h2:after {
       clear: none; }
     @media screen and (min-width: 48em) {
@@ -2934,7 +2935,8 @@ ul.job-list-dots {
     .drink-block:nth-of-type(3n) {
       margin-left: 2%; } }
   .drink-block h4 {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-transform: uppercase; }
 
 .arrow-wrap {
   margin-bottom: 50px; }
@@ -3036,7 +3038,7 @@ ul.job-list-dots {
 
 .plus-minus {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   right: 5px;
   width: 20px; }
   .plus-minus .horizontal {
@@ -3205,6 +3207,7 @@ ul.job-list-dots {
     width: 100%;
     height: 300px;
     background-size: cover;
+    background-position: center;
     background-color: #939292; }
     .team-member-item .image img {
       height: 0;
@@ -3445,8 +3448,7 @@ input.datepicker {
 .OT_searchWrapperAll {
   width: 100%;
   background-color: #9D4446;
-  padding: 20px;
-  margin-bottom: 300px;
+  padding: 20px 20px 5px;
   font-size: 22px;
   font-size: 1.375rem;
   font-family: "Gotham"; }
@@ -3461,16 +3463,22 @@ input.datepicker {
     text-transform: uppercase; }
   .OT_searchWrapperAll .contact-text {
     color: #FFE7CC;
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.2em;
     text-align: center; }
   .OT_searchWrapperAll form {
     margin-bottom: 30px; }
+  .OT_searchWrapperAll .phone-number {
+    display: block;
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-top: 20px;
+    font-weight: 500; }
 
 .form-control {
   width: 100%;
-  height: 55px;
+  height: 45px;
   background-color: #FFE7CC;
   color: #8B2332;
   font-family: "Gotham";
@@ -3555,21 +3563,24 @@ select.source {
   color: #8B2332;
   border-radius: 0;
   border: 0;
-  height: 55px;
-  line-height: 55px;
+  height: 45px;
+  line-height: 45px;
   font-family: "Gotham";
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   margin-bottom: 10px;
   width: 100%; }
   .form-group input h3, .form-group.dropdown h3 {
     margin: 0;
-    line-height: 55px;
+    line-height: 45px;
     font-family: "Gotham";
-    font-size: 22px;
-    font-size: 1.375rem; }
+    font-size: 18px;
+    font-size: 1.125rem;
+    overflow: hidden;
+    height: 45px; }
   .form-group input .drop, .form-group.dropdown .drop {
-    padding-left: 30px; }
+    padding-left: 30px;
+    padding-right: 20px; }
 
 .form-group input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -3594,7 +3605,7 @@ select.source {
 .dropdown-list {
   width: 100%;
   position: absolute;
-  top: 55px;
+  top: 45px;
   background-color: #8B2332;
   color: #FFE7CC;
   z-index: 3;
