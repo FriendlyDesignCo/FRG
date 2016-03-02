@@ -166,6 +166,22 @@
 								    }
 								}
 
+								$(".date-input").click(function() {
+									$(".datepicker td").click(function() {
+										if($(this).hasClass("weekend")) {
+											//selected_date = "weekend";
+											console.log("weekend");
+											switchImages("url_1", reservation_images[selected_restaurant]["images"]["weekend"]);
+											//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekend"] );
+										} else {
+											//selected_date = "weekday";
+											console.log("day");
+											switchImages("url_1", reservation_images[selected_restaurant]["images"]["weekday"]);
+											//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekday"] );
+										}
+									});
+								});
+
 							});
 
 							function switchImages(url_1, url_2) {
@@ -198,21 +214,7 @@
 
 
 
-						$(".date-input").click(function() {
-							$(".datepicker td").click(function() {
-								if($(this).hasClass("weekend")) {
-									//selected_date = "weekend";
-									console.log("weekend");
-									switchImages("url_1", reservation_images[selected_restaurant]["images"]["weekend"]);
-									//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekend"] );
-								} else {
-									//selected_date = "weekday";
-									console.log("day");
-									switchImages("url_1", reservation_images[selected_restaurant]["images"]["weekday"]);
-									//$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekday"] );
-								}
-							});
-						});
+						
 						    
 					})(jQuery);
 	</script>
