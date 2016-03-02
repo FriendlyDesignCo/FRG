@@ -168,7 +168,10 @@ ul.sub-menu li:hover{background-color:#9d4446}.reservation-widget{position:absol
 .oldie .flexnav li ul li ul{top:0}.oldie .flexnav li ul li a{border-bottom:0}.oldie .flexnav li ul.open{display:block;width:100%;overflow:visible}
 .oldie .flexnav li ul.open li{width:100%}.oldie .flexnav li ul.open ul.open{margin-left:100%;top:0;display:block;width:100%;overflow:visible}
 .oldie .flexnav ul li:hover ul{margin-left:100%;top:0}.oldie .menu-button{display:none}
-.oldie.ie7 .flexnav li{width:19.9%}body{background-color:#ffe7cc}@media screen and (min-width:48em){.left{float:left}
+.oldie.ie7 .flexnav li{width:19.9%}@font-face{font-family:'Glyphicons Halflings';src:url("../fonts/glyphicons-halflings-regular.eot");src:url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"),url("../fonts/glyphicons-halflings-regular.woff") format("woff"),url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"),url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")}
+.glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.glyphicon-chevron-left:before{content:"\e079"}.glyphicon-chevron-right:before{content:"\e080"}
+.hide{display:none}body{background-color:#ffe7cc}@media screen and (min-width:48em){.left{float:left}
 }@media screen and (min-width:48em){.right{float:right}}ul.alm-listing{padding-left:0}
 button#load-more.done{display:none}.spacer{position:absolute;height:100px}.spacer.s1{top:0}
 @media screen and (min-width:64em){.spacer.s1{top:40%}}.spacer.s2{top:45%}.spacer.s3{top:50%}
@@ -452,7 +455,8 @@ input.datepicker{position:relative}.OT_searchWrapperAll{display:none}.form_wrap-
 .form-group input:-moz-placeholder{color:#8b2332}.form-actions .button:hover{color:#8b2332 !important;background-color:#ffe7cc}
 .dropdown-list{width:100%;position:absolute;top:55px;background-color:#8b2332;color:#ffe7cc;z-index:3;height:300px;overflow-y:scroll;list-style-type:none}
 .dropdown-list li{padding:20px 10px;cursor:pointer;line-height:1em;transition:all .3s}
-.dropdown-list li:hover{background-color:#9d4446}.page-template-page-templatestemplate-left-col-php h1.entry-title{margin:0;text-align:left}
+.dropdown-list li:hover{background-color:#9d4446}.date-input{display:block}.datepicker table tr td.today{background-image:none !important;background-color:#ffe7cc !important}
+.page-template-page-templatestemplate-left-col-php h1.entry-title{margin:0;text-align:left}
 @media screen and (min-width:48em){.page-template-page-templatestemplate-left-col-php #main{display:-webkit-flex;display:-ms-flexbox;display:flex}
 }@media screen and (min-width:0){.page-template-page-templatestemplate-left-col-php #main #primary{float:left;display:block;margin-right:14.28571%;width:214.28571%}
 .page-template-page-templatestemplate-left-col-php #main #primary:last-child{margin-right:0}

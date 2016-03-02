@@ -10,10 +10,10 @@
 
 get_header(); ?>
 
-<div id="" class="cookbook-page content-area ">
+<div id="" class="reservation-page content-area ">
 	
 	<div id="content" class="site-content">
-		<div class="form_wrap-inner active">
+		<div class="form_wrap-inner left">
 
 			<h2 class="form-header">Reserve a Table</h2>
 				
@@ -24,10 +24,10 @@ get_header(); ?>
 			            <div class="drop"  style="">
 			            	<h3 class="left">LOCATION</h3>
 			            </div>
-			            <ul class="dropdown-list list-unstyled" style="display: none;"></ul>
+			            <ul class="dropdown-list list-unstyled location-list" style="display: none;"></ul>
 				     
 				          
-						<select name="RestaurantID" class="source form-control selectpicker" onchange="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value">
+						<select name="RestaurantID" class="source form-control selectpicker location-picker" onchange="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value">
 							<option value="0" class="hidden">LOCATION</option>
 							<option value="24712">DC</option>
 							<option value="70411">MOCO</option>
@@ -35,9 +35,10 @@ get_header(); ?>
 							<option value="93802" class="ffb">FARMERS FISHERS BAKERS</option>
 						</select>
 					</div>
-					<div class="form-group">
+					<div class="form-group date">
 						<span class="date-input">
 							<input type="text" name="startDate" class="form-control datepicker" placeholder="DATE" autocomplete="off"/>
+							<!--<input type="date" name="bday" min="2000-01-02">-->
 							<span class="btn-caret"><i class="fa fa-angle-down"></i></span>
 						</span>
 					</div>
@@ -45,7 +46,7 @@ get_header(); ?>
 						<div class="drop"  style="">
 			            	<h3 class="left">TIME</h3>
 			            </div>
-			            <ul class="dropdown-list list-unstyled" style="display: none;"></ul>
+			            <ul class="dropdown-list list-unstyled time-list" style="display: none;"></ul>
 				     
 						<select name="ResTime" class="source form-control res-time selectpicker">
 							<option value="0" class="hidden">TIME</option>
@@ -90,9 +91,9 @@ get_header(); ?>
 						<div class="drop"  style="">
 			            	<h3 class="left">SIZE</h3>
 			            </div>
-			            <ul class="dropdown-list list-unstyled" style="display: none;"></ul>
+			            <ul class="dropdown-list list-unstyled party-size-list" style="display: none;"></ul>
 
-						<select name="PartySize" class="source form-control party-size selectpicker">
+						<select name="PartySize" class="source form-control party-size selectpicker party-size-list">
 							<option value="0" class="hidden">SIZE</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -126,22 +127,275 @@ get_header(); ?>
 				</form>		
 				<h3 class="contact-text">Can’t get the reservation time you’re looking for online? Please call us, we might be able to help. 202-555-5555</h3>
 			</div>
-			<script>
+		</div>
+		<div class="reservation_image_wrap right">
+			<img src="<?php the_field('default_image') ?>">
+		</div>
+		<script>
 				
 				(function($) {
+
+					$(document).ready(function() {
+						selected_restaurant = 0;
+						var	selected_date = "weekday";
+						var	selected_time = "t1";
+						var	selected_party_size = "s1";
+
+						$('.dropdown ul li').click(function() {
+							// variables for what is selected
+							
+
+							var text = $(this).text();
+							var index = $(this).index();
+
+							console.log(index);
+						    $(this).parent().parent().children().children("h3").html(text);
+						    console.log("text "+ text);
+						    switch(text) {
+							    case "DC":
+							        $(this).parent().parent().children(".source").val(24712);
+							        // change to dc photo
+							        selected_restaurant = 0;
+							        $(".reservation_image_wrap img").attr("src", reservation_images[0]["image"] );
+							        break;
+							    case "MOCO":
+							    	console.log("moco");
+							        $(this).parent().parent().children(".source").val(70411);
+							        // change to moco photo
+							        selected_restaurant = 1;
+							        $(".reservation_image_wrap img").attr("src", reservation_images[1]["image"] );
+							        break;
+							    case "TYSONS":
+							        $(this).parent().parent().children(".source").val(150769);
+							        // change to tysons photo
+							        selected_restaurant = 2;
+							        $(".reservation_image_wrap img").attr("src", reservation_images[2]["image"] );
+							        break;
+							    case "FARMERS FISHERS BAKERS":
+							        $(this).parent().parent().children(".source").val(93802);
+							        // change to ffb photo
+							        selected_restaurant = 3;
+							        $(".reservation_image_wrap img").attr("src", reservation_images[3]["image"] );
+							        break;
+							    default:
+							        $(this).parent().parent().children(".source").val(text);
+							}
+
+							if($(this).parent().hasClass("time-list")) {
+								console.log("time list");
+								if(index > 18) {
+									console.log("time after 3pm")
+							    	//console.log("time between 11am and 3pm")
+							    	selected_time = "t3";
+							    	$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
+							    } else if(index > 8) {
+							    	selected_time = "t2";
+							    	console.log("time between 11am and 3pm");
+							    	$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
+							    } else {
+							    	selected_time = "t1";
+							    	console.log("time between 7am and 11am");
+							    	$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_time] );
+							    }
+							}
+
+							if($(this).parent().hasClass("party-size-list")) {
+								if(index > 4) {
+									selected_party_size = "s2";
+									console.log("5 or more");
+									$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_party_size] );
+							    } else {
+							    	selected_party_size = "s1";
+							    	console.log("fewer than 4");
+							    	$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"][selected_party_size] );
+							    }
+							}
+
+						});
+					});
 				
 				   	$('input.datepicker').datetimepicker({
 						
 						format: 'MM/DD/YYYY',
 						useCurrent: false,
-						defaultDate: false
+						defaultDate: false,
+						debug: true
 					});
-					$('span.date-input').click();
+					//$('span.date-input').click();
 
+
+
+					$(".date-input").click(function() {
+						$(".datepicker td").click(function() {
+							if($(this).hasClass("weekend")) {
+								//selected_date = "weekend";
+								console.log("weekend");
+								$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekend"] );
+							} else {
+								//selected_date = "weekday";
+								console.log("day");
+								$(".reservation_image_wrap img").attr("src", reservation_images[selected_restaurant]["images"]["weekday"] );
+							}
+						});
+					});
 					    
 				})(jQuery);
 			</script>
-		</div>
+			<div class="hide">
+				<script type="text/javascript">
+					<!--//--><![CDATA[//><!--
+						var images = new Array();
+						function preload() {
+							for (i = 0; i < preload.arguments.length; i++) {
+								images[i] = new Image()
+								images[i].src = preload.arguments[i]
+							}
+						}
+						preload(
+							<?php 
+								$pre_images = array();
+								if(have_rows('locations')) : while(have_rows('locations')) : the_row();
+									$sub_images = get_sub_field('images');
+									$pre_images[] = get_sub_field('default_image');
+									$pre_images[] = $sub_images[0]['size_1-4'];
+									$pre_images[] = $sub_images[0]['size_5'];
+									$pre_images[] = $sub_images[0]['weekday'];
+									$pre_images[] = $sub_images[0]['weekend'];
+									$pre_images[] = $sub_images[0]['time_before_11'];
+									$pre_images[] = $sub_images[0]['time_11-3'];
+									$pre_images[] = $sub_images[0]['time_after_3'];
+								endwhile;
+								
+								$result = array_unique($pre_images);
+								
+								endif;
+								
+								if($result) {
+									$i = 0;
+									$total = count($result);
+									foreach($result as $img) {
+										$sep = $i == $total - 1 ? '' : ',';
+										echo "\"{$img}\"{$sep}\n\t\t\t\t\t\t";
+									$i++; }
+								}
+							?>
+						)
+					//--><!]]>
+				</script>
+				<script type="text/javascript">
+				<?php if(have_rows('locations')) : ?>
+				<!--//--><![CDATA[//><!--
+				var reservation_images =
+					<?php
+						$json_array = array();
+						$location = "";
+						while(have_rows('locations')) : the_row();
+							$loc = get_sub_field('location');
+							switch($loc) {
+								case 'dc':
+									$location = '24712';
+									break;
+								case 'moco':
+									$location = '70411';
+									break;
+								case 'tysons':
+									$location = '150769';
+									break;
+								case 'ffb':
+									$location = '93802';
+									break;
+							}
+							$images = get_sub_field('images');
+							$json_array[] = array(
+								'location' => $location,
+								'image' => get_sub_field('default_image'),
+								'images' => array(
+									's1' => $images[0]['size_1-4'],
+									's2' => $images[0]['size_5'],
+									'weekday' => $images[0]['weekday'],
+									'weekend' => $images[0]['weekend'],
+									't1' => $images[0]['time_before_11'],
+									't2' => $images[0]['time_11-3'],
+									't3' => $images[0]['time_after_3']
+								)
+							);
+							
+						endwhile;
+						
+						$json = json_encode($json_array, JSON_UNESCAPED_SLASHES);
+						
+						echo $json;
+					?>
+				//--><!]]>
+				<?php endif; ?>
+				<?php /* ?>
+				<!--//--><![CDATA[//><!--
+				var reservation_images = [
+					{
+						"location": "24712", // dc
+						"image": "<?php echo get_template_directory_uri(); ?>/assets/img/p_shrimp_bucatini.png",
+						"images": [
+							{
+								"s1": "Porchetta",
+								"s2": "<?php echo get_template_directory_uri(); ?>/assets/img/p_ribeye.png",
+								"weekday": "Shrimp Salad",
+								"weekend": "Choco Cake",
+								"t1": "French Toast",
+								"t2": "Farmers Salad",
+								"t3": "Fried Chicken"
+							}
+						]
+					},
+					{
+						"location": "70411", // moco
+						"image": "Pot Roast",
+						"images": [
+							{
+								"s1": "Porchetta",
+								"s2": "Carrott Cake",
+								"weekday": "Chk salad",
+								"weekend": "Beignets",
+								"t1": "Steak & Eggs",
+								"t2": "Goat Cheese Burger",
+								"t3": "Shrimp Bucatini"
+							}
+						]
+					},
+					{
+						"location": "150769", // tysons
+						"image": "Fried Chicken",
+						"images": [
+							{
+								"s1": "Porchetta",
+								"s2": "Beef Tar Tar",
+								"weekday": "Farmers Salad",
+								"weekend": "Carbonara",
+								"t1": "Steak & Eggs",
+								"t2": "Shrimp Salad",
+								"t3": "Ribeye"
+							}
+						]
+					},
+					{
+						"location": "93802", // ffb
+						"image": "Sushi",
+						"images": [
+							{
+								"s1": "Tacos",
+								"s2": "Pizza",
+								"weekday": "Ahi Salad",
+								"weekend": "Shrimp",
+								"t1": "Beignets",
+								"t2": "Beignets",
+								"t3": "Goat Cheese Burger"
+							}
+						]
+					}
+				];
+				//--><!]]>
+				<?php */ ?>
+				</script>
+			</div>
 	</div><!-- #content -->
 </div>
 

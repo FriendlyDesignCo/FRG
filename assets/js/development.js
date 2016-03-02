@@ -70,38 +70,174 @@
 		$(".dropdown select option").each( function(i) {
 			$(this).parent().parent().find(".dropdown-list").append("<li>"+$(this).text()+"</li>");
 		});
-		$('.dropdown ul li').click(function() {
-			var text = $(this).text();
-			var index = $(this).index();
-			console.log(index);
-		    $(this).parent().parent().children().children("h3").html(text);
-		    switch(text) {
-			    case "DC":
-			        $(this).parent().parent().children(".source").val(24712);
-			        break;
-			    case "MOCO":
-			        $(this).parent().parent().children(".source").val(70411);
-			        break;
-			    case "TYSONS":
-			        $(this).parent().parent().children(".source").val(150769);
-			        break;
-			    case "FARMERS FISHERS BAKERS":
-			        $(this).parent().parent().children(".source").val(93802);
-			        break;
-			    default:
-			        $(this).parent().parent().children(".source").val(text);
-			}
-		    
-		    //$(this).parent().parent().children(".source :nth-child("+ index+1 +")").prop('selected', true)
-		    if($("select.res-time").prop('selectedIndex') > 3) {
-		    	console.log("more than 3");
-		    }
-		});
 		
+
+
+
+		$( ".form-group select" ).change(function() {
+		  alert( "Handler for .change() called." );
+		  var index = $(this).index();
+
+		  if($(this).parent().hasClass("time-list")) {
+				console.log("time list");
+				if(index > 18) {
+					console.log("time after 3pm")
+			    	//console.log("time between 11am and 3pm")
+			    } else if(index > 8) {
+			    	console.log("time between 11am and 3pm")
+			    	//console.log("time between 7am and 11am")
+			    } else {
+			    	console.log("time between 7am and 11am")
+			    	//console.log("time after 3pm")
+			    }
+			}
+
+			if($(this).parent().hasClass("time-list")) {
+				console.log("time list");
+				if(index > 18) {
+					console.log("time after 3pm")
+			    	//console.log("time between 11am and 3pm")
+			    } else if(index > 8) {
+			    	console.log("time between 11am and 3pm")
+			    	//console.log("time between 7am and 11am")
+			    } else {
+			    	console.log("time between 7am and 11am")
+			    	//console.log("time after 3pm")
+			    }
+			}
+
+			
+		});
 
 	});
 
 
-
-
 })( jQuery );
+
+
+
+
+
+function reservationsAnimation() {
+		var $plate = $('#plate img');
+		var loc = '';
+		
+			
+		$(document).on('change', '.reservation-page #form_wrap select', function() {
+			var $self = $(this),
+				field = $self.attr('name'),
+				value = $self.attr('value'),
+				data = reservation_images,
+				img = '';
+			
+			if(field == 'RestaurantID') {
+				
+				for(i in data) {
+					if(data[i].location == value) {
+						img = data[i].image;
+						loc = data[i].location;
+					} else {
+						continue;
+					}
+				}
+				
+				//$('.reservation-page input[name="startDate"]').removeClass('hidden');
+				
+			}
+			if(field == 'PartySize') {
+				
+				for(i in data) {
+					if(data[i].location == loc) {
+						images = data[i].images;
+						if(value < 5) {
+							img = images.s1;
+						} else {
+							img = images.s2;
+						}
+					} else {
+						continue;
+					}
+				}
+				
+				//$('.reservation-page .btn-submit').removeClass('hidden');
+				
+			}
+			if(field == 'ResTime') {
+				
+				time = Date.parse(value).toString('H.mm');
+				
+				for(i in data) {
+					if(data[i].location == loc) {
+						images = data[i].images;
+						if(time <= 11) {
+							img = images.t1;
+						} else if(time > 11 && time <= 15) {
+							img = images.t2;
+						} else {
+							img = images.t3;
+						}
+					} else {
+						continue;
+					}
+				}
+				
+				//$('.reservation-page select[name="PartySize"]').selectpicker('setStyle', 'hidden', 'remove');
+				
+			}
+			
+			//animate out
+			setTimeout(function(){
+				$plate.removeClass('in').addClass('out');
+			},500);
+			
+			// 1500 millisecond animation
+			
+			//animate in
+			setTimeout(function(){
+				$plate.attr('src', img);
+				$plate.removeClass('out').addClass('in');
+			},1000);
+			
+		});
+		
+		$('.reservation-page input[name="startDate"]').on('dp.change', function() {
+			var $self = $(this),
+				value = $self.val(),
+				data = reservation_images,
+				weekday = '',
+				img = '';
+			
+			var date = Date.parse(value);
+			if(date != null) {
+				weekday = date.is().weekday();
+				for(i in data) {
+					if(data[i].location == loc) {
+						images = data[i].images;
+						if(weekday == true) {
+							img = images.weekday;
+						} else {
+							img = images.weekend;
+						}
+					} else {
+						continue;
+					}
+				}
+			}
+				
+			//$('.reservation-page select[name="ResTime"]').selectpicker('setStyle', 'hidden', 'remove');
+			
+			//animate out
+			setTimeout(function(){
+				$plate.removeClass('in').addClass('out');
+			},500);
+			
+			// 1500 millisecond animation
+			
+			//animate in
+			setTimeout(function(){
+				$plate.attr('src', img);
+				$plate.removeClass('out').addClass('in');
+			},1000);
+			
+		});
+	}
