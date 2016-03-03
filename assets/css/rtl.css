@@ -3840,27 +3840,31 @@ footer {
     margin: auto;
     width: 100%; }
   footer .footer-left {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 48.93617%;
     margin-bottom: 40px;
     margin-top: 30px;
     padding: 10px;
     text-align: right; }
-    footer .footer-left:last-child {
-      margin-right: 0; }
+    @media screen and (min-width: 48em) {
+      footer .footer-left {
+        float: left;
+        display: block;
+        margin-right: 3.22581%;
+        width: 74.19355%; }
+        footer .footer-left:last-child {
+          margin-right: 0; } }
   footer .footer-right {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 48.93617%;
     margin-top: 30px;
     margin-bottom: 40px;
     padding: 10px;
     text-align: left; }
-    footer .footer-right:last-child {
-      margin-right: 0; }
+    @media screen and (min-width: 48em) {
+      footer .footer-right {
+        float: left;
+        display: block;
+        margin-right: 3.22581%;
+        width: 74.19355%; }
+        footer .footer-right:last-child {
+          margin-right: 0; } }
   footer .copyright {
     font-size: 12px;
     font-size: 0.75rem;

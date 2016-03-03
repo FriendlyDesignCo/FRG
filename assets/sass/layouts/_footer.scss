@@ -13,18 +13,24 @@ footer {
         width: 100%;
     }
     .footer-left {
-        @include span-columns(6);
+        
         margin-bottom: 40px;
         margin-top: 30px;
         padding: 10px;
         @include text-align(left);
+        @include media($md) {
+            @include span-columns(6);
+        }
     }
     .footer-right {
-        @include span-columns(6);
+        
         margin-top: 30px;
         margin-bottom: 40px;
         padding: 10px;
         @include text-align(right);
+        @include media($md) {
+            @include span-columns(6);
+        }
     }
     .copyright {
         @include fontSize(12px);
