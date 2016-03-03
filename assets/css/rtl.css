@@ -900,8 +900,7 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
-  padding-top: 50px; }
+  overflow: hidden; }
   @media screen and (min-width: 48em) {
     #page {
       padding-top: 0; } }
@@ -1008,7 +1007,7 @@ body {
       padding: 0; } }
 
 .interior-page {
-  padding-top: 50px;
+  padding-top: 100px;
   position: relative; }
   .interior-page .site-content {
     position: relative; }
@@ -1217,7 +1216,10 @@ ul.sub-menu {
     background-color: #9D4446;
     color: #FFE7CC;
     display: block;
-    padding: 10px; }
+    padding: 5px; }
+    @media screen and (min-width: 64em) {
+      .reservation-widget a {
+        padding: 10px; } }
   .reservation-widget:hover a {
     background-color: #8B2332;
     text-decoration: none; }
@@ -1264,7 +1266,10 @@ ul.sub-menu {
       background-color: #9D4446;
       width: 100%;
       position: absolute;
-      top: 50px; }
+      top: 40px; }
+      @media screen and (min-width: 30em) {
+        #secondary-nav .reservation-widget .widget-wrap {
+          top: 50px; } }
   #secondary-nav .logo {
     position: relative;
     padding: 10px;
@@ -1667,19 +1672,23 @@ button#load-more.done {
       height: 100vh; } }
   .home-wrap .slide-2:before {
     content: "";
-    background-image: linear-gradient(to bottom, #FFE7CC 50%, rgba(255, 231, 204, 0.1) 98%, transparent 100%);
+    background-image: linear-gradient(to bottom, #FFE7CC 50%, rgba(255, 231, 204, 0.7) 100%);
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0; }
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 30em) {
       .home-wrap .slide-2:before {
         background-image: linear-gradient(to bottom, #FFE7CC 30%, transparent);
         height: 70%; } }
   .home-wrap .slide-2 p, .home-wrap .slide-2 h2 {
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    margin-bottom: 50px; }
+    @media screen and (min-width: 64em) {
+      .home-wrap .slide-2 p, .home-wrap .slide-2 h2 {
+        margin-bottom: 20px; } }
 
 .home-wrap .slide-3 {
   padding-top: 300px;
@@ -1710,7 +1719,7 @@ button#load-more.done {
   width: 100%;
   position: relative;
   padding: 5vh 5% 0; }
-  @media screen and (min-width: 0) {
+  @media screen and (min-width: 64em) {
     .home-section, .section-wrap {
       text-align: center;
       padding: 15vh 10px; } }
@@ -1863,17 +1872,14 @@ button#load-more.done {
 
 .flip-icons {
   margin-top: 40px;
-  -webkit-transform: translateY(60vh);
-          transform: translateY(60vh);
-  text-align: center; }
+  text-align: center;
+  position: absolute;
+  width: 90%; }
   @media screen and (min-width: 48em) {
     .flip-icons {
-      position: absolute;
       bottom: 30vh;
       width: 100%;
       left: 0;
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
       margin-top: 10%; } }
 
 /* entire container, keeps perspective */
@@ -1900,8 +1906,6 @@ button#load-more.done {
       padding: 10px;
       width: 70px;
       height: 70px; } }
-  .flip-icon-wrap:first-of-type {
-    margin-left: 3%; }
 
 .back {
   background-repeat: no-repeat;
@@ -2234,11 +2238,14 @@ ul.positions {
       height: 100vh;
       min-height: none; } }
   .careers-section.last-slide, .beverages-section.last-slide {
-    position: absolute; }
+    position: absolute;
+    height: calc(100vh - 63px);
+    text-align: center;
+    min-height: initial; }
     @media screen and (min-width: 48em) {
       .careers-section.last-slide, .beverages-section.last-slide {
         top: 800vh;
-        padding-top: 0; } }
+        padding-top: 30vh; } }
   @media screen and (min-width: 48em) {
     .careers-section.slide-wrap, .beverages-section.slide-wrap {
       height: 700vh; } }
@@ -3229,7 +3236,9 @@ ul.job-list-dots {
     font-family: "Gotham";
     font-weight: 300;
     text-transform: uppercase;
-    color: #9D4446; }
+    color: #9D4446;
+    font-size: 16px;
+    font-size: 1rem; }
     @media screen and (min-width: 48em) {
       .press-item .publication {
         font-size: 22px;
@@ -3237,27 +3246,25 @@ ul.job-list-dots {
   .press-item .headline {
     font-family: "adobe-caslon-pro";
     font-weight: 600;
-    font-style: italic; }
+    font-style: italic;
+    font-size: 20px;
+    font-size: 1.25rem; }
     @media screen and (min-width: 48em) {
       .press-item .headline {
         font-size: 33px;
         font-size: 2.0625rem; } }
   .press-item .quote {
     font-family: "GothamNarrow";
-    font-weight: 300; }
-    @media screen and (min-width: 48em) {
-      .press-item .quote {
-        font-size: 16px;
-        font-size: 1rem; } }
+    font-weight: 300;
+    font-size: 16px;
+    font-size: 1rem; }
   .press-item .date {
     font-family: "Gotham";
     font-weight: 300;
     text-transform: uppercase;
-    color: #9D4446; }
-    @media screen and (min-width: 48em) {
-      .press-item .date {
-        font-size: 12px;
-        font-size: 0.75rem; } }
+    color: #9D4446;
+    font-size: 12px;
+    font-size: 0.75rem; }
 
 .team-page .site-content h2 {
   margin-bottom: 0; }

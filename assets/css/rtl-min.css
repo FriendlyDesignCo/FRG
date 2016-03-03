@@ -73,9 +73,9 @@ h4.small{font-size:16px;font-size:1rem}.text-featured{color:#8b2332;font-family:
 .button:hover,#load-more:hover{background-color:#9d4446;text-decoration:none}input[type="submit"]{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;border:0;width:100%}
 .infinite-scroll #navigation,.infinite-scroll.neverending #footer{display:none}.infinity-end.neverending #footer{display:block}
 body{background-color:#fff;color:#000;font-family:"Georgia","Cambria","Times New Roman","Times",serif;line-height:1.5em;word-break:break-word;direction:rtl;unicode-bidi:embed}
-#page{max-width:100%;margin-left:auto;margin-right:auto;overflow:hidden;padding-top:50px}
-@media screen and (min-width:48em){#page{padding-top:0}}#primary{margin:0 auto;width:100%}
-#primary::after{clear:both;content:"";display:table}@media screen and (min-width:0){#primary{float:left;display:block;margin-right:14.28571%;width:100%}
+#page{max-width:100%;margin-left:auto;margin-right:auto;overflow:hidden}@media screen and (min-width:48em){#page{padding-top:0}
+}#primary{margin:0 auto;width:100%}#primary::after{clear:both;content:"";display:table}
+@media screen and (min-width:0){#primary{float:left;display:block;margin-right:14.28571%;width:100%}
 #primary:last-child{margin-right:0}}@media screen and (min-width:48em){#primary{float:left;display:block;margin-right:3.22581%;width:48.3871%;margin-right:0}
 #primary:last-child{margin-right:0}}#primary ul{list-style:none}#primary ul li{list-style-type:square}
 #secondary{margin:20px auto;padding:0 30px 0 0;width:100%}@media screen and (min-width:0){#secondary{float:left;display:block;margin-right:14.28571%;width:100%;padding:30px}
@@ -90,7 +90,7 @@ body{background-color:#fff;color:#000;font-family:"Georgia","Cambria","Times New
 }.home-section-inner .case-study,.section-inner .case-study{position:relative}@media screen and (min-width:48em){.home-section-inner .case-study,.section-inner .case-study{width:70%}
 }.site-content{padding:50px 5% 0;float:left;width:100%}@media screen and (min-width:48em){.site-content{padding:150px 7% 0}
 }.entry-content,.mobile-padding{padding:0 5%}@media screen and (min-width:48em){.entry-content,.mobile-padding{padding:0}
-}.interior-page{padding-top:50px;position:relative}.interior-page .site-content{position:relative}
+}.interior-page{padding-top:100px;position:relative}.interior-page .site-content{position:relative}
 body:not(.home) #secondary-nav{-webkit-transform:translateY(0);transform:translateY(0)}
 body.home header#masthead.not-scrolled{position:fixed}@media screen and (min-width:64em){body.home header#masthead.not-scrolled{position:absolute}
 body.home header#masthead.not-scrolled .logo{display:block;float:none;padding:0;margin:20px auto}
@@ -124,14 +124,15 @@ ul.sub-menu{display:block;position:relative;left:0;width:100%;margin-left:0;text
 @media screen and (min-width:64em){ul.sub-menu a{border-top:none !important}}ul.sub-menu li{display:block !important;float:none}
 ul.sub-menu li:hover{background-color:#9d4446}.reservation-widget{position:absolute;text-align:center;text-transform:uppercase;font-family:"Gotham";transition:all .3s}
 @media screen and (min-width:64em){.reservation-widget{width:200px;font-size:16px;font-size:1rem}
-}.reservation-widget a{background-color:#9d4446;color:#ffe7cc;display:block;padding:10px}
-.reservation-widget:hover a{background-color:#8b2332;text-decoration:none}#primary-nav{display:none}
-@media screen and (min-width:64em){#primary-nav{display:block}}#primary-nav .reservation-widget{display:none;width:200px;left:50px}
-#primary-nav .logo{width:180px;position:relative;padding:10px;float:left;display:none}
+}.reservation-widget a{background-color:#9d4446;color:#ffe7cc;display:block;padding:5px}
+@media screen and (min-width:64em){.reservation-widget a{padding:10px}}.reservation-widget:hover a{background-color:#8b2332;text-decoration:none}
+#primary-nav{display:none}@media screen and (min-width:64em){#primary-nav{display:block}
+}#primary-nav .reservation-widget{display:none;width:200px;left:50px}#primary-nav .logo{width:180px;position:relative;padding:10px;float:left;display:none}
 #primary-nav .logo a{display:block}#primary-nav .logo .light{display:block}#secondary-nav{display:block;position:fixed;top:0;left:0;transition:all .4s;box-shadow:0 5px 14px -6px black}
 @media screen and (min-width:64em){#secondary-nav{-webkit-transform:translateY(-140px);transform:translateY(-140px)}
-}#secondary-nav .reservation-widget{width:300px;right:0;top:63px}#secondary-nav .reservation-widget .widget-wrap{position:relative;text-align:left;display:none;background-color:#9d4446;width:100%;position:absolute;top:50px}
-#secondary-nav .logo{position:relative;padding:10px;float:left;width:140px;height:63px}
+}#secondary-nav .reservation-widget{width:300px;right:0;top:63px}#secondary-nav .reservation-widget .widget-wrap{position:relative;text-align:left;display:none;background-color:#9d4446;width:100%;position:absolute;top:40px}
+@media screen and (min-width:30em){#secondary-nav .reservation-widget .widget-wrap{top:50px}
+}#secondary-nav .logo{position:relative;padding:10px;float:left;width:140px;height:63px}
 #secondary-nav .logo a{display:block}#secondary-nav.slide-down{-webkit-transform:translateY(0);transform:translateY(0)}
 #secondary-nav .menu-menu-1-container{width:80%;background-color:#9d4446;position:absolute;height:100vh;top:63px;right:0;transition:all .3s;-webkit-transform:translateX(100vw);transform:translateX(100vw);box-shadow:0 14px 20px -19px black}
 @media screen and (min-width:64em){#secondary-nav .menu-menu-1-container{-webkit-transform:translateX(0);transform:translateX(0);top:0;background-color:#8b2332;height:auto}
@@ -182,15 +183,16 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 }@media screen and (min-width:71.25em){.home-wrap .slide-1 h2{font-size:71px;font-size:4.4375rem}
 }.home-wrap .slide-2{background-size:cover;background-repeat:no-repeat;height:auto}
 @media screen and (min-width:48em){.home-wrap .slide-2{padding-top:10vh;height:100vh}
-}.home-wrap .slide-2:before{content:"";background-image:linear-gradient(to bottom,#ffe7cc 50%,rgba(255,231,204,0.1) 98%,transparent 100%);position:absolute;width:100%;height:100%;left:0;top:0}
-@media screen and (min-width:48em){.home-wrap .slide-2:before{background-image:linear-gradient(to bottom,#ffe7cc 30%,transparent);height:70%}
-}.home-wrap .slide-2 p,.home-wrap .slide-2 h2{position:relative;z-index:2}.home-wrap .slide-3{padding-top:300px;height:auto}
-@media screen and (min-width:48em){.home-wrap .slide-3{padding-bottom:100px;padding-top:4vh;height:140vh}
+}.home-wrap .slide-2:before{content:"";background-image:linear-gradient(to bottom,#ffe7cc 50%,rgba(255,231,204,0.7) 100%);position:absolute;width:100%;height:100%;left:0;top:0}
+@media screen and (min-width:30em){.home-wrap .slide-2:before{background-image:linear-gradient(to bottom,#ffe7cc 30%,transparent);height:70%}
+}.home-wrap .slide-2 p,.home-wrap .slide-2 h2{position:relative;z-index:2;margin-bottom:50px}
+@media screen and (min-width:64em){.home-wrap .slide-2 p,.home-wrap .slide-2 h2{margin-bottom:20px}
+}.home-wrap .slide-3{padding-top:300px;height:auto}@media screen and (min-width:48em){.home-wrap .slide-3{padding-bottom:100px;padding-top:4vh;height:140vh}
 }.home-wrap .slide-4 .image-cookie{width:95%;display:block;margin:0 auto;z-index:2}
 @media screen and (min-width:48em){.home-wrap .slide-4 .image-cookie{width:50%}}@media screen and (min-width:64em){.home-wrap .slide-4 .image-cookie{width:40%}
 }@media screen and (min-width:71.25em){.home-wrap .slide-4 .image-cookie{width:50%}
 }.home-section,.section-wrap{float:left;width:100%;position:relative;padding:5vh 5% 0}
-@media screen and (min-width:0){.home-section,.section-wrap{text-align:center;padding:15vh 10px}
+@media screen and (min-width:64em){.home-section,.section-wrap{text-align:center;padding:15vh 10px}
 }.home-section p,.section-wrap p{font-family:"Gotham";font-size:16px;font-size:1rem}
 @media screen and (min-width:48em){.home-section p,.section-wrap p{font-size:22px;font-size:1.375rem}
 }@media screen and (min-width:71.25em){.home-section p,.section-wrap p{font-size:22px;font-size:1.375rem}
@@ -215,12 +217,11 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 }.slide-8-block p{font-size:14px;font-size:.875rem;line-height:1.4em}@media screen and (min-width:64em){.slide-8-block p{font-size:18px;font-size:1.125rem}
 }.slide-8-block .slide-8-block-inner{padding:40% 20px 20px;outline:1px solid #ffe7cc;outline-offset:-10px;height:100%;width:100%;z-index:3;position:relative}
 @media screen and (min-width:64em){.slide-8-block .slide-8-block-inner{padding:20px;position:absolute;left:0;top:0}
-}.flip-icons{margin-top:40px;-webkit-transform:translateY(60vh);transform:translateY(60vh);text-align:center}
-@media screen and (min-width:48em){.flip-icons{position:absolute;bottom:30vh;width:100%;left:0;-webkit-transform:translateY(0);transform:translateY(0);margin-top:10%}
+}.flip-icons{margin-top:40px;text-align:center;position:absolute;width:90%}@media screen and (min-width:48em){.flip-icons{bottom:30vh;width:100%;left:0;margin-top:10%}
 }.flip-icon-wrap{-webkit-perspective:1000;perspective:1000;display:inline-block}.flip-icon-wrap{width:29vw;height:29vw;border-radius:50%;padding:5px;max-width:200px;max-height:200px}
 @media screen and (min-width:48em){.flip-icon-wrap{padding:10px;width:120px;height:120px}
 }@media screen and (min-width:64em){.flip-icon-wrap{padding:10px;width:70px;height:70px}
-}.flip-icon-wrap:first-of-type{margin-left:3%}.back{background-repeat:no-repeat;background-size:cover;background-position:center}
+}.back{background-repeat:no-repeat;background-size:cover;background-position:center}
 .flip-icon,.front,.back{width:100%;height:100%;border-radius:50%}.flip-icon{-webkit-transform-style:preserve-3d;transform-style:preserve-3d;position:relative}
 .front,.back{-webkit-backface-visibility:hidden;backface-visibility:hidden;position:absolute;top:0;left:0}
 .front{z-index:2;-webkit-transform:rotateY(0);transform:rotateY(0);background-color:#9d4446;background-size:auto 60%;background-position:center;background-repeat:no-repeat}
@@ -267,7 +268,8 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 .career-slide-2{z-index:6}.career-slide-3{z-index:5}.career-slide-4{z-index:4}.career-slide-5{z-index:3}
 .career-slide-6{z-index:2}.careers-section,.beverages-section{text-align:left;min-height:100vh}
 @media screen and (min-width:48em){.careers-section,.beverages-section{height:100vh;min-height:none}
-}.careers-section.last-slide,.beverages-section.last-slide{position:absolute}@media screen and (min-width:48em){.careers-section.last-slide,.beverages-section.last-slide{top:800vh;padding-top:0}
+}.careers-section.last-slide,.beverages-section.last-slide{position:absolute;height:calc(100vh - 63px);text-align:center;min-height:initial}
+@media screen and (min-width:48em){.careers-section.last-slide,.beverages-section.last-slide{top:800vh;padding-top:30vh}
 }@media screen and (min-width:48em){.careers-section.slide-wrap,.beverages-section.slide-wrap{height:700vh}
 }.careers-wrap .slide-1 h2{margin:0;text-align:left}.careers-wrap .slide-1 p{text-align:left;line-height:1.4em}
 h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';font-weight:500;font-size:20px;font-size:1.25rem}
@@ -398,14 +400,13 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 @media screen and (min-width:48em){.press-item{padding:0 50px;width:49%}}.press-item:hover{opacity:.6}
 .press-item a{text-decoration:none}.press-item a:hover{text-decoration:none}.press-item p{color:black}
 .press-item .quote{position:relative;padding:10px 0}.press-item .quote:before,.press-item .quote:after{content:"";position:absolute;width:80%;height:1px;background-color:#8b2332;left:0;right:0;margin:0 auto}
-.press-item .quote:before{top:0}.press-item .quote:after{bottom:0}.press-item .publication{font-family:"Gotham";font-weight:300;text-transform:uppercase;color:#9d4446}
+.press-item .quote:before{top:0}.press-item .quote:after{bottom:0}.press-item .publication{font-family:"Gotham";font-weight:300;text-transform:uppercase;color:#9d4446;font-size:16px;font-size:1rem}
 @media screen and (min-width:48em){.press-item .publication{font-size:22px;font-size:1.375rem}
-}.press-item .headline{font-family:"adobe-caslon-pro";font-weight:600;font-style:italic}
+}.press-item .headline{font-family:"adobe-caslon-pro";font-weight:600;font-style:italic;font-size:20px;font-size:1.25rem}
 @media screen and (min-width:48em){.press-item .headline{font-size:33px;font-size:2.0625rem}
-}.press-item .quote{font-family:"GothamNarrow";font-weight:300}@media screen and (min-width:48em){.press-item .quote{font-size:16px;font-size:1rem}
-}.press-item .date{font-family:"Gotham";font-weight:300;text-transform:uppercase;color:#9d4446}
-@media screen and (min-width:48em){.press-item .date{font-size:12px;font-size:.75rem}
-}.team-page .site-content h2{margin-bottom:0}.team-page .site-content>h3{font-size:24px;font-size:1.5rem;margin-bottom:40px}
+}.press-item .quote{font-family:"GothamNarrow";font-weight:300;font-size:16px;font-size:1rem}
+.press-item .date{font-family:"Gotham";font-weight:300;text-transform:uppercase;color:#9d4446;font-size:12px;font-size:.75rem}
+.team-page .site-content h2{margin-bottom:0}.team-page .site-content>h3{font-size:24px;font-size:1.5rem;margin-bottom:40px}
 .team-member-item{display:inline-block;width:49%;vertical-align:top;margin-bottom:20px}
 @media screen and (min-width:48em){.team-member-item{width:22%}}@media screen and (min-width:48em){.team-member-item:nth-of-type(4n),.team-member-item:nth-of-type(4n-1),.team-member-item:nth-of-type(4n-2){margin-left:1%}
 }.team-member-item:hover>.text{background-color:#8b2332}.team-member-item .image{width:100%;height:300px;background-size:cover;background-position:center;background-color:#939292}

@@ -277,7 +277,10 @@ ul.sub-menu {
         background-color: $light-red;
         color: $tan;
         display: block;
-        padding: 10px;
+        padding: 5px;
+        @include media($mdbg) {
+            padding: 10px;
+        }
     }
     &:hover {
         
@@ -338,7 +341,10 @@ ul.sub-menu {
             background-color: $light-red;
             width: 100%;
             position: absolute;
-            top: 50px;
+            top: 40px;
+            @include media($smbg) {
+                top: 50px;
+            }
         }
     }
     .logo {
