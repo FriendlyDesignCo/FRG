@@ -1390,6 +1390,15 @@ ul.job-list-dots {
     }
 }
 
+.single-post {
+    .site-main {
+        padding-top: 100px;
+        @include media($md) {
+
+        }
+    }
+}
+
 .blog-list {
     @include media($md) {
         padding-left: 300px;
@@ -1563,7 +1572,7 @@ ul.job-list-dots {
 
 .drink-block {
     position: relative;
-    width: 48%;
+    width: 100%;
     display: inline-block;
     background-color: #FFE7CC;
     border: 1px solid $dark-red;

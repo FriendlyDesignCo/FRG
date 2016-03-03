@@ -88,7 +88,7 @@ body{background-color:#fff;color:#000;font-family:"Georgia","Cambria","Times New
 }@media screen and (min-width:64em){.home-section-inner,.section-inner{max-width:1024px;margin-left:auto;margin-right:auto}
 .home-section-inner::after,.section-inner::after{clear:both;content:"";display:table}
 }.home-section-inner .case-study,.section-inner .case-study{position:relative}@media screen and (min-width:48em){.home-section-inner .case-study,.section-inner .case-study{width:70%}
-}.site-content{padding:50px 5% 0;float:left;width:100%}@media screen and (min-width:48em){.site-content{padding:150px 7% 0}
+}.site-content{padding:50px 5% 0;width:100%}@media screen and (min-width:48em){.site-content{padding:150px 7% 0}
 }.entry-content,.mobile-padding{padding:0 5%}@media screen and (min-width:48em){.entry-content,.mobile-padding{padding:0}
 }.interior-page{padding-top:100px;position:relative}.interior-page .site-content{position:relative}
 body:not(.home) #secondary-nav{-webkit-transform:translateY(0);transform:translateY(0)}
@@ -341,9 +341,9 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .categories-list a{text-transform:uppercase;color:#9d4446;font-family:"Gotham";font-size:18px;font-size:1.125rem;font-weight:bold}
 .categories-list li{list-style-type:none}.categories-list h3{font-family:"adobe-caslon-pro";font-weight:500;font-style:italic;margin-bottom:0}
 @media screen and (min-width:48em){.categories-list{display:block;padding:20px 20px 40px;width:295px;position:absolute;left:0;top:150px}
-}@media screen and (min-width:48em){.blog-list{padding-left:300px}}.blog-list .blog-item{padding:10px 0;float:left;width:100%}
-.blog-list .category a{color:#9d4446}.blog-list .sub-title{font-size:16px;font-size:1rem}
-@media screen and (min-width:48em){.blog-list .sub-title{font-size:20px;font-size:1.25rem}
+}.single-post .site-main{padding-top:100px}@media screen and (min-width:48em){.blog-list{padding-left:300px}
+}.blog-list .blog-item{padding:10px 0;float:left;width:100%}.blog-list .category a{color:#9d4446}
+.blog-list .sub-title{font-size:16px;font-size:1rem}@media screen and (min-width:48em){.blog-list .sub-title{font-size:20px;font-size:1.25rem}
 }.sidebar-text{background-color:#9d4446;color:#ffe7cc;border-radius:20px;line-height:1.2em;font-family:"adobe-caslon-pro";font-style:italic;position:relative}
 @media screen and (min-width:48em){.sidebar-text{width:250px}}.sidebar-text a{display:block;padding:20px 20px 50px;color:#ffe7cc}
 .sidebar-text.right{margin-left:20px}.sidebar-text.left{margin-right:20px}.sidebar-text .twitter-icon{content:"";position:absolute;width:20px;height:20px;background-size:cover;background-position:center;right:20px;bottom:10px}
@@ -362,7 +362,7 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .beverage-info h2:after{clear:none}@media screen and (min-width:48em){.beverage-info h2{clear:none;font-size:42px;font-size:2.625rem}
 }.beverage-info p{font-family:"GothamNarrow";font-weight:300;font-size:20px;font-size:1.25rem;line-height:1.4em}
 .beverage-info .intro-text{font-family:"Gotham";font-weight:bold;font-size:24px;font-size:1.5rem;color:#8b2332}
-.drink-block{position:relative;width:48%;display:inline-block;background-color:#ffe7cc;border:1px solid #8b2332;padding:15px;margin-bottom:15px;vertical-align:top}
+.drink-block{position:relative;width:100%;display:inline-block;background-color:#ffe7cc;border:1px solid #8b2332;padding:15px;margin-bottom:15px;vertical-align:top}
 @media screen and (min-width:48em){.drink-block{width:31%}}.drink-block p{margin:0;font-family:"GothamNarrow";font-size:15px;font-size:.9375rem}
 .drink-block span{float:left;display:inline}.drink-block span+span{border-right:1px solid black}
 @media screen and (min-width:48em){.drink-block:nth-of-type(3n-1){margin-left:2%}

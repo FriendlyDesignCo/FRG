@@ -991,7 +991,6 @@ body {
 
 .site-content {
   padding: 50px 5% 0;
-  float: left;
   width: 100%; }
   @media screen and (min-width: 48em) {
     .site-content {
@@ -2783,6 +2782,9 @@ ul.job-list-dots {
       left: 0;
       top: 150px; } }
 
+.single-post .site-main {
+  padding-top: 100px; }
+
 @media screen and (min-width: 48em) {
   .blog-list {
     padding-left: 300px; } }
@@ -2939,7 +2941,7 @@ ul.job-list-dots {
 
 .drink-block {
   position: relative;
-  width: 48%;
+  width: 100%;
   display: inline-block;
   background-color: #FFE7CC;
   border: 1px solid #8B2332;
