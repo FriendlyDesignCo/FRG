@@ -2640,12 +2640,15 @@ ul.job-list-dots {
         height: 80%; } }
   .sprinkler-animation.step-1 {
     opacity: 1; }
-  .sprinkler-animation.step-6 .corn {
-    -webkit-transform: rotate(30deg);
-            transform: rotate(30deg);
-    background-position: center;
-    height: 400px;
-    bottom: 0; }
+  .sprinkler-animation.step-6 {
+    top: 10vh; }
+    .sprinkler-animation.step-6 .corn {
+      -webkit-transform: rotate(30deg);
+              transform: rotate(30deg);
+      background-position: center;
+      height: 400px;
+      background-size: 70%;
+      bottom: 0; }
 
 .nav-dots-inner {
   border-top: 2px solid #8B2332;

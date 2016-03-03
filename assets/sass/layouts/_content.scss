@@ -1230,11 +1230,15 @@ ul.job-list-dots {
     &.step-1 {
         opacity: 1;
     }
-    &.step-6 .corn {
-        transform: rotate(30deg);
-        background-position: center;
-        height: 400px;
-        bottom: 0;
+    &.step-6 {
+        top: 10vh;
+        .corn {
+            transform: rotate(30deg);
+            background-position: center;
+            height: 400px;
+            background-size: 70%;
+            bottom: 0;
+        }
     }
 }
 
