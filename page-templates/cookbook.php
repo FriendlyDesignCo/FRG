@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<div id="" class="cookbook-page content-area ">
+<div id="" class="cookbook-page content-area interior-page">
 	
 	<div id="content" class="site-content">
 		<div class="cookbook-logo ">
