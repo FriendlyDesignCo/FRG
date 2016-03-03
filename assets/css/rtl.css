@@ -2422,14 +2422,14 @@ h2.career-title {
     font-family: "adobe-caslon-pro";
     font-style: italic;
     background-color: #9D4446;
-    line-height: 1em; }
+    line-height: 1.2em; }
     @media screen and (min-width: 48em) {
       .case-study-card-expanded .inner-blurb {
-        font-size: 24px;
-        font-size: 1.5rem;
+        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 500;
         width: 40%;
-        padding: 20px;
+        padding: 20px 20px 20px 30px;
         height: 175px; } }
   .case-study-card-expanded .case-study-paragraph {
     float: right;
@@ -2524,6 +2524,22 @@ ul.job-list-dots {
   ul.job-list-dots li:last-of-type:after {
     content: none; }
 
+@-webkit-keyframes sprinklerAnimation {
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px); } }
+
+@keyframes sprinklerAnimation {
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px); } }
+
 .nav-dots ul li.active {
   background: #8B2332;
   width: 20px;
@@ -2586,8 +2602,12 @@ ul.job-list-dots {
     -webkit-transform: translateY(50px);
             transform: translateY(50px); }
     .sprinkler-animation .sprinkler.animated {
-      -webkit-transform: translateY(0);
-              transform: translateY(0); }
+      -webkit-animation-name: sprinklerAnimation;
+      animation-name: sprinklerAnimation;
+      -webkit-animation-duration: 1.2s;
+      animation-duration: 1.2s;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease; }
     @media screen and (min-width: 48em) {
       .sprinkler-animation .sprinkler {
         width: 70%;

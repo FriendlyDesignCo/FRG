@@ -998,12 +998,12 @@ h2.career-title {
         font-family: $caslon;
         font-style: italic;
         background-color: $light-red;
-        line-height: 1em;
+        line-height: 1.2em;
         @include media($md) {
-            @include fontSize(24px);
+            @include fontSize(20px);
             font-weight: 500;
             width: 40%;   
-            padding: 20px; 
+            padding: 20px 20px 20px 30px; 
             height: 175px;
         }
     }
@@ -1113,7 +1113,10 @@ ul.job-list-dots {
     
 }
 
-
+@keyframes sprinklerAnimation {
+    50% {transform: translateY(0);}
+    100% {transform: translateY(50px);}
+}
 
 .nav-dots ul li.active {
     background: $dark-red;
@@ -1182,7 +1185,9 @@ ul.job-list-dots {
         //transform: scale(0);
         //transform-origin: center bottom;
         &.animated {
-            transform: translateY(0);
+            @include animation-name(sprinklerAnimation);
+            @include animation-duration(1.2s);
+            @include animation-timing-function(ease);
         }
         @include media($md) {
             width: 70%;
