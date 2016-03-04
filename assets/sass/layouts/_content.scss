@@ -443,6 +443,7 @@ button#load-more.done {
     left: 0;
 }
 
+
 /* front pane, placed above back */
 .front {
     z-index: 2;
@@ -452,6 +453,12 @@ button#load-more.done {
     background-size: auto 60%;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.icon-5 .front {
+        background-size: 59%;
+    background-position: center bottom;
+
 }
 
 /* back, initially hidden pane */

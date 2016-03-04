@@ -6,7 +6,7 @@
 <?php tha_entry_before(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemType="http://schema.org/BlogPosting">
 	<?php tha_entry_top(); ?>
-	<?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id() ) ?>
+	<?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' ) ?>
 	<?php if($image_url != null) {?>
 		<div class="hero-image" style="background-image:url(<?php echo $image_url[0] ?>)" title="<?php echo the_title_attribute( 'echo=0' ) ?>"></div>
 	<?php } ?>
@@ -19,5 +19,4 @@
 
 	
 	<?php tha_entry_bottom(); ?>
-</article><!-- #post-## -->
-
+</article>

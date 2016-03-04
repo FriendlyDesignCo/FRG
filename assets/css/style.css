@@ -715,7 +715,7 @@ ol:nth-child(n+2) {
   font-family: "adobe-caslon-pro";
   text-align: left;
   line-height: 1em;
-  margin-bottom: 0; }
+  margin-bottom: 5px; }
   .entry-title a {
     color: #8B2332; }
   @media screen and (min-width: 0) {
@@ -1947,6 +1947,10 @@ button#load-more.done {
   background-size: auto 60%;
   background-position: center;
   background-repeat: no-repeat; }
+
+.icon-5 .front {
+  background-size: 59%;
+  background-position: center bottom; }
 
 /* back, initially hidden pane */
 .back {
