@@ -3753,14 +3753,20 @@ select.source {
 
 .contact-form-wrap {
   position: relative;
-  width: 70%;
   float: left;
-  padding: 0 50px; }
+  width: 100%; }
+  @media screen and (min-width: 48em) {
+    .contact-form-wrap {
+      width: 70%;
+      padding: 0 50px; } }
 
 .contact-field.field-half-width {
-  width: 49%;
+  width: 100%;
   float: left;
   height: 100px; }
+  @media screen and (min-width: 48em) {
+    .contact-field.field-half-width {
+      width: 49%; } }
   .contact-field.field-half-width:nth-of-type(2n) {
     float: right; }
 
@@ -3776,15 +3782,31 @@ select.source {
     color: #8B2332;
     font-family: "Gotham";
     font-weight: bold; }
-  .gform_body ul .gfield {
-    float: left; }
-  .gform_body ul input, .gform_body ul textarea {
+  .gform_body ul select, .gform_body ul input {
+    height: 48px;
+    padding: 5px 10px; }
+  .gform_body ul input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    padding: 0; }
+  .gform_body ul select, .gform_body ul input, .gform_body ul textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
     font-family: "Gotham";
     font-weight: 500;
     background-color: #FFE7CC;
     border: 2px solid #8B2332;
     border-radius: 5px;
     color: #8B2332; }
+  .gform_body ul .gchoice_1_8_1 input {
+    margin-top: 5px;
+    float: left; }
+  .gform_body ul .gchoice_1_8_1 label {
+    font-size: 16px;
+    font-size: 1rem; }
 
 /*--------------------------------------------------------------
     6.4 Page Templates

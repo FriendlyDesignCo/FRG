@@ -473,10 +473,13 @@ input.datepicker{position:relative}@media screen and (min-width:48em){.form_wrap
 .dropdown-list li:hover{background-color:#9d4446}.date-input{display:block}.date-input input{padding-left:30px}
 .datepicker table tr td.today{background-image:none !important;background-color:#ffe7cc !important}
 .reservation-page .form-wrap{padding:0 10vw}.reservation_image_wrap{width:100%}@media screen and (min-width:48em){.reservation_image_wrap{width:50%}
-}.contact-form-wrap{position:relative;width:70%;float:left;padding:0 50px}.contact-field.field-half-width{width:49%;float:left;height:100px}
-.contact-field.field-half-width:nth-of-type(2n){float:right}.contact-field.field-full-width{width:100%}
+}.contact-form-wrap{position:relative;float:left;width:100%}@media screen and (min-width:48em){.contact-form-wrap{width:70%;padding:0 50px}
+}.contact-field.field-half-width{width:100%;float:left;height:100px}@media screen and (min-width:48em){.contact-field.field-half-width{width:49%}
+}.contact-field.field-half-width:nth-of-type(2n){float:right}.contact-field.field-full-width{width:100%}
 .gform_body ul{list-style-type:none;margin:0;padding:0}.gform_body ul label{text-transform:uppercase;color:#8b2332;font-family:"Gotham";font-weight:bold}
-.gform_body ul .gfield{float:left}.gform_body ul input,.gform_body ul textarea{font-family:"Gotham";font-weight:500;background-color:#ffe7cc;border:2px solid #8b2332;border-radius:5px;color:#8b2332}
+.gform_body ul select,.gform_body ul input{height:48px;padding:5px 10px}.gform_body ul input[type="checkbox"]{height:20px;width:20px;padding:0}
+.gform_body ul select,.gform_body ul input,.gform_body ul textarea{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;font-family:"Gotham";font-weight:500;background-color:#ffe7cc;border:2px solid #8b2332;border-radius:5px;color:#8b2332}
+.gform_body ul .gchoice_1_8_1 input{margin-top:5px;float:left}.gform_body ul .gchoice_1_8_1 label{font-size:16px;font-size:1rem}
 .page-template-page-templatestemplate-left-col-php h1.entry-title{margin:0;text-align:left}
 @media screen and (min-width:48em){.page-template-page-templatestemplate-left-col-php #main{display:-webkit-flex;display:-ms-flexbox;display:flex}
 }@media screen and (min-width:0){.page-template-page-templatestemplate-left-col-php #main #primary{float:left;display:block;margin-right:14.28571%;width:214.28571%}

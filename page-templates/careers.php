@@ -298,6 +298,7 @@ get_header(); ?>
 	<section class="section careers-section last-slide section-wrap">
 		<div class="section-inner">
 			<h2 class="small">Ready to start your journey?</h2>
+			<a class="button" href="<?php the_field('apply_link') ?>">Apply</a>
 	</section>
 </div><!-- .page-wrap -->
 
