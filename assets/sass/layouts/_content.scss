@@ -261,6 +261,9 @@ button#load-more.done {
         height: 0;
         padding-bottom: 32%;
     }
+    a {
+        display: block;
+    }
     .slide-8-header {
         transition: all .3s;
         position: relative;
@@ -2253,7 +2256,9 @@ input.datepicker {
     position: relative;
 }
 
-
+.datepicker {
+    @include fontSize(16px);
+}
 /********** form ***********/
 
 .form_wrap-inner {
@@ -2287,6 +2292,7 @@ input.datepicker {
         @include fontSize(16px);
         line-height: 1.2em;
         text-align: center;
+        text-transform: none;
     }
     form {
         margin-bottom: 30px;
@@ -2460,6 +2466,19 @@ select.source {
     }
     img {
 
+    }
+}
+
+.contact-page-text {
+    h3 {
+        font-family: "GothamNarrow";
+        font-weight: 400;
+        @include fontSize(26px); 
+    }
+    p {
+        font-family: "GothamNarrow";
+        font-weight: 300;
+        @include fontSize(20px);
     }
 }
 

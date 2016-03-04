@@ -177,12 +177,12 @@ table {
 th {
   border-bottom: 1px solid #b7b7b7;
   font-weight: 600;
-  padding: 0.75em 0;
+  padding: .3em 0;
   text-align: left; }
 
 td {
   border-bottom: 1px solid #ddd;
-  padding: 0.75em 0; }
+  padding: .3em 0; }
 
 tr,
 td,
@@ -1792,6 +1792,8 @@ button#load-more.done {
     .slide-8-block {
       height: 0;
       padding-bottom: 32%; } }
+  .slide-8-block a {
+    display: block; }
   .slide-8-block .slide-8-header {
     transition: all .3s;
     position: relative; }
@@ -3553,6 +3555,10 @@ ul.job-list-dots {
 input.datepicker {
   position: relative; }
 
+.datepicker {
+  font-size: 16px;
+  font-size: 1rem; }
+
 /********** form ***********/
 @media screen and (min-width: 48em) {
   .form_wrap-inner {
@@ -3583,7 +3589,8 @@ input.datepicker {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.2em;
-    text-align: center; }
+    text-align: center;
+    text-transform: none; }
   .OT_searchWrapperAll form {
     margin-bottom: 30px; }
   .OT_searchWrapperAll .phone-number {
@@ -3755,6 +3762,18 @@ select.source {
   @media screen and (min-width: 48em) {
     .reservation_image_wrap {
       width: 50%; } }
+
+.contact-page-text h3 {
+  font-family: "GothamNarrow";
+  font-weight: 400;
+  font-size: 26px;
+  font-size: 1.625rem; }
+
+.contact-page-text p {
+  font-family: "GothamNarrow";
+  font-weight: 300;
+  font-size: 20px;
+  font-size: 1.25rem; }
 
 .contact-form-wrap {
   position: relative;

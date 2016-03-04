@@ -228,7 +228,7 @@ get_header(); ?>
 							
 						endwhile;
 						
-						$json = json_encode($json_array, JSON_UNESCAPED_SLASHES);
+						$json = json_encode($json_array);
 						
 						echo $json;
 					?>
@@ -303,7 +303,10 @@ get_header(); ?>
 				</script>
 			</div>
 		</div>
-		
+		<div class="contact-page-text">
+			<h3><?php the_field('header_text') ?></h3>
+			<p><?php the_field('paragraph_text') ?></p>
+		</div>
 	</div><!-- #content -->
 </div>
 

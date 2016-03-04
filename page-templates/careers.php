@@ -148,7 +148,7 @@ get_header(); ?>
 				var controller = new ScrollMagic.Controller();
 				new ScrollMagic.Scene({triggerElement: "#career-trigger1", duration: "600%"})
 								.setPin(".career-wrap")
-								.addIndicators()
+								//.addIndicators()
 								.addTo(controller);
 				
 				
