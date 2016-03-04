@@ -88,6 +88,10 @@ button#load-more.done {
 .home-wrap {
     //padding-top: 100px;
     .slide-1 {
+        height: auto;
+        @include media($md) {
+            height: 100vh;
+        }
         h2 {
             @include fontSize(31px);
             @include media($md) {
@@ -170,7 +174,7 @@ button#load-more.done {
     width: 100%;
     position: relative;
     
-    padding: 5vh 5% 0;
+    padding: 5vh 5%;
     @include media($mdbg) {
         text-align: center;
         padding: 15vh 10px;    
