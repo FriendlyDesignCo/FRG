@@ -383,7 +383,7 @@
 			<?php } ?>
 			<?php if(is_page( 'Careers' )  ) { ?>
 				<div class="reservation-widget careers-widget">
-					<a class="" href="<?php the_field('apply_link', 8); ?>">Apply</a>
+					<a class="" onmousedown="ga('send', 'event', 'apply', 'click', '1');" href="<?php the_field('apply_link', 8); ?>">Apply</a>
 				</div>
 			<?php } ?>
 			<div class="logo">

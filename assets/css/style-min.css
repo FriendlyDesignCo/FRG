@@ -473,13 +473,23 @@ input.datepicker{position:relative}@media screen and (min-width:48em){.form_wrap
 .dropdown-list li:hover{background-color:#9d4446}.date-input{display:block}.date-input input{padding-left:30px}
 .datepicker table tr td.today{background-image:none !important;background-color:#ffe7cc !important}
 .reservation-page .form-wrap{padding:0 10vw}.reservation_image_wrap{width:100%}@media screen and (min-width:48em){.reservation_image_wrap{width:50%}
-}.contact-form-wrap{position:relative;float:left;width:100%}@media screen and (min-width:48em){.contact-form-wrap{width:70%;padding:0 50px}
-}.contact-field.field-half-width{width:100%;float:left;height:100px}@media screen and (min-width:48em){.contact-field.field-half-width{width:49%}
+}.contact-form-wrap{position:relative;float:left;width:100%;margin-bottom:30px}@media screen and (min-width:48em){.contact-form-wrap{width:70%;padding:0 50px}
+}.contact-field.field-half-width{width:100%;float:left;height:130px}@media screen and (min-width:48em){.contact-field.field-half-width{width:49%}
 }.contact-field.field-half-width:nth-of-type(2n){float:right}.contact-field.field-full-width{width:100%}
-.gform_body ul{list-style-type:none;margin:0;padding:0}.gform_body ul label{text-transform:uppercase;color:#8b2332;font-family:"Gotham";font-weight:bold}
-.gform_body ul select,.gform_body ul input{height:48px;padding:5px 10px}.gform_body ul input[type="checkbox"]{height:20px;width:20px;padding:0}
-.gform_body ul select,.gform_body ul input,.gform_body ul textarea{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;font-family:"Gotham";font-weight:500;background-color:#ffe7cc;border:2px solid #8b2332;border-radius:5px;color:#8b2332}
+.gform_title{font-family:"adobe-caslon-pro";font-style:italic;font-size:32px;font-size:2rem}
+@media screen and (min-width:48em){.gform_title{font-size:62px;font-size:3.875rem}
+}.gform_body ul{list-style-type:none;margin:0;padding:0}.gform_body ul label{text-transform:uppercase;color:#8b2332;font-family:"Gotham";font-weight:bold}
+.gform_body ul select,.gform_body ul input{height:48px;padding:5px 10px}.gform_body ul input[type="checkbox"]{height:20px;width:20px;padding:0;position:relative}
+.gform_body ul input[type="checkbox"]:checked:after{content:"x";position:absolute;color:#8b2332;left:0;font-family:"Gotham";width:17px;top:1px;line-height:.7em;text-align:center}
+.gform_body ul select,.gform_body ul input,.gform_body ul textarea{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;font-family:"Gotham";font-weight:500;background-color:#ffe7cc;border:2px solid #8b2332;border-radius:5px;color:#8b2332;margin-bottom:5px}
 .gform_body ul .gchoice_1_8_1 input{margin-top:5px;float:left}.gform_body ul .gchoice_1_8_1 label{font-size:16px;font-size:1rem}
+.checkbox-field{margin-top:30px}.gform_button.button{width:200px}@media screen and (min-width:48em){.gform_button.button{float:right;margin-top:-50px}
+}.locations-list-wrap{width:100%}@media screen and (min-width:48em){.locations-list-wrap{float:left;width:30%}
+}.location-item{margin-bottom:20px}.location-item .location-name{text-transform:uppercase;font-family:"Gotham";font-weight:bold;font-size:18px;font-size:1.125rem;margin:0}
+.location-item p{margin:0;font-family:"GothamNarrow";font-size:20px;font-size:1.25rem}
+.location-item .phone-number{font-weight:400}.location-item .address{font-weight:300}
+.validation_message{background-color:#8b2332;color:#ffe7cc;padding-left:30px;position:relative;font-family:"Gotham";float:left;padding:0 10px 0 40px;border-radius:7px;font-size:14px;font-size:.875rem}
+.validation_message:before{content:"!";font-family:"Gotham";font-weight:bold;text-align:center;border-radius:7px;position:absolute;left:0;top:0;height:100%;width:30px;background-color:#9d4446}
 .page-template-page-templatestemplate-left-col-php h1.entry-title{margin:0;text-align:left}
 @media screen and (min-width:48em){.page-template-page-templatestemplate-left-col-php #main{display:-webkit-flex;display:-ms-flexbox;display:flex}
 }@media screen and (min-width:0){.page-template-page-templatestemplate-left-col-php #main #primary{float:left;display:block;margin-right:14.28571%;width:214.28571%}

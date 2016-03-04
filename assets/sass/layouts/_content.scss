@@ -2459,6 +2459,7 @@ select.source {
     position: relative;
     float: left;
     width: 100%;
+    margin-bottom: 30px;
     @include media($md) {
         width: 70%;
         padding: 0 50px;    
@@ -2469,7 +2470,7 @@ select.source {
     &.field-half-width {
          width: 100%;
          float: left;
-         height: 100px;
+         height: 130px;
          @include media($md) {
             width: 49%;
          }
@@ -2482,7 +2483,14 @@ select.source {
      }
 }
 
-
+.gform_title {
+    font-family: $caslon;
+    font-style: italic;
+    @include fontSize(32px);
+    @include media($md) {
+        @include fontSize(62px);
+    }
+}
 .gform_body ul {
     list-style-type: none;
     margin:0;
@@ -2494,7 +2502,7 @@ select.source {
         font-weight: bold;
     }
     .gfield {
-        
+
     }
     select, input {
         height: 48px;
@@ -2504,6 +2512,20 @@ select.source {
         height: 20px;
         width: 20px;
         padding: 0;
+        position: relative;
+        &:checked {
+            &:after {
+                content: "x";
+                position: absolute;
+                color: $dark-red;
+                left: 0;
+                font-family: "Gotham";
+                width: 17px;
+                top: 1px;
+                line-height: .7em;
+                text-align: center;
+            }
+        }
     }
     select, input, textarea {
         @include appearance(none);
@@ -2513,6 +2535,7 @@ select.source {
         border: 2px solid $dark-red;
         border-radius: 5px;
         color: $dark-red;
+        margin-bottom: 5px;
     }
     .gchoice_1_8_1{
         input {
@@ -2525,3 +2548,72 @@ select.source {
         
     }
 }
+
+.checkbox-field {
+    margin-top: 30px;
+}
+
+.gform_button.button {
+    @include media($md) {
+        float: right;    
+        margin-top: -50px;
+    }
+    width: 200px;
+}
+.locations-list-wrap {
+    width: 100%;
+    @include media($md) {
+        float: left;
+        width: 30%;
+    }
+}
+
+.location-item {
+    margin-bottom: 20px;
+    .location-name {
+        text-transform: uppercase;
+        font-family: "Gotham";
+        font-weight: bold;
+        @include fontSize(18px);
+        margin: 0;
+    }
+    p {
+        margin: 0;
+        font-family: "GothamNarrow";
+        @include fontSize(20px); 
+    }
+    .phone-number {
+        font-weight: 400;
+    }
+    .address {
+        font-weight: 300;
+    }
+}
+
+.validation_message {
+    background-color: $dark-red;
+    color: $tan;
+    padding-left: 30px;
+    position: relative;
+    font-family: "Gotham";
+    float: left;
+    padding: 0 10px 0 40px;
+    border-radius: 7px;
+    @include fontSize(14px);
+    &:before {
+        content: "!";
+        font-family: "Gotham";
+        font-weight: bold;
+        text-align: center;
+        border-radius: 7px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 30px;
+        background-color: $light-red;
+    }
+}
+
+
+

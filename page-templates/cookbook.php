@@ -19,7 +19,7 @@ get_header(); ?>
 		<div class="cookbook-text">
 			<p class="text-left"><?php the_field('paragraph_text_left'); ?></p>
 			<p class="text-right"><?php the_field('paragraph_text_right'); ?></p>
-			<a class="button "href="<?php the_field('buy_link'); ?>"><?php the_field('buy_button_text'); ?></a>
+			<a class="button " onmousedown="ga('send', 'event', 'cookbook', 'click', 'button');" href="<?php the_field('buy_link'); ?>"><?php the_field('buy_button_text'); ?></a>
 		</div>
 		<div class="images-wrap">
 		<?php if( have_rows('images') ): ?>

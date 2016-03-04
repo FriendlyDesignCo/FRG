@@ -93,7 +93,7 @@ get_header(); ?>
 			<h2 class="small"><?php the_field('hero_header_line_1'); ?></h2>
 			<h2 class="small"><?php the_field('hero_header_line_2'); ?></h2>
 			<p class="text-red"><?php the_field('hero_paragraph'); ?></p>
-			<a class="button " href="<?php the_field('apply_link'); ?>">Apply</a>
+			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '2');" href="<?php the_field('apply_link'); ?>">Apply</a>
 			<p class="text-red medium"><?php the_field('scroll_more_text'); ?></p>
 
 			<div class="arrow-wrap">
@@ -298,7 +298,7 @@ get_header(); ?>
 	<section class="section careers-section last-slide section-wrap">
 		<div class="section-inner">
 			<h2 class="small">Ready to start your journey?</h2>
-			<a class="button" href="<?php the_field('apply_link') ?>">Apply</a>
+			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '3');" href="<?php the_field('apply_link') ?>">Apply</a>
 	</section>
 </div><!-- .page-wrap -->
 
