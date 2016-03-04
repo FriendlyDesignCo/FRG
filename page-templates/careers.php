@@ -44,7 +44,7 @@ get_header(); ?>
 		
 	</script>
 
-<div id="fullpage" class="careers-wrap page-wrap content-area interior-page">
+<div id="fullpage" class="careers-wrap page-wrap content-area">
 	<?php if( have_rows('career_path') ): ?>
 	<?php $slide_anchor = 0; ?>
 	<?php while( have_rows('career_path') ): the_row(); ?>
@@ -97,9 +97,9 @@ get_header(); ?>
 			<p class="text-red medium"><?php the_field('scroll_more_text'); ?></p>
 
 			<div class="arrow-wrap">
-				<div class="arrow arrow-red"></div>
-				<div class="arrow arrow-red"></div>
-				<div class="arrow arrow-red"></div>
+				<div class="arrow arrow-red arrow-1"></div>
+				<div class="arrow arrow-red arrow-2"></div>
+				<div class="arrow arrow-red arrow-3"></div>
 			</div>
 		</div>
 	</section>

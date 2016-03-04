@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<div id="" class="blog-page content-area interior-page">
+<div id="" class="blog-page content-area ">
 	<style>
 	
 	</style>

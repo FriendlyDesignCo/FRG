@@ -3,7 +3,7 @@
 
 	$(document).ready(function() {
 
-		$("#secondary-nav .reservation-widget a").click(function(e) {
+		$("#secondary-nav .reservation-widget a.reservation").click(function(e) {
 			e.preventDefault();
 			$(this).parent().children(".widget-wrap").toggle();
 		});

@@ -2,18 +2,22 @@
 /**
  * Template Name: Contact
  *
- * This template display content at full with, with no sidebars.
- * Please note that this is the WordPress construct of pages and that other 'pages' on your WordPress site will use a different template.
+ * 
  *
  * @package some_like_it_neat
  */
 
 get_header(); ?>
 
-<div id="" class="cookbook-page content-area ">
+<div id="" class="contact-us-page content-area ">
 	
 	<div id="content" class="site-content">
-		
+		<div class="contact-form-wrap">
+			<?php echo do_shortcode("[gravityform id='1' title='true' description='true' ajax='true']");  ?>	
+		</div>
+		<div class="">
+			
+		</div>
 	</div><!-- #content -->
 </div>
 

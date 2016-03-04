@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<div id="" class="home-wrap page-wrap content-area">
+<div id="" class="home-wrap page-wrap content-area ">
 	<style>
 		.arrow {
 			width: 100px;

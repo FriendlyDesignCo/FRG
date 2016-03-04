@@ -9,7 +9,7 @@
  */
 
 get_header(); ?>
-<div id="" class="content-area interior-page">
+<div id="" class="content-area ">
 	<div id="content" class="site-content section-inner">
 	
 		<?php tha_entry_top(); ?>

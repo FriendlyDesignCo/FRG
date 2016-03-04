@@ -672,7 +672,7 @@ ul.positions {
     left: 0;
     //background-color: $tan;
     position: absolute;
-    padding: 5vh 5%;
+    padding: 10vh 5% 5vh;
     
     background-size: cover;
     &:before {
@@ -814,7 +814,18 @@ ul.positions {
     }
 }
 
+.beverages-page {
+    padding-top: 100px;
+    @include media($md) {
+        padding-top: 0;
+    }
+}
+
 .careers-wrap {
+    padding-top: 100px;
+    @include media($md) {
+        padding-top: 0;
+    }
     .slide-1 {
         //padding-top: 0;
         h2 {
@@ -965,7 +976,7 @@ h2.career-title {
     transition: all .3s;
     transform: scale(0);
     transform-origin: bottom left;
-    padding: 70px 10px 0;
+    padding: 70px 20px 50px;
     height: 75vh;
     width: 90vw;
     overflow-y: scroll;
@@ -1009,8 +1020,11 @@ h2.career-title {
         font-style: italic;
         background-color: $light-red;
         line-height: 1.2em;
+        margin-bottom: 40px;
+        padding: 10px;
         @include media($md) {
             @include fontSize(20px);
+            margin-bottom: 0px;
             font-weight: 500;
             width: 40%;   
             padding: 20px 20px 20px 30px; 
@@ -1246,8 +1260,12 @@ ul.job-list-dots {
             transform: rotate(30deg);
             background-position: center;
             height: 400px;
-            background-size: 70%;
-            bottom: 0;
+            background-size: 120%;
+            bottom: 40px;
+            @include media($md) {
+                background-size: 70%;
+                bottom: 0;
+            }
         }
     }
 }
@@ -1392,9 +1410,9 @@ ul.job-list-dots {
 
 .single-post {
     .site-main {
-        padding-top: 100px;
+        //padding-top: 100px;
         @include media($md) {
-
+            padding-top: 0;
         }
     }
 }
@@ -1411,13 +1429,15 @@ ul.job-list-dots {
     .category a {
         color: $light-red;
     }
-    .sub-title {
-        @include fontSize(16px);
+    
+}
+
+.sub-title {
+        @include fontSize(18px);
         @include media($md) {
             @include fontSize(20px);
         }
     }
-}
 
 .sidebar-text {
     background-color: $light-red;
@@ -1615,7 +1635,9 @@ ul.job-list-dots {
 
 .arrow-wrap {
     margin-bottom: 50px;
+    display: none;
     @include media($md) {
+        display: block;
         margin-bottom: 10px;
     }
 }
@@ -2426,5 +2448,49 @@ select.source {
     }
     img {
 
+    }
+}
+
+.contact-form-wrap {
+    position: relative;
+    width: 70%;
+    float: left;
+    padding: 0 50px;
+}
+
+.contact-field{
+    &.field-half-width {
+         width: 49%;
+         float: left;
+         height: 100px;
+         &:nth-of-type(2n) {
+             float: right;
+         }
+     }
+     &.field-full-width {
+        width: 100%;
+     }
+}
+
+.gform_body ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    label {
+        text-transform: uppercase;
+        color: $dark-red;
+        font-family: "Gotham";
+        font-weight: bold;
+    }
+    .gfield {
+        float: left;
+    }
+    input, textarea {
+        font-family: "Gotham";
+        font-weight: 500;
+        background-color: $tan;
+        border: 2px solid $dark-red;
+        border-radius: 5px;
+        color: $dark-red;
     }
 }

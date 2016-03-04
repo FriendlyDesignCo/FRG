@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<div id="" class="press-page content-area interior-page">
+<div id="" class="press-page content-area">
 	
 	<div id="content" class="site-content">
 		<h2 class="large center-text">Press</h2>

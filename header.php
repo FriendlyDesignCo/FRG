@@ -251,7 +251,7 @@
 		<nav id="secondary-nav" class="secondary-nav">
 			<?php if(!is_page( 'Reservations' ) && !is_page( 'Careers' )  ) { ?>
 				<div class="reservation-widget">
-					<a href="">Reserve A Table</a>
+					<a class="reservation" ="r" href="">Reserve A Table</a>
 					<div class="widget-wrap">
 						<div class="OT_searchWrapperAll">
 							<form name="ism" id="ism" class="clearfix" method="post" target="_blank" action="http://www.opentable.com/restaurant-search.aspx">
@@ -381,7 +381,11 @@
 					</div>
 				</div>
 			<?php } ?>
-			
+			<?php if(is_page( 'Careers' )  ) { ?>
+				<div class="reservation-widget careers-widget">
+					<a class="" href="<?php the_field('apply_link', 8); ?>">Apply</a>
+				</div>
+			<?php } ?>
 			<div class="logo">
 				<a href="<?php echo get_site_url(); ?>">
 					<img class="light" src="<?php echo get_site_url(); ?>/wp-content/uploads/logos/frg-logo-light.svg">

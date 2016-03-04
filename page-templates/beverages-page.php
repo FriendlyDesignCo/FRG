@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<div id="" class="beverages-page content-area interior-page">
+<div id="" class="beverages-page content-area">
 	<script>
 		(function($) {
 			

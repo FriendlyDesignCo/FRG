@@ -111,10 +111,6 @@ textarea {
   padding: 0.5em;
   transition: border-color;
   width: 100%; }
-  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
-  select[multiple=multiple]:hover,
-  textarea:hover {
-    border-color: #c4c4c4; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
   select[multiple=multiple]:focus,
   textarea:focus {
@@ -740,8 +736,12 @@ ol:nth-child(n+2) {
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif; }
 
 .entry-content p {
-  font-size: 20px;
-  font-size: 1.25rem; }
+  font-size: 18px;
+  font-size: 1.125rem; }
+  @media screen and (min-width: 48em) {
+    .entry-content p {
+      font-size: 20px;
+      font-size: 1.25rem; } }
 
 p {
   line-height: 1.58em; }
@@ -905,6 +905,11 @@ body {
     #page {
       padding-top: 0; } }
 
+#main {
+  float: left;
+  width: 100%;
+  margin-bottom: 50px; }
+
 #primary {
   margin: 0 auto;
   width: 100%; }
@@ -993,7 +998,7 @@ body {
         width: 70%; } }
 
 .site-content {
-  padding: 50px 5% 0;
+  padding: 150px 5% 0;
   width: 100%; }
   @media screen and (min-width: 48em) {
     .site-content {
@@ -2129,7 +2134,7 @@ ul.positions {
   top: 0;
   left: 0;
   position: absolute;
-  padding: 5vh 5%;
+  padding: 10vh 5% 5vh;
   background-size: cover; }
   .career-slide:before {
     content: "";
@@ -2249,13 +2254,23 @@ ul.positions {
     .careers-section.slide-wrap, .beverages-section.slide-wrap {
       height: 700vh; } }
 
-.careers-wrap .slide-1 h2 {
-  margin: 0;
-  text-align: left; }
+.beverages-page {
+  padding-top: 100px; }
+  @media screen and (min-width: 48em) {
+    .beverages-page {
+      padding-top: 0; } }
 
-.careers-wrap .slide-1 p {
-  text-align: left;
-  line-height: 1.4em; }
+.careers-wrap {
+  padding-top: 100px; }
+  @media screen and (min-width: 48em) {
+    .careers-wrap {
+      padding-top: 0; } }
+  .careers-wrap .slide-1 h2 {
+    margin: 0;
+    text-align: left; }
+  .careers-wrap .slide-1 p {
+    text-align: left;
+    line-height: 1.4em; }
 
 h2.career-title {
   font-style: normal;
@@ -2386,7 +2401,7 @@ h2.career-title {
           transform: scale(0);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
-  padding: 70px 10px 0;
+  padding: 70px 20px 50px;
   height: 75vh;
   width: 90vw;
   overflow-y: scroll; }
@@ -2428,11 +2443,14 @@ h2.career-title {
     font-family: "adobe-caslon-pro";
     font-style: italic;
     background-color: #9D4446;
-    line-height: 1.2em; }
+    line-height: 1.2em;
+    margin-bottom: 40px;
+    padding: 10px; }
     @media screen and (min-width: 48em) {
       .case-study-card-expanded .inner-blurb {
         font-size: 20px;
         font-size: 1.25rem;
+        margin-bottom: 0px;
         font-weight: 500;
         width: 40%;
         padding: 20px 20px 20px 30px;
@@ -2656,8 +2674,12 @@ ul.job-list-dots {
               transform: rotate(30deg);
       background-position: center;
       height: 400px;
-      background-size: 70%;
-      bottom: 0; }
+      background-size: 120%;
+      bottom: 40px; }
+      @media screen and (min-width: 48em) {
+        .sprinkler-animation.step-6 .corn {
+          background-size: 70%;
+          bottom: 0; } }
 
 .nav-dots-inner {
   border-top: 2px solid #8B2332;
@@ -2785,8 +2807,9 @@ ul.job-list-dots {
       left: 0;
       top: 150px; } }
 
-.single-post .site-main {
-  padding-top: 100px; }
+@media screen and (min-width: 48em) {
+  .single-post .site-main {
+    padding-top: 0; } }
 
 @media screen and (min-width: 48em) {
   .blog-list {
@@ -2800,11 +2823,11 @@ ul.job-list-dots {
 .blog-list .category a {
   color: #9D4446; }
 
-.blog-list .sub-title {
-  font-size: 16px;
-  font-size: 1rem; }
+.sub-title {
+  font-size: 18px;
+  font-size: 1.125rem; }
   @media screen and (min-width: 48em) {
-    .blog-list .sub-title {
+    .sub-title {
       font-size: 20px;
       font-size: 1.25rem; } }
 
@@ -2975,9 +2998,11 @@ ul.job-list-dots {
     text-transform: uppercase; }
 
 .arrow-wrap {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  display: none; }
   @media screen and (min-width: 48em) {
     .arrow-wrap {
+      display: block;
       margin-bottom: 10px; } }
 
 .arrow-1 {
@@ -3723,6 +3748,41 @@ select.source {
   @media screen and (min-width: 48em) {
     .reservation_image_wrap {
       width: 50%; } }
+
+.contact-form-wrap {
+  position: relative;
+  width: 70%;
+  float: left;
+  padding: 0 50px; }
+
+.contact-field.field-half-width {
+  width: 49%;
+  float: left;
+  height: 100px; }
+  .contact-field.field-half-width:nth-of-type(2n) {
+    float: right; }
+
+.contact-field.field-full-width {
+  width: 100%; }
+
+.gform_body ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .gform_body ul label {
+    text-transform: uppercase;
+    color: #8B2332;
+    font-family: "Gotham";
+    font-weight: bold; }
+  .gform_body ul .gfield {
+    float: left; }
+  .gform_body ul input, .gform_body ul textarea {
+    font-family: "Gotham";
+    font-weight: 500;
+    background-color: #FFE7CC;
+    border: 2px solid #8B2332;
+    border-radius: 5px;
+    color: #8B2332; }
 
 /*--------------------------------------------------------------
     6.4 Page Templates

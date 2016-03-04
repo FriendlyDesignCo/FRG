@@ -38,7 +38,9 @@ html {
 .wrap {}
 
 #main {
-    
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 #primary {
@@ -97,7 +99,7 @@ html {
 }
 
 .site-content {
-    padding: 50px 5% 0;
+    padding: 150px 5% 0;
         //float: left;
     width: 100%;
     @include media($md) {
