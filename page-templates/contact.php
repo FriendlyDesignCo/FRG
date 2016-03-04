@@ -29,6 +29,20 @@ get_header(); ?>
 		</div>
 	</div><!-- #content -->
 </div>
+<script>
+	(function($) {
+		$(document).ready(function() {
 
+			/*$(".gfield_select").each( function(i) {
+				$(this)
+					.parent()
+					.append("<div class='drop'>"+
+								"<h3>"+$(this).text()+"</h3>"+
+								
+							"</div>");
+			});*/
+		});
+	})( jQuery );
+</script>
 
 <?php get_footer(); ?>

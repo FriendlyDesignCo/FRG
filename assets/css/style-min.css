@@ -463,12 +463,12 @@ input.datepicker{position:relative}@media screen and (min-width:48em){.form_wrap
 .datepicker td,.datepicker th{width:auto !important;height:auto !important}select.source{display:none}
 .form-group{position:relative}.dropdown{cursor:pointer}.touch .drop{display:none}
 .touch .source{display:block !important;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none}
-.form-group input,.form-group.dropdown{position:relative;background-color:#ffe7cc;color:#8b2332;border-radius:0;border:0;height:45px;line-height:45px;font-family:"Gotham";font-size:18px;font-size:1.125rem;margin-bottom:10px;width:100%}
-.form-group input h3,.form-group.dropdown h3{margin:0;line-height:45px;font-family:"Gotham";font-size:18px;font-size:1.125rem;overflow:hidden;height:45px}
-.form-group input .drop,.form-group.dropdown .drop{padding-left:30px;padding-right:20px}
-.form-group input::-webkit-input-placeholder{color:#8b2332}.form-group input::-moz-placeholder{color:#8b2332}
-.form-group input:-ms-input-placeholder{color:#8b2332}.form-group input:-moz-placeholder{color:#8b2332}
-.form-actions .button:hover{color:#8b2332 !important;background-color:#ffe7cc}.dropdown-list{width:100%;position:absolute;top:45px;background-color:#8b2332;color:#ffe7cc;z-index:3;height:300px;overflow-y:scroll;list-style-type:none}
+.form-group input,.drop{position:relative;background-color:#ffe7cc;color:#8b2332;border-radius:0;border:0;height:45px;line-height:45px;font-family:"Gotham";font-size:18px;font-size:1.125rem;margin-bottom:10px;width:100%}
+.form-group input h3,.drop h3{margin:0;line-height:45px;font-family:"Gotham";font-size:18px;font-size:1.125rem;overflow:hidden;height:45px}
+.drop{padding-left:30px;padding-right:20px}.form-group input::-webkit-input-placeholder{color:#8b2332}
+.form-group input::-moz-placeholder{color:#8b2332}.form-group input:-ms-input-placeholder{color:#8b2332}
+.form-group input:-moz-placeholder{color:#8b2332}.form-actions .button:hover{color:#8b2332 !important;background-color:#ffe7cc}
+.dropdown-list{width:100%;position:absolute;top:45px;background-color:#8b2332;color:#ffe7cc;z-index:3;height:300px;overflow-y:scroll;list-style-type:none}
 .dropdown-list li{padding:20px 30px;cursor:pointer;line-height:1em;transition:all .3s}
 .dropdown-list li:hover{background-color:#9d4446}.date-input{display:block}.date-input input{padding-left:30px}
 .datepicker table tr td.today{background-image:none !important;background-color:#ffe7cc !important}
@@ -481,11 +481,12 @@ input.datepicker{position:relative}@media screen and (min-width:48em){.form_wrap
 }.gform_body ul{list-style-type:none;margin:0;padding:0}.gform_body ul label{text-transform:uppercase;color:#8b2332;font-family:"Gotham";font-weight:bold}
 .gform_body ul select,.gform_body ul input{height:48px;padding:5px 10px}.gform_body ul input[type="checkbox"]{height:20px;width:20px;padding:0;position:relative}
 .gform_body ul input[type="checkbox"]:checked:after{content:"x";position:absolute;color:#8b2332;left:0;font-family:"Gotham";width:17px;top:1px;line-height:.7em;text-align:center}
-.gform_body ul select,.gform_body ul input,.gform_body ul textarea{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;font-family:"Gotham";font-weight:500;background-color:#ffe7cc;border:2px solid #8b2332;border-radius:5px;color:#8b2332;margin-bottom:5px}
+.gform_body ul select,.gform_body ul input,.gform_body ul textarea{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;font-family:"Gotham";font-weight:500;background-color:#f5d8c0;border:2px solid #8b2332;border-radius:5px;color:#8b2332;margin-bottom:5px}
 .gform_body ul .gchoice_1_8_1 input{margin-top:5px;float:left}.gform_body ul .gchoice_1_8_1 label{font-size:16px;font-size:1rem}
 .checkbox-field{margin-top:30px}.gform_button.button{width:200px}@media screen and (min-width:48em){.gform_button.button{float:right;margin-top:-50px}
 }.locations-list-wrap{width:100%}@media screen and (min-width:48em){.locations-list-wrap{float:left;width:30%}
-}.location-item{margin-bottom:20px}.location-item .location-name{text-transform:uppercase;font-family:"Gotham";font-weight:bold;font-size:18px;font-size:1.125rem;margin:0}
+}.ginput_container_select .drop{background-color:#f5d8c0;border:2px solid #8b2332;border-radius:5px;color:#8b2332;margin-bottom:5px;height:48px;padding:5px 10px;line-height:48px}
+.dropdown-arrow-style{position:relative}.location-item{margin-bottom:20px}.location-item .location-name{text-transform:uppercase;font-family:"Gotham";font-weight:bold;font-size:18px;font-size:1.125rem;margin:0}
 .location-item p{margin:0;font-family:"GothamNarrow";font-size:20px;font-size:1.25rem}
 .location-item .phone-number{font-weight:400}.location-item .address{font-weight:300}
 .validation_message{background-color:#8b2332;color:#ffe7cc;padding-left:30px;position:relative;font-family:"Gotham";float:left;padding:0 10px 0 40px;border-radius:7px;font-size:14px;font-size:.875rem}

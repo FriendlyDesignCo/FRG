@@ -3673,7 +3673,7 @@ select.source {
   -o-appearance: none;
   appearance: none; }
 
-.form-group input, .form-group.dropdown {
+.form-group input, .drop {
   position: relative;
   background-color: #FFE7CC;
   color: #8B2332;
@@ -3686,7 +3686,7 @@ select.source {
   font-size: 1.125rem;
   margin-bottom: 10px;
   width: 100%; }
-  .form-group input h3, .form-group.dropdown h3 {
+  .form-group input h3, .drop h3 {
     margin: 0;
     line-height: 45px;
     font-family: "Gotham";
@@ -3694,9 +3694,10 @@ select.source {
     font-size: 1.125rem;
     overflow: hidden;
     height: 45px; }
-  .form-group input .drop, .form-group.dropdown .drop {
-    padding-left: 30px;
-    padding-right: 20px; }
+
+.drop {
+  padding-left: 30px;
+  padding-right: 20px; }
 
 .form-group input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -3822,7 +3823,7 @@ select.source {
     appearance: none;
     font-family: "Gotham";
     font-weight: 500;
-    background-color: #FFE7CC;
+    background-color: #F5D8C0;
     border: 2px solid #8B2332;
     border-radius: 5px;
     color: #8B2332;
@@ -3850,6 +3851,19 @@ select.source {
     .locations-list-wrap {
       float: left;
       width: 30%; } }
+
+.ginput_container_select .drop {
+  background-color: #F5D8C0;
+  border: 2px solid #8B2332;
+  border-radius: 5px;
+  color: #8B2332;
+  margin-bottom: 5px;
+  height: 48px;
+  padding: 5px 10px;
+  line-height: 48px; }
+
+.dropdown-arrow-style {
+  position: relative; }
 
 .location-item {
   margin-bottom: 20px; }
