@@ -2570,6 +2570,7 @@ select.source {
 }
 
 .ginput_container_select {
+    position: relative;
     .drop {
         background-color: #F5D8C0;
         border: 2px solid $dark-red;

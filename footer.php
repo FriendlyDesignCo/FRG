@@ -20,6 +20,9 @@
 		<?php tha_footer_top(); ?>
 
 			<section class="site-info">
+				<div class="footer-right">
+					<?php echo do_shortcode("[gravityform id='2' title='false' description='false' ajax='true']");  ?>	
+				</div>
 				<div class="footer-left">
 					<?php
 					wp_nav_menu(
@@ -31,7 +34,6 @@
 					); ?>
 					<p class="copyright">Copyright &#169; <?php echo date("Y") ?> Farmers Restaurant Group | Restaurant Consulting</p>
 				</div>
-				
 			</section><!-- .site-info -->
 
 		</footer><!-- #colophon -->

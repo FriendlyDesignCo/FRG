@@ -233,7 +233,7 @@ ol {
 }
 
 
-.entry-content p {
+.entry-content p, .entry-content ul, .entry-content li {
     @extend .body-text;
     @include fontSize(18px);
     @include media($md) {

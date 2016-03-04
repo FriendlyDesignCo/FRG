@@ -735,11 +735,11 @@ ol:nth-child(n+2) {
 #secondary {
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif; }
 
-.entry-content p {
+.entry-content p, .entry-content ul, .entry-content li {
   font-size: 18px;
   font-size: 1.125rem; }
   @media screen and (min-width: 48em) {
-    .entry-content p {
+    .entry-content p, .entry-content ul, .entry-content li {
       font-size: 20px;
       font-size: 1.25rem; } }
 
@@ -772,7 +772,7 @@ p {
       font-size: 20px;
       font-size: 1.25rem; } }
 
-.body-text, .entry-content p {
+.body-text, .entry-content p, .entry-content ul, .entry-content li {
   font-family: "GothamNarrow";
   font-weight: 300; }
 
@@ -3852,15 +3852,17 @@ select.source {
       float: left;
       width: 30%; } }
 
-.ginput_container_select .drop {
-  background-color: #F5D8C0;
-  border: 2px solid #8B2332;
-  border-radius: 5px;
-  color: #8B2332;
-  margin-bottom: 5px;
-  height: 48px;
-  padding: 5px 10px;
-  line-height: 48px; }
+.ginput_container_select {
+  position: relative; }
+  .ginput_container_select .drop {
+    background-color: #F5D8C0;
+    border: 2px solid #8B2332;
+    border-radius: 5px;
+    color: #8B2332;
+    margin-bottom: 5px;
+    height: 48px;
+    padding: 5px 10px;
+    line-height: 48px; }
 
 .dropdown-arrow-style {
   position: relative; }
@@ -4063,24 +4065,37 @@ footer {
     @media screen and (min-width: 48em) {
       footer .footer-left {
         float: left;
-        display: block;
-        margin-right: 3.22581%;
-        width: 74.19355%; }
-        footer .footer-left:last-child {
-          margin-right: 0; } }
+        width: 50%; } }
   footer .footer-right {
     margin-top: 30px;
     margin-bottom: 40px;
-    padding: 10px;
-    text-align: left; }
+    padding: 10px; }
+    footer .footer-right .gform_wrapper {
+      width: 100%; }
+      footer .footer-right .gform_wrapper .gform_button, footer .footer-right .gform_wrapper label {
+        display: none; }
+    footer .footer-right input {
+      background-color: #9D4446;
+      color: #FFE7CC;
+      font-weight: 400;
+      font-size: 16px;
+      font-size: 1rem; }
+      footer .footer-right input::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #FFE7CC; }
+      footer .footer-right input::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #FFE7CC; }
+      footer .footer-right input:-ms-input-placeholder {
+        /* IE 10+ */
+        color: #FFE7CC; }
+      footer .footer-right input:-moz-placeholder {
+        /* Firefox 18- */
+        color: #FFE7CC; }
     @media screen and (min-width: 48em) {
       footer .footer-right {
-        float: left;
-        display: block;
-        margin-right: 3.22581%;
-        width: 74.19355%; }
-        footer .footer-right:last-child {
-          margin-right: 0; } }
+        float: right;
+        width: 50%; } }
   footer .copyright {
     font-size: 12px;
     font-size: 0.75rem;
