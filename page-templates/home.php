@@ -414,14 +414,14 @@ get_header(); ?>
 			<div class="slide-8-block-wrap">
 				<?php if( have_rows('slide_8_block') ): ?>
 					<?php while( have_rows('slide_8_block') ): the_row(); ?>
-					<div class="slide-8-block" style="background-image:url('<?php the_field('block_background'); ?>')">
-						<a href="<?php the_field('block_link'); ?>">
+					<div class="slide-8-block" style="background-image:url('<?php the_sub_field('block_background'); ?>')">
+						<a href="<?php the_sub_field('block_link'); ?>">
 						<div class="slide-8-block-inner">
 							<div class="slide-8-header">
-								<img class="" src="<?php the_field('block_icon'); ?>">
-								<h4 class=""><?php the_field('block_header'); ?></h4>
+								<img class="" src="<?php the_sub_field('block_icon'); ?>">
+								<h4 class=""><?php the_sub_field('block_header'); ?></h4>
 							</div>
-							<p class="move-text"><?php the_field('block_paragraph'); ?></p>	
+							<p class="move-text"><?php the_sub_field('block_paragraph'); ?></p>	
 						</div></a>
 					</div>
 					<?php endwhile; ?>
