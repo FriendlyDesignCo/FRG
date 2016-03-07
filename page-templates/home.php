@@ -412,13 +412,13 @@ get_header(); ?>
 		<div class="home-section-inner">
 			<h2 class=""> <?php the_field('slide_8_paragraph'); ?></h2>
 			<div class="slide-8-block-wrap">
-				<?php if( have_rows('slide_8') ): ?>
-					<?php while( have_rows('slide_8') ): the_row(); ?>
+				<?php if( have_rows('slide_8_block') ): ?>
+					<?php while( have_rows('slide_8_block') ): the_row(); ?>
 					<div class="slide-8-block" style="background-image:url('<?php the_field('block_background'); ?>')">
 						<a href="<?php the_field('block_link'); ?>">
 						<div class="slide-8-block-inner">
 							<div class="slide-8-header">
-								<img class="" src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_icon'); ?>">
+								<img class="" src="<?php the_field('block_icon'); ?>">
 								<h4 class=""><?php the_field('block_header'); ?></h4>
 							</div>
 							<p class="move-text"><?php the_field('block_paragraph'); ?></p>	
