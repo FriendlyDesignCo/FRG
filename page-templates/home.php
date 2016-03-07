@@ -412,37 +412,20 @@ get_header(); ?>
 		<div class="home-section-inner">
 			<h2 class=""> <?php the_field('slide_8_paragraph'); ?></h2>
 			<div class="slide-8-block-wrap">
-				<div class="slide-8-block" style="background-image:url('<?php the_field('block_1_background'); ?>')">
-					<a href="<?php the_field('block_1_link'); ?>">
-					<div class="slide-8-block-inner">
-						<div class="slide-8-header">
-							<img class="" src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_1_icon'); ?>">
-							<h4 class=""><?php the_field('block_1_header'); ?></h4>
-						</div>
-						<p class="move-text"><?php the_field('block_1_paragraph'); ?></p>	
-					</div></a>
-				</div>
-				<div class="slide-8-block" style="background-image:url('<?php the_field('block_2_background'); ?>')">
-					<a href="<?php the_field('block_2_link'); ?>">
-					<div class="slide-8-block-inner">
-						<div class="slide-8-header">
-							<img class="" src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_2_icon'); ?>">
-							<h4 class=""><?php the_field('block_2_header'); ?></h4>
-						</div>
-						<p class="move-text"><?php the_field('block_2_paragraph'); ?></p>
-					</div></a>
-				</div>
-				<div class="slide-8-block" style="background-image:url('<?php the_field('block_3_background'); ?>')">
-					<a href="<?php the_field('block_3_link'); ?>">
-					<div class="slide-8-block-inner">	
-						<div class="slide-8-header">
-							<img class="" src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_3_icon'); ?>"> 
-							<h4 class=""><?php the_field('block_3_header'); ?></h4>
-						</div>
-						<p class="move-text"><?php the_field('block_3_paragraph'); ?></p>
+				<?php if( have_rows('slide_8') ): ?>
+					<?php while( have_rows('slide_8') ): the_row(); ?>
+					<div class="slide-8-block" style="background-image:url('<?php the_field('block_background'); ?>')">
+						<a href="<?php the_field('block_link'); ?>">
+						<div class="slide-8-block-inner">
+							<div class="slide-8-header">
+								<img class="" src="<?php echo get_site_url(); ?>/wp-content/uploads/home-icons/<?php the_field('block_icon'); ?>">
+								<h4 class=""><?php the_field('block_header'); ?></h4>
+							</div>
+							<p class="move-text"><?php the_field('block_paragraph'); ?></p>	
+						</div></a>
 					</div>
-					</a>
-				</div>
+					<?php endwhile; ?>
+				<?php endif; ?>
 			</div>
 		</div>
 	</section>
