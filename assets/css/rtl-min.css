@@ -329,7 +329,7 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 }.sprinkler-animation .step-1,.sprinkler-animation .step-2{position:absolute;width:200px;height:200px;left:0;right:0;bottom:0;margin:0 auto;background-position:center;background-repeat:no-repeat}
 .sprinkler-animation .step-2{opacity:0}.sprinkler-animation .corn{position:absolute;width:100%;height:100%;left:0;right:0;bottom:20%;margin:0 auto;background-position:center bottom;background-repeat:no-repeat;opacity:0}
 @media screen and (min-width:48em){.sprinkler-animation .corn{bottom:0;width:100%;background-size:150px;height:80%}
-}.sprinkler-animation.step-1{opacity:1}.sprinkler-animation.step-6{top:10vh}.sprinkler-animation.step-6 .corn{-webkit-transform:rotate(30deg);transform:rotate(30deg);background-position:center;height:400px;background-size:120%;bottom:40px}
+}.sprinkler-animation.step-1{opacity:1}.sprinkler-animation.step-6{top:10vh}.sprinkler-animation.step-6 .corn{background-position:center;height:400px;background-size:120%;bottom:40px}
 @media screen and (min-width:48em){.sprinkler-animation.step-6 .corn{background-size:70%;bottom:0}
 }.nav-dots-inner{border-top:2px solid #8b2332;border-bottom:2px solid #8b2332;width:70%;height:40px}
 .nav-dots{position:absolute;top:15vh;left:0;right:0;margin:0 auto;z-index:10;width:100%;display:none}

@@ -2681,8 +2681,6 @@ ul.job-list-dots {
   .sprinkler-animation.step-6 {
     top: 10vh; }
     .sprinkler-animation.step-6 .corn {
-      -webkit-transform: rotate(30deg);
-              transform: rotate(30deg);
       background-position: center;
       height: 400px;
       background-size: 120%;

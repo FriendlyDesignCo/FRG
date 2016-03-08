@@ -96,10 +96,11 @@ get_header(); ?>
 			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '2');" href="<?php the_field('apply_link'); ?>">Apply</a>
 			<p class="text-red medium"><?php the_field('scroll_more_text'); ?></p>
 
-			<div class="arrow-wrap">
+			<div class="arrow-wrap"><a class="arrow-link" href="#career-anchor-1">
 				<div class="arrow arrow-red arrow-1"></div>
 				<div class="arrow arrow-red arrow-2"></div>
 				<div class="arrow arrow-red arrow-3"></div>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -117,7 +118,7 @@ get_header(); ?>
 	<div id="dot-trigger5" class=" s0"></div>
 	<div id="dot-trigger6" class=" s0"></div>
 	<section class="section careers-section career-slide-wrap section-wrap slide-wrap">
-		
+		<a class="anchor-scroll-link" name="career-anchor-1"></a>
 		<div class="slide-wrap">
 		<div class="career-wrap slide-wrap">
 			<div class="nav-dots">
