@@ -487,7 +487,8 @@ input.datepicker{position:relative}.datepicker{font-size:16px;font-size:1rem}@me
 .gform_body ul input[type="checkbox"]:checked:after{content:"x";position:absolute;color:#8b2332;left:0;font-family:"Gotham";width:17px;top:1px;line-height:.7em;text-align:center}
 .gform_body ul select,.gform_body ul input,.gform_body ul textarea{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;font-family:"Gotham";font-weight:500;background-color:#f5d8c0;border:2px solid #8b2332;border-radius:5px;color:#8b2332;margin-bottom:5px}
 .gform_body ul .gchoice_1_8_1 input{margin-top:5px;float:left}.gform_body ul .gchoice_1_8_1 label{font-size:16px;font-size:1rem}
-.checkbox-field{margin-top:30px}.gform_button.button{width:200px}@media screen and (min-width:48em){.gform_button.button{float:right;margin-top:-50px}
+@media screen and (min-width:48em){.gfield.half-width{width:50%}}.checkbox-field{margin-top:30px}
+.gform_button.button{width:200px}@media screen and (min-width:48em){.gform_button.button{float:right;margin-top:-50px}
 }.locations-list-wrap{width:100%}@media screen and (min-width:48em){.locations-list-wrap{float:left;width:30%}
 }.ginput_container_select{position:relative}.ginput_container_select .drop{background-color:#f5d8c0;border:2px solid #8b2332;border-radius:5px;color:#8b2332;margin-bottom:5px;height:48px;padding:5px 10px;line-height:48px}
 .dropdown-arrow-style{position:relative}.location-item{margin-bottom:20px}.location-item .location-name{text-transform:uppercase;font-family:"Gotham";font-weight:bold;font-size:18px;font-size:1.125rem;margin:0}
@@ -522,13 +523,21 @@ input.datepicker{position:relative}.datepicker{font-size:16px;font-size:1rem}@me
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .widget{margin:0 0 1.5em}.widget select{max-width:100%}.widget_search .search-submit{display:none}
 footer{float:left;margin:0 auto;padding:0 40px;width:100%;background-color:#8b2332;color:#ffe7cc}
-footer p{margin:0}footer .site-info{margin:auto;width:100%}footer .footer-left{margin-bottom:40px;margin-top:30px;padding:10px;text-align:left}
-@media screen and (min-width:48em){footer .footer-left{float:left;width:50%}}footer .footer-right{margin-top:30px;margin-bottom:40px;padding:10px}
-footer .footer-right .gform_wrapper{width:100%}footer .footer-right .gform_wrapper .gform_button,footer .footer-right .gform_wrapper label{display:none}
+footer p{margin:0}footer .site-info{margin:auto;width:100%}footer .gform_wrapper{position:relative;z-index:1}
+footer .gform_wrapper{border:1px solid #ffe7cc;border-radius:8px;height:42px;overflow:hidden}
+footer .gform_wrapper input{height:40px;margin:0;border:0}footer .gform_wrapper #field_2_4{border-right:1px solid #ffe7cc}
+footer .sign-up-text{position:absolute;left:0;top:0;width:100%;height:100%;background-color:#9d4446;color:#ffe7cc;z-index:0}
+footer .footer-left{margin-bottom:40px;margin-top:30px;padding:10px;text-align:left}
+@media screen and (min-width:48em){footer .footer-left{float:left;width:50%}}footer .footer-right{position:relative;margin-top:30px;margin-bottom:40px;padding:10px}
+footer .footer-right .gform_wrapper{width:100%}footer .footer-right .gform_wrapper label{display:none}
+footer .footer-right .gform_button{background-color:#ffe7cc;color:#8b2332 !important;text-align:center;padding:0;width:75px;height:42px;float:right;margin:0;position:absolute;right:0;border-radius:0;top:0}
 footer .footer-right input{background-color:#9d4446;color:#ffe7cc;font-weight:400;font-size:16px;font-size:1rem}
-footer .footer-right input::-webkit-input-placeholder{color:#ffe7cc}footer .footer-right input::-moz-placeholder{color:#ffe7cc}
-footer .footer-right input:-ms-input-placeholder{color:#ffe7cc}footer .footer-right input:-moz-placeholder{color:#ffe7cc}
+footer .footer-right input::-webkit-input-placeholder{color:#ffe7cc;text-transform:uppercase}
+footer .footer-right input::-moz-placeholder{color:#ffe7cc;text-transform:uppercase}
+footer .footer-right input:-ms-input-placeholder{color:#ffe7cc;text-transform:uppercase}
+footer .footer-right input:-moz-placeholder{color:#ffe7cc;text-transform:uppercase}
 @media screen and (min-width:48em){footer .footer-right{float:right;width:50%}}footer .copyright{font-size:12px;font-size:.75rem;font-family:"Gotham"}
+footer .gform_confirmation_wrapper{font-family:"Gotham";text-align:center;background-color:#9d4446;border-radius:8px}
 .menu-footer-menu-container{font-size:14px;font-size:.875rem;font-family:"Gotham";text-transform:uppercase}
 .menu-footer-menu-container ul{list-style-type:none;padding:0}.menu-footer-menu-container li{padding-right:10px;display:inline-block}
 .menu-footer-menu-container a{color:#ffe7cc}.screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;width:1px}

@@ -21,7 +21,11 @@
 
 			<section class="site-info">
 				<div class="footer-right">
+
 					<?php echo do_shortcode("[gravityform id='2' title='false' description='false' ajax='true']");  ?>	
+					<!--<div class="sign-up-text">
+						Sign up for a monthley newsletter from our restaurants
+					</div>-->
 				</div>
 				<div class="footer-left">
 					<?php
