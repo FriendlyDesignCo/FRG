@@ -45,7 +45,7 @@
 	<link rel="stylesheet" id="" href="<?php echo get_template_directory_uri(); ?>/assets/css/unslider-dots.css " type="text/css" media="all">
 
 
-	
+
 
 	<!-- GSAP -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
@@ -80,6 +80,21 @@
 	<script>
 					
 					(function($) {
+
+						$(function() {
+						  $('a[href*="#"]:not([href="#"])').click(function() {
+						    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						      var target = $(this.hash);
+						      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						      if (target.length) {
+						        $('html, body').animate({
+						          scrollTop: target.offset().top
+						        }, 1000);
+						        return false;
+						      }
+						    }
+						  });
+						});
 
 						$(document).ready(function() {
 							selected_restaurant = 0;

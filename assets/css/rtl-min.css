@@ -380,8 +380,9 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .arrow-3{-webkit-animation-name:fadeOut;animation-name:fadeOut;-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-timing-function:ease;animation-timing-function:ease;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-delay:.6s;animation-delay:.6s}
 @-webkit-keyframes fadeOut{0%{opacity:1}33%{opacity:0}66%{opacity:1}
 }@keyframes fadeOut{0%{opacity:1}33%{opacity:0}66%{opacity:1}
-}.cookbook-logo{padding-bottom:50px}.cookbook-logo img{display:block;margin:0 auto}
-@media screen and (min-width:48em){.cookbook-logo img{max-width:500px}}.cookbook-text{width:100%;position:relative;padding-top:50px;padding-bottom:50px}
+}.arrow-link{display:block}.anchor-scroll-link{position:absolute;top:0}.cookbook-logo{padding-bottom:50px}
+.cookbook-logo img{display:block;margin:0 auto}@media screen and (min-width:48em){.cookbook-logo img{max-width:500px}
+}.cookbook-text{width:100%;position:relative;padding-top:50px;padding-bottom:50px}
 .cookbook-text p{margin-top:0;font-family:"GothamNarrow";font-weight:300;font-size:18px;font-size:1.125rem}
 @media screen and (min-width:48em){.cookbook-text p{font-size:20px;font-size:1.25rem}
 }@media screen and (min-width:48em){.cookbook-text{padding:50px 100px}}@media screen and (min-width:48em){.cookbook-text .text-left{display:inline-block;width:48%;vertical-align:top}

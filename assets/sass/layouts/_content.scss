@@ -1687,6 +1687,15 @@ ul.job-list-dots {
     66% {opacity: 1}
 }
 
+.arrow-link {
+    display: block;
+}
+
+.anchor-scroll-link {
+    position: absolute;
+    top: 0;
+}
+
 .cookbook-logo {
     img {
         display: block;

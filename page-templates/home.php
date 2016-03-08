@@ -42,7 +42,7 @@ get_header(); ?>
 			(function($) {
 				
 			    $(document).ready(function() {
-			    	
+
 				    // home counter
 				    var homeCount = new CountUp("home-count", 0, 42387, 0, 3);
 					homeCount.start();
@@ -85,23 +85,25 @@ get_header(); ?>
 			<h3>Owned By</h3>
 			<h3 id="home-count" class="numbers-counting"></h3>
 			<h3>Family Farmers</h3>
-			<div class="arrow arrow-tan"></div>
+			<a class="arrow-link" href="#home-anchor-1"><div class="arrow arrow-tan"></div></a>
 		</div>
 	</section>
 
 	<section class="home-section slide-1">
+		<a class="anchor-scroll-link" name="home-anchor-1"></a>
 		<div class="home-section-inner">
 			<h2><?php the_field('slide_1_header'); ?></h2>
 			<?php the_field('slide_1_paragraph'); ?>
-			<div class="arrow-wrap">
+			<div class="arrow-wrap"><a class="arrow-link" href="#home-anchor-2">
 				<div class="arrow arrow-red arrow-1"></div>
 				<div class="arrow arrow-red arrow-2"></div>
-				<div class="arrow arrow-red arrow-3"></div>
+				<div class="arrow arrow-red arrow-3"></div></a>
 			</div>
 		</div>
 	</section>
 
 	<section class="home-section slide-2" style="background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/2016/01/home-field.jpg');">
+		<a class="anchor-scroll-link" name="home-anchor-2"></a>
 		<div class="home-section-inner">
 			<?php the_field('slide_2_paragraph'); ?>
 			<div id="trigger1" class=" s0"></div>
