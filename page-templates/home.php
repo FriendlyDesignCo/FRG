@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<div id="" class="home-wrap page-wrap content-area ">
+<div id="fullpage" class="home-wrap page-wrap content-area ">
 	<style>
 		.arrow {
 			width: 100px;
@@ -42,7 +42,7 @@ get_header(); ?>
 			(function($) {
 				
 			    $(document).ready(function() {
-				    
+			    	
 				    // home counter
 				    var homeCount = new CountUp("home-count", 0, 42387, 0, 3);
 					homeCount.start();
