@@ -1777,6 +1777,9 @@ button#load-more.done {
         font-size: 40px;
         font-size: 2.5rem; } }
 
+.slide-8-block-wrap {
+  text-align: center; }
+
 .slide-8-block {
   display: inline-block;
   overflow: hidden;
