@@ -28,13 +28,14 @@ get_header(); ?>
 				var slide_height_4 = $(".slide-1").height() + $(window).height()*4/2;
 				var slide_height_5 = $(".slide-1").height() + $(window).height()*5/2;
 				var slide_height_6 = $(".slide-1").height() + $(window).height()*6/2;
-				var last_slide_height = $(".slide-1").height() + $(window).height()*7;
-				$(".mobile-screen #career-trigger1").css("top", slide_height_1+80+"px");
-				$(".mobile-screen #career-trigger2").css("top", slide_height_2+80+"px");
-				$(".mobile-screen #career-trigger3").css("top", slide_height_3+80+"px");
-				$(".mobile-screen #career-trigger4").css("top", slide_height_4+80+"px");
-				$(".mobile-screen #career-trigger5").css("top", slide_height_5+80+"px");
-				$(".mobile-screen #career-trigger6").css("top", slide_height_6+80+"px");
+				//var last_slide_height = $(".slide-1").height() + $(window).height()*7;
+				var last_slide_height = $(".slide-1").height() + 9*$(".career-slide-1").height();
+				$(".mobile-screen #career-trigger1").css("top", slide_height_1+100+"px");
+				$(".mobile-screen #career-trigger2").css("top", slide_height_2+100+"px");
+				$(".mobile-screen #career-trigger3").css("top", slide_height_3+100+"px");
+				$(".mobile-screen #career-trigger4").css("top", slide_height_4+100+"px");
+				$(".mobile-screen #career-trigger5").css("top", slide_height_5+100+"px");
+				$(".mobile-screen #career-trigger6").css("top", slide_height_6+100+"px");
 				$(".mobile-screen .careers-section.last-slide").css("top", last_slide_height+"px");
 
 
@@ -44,7 +45,7 @@ get_header(); ?>
 		
 	</script>
 
-<div id="fullpage" class="careers-wrap page-wrap content-area">
+<div id="" class="careers-wrap page-wrap content-area">
 	<?php if( have_rows('career_path') ): ?>
 	<?php $slide_anchor = 0; ?>
 	<?php while( have_rows('career_path') ): the_row(); ?>
@@ -149,7 +150,7 @@ get_header(); ?>
 				var controller = new ScrollMagic.Controller();
 				new ScrollMagic.Scene({triggerElement: "#career-trigger1", duration: "600%"})
 								.setPin(".career-wrap")
-								//.addIndicators()
+								.addIndicators()
 								.addTo(controller);
 				
 				
@@ -300,6 +301,7 @@ get_header(); ?>
 		<div class="section-inner">
 			<h2 class="small">Ready to start your journey?</h2>
 			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '3');" href="<?php the_field('apply_link') ?>">Apply</a>
+
 	</section>
 </div><!-- .page-wrap -->
 
