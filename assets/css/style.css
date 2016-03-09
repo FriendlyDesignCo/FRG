@@ -1723,7 +1723,9 @@ button#load-more.done {
   width: 95%;
   display: block;
   margin: 0 auto;
-  z-index: 2; }
+  z-index: 2;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
   @media screen and (min-width: 48em) {
     .home-wrap .slide-4 .image-cookie {
       width: 50%; } }
@@ -2152,6 +2154,8 @@ ul.positions {
 .career-slide {
   height: 100vh;
   display: block;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   white-space: normal;
   width: 100%;
   top: 0;
@@ -4134,10 +4138,11 @@ footer {
     z-index: 1; }
   footer .gform_body {
     border: 1px solid #FFE7CC;
-    border-radius: 8px; }
+    border-radius: 8px 8px 0 0; }
     @media screen and (min-width: 48em) {
       footer .gform_body {
-        height: 42px; } }
+        height: 42px;
+        border-radius: 8px; } }
   footer .gform_wrapper input {
     height: 40px;
     margin: 0;
