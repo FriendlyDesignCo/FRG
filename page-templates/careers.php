@@ -220,7 +220,7 @@ get_header(); ?>
 						</div>
 						<?php endif; ?>
 						<div class="compensation-wrap">
-							<h3 class="compensation-header">Compensation</h3>
+							<h3 class="compensation-header">Compensation:</h3>
 							<p><?php the_sub_field('career_compensation'); ?></p>	
 						</div>
 						<!-- end positions loop -->
