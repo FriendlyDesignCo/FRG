@@ -4114,23 +4114,29 @@ footer {
   footer .gform_wrapper {
     position: relative;
     z-index: 1; }
-  footer .gform_wrapper {
+  footer .gform_body {
     border: 1px solid #FFE7CC;
-    border-radius: 8px;
-    overflow: hidden; }
-    footer .gform_wrapper input {
-      height: 40px;
-      margin: 0;
-      border: 0; }
-    footer .gform_wrapper #field_2_4 {
-      border-bottom: 1px solid #FFE7CC; }
-      @media screen and (min-width: 48em) {
-        footer .gform_wrapper #field_2_4 {
-          border-bottom: none;
-          border-right: 1px solid #FFE7CC; } }
+    border-radius: 8px; }
     @media screen and (min-width: 48em) {
-      footer .gform_wrapper {
+      footer .gform_body {
         height: 42px; } }
+  footer .gform_wrapper input {
+    height: 40px;
+    margin: 0;
+    border: 0; }
+  footer .gform_wrapper #field_2_4 .ginput_container {
+    border-bottom: 1px solid #FFE7CC;
+    overflow: hidden;
+    border-radius: 8px 8px 0px 0; }
+    @media screen and (min-width: 48em) {
+      footer .gform_wrapper #field_2_4 .ginput_container {
+        border-radius: 8px 0px 0px 8px;
+        border-bottom: none;
+        border-right: 1px solid #FFE7CC; } }
+  footer .gform_wrapper .validation_error {
+    position: absolute;
+    display: none;
+    bottom: -40px; }
   footer .sign-up-text {
     position: absolute;
     left: 0;
@@ -4165,12 +4171,15 @@ footer {
       padding: 0;
       height: 42px;
       width: 100%;
+      text-transform: uppercase;
+      font-weight: bold;
       margin: 0;
       right: 0;
-      border-radius: 0;
+      border-radius: 0 0px 8px 8px;
       bottom: 0; }
       @media screen and (min-width: 48em) {
         footer .footer-right .gform_button {
+          border-radius: 0 8px 8px 0;
           position: absolute;
           width: 75px;
           float: right;

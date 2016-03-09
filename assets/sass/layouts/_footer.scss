@@ -16,26 +16,38 @@ footer {
         position: relative;
         z-index: 1;
     }
-    .gform_wrapper {
+    .gform_body {
         border: 1px solid $tan;
         border-radius: 8px;
         //height: 42px;
-        overflow: hidden;
+        //overflow: hidden;
+        @include media($md) {
+            height: 42px;    
+        }
+    }
+    .gform_wrapper {
+        
 
         input {
             height: 40px;
             margin: 0;
             border: 0;
         }
-        #field_2_4 {
+        #field_2_4 .ginput_container{
             border-bottom: 1px solid $tan;
+            overflow: hidden;
+            border-radius: 8px 8px 0px 0;
             @include media($md) {
+                border-radius: 8px 0px 0px 8px;
                 border-bottom: none;
                 border-right: 1px solid $tan;
             }
         }
-        @include media($md) {
-            height: 42px;    
+       
+        .validation_error {
+            position: absolute;
+            display: none;
+            bottom: -40px;
         }
     }
     .sign-up-text {
@@ -74,13 +86,14 @@ footer {
             padding:0;
             height: 42px;
             width: 100%;
-            
-            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0;  
             right: 0;
-            border-radius: 0;
+            border-radius: 0 0px 8px 8px;
             bottom: 0;
             @include media($md) {
-
+                border-radius: 0 8px 8px 0;
                 position: absolute;
                 width: 75px;
                 float: right;    
