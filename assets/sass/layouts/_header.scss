@@ -333,10 +333,14 @@ ul.sub-menu {
         transform: translateY(-140px);    
     }
     .reservation-widget {
-        width: 300px;
+        width: 100%;
+        left: 0;
+        margin: 0 auto;
         right: 0;
         top: 50px;
         @include media($mdbg) {
+            width: 300px;
+            left: initial;
             top: 63px;
         }
         .widget-wrap {

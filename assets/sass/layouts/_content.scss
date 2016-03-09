@@ -2323,9 +2323,11 @@ input.datepicker {
     background-color: $tan;
     color: $dark-red;
     font-family: "Gotham";
-    @include fontSize(22px);
+    @include fontSize(18px);
     border-radius: 0;
-    border-color: transparent
+    border-color: transparent;
+    padding-left: 30px;
+    margin-bottom: 10px;
 }
 
 

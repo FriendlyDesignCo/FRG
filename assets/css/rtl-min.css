@@ -131,7 +131,8 @@ ul.sub-menu li:hover{background-color:#9d4446}.reservation-widget{position:absol
 }#primary-nav .reservation-widget{display:none;width:200px;left:50px}#primary-nav .logo{width:180px;position:relative;padding:10px;float:left;display:none}
 #primary-nav .logo a{display:block}#primary-nav .logo .light{display:block}#secondary-nav{display:block;position:fixed;top:0;left:0;transition:all .4s;box-shadow:0 5px 14px -6px black}
 @media screen and (min-width:64em){#secondary-nav{-webkit-transform:translateY(-140px);transform:translateY(-140px)}
-}#secondary-nav .reservation-widget{width:300px;right:0;top:50px}@media screen and (min-width:64em){#secondary-nav .reservation-widget{top:63px}
+}#secondary-nav .reservation-widget{width:100%;left:0;margin:0 auto;right:0;top:50px}
+@media screen and (min-width:64em){#secondary-nav .reservation-widget{width:300px;left:initial;top:63px}
 }#secondary-nav .reservation-widget .widget-wrap{position:relative;text-align:left;display:none;background-color:#9d4446;width:100%;position:absolute;top:40px}
 @media screen and (min-width:30em){#secondary-nav .reservation-widget .widget-wrap{top:50px}
 }#secondary-nav .logo{position:relative;padding:10px;float:left;width:140px;height:50px}
@@ -455,7 +456,7 @@ input.datepicker{position:relative}.datepicker{font-size:16px;font-size:1rem}@me
 .OT_searchWrapperAll .form-header{font-family:"Gotham";font-size:22px;font-size:1.375rem;color:#ffe7cc;font-style:normal;text-align:center;font-weight:400;text-transform:uppercase}
 .OT_searchWrapperAll .contact-text{color:#ffe7cc;font-size:16px;font-size:1rem;line-height:1.2em;text-align:center;text-transform:none}
 .OT_searchWrapperAll form{margin-bottom:30px}.OT_searchWrapperAll .phone-number{display:block;font-size:18px;font-size:1.125rem;margin-top:20px;font-weight:500}
-.form-control{width:100%;height:45px;background-color:#ffe7cc;color:#8b2332;font-family:"Gotham";font-size:22px;font-size:1.375rem;border-radius:0;border-color:transparent}
+.form-control{width:100%;height:45px;background-color:#ffe7cc;color:#8b2332;font-family:"Gotham";font-size:18px;font-size:1.125rem;border-radius:0;border-color:transparent;padding-left:30px;margin-bottom:10px}
 .bootstrap-datetimepicker-widget.dropdown-menu{background-color:#8b2332}.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before,.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after{content:none}
 .bootstrap-datetimepicker-widget table td,.bootstrap-datetimepicker-widget table th{border-radius:0}
 .bootstrap-datetimepicker-widget table td,.bootstrap-datetimepicker-widget table th,.bootstrap-datetimepicker-widget table td.day{color:#f1ddcb}

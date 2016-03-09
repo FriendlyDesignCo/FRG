@@ -1260,11 +1260,15 @@ ul.sub-menu {
       -webkit-transform: translateY(-140px);
               transform: translateY(-140px); } }
   #secondary-nav .reservation-widget {
-    width: 300px;
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
     right: 0;
     top: 50px; }
     @media screen and (min-width: 64em) {
       #secondary-nav .reservation-widget {
+        width: 300px;
+        left: initial;
         top: 63px; } }
     #secondary-nav .reservation-widget .widget-wrap {
       position: relative;
@@ -3625,10 +3629,12 @@ input.datepicker {
   background-color: #FFE7CC;
   color: #8B2332;
   font-family: "Gotham";
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   border-radius: 0;
-  border-color: transparent; }
+  border-color: transparent;
+  padding-left: 30px;
+  margin-bottom: 10px; }
 
 .bootstrap-datetimepicker-widget.dropdown-menu {
   background-color: #8b2332; }
