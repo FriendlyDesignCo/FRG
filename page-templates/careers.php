@@ -22,15 +22,15 @@ get_header(); ?>
 		        else {
 		        	$('body').addClass("desktop-screen");	
 		        }
-				var slide_height_1 = $(".slide-1").height() + $(window).height()/2;
-				var slide_height_2 = $(".slide-1").height() + $(window).height()*2/2;
-				var slide_height_3 = $(".slide-1").height() + $(window).height()*3/2;
-				var slide_height_4 = $(".slide-1").height() + $(window).height()*4/2;
-				var slide_height_5 = $(".slide-1").height() + $(window).height()*5/2;
-				var slide_height_6 = $(".slide-1").height() + $(window).height()*6/2;
+				var slide_height_1 = $(".slide-1").height() + $(window).innerHeight()/2;
+				var slide_height_2 = $(".slide-1").height() + $(window).innerHeight()*2/2;
+				var slide_height_3 = $(".slide-1").height() + $(window).innerHeight()*3/2;
+				var slide_height_4 = $(".slide-1").height() + $(window).innerHeight()*4/2;
+				var slide_height_5 = $(".slide-1").height() + $(window).innerHeight()*5/2;
+				var slide_height_6 = $(".slide-1").height() + $(window).innerHeight()*6/2;
 				//var last_slide_height = $(".slide-1").height() + $(window).height()*7;
 				var last_slide_height = $(".slide-1").height() + 9*$(".career-slide-1").height();
-				$(".mobile-screen #career-trigger1").css("top", slide_height_1+100+"px");
+				$(".mobile-screen #career-trigger1").css("top", slide_height_1+150+"px");
 				$(".mobile-screen #career-trigger2").css("top", slide_height_2+100+"px");
 				$(".mobile-screen #career-trigger3").css("top", slide_height_3+100+"px");
 				$(".mobile-screen #career-trigger4").css("top", slide_height_4+100+"px");
@@ -148,7 +148,7 @@ get_header(); ?>
 				// init controller
 
 				var controller = new ScrollMagic.Controller();
-				new ScrollMagic.Scene({triggerElement: "#career-trigger1", duration: "600%"})
+				new ScrollMagic.Scene({triggerElement: "#career-trigger1", duration: "550%"})
 								.setPin(".career-wrap")
 								.addIndicators()
 								.addTo(controller);

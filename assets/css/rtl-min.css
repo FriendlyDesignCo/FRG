@@ -107,8 +107,8 @@ body.home header#masthead.not-scrolled .menu-menu-1-container .sub-menu{position
 }header#masthead{float:left;width:100%;position:fixed;transition:-webkit-transform .4s;transition:transform .4s;transition:transform .4s,-webkit-transform .4s;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);top:0;left:0;z-index:999}
 header#masthead .hide-scroll{display:none}header#masthead .show-scroll{transition:all .4s;position:absolute;height:calc(100vh - 50px);width:100%}
 @media screen and (min-width:64em){header#masthead .show-scroll{width:auto;background-color:none;position:relative;display:block;height:auto;float:right}
-}#primary-nav{position:relative}#secondary-nav{background-color:#8b2332;height:63px;float:left;width:100%}
-.menu-menu-1-container{font-family:'Gotham';font-size:16px;font-size:1rem}
+}#primary-nav{position:relative}#secondary-nav{background-color:#8b2332;height:50px;float:left;width:100%}
+@media screen and (min-width:64em){#secondary-nav{height:63px}}.menu-menu-1-container{font-family:'Gotham';font-size:16px;font-size:1rem}
 .menu-menu-1-container a{color:#ffe7cc;text-transform:uppercase;line-height:1.2em}
 @media screen and (min-width:64em){.menu-menu-1-container a{line-height:1.5em}}.menu-menu-1-container a:after{content:">";position:absolute;right:10px;color:#ffe7cc}
 @media screen and (min-width:64em){.menu-menu-1-container a:after{display:none}}.menu-menu-1-container ul{padding:0;margin:0}
@@ -131,13 +131,15 @@ ul.sub-menu li:hover{background-color:#9d4446}.reservation-widget{position:absol
 }#primary-nav .reservation-widget{display:none;width:200px;left:50px}#primary-nav .logo{width:180px;position:relative;padding:10px;float:left;display:none}
 #primary-nav .logo a{display:block}#primary-nav .logo .light{display:block}#secondary-nav{display:block;position:fixed;top:0;left:0;transition:all .4s;box-shadow:0 5px 14px -6px black}
 @media screen and (min-width:64em){#secondary-nav{-webkit-transform:translateY(-140px);transform:translateY(-140px)}
-}#secondary-nav .reservation-widget{width:300px;right:0;top:63px}#secondary-nav .reservation-widget .widget-wrap{position:relative;text-align:left;display:none;background-color:#9d4446;width:100%;position:absolute;top:40px}
+}#secondary-nav .reservation-widget{width:300px;right:0;top:50px}@media screen and (min-width:64em){#secondary-nav .reservation-widget{top:63px}
+}#secondary-nav .reservation-widget .widget-wrap{position:relative;text-align:left;display:none;background-color:#9d4446;width:100%;position:absolute;top:40px}
 @media screen and (min-width:30em){#secondary-nav .reservation-widget .widget-wrap{top:50px}
-}#secondary-nav .logo{position:relative;padding:10px;float:left;width:140px;height:63px}
-#secondary-nav .logo a{display:block}#secondary-nav.slide-down{-webkit-transform:translateY(0);transform:translateY(0)}
-#secondary-nav .menu-menu-1-container{width:80%;background-color:#9d4446;position:absolute;height:100vh;top:63px;right:0;transition:all .3s;-webkit-transform:translateX(100vw);transform:translateX(100vw);box-shadow:0 14px 20px -19px black}
+}#secondary-nav .logo{position:relative;padding:10px;float:left;width:140px;height:50px}
+@media screen and (min-width:48em){#secondary-nav .logo{height:63px}}#secondary-nav .logo a{display:block;height:100%}
+#secondary-nav.slide-down{-webkit-transform:translateY(0);transform:translateY(0)}
+#secondary-nav .menu-menu-1-container{width:80%;background-color:#9d4446;position:absolute;height:100vh;top:50px;right:0;transition:all .3s;-webkit-transform:translateX(100vw);transform:translateX(100vw);box-shadow:0 14px 20px -19px black}
 @media screen and (min-width:64em){#secondary-nav .menu-menu-1-container{-webkit-transform:translateX(0);transform:translateX(0);top:0;background-color:#8b2332;height:auto}
-}@media screen and (min-width:64em){#secondary-nav .sub-menu{top:63px}}header label{position:absolute;right:0;top:0;padding:20px 10px;z-index:130;height:100%;margin:0;width:50px}
+}@media screen and (min-width:64em){#secondary-nav .sub-menu{top:63px}}header label{position:absolute;right:0;top:0;padding:15px 10px;z-index:130;height:100%;margin:0;width:50px}
 .hamburger{position:relative;top:0;z-index:100;list-style-type:none;padding:0;margin:0}
 @media screen and (min-width:64em){.hamburger{display:none}}.hamburger li{width:100%;background-color:#ffe7cc;height:3px;margin-bottom:5px;transition:all .3s}
 #showblock{display:none}#showblock:checked+.menu-menu-1-container{-webkit-transform:translateX(0);transform:translateX(0)}
@@ -270,8 +272,8 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 .career-slide-2{z-index:6}.career-slide-3{z-index:5}.career-slide-4{z-index:4}.career-slide-5{z-index:3}
 .career-slide-6{z-index:2}.careers-section,.beverages-section{text-align:left;min-height:100vh}
 @media screen and (min-width:48em){.careers-section,.beverages-section{height:100vh;min-height:none}
-}.careers-section.last-slide,.beverages-section.last-slide{position:absolute;height:calc(100vh - 63px);text-align:center;min-height:initial}
-@media screen and (min-width:48em){.careers-section.last-slide,.beverages-section.last-slide{top:800vh;padding-top:30vh}
+}.careers-section.last-slide,.beverages-section.last-slide{position:absolute;height:calc(100vh - 63px);text-align:center;min-height:initial;top:650vh}
+@media screen and (min-width:48em){.careers-section.last-slide,.beverages-section.last-slide{top:750vh;padding-top:30vh}
 }@media screen and (min-width:48em){.careers-section.slide-wrap,.beverages-section.slide-wrap{height:700vh}
 }.beverages-page{padding-top:100px}@media screen and (min-width:48em){.beverages-page{padding-top:0}
 }.careers-wrap{padding-top:100px}@media screen and (min-width:48em){.careers-wrap{padding-top:0}

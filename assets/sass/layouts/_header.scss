@@ -115,9 +115,12 @@ header#masthead {
 
 #secondary-nav {
     background-color: $dark-red;
-    height: 63px;
+    height: 50px;
     float: left;
     width: 100%;
+    @include media($mdbg) {
+        height: 63px;
+    }
 }
 
 .menu-menu-1-container {
@@ -283,7 +286,6 @@ ul.sub-menu {
         }
     }
     &:hover {
-        
         a {
             background-color: $dark-red;
             text-decoration: none;
@@ -333,7 +335,10 @@ ul.sub-menu {
     .reservation-widget {
         width: 300px;
         right: 0;
-        top: 63px;
+        top: 50px;
+        @include media($mdbg) {
+            top: 63px;
+        }
         .widget-wrap {
             position: relative;
             text-align: left;
@@ -353,9 +358,13 @@ ul.sub-menu {
         padding: 10px;
         float: left;
         width: 140px;
-        height: 63px;
+        height: 50px;
+        @include media($md) {
+            height: 63px;
+        }
         a {
             display: block;
+            height: 100%;
         }
     }
     &.slide-down {
@@ -366,7 +375,7 @@ ul.sub-menu {
         background-color: $light-red;
         position: absolute;
         height: 100vh;
-        top: 63px;
+        top: 50px;
         right: 0;
         transition: all .3s;
         transform: translateX(100vw);
@@ -391,7 +400,7 @@ header label {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 20px 10px;
+    padding: 15px 10px;
     z-index: 130;
     height: 100%;
     margin: 0;
