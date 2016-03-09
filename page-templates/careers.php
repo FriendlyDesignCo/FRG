@@ -10,32 +10,40 @@
 
 get_header(); ?>
 	<script>
-		(function($) {
-		    $(document).ready(function() {
+	var animation_duration;
 
-		    	if ($(window).width() < 768) {
-		             $('body').addClass("mobile-screen");
-		        }
-		        else if ($(window).width() < 1024) {
-		             $('body').addClass("tablet-screen");
-		        }
-		        else {
-		        	$('body').addClass("desktop-screen");	
-		        }
-				var slide_height_1 = $(".slide-1").height() + $(window).innerHeight()/2;
-				var slide_height_2 = $(".slide-1").height() + $(window).innerHeight()*2/2;
-				var slide_height_3 = $(".slide-1").height() + $(window).innerHeight()*3/2;
-				var slide_height_4 = $(".slide-1").height() + $(window).innerHeight()*4/2;
-				var slide_height_5 = $(".slide-1").height() + $(window).innerHeight()*5/2;
-				var slide_height_6 = $(".slide-1").height() + $(window).innerHeight()*6/2;
+		(function($) {
+			if ($(window).width() < 768) {
+	             $('body').addClass("mobile-screen");
+	             animation_duration = 400;
+	        }
+	        else if ($(window).width() < 1024) {
+	             $('body').addClass("tablet-screen");
+	             animation_duration = 400;
+	        }
+	        else {
+	        	$('body').addClass("desktop-screen");	
+	        	animation_duration = 550;
+	        }
+		    $(document).ready(function() {
+		    	
+		    	
+		        console.log("slide-1 height: " + $(".slide-1").height());
+		        console.log("window height: " + $(window).height());
+				var slide_height_1 = ($(".slide-1").height() + $(window).height()/2) + 200;
+				var slide_height_2 = ($(".slide-1").height() + $(window).height()*2/2) + 200 ;
+				var slide_height_3 = ($(".slide-1").height() + $(window).height()*3/2) + 200 ;
+				var slide_height_4 = ($(".slide-1").height() + $(window).height()*4/2) + 200 ;
+				var slide_height_5 = ($(".slide-1").height() + $(window).height()*5/2) + 200 ;
+				var slide_height_6 = ($(".slide-1").height() + $(window).height()*6/2) + 200 ;
 				//var last_slide_height = $(".slide-1").height() + $(window).height()*7;
-				var last_slide_height = $(".slide-1").height() + 9*$(".career-slide-1").height();
-				$(".mobile-screen #career-trigger1").css("top", slide_height_1+150+"px");
-				$(".mobile-screen #career-trigger2").css("top", slide_height_2+100+"px");
-				$(".mobile-screen #career-trigger3").css("top", slide_height_3+100+"px");
-				$(".mobile-screen #career-trigger4").css("top", slide_height_4+100+"px");
-				$(".mobile-screen #career-trigger5").css("top", slide_height_5+100+"px");
-				$(".mobile-screen #career-trigger6").css("top", slide_height_6+100+"px");
+				var last_slide_height = $(".slide-1").height() + 6*$(".career-slide-1").height() + 200;
+				$(".mobile-screen #career-trigger1").css("top", slide_height_1+"px");
+				$(".mobile-screen #career-trigger2").css("top", slide_height_2+"px");
+				$(".mobile-screen #career-trigger3").css("top", slide_height_3+"px");
+				$(".mobile-screen #career-trigger4").css("top", slide_height_4+"px");
+				$(".mobile-screen #career-trigger5").css("top", slide_height_5+"px");
+				$(".mobile-screen #career-trigger6").css("top", slide_height_6+"px");
 				$(".mobile-screen .careers-section.last-slide").css("top", last_slide_height+"px");
 
 
@@ -72,21 +80,42 @@ get_header(); ?>
 		.step-1 .corn {
 			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-1.svg');
 		}
+		
 		.step-2 .corn {
 			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-2.svg');
 		}
+		.step-2 .corn.before {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-1.svg');
+		}
+
 		.step-3 .corn {
 			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-3.svg');
 		}
+		.step-3 .corn.before {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-2.svg');
+		}
+
 		.step-4 .corn {
 			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-3.svg');
 		}
+		.step-4 .corn.before {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-3.svg');
+		}
+		
 		.step-5 .corn {
 			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-4.svg');
 		}
+		.step-5 .corn.before {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-3.svg');
+		}
+		
 		.step-6 .corn {
 			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-5.svg');
 		}
+		.step-6 .corn.before {
+			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/animation-step-4.svg');
+		}
+		
 	</style>
 	<section class="section careers-section slide-1 section-wrap">
 		<div class="section-inner">
@@ -146,13 +175,14 @@ get_header(); ?>
 			
 			<script>
 				// init controller
-
+				console.log("animation_duration "+animation_duration);
+				//animation_duration = 550;
 				var controller = new ScrollMagic.Controller();
-				new ScrollMagic.Scene({triggerElement: "#career-trigger1", duration: "550%"})
+				var scene = new ScrollMagic.Scene({triggerElement: "#career-trigger1"})
 								.setPin(".career-wrap")
 								.addIndicators()
 								.addTo(controller);
-				
+				scene.duration(animation_duration+"%");
 				
 			</script>
 			<?php if( have_rows('career_path') ): ?>
@@ -165,7 +195,8 @@ get_header(); ?>
 				
 				<div class="section-inner ">
 					<div class="sprinkler-animation step-<?php echo $slide_number ?>">
-						<div class="corn"></div>
+						<div class="corn before"></div>
+						<div class="corn after"></div>
 						<div class="water" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/water.svg')"></div>
 						<div class="sprinkler" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/uploads/animation/sprinkler.svg')"></div>
 					</div>
@@ -249,7 +280,11 @@ get_header(); ?>
 							//.addIndicators()
 							.addTo(controller);	
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
-							.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .corn", { delay: 0.5, opacity: 1})
+							.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .corn.after", { delay: 1, opacity: 1})
+							//.addIndicators()
+							.addTo(controller);	
+				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
+							.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .corn.before", { delay: .8, opacity: 0})
 							//.addIndicators()
 							.addTo(controller);	
 

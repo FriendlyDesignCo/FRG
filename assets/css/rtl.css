@@ -2629,7 +2629,7 @@ ul.job-list-dots {
     position: absolute;
     display: none;
     bottom: 10%;
-    transition: all 1.5s;
+    transition: all 2.5s;
     transition-delay: .2s; }
     @media screen and (min-width: 48em) {
       .sprinkler-animation .water {
@@ -2684,14 +2684,18 @@ ul.job-list-dots {
     bottom: 20%;
     margin: 0 auto;
     background-position: center bottom;
-    background-repeat: no-repeat;
-    opacity: 0; }
+    background-repeat: no-repeat; }
     @media screen and (min-width: 48em) {
       .sprinkler-animation .corn {
         bottom: 0;
         width: 100%;
         background-size: 150px;
         height: 80%; } }
+    .sprinkler-animation .corn.after {
+      opacity: 0; }
+    .sprinkler-animation .corn.before {
+      z-index: 2;
+      opacity: 1; }
   .sprinkler-animation.step-1 {
     opacity: 1; }
   .sprinkler-animation.step-6 {
@@ -2705,6 +2709,19 @@ ul.job-list-dots {
         .sprinkler-animation.step-6 .corn {
           background-size: 70%;
           bottom: 0; } }
+      .sprinkler-animation.step-6 .corn.before {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        bottom: 20%;
+        margin: 0 auto; }
+        @media screen and (min-width: 48em) {
+          .sprinkler-animation.step-6 .corn.before {
+            bottom: 0;
+            width: 100%;
+            background-size: 150px;
+            height: 80%; } }
 
 .nav-dots-inner {
   border-top: 2px solid #8B2332;
