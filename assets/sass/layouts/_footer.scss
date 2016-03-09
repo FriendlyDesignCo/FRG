@@ -19,7 +19,7 @@ footer {
     .gform_wrapper {
         border: 1px solid $tan;
         border-radius: 8px;
-        height: 42px;
+        //height: 42px;
         overflow: hidden;
 
         input {
@@ -28,9 +28,15 @@ footer {
             border: 0;
         }
         #field_2_4 {
-            border-right: 1px solid $tan;
+            border-bottom: 1px solid $tan;
+            @include media($md) {
+                border-bottom: none;
+                border-right: 1px solid $tan;
+            }
         }
-        
+        @include media($md) {
+            height: 42px;    
+        }
     }
     .sign-up-text {
         position: absolute;
@@ -66,14 +72,20 @@ footer {
             color: $dark-red !important;
             text-align: center;
             padding:0;
-            width: 75px;
             height: 42px;
-            float: right;
+            width: 100%;
+            
             margin: 0;
-            position: absolute;
             right: 0;
             border-radius: 0;
-            top: 0;
+            bottom: 0;
+            @include media($md) {
+
+                position: absolute;
+                width: 75px;
+                float: right;    
+                top: 0;    
+            }
         }
         input {
             background-color: $light-red;
@@ -117,6 +129,8 @@ footer {
         border-radius: 8px;
     }
 }
+
+
 
 .menu-footer-menu-container {
     @include fontSize(14px);

@@ -528,14 +528,16 @@ input.datepicker{position:relative}.datepicker{font-size:16px;font-size:1rem}@me
 .widget{margin:0 0 1.5em}.widget select{max-width:100%}.widget_search .search-submit{display:none}
 footer{float:right;margin:0 auto;padding:0 40px;width:100%;background-color:#8b2332;color:#ffe7cc}
 footer p{margin:0}footer .site-info{margin:auto;width:100%}footer .gform_wrapper{position:relative;z-index:1}
-footer .gform_wrapper{border:1px solid #ffe7cc;border-radius:8px;height:42px;overflow:hidden}
-footer .gform_wrapper input{height:40px;margin:0;border:0}footer .gform_wrapper #field_2_4{border-right:1px solid #ffe7cc}
-footer .sign-up-text{position:absolute;left:0;top:0;width:100%;height:100%;background-color:#9d4446;color:#ffe7cc;z-index:0}
+footer .gform_wrapper{border:1px solid #ffe7cc;border-radius:8px;overflow:hidden}
+footer .gform_wrapper input{height:40px;margin:0;border:0}footer .gform_wrapper #field_2_4{border-bottom:1px solid #ffe7cc}
+@media screen and (min-width:48em){footer .gform_wrapper #field_2_4{border-bottom:0;border-right:1px solid #ffe7cc}
+}@media screen and (min-width:48em){footer .gform_wrapper{height:42px}}footer .sign-up-text{position:absolute;left:0;top:0;width:100%;height:100%;background-color:#9d4446;color:#ffe7cc;z-index:0}
 footer .footer-left{margin-bottom:40px;margin-top:30px;padding:10px;text-align:right}
 @media screen and (min-width:48em){footer .footer-left{float:left;width:50%}}footer .footer-right{position:relative;margin-top:30px;margin-bottom:40px;padding:10px}
 footer .footer-right .gform_wrapper{width:100%}footer .footer-right .gform_wrapper label{display:none}
-footer .footer-right .gform_button{background-color:#ffe7cc;color:#8b2332 !important;text-align:center;padding:0;width:75px;height:42px;float:right;margin:0;position:absolute;right:0;border-radius:0;top:0}
-footer .footer-right input{background-color:#9d4446;color:#ffe7cc;font-weight:400;font-size:16px;font-size:1rem}
+footer .footer-right .gform_button{background-color:#ffe7cc;color:#8b2332 !important;text-align:center;padding:0;height:42px;width:100%;margin:0;right:0;border-radius:0;bottom:0}
+@media screen and (min-width:48em){footer .footer-right .gform_button{position:absolute;width:75px;float:right;top:0}
+}footer .footer-right input{background-color:#9d4446;color:#ffe7cc;font-weight:400;font-size:16px;font-size:1rem}
 footer .footer-right input::-webkit-input-placeholder{color:#ffe7cc;text-transform:uppercase}
 footer .footer-right input::-moz-placeholder{color:#ffe7cc;text-transform:uppercase}
 footer .footer-right input:-ms-input-placeholder{color:#ffe7cc;text-transform:uppercase}

@@ -4117,14 +4117,20 @@ footer {
   footer .gform_wrapper {
     border: 1px solid #FFE7CC;
     border-radius: 8px;
-    height: 42px;
     overflow: hidden; }
     footer .gform_wrapper input {
       height: 40px;
       margin: 0;
       border: 0; }
     footer .gform_wrapper #field_2_4 {
-      border-right: 1px solid #FFE7CC; }
+      border-bottom: 1px solid #FFE7CC; }
+      @media screen and (min-width: 48em) {
+        footer .gform_wrapper #field_2_4 {
+          border-bottom: none;
+          border-right: 1px solid #FFE7CC; } }
+    @media screen and (min-width: 48em) {
+      footer .gform_wrapper {
+        height: 42px; } }
   footer .sign-up-text {
     position: absolute;
     left: 0;
@@ -4157,14 +4163,18 @@ footer {
       color: #8B2332 !important;
       text-align: center;
       padding: 0;
-      width: 75px;
       height: 42px;
-      float: right;
+      width: 100%;
       margin: 0;
-      position: absolute;
       right: 0;
       border-radius: 0;
-      top: 0; }
+      bottom: 0; }
+      @media screen and (min-width: 48em) {
+        footer .footer-right .gform_button {
+          position: absolute;
+          width: 75px;
+          float: right;
+          top: 0; } }
     footer .footer-right input {
       background-color: #9D4446;
       color: #FFE7CC;
