@@ -3878,8 +3878,12 @@ select.source {
     font-size: 1rem; }
 
 @media screen and (min-width: 48em) {
-  .gfield.half-width {
-    width: 50%; } }
+  .gfield.name-field {
+    width: 40%; } }
+
+@media screen and (min-width: 48em) {
+  .gfield.email-field {
+    width: 60%; } }
 
 .checkbox-field {
   margin-top: 30px; }

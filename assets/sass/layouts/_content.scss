@@ -2587,9 +2587,14 @@ select.source {
 }
 
 .gfield {
-    &.half-width {
+    &.name-field {
         @include media($md) {
-            width: 50%;
+            width: 40%;
+        }
+    }
+    &.email-field {
+        @include media($md) {
+            width: 60%;
         }
     }
 }
