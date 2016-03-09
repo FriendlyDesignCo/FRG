@@ -94,7 +94,7 @@ get_header(); ?>
 			<h2 class="small"><?php the_field('hero_header_line_1'); ?></h2>
 			<h2 class="small"><?php the_field('hero_header_line_2'); ?></h2>
 			<p class="text-red"><?php the_field('hero_paragraph'); ?></p>
-			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '2');" href="<?php the_field('apply_link'); ?>">Apply</a>
+			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '2');" target="_blank" href="<?php the_field('apply_link'); ?>">Apply</a>
 			<p class="text-red medium"><?php the_field('scroll_more_text'); ?></p>
 
 			<div class="arrow-wrap"><a class="arrow-link" href="#career-anchor-1">
