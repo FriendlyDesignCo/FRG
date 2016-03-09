@@ -489,8 +489,9 @@ input.datepicker{position:relative}.datepicker{font-size:16px;font-size:1rem}@me
 .gform_body ul input[type="checkbox"]:checked:after{content:"x";position:absolute;color:#8b2332;left:0;font-family:"Gotham";width:17px;top:1px;line-height:.7em;text-align:center}
 .gform_body ul select,.gform_body ul input,.gform_body ul textarea{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;font-family:"Gotham";font-weight:500;background-color:#f5d8c0;border:2px solid #8b2332;border-radius:5px;color:#8b2332;margin-bottom:5px}
 .gform_body ul .gchoice_1_8_1 input{margin-top:5px;float:left}.gform_body ul .gchoice_1_8_1 label{font-size:16px;font-size:1rem}
-@media screen and (min-width:48em){.gfield.name-field{width:40%}}@media screen and (min-width:48em){.gfield.email-field{width:60%}
-}.checkbox-field{margin-top:30px}.gform_button.button{width:200px}@media screen and (min-width:48em){.gform_button.button{float:right;margin-top:-50px}
+@media screen and (min-width:48em){.gfield.half-width{width:50%}}@media screen and (min-width:48em){.gfield.name-field{width:40%}
+}@media screen and (min-width:48em){.gfield.email-field{width:60%}}.checkbox-field{margin-top:30px}
+.gform_button.button{width:200px}@media screen and (min-width:48em){.gform_button.button{float:right;margin-top:-50px}
 }.locations-list-wrap{width:100%}@media screen and (min-width:48em){.locations-list-wrap{float:left;width:30%}
 }.ginput_container_select{position:relative}.ginput_container_select .drop{background-color:#f5d8c0;border:2px solid #8b2332;border-radius:5px;color:#8b2332;margin-bottom:5px;height:48px;padding:5px 10px;line-height:48px}
 .dropdown-arrow-style{position:relative}.location-item{margin-bottom:20px}.location-item .location-name{text-transform:uppercase;font-family:"Gotham";font-weight:bold;font-size:18px;font-size:1.125rem;margin:0}

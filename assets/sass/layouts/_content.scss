@@ -2587,6 +2587,11 @@ select.source {
 }
 
 .gfield {
+    &.half-width {
+        @include media($md) {
+            width: 50%;
+        }
+    }
     &.name-field {
         @include media($md) {
             width: 40%;
