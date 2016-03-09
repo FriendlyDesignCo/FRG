@@ -4219,6 +4219,8 @@ footer {
     text-align: center;
     background-color: #9D4446;
     border-radius: 8px; }
+  footer a {
+    color: #FFE7CC; }
 
 .menu-footer-menu-container {
   font-size: 14px;
