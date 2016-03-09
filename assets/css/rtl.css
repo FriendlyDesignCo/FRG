@@ -1797,6 +1797,10 @@ button#load-more.done {
 .slide-8-block-wrap {
   text-align: center; }
 
+@media screen and (min-width: 48em) {
+  .slide-8-block + .slide-8-block {
+    margin-left: 1%; } }
+
 .slide-8-block {
   display: inline-block;
   overflow: hidden;
@@ -1869,12 +1873,6 @@ button#load-more.done {
     position: relative;
     z-index: 2;
     text-align: left; }
-  @media screen and (min-width: 48em) {
-    .slide-8-block:nth-of-type(1) {
-      float: left; } }
-  @media screen and (min-width: 48em) {
-    .slide-8-block:nth-of-type(3) {
-      float: right; } }
   .slide-8-block p {
     font-size: 14px;
     font-size: 0.875rem;
