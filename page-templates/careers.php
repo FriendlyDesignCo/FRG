@@ -11,7 +11,7 @@
 get_header(); ?>
 	<script>
 	var animation_duration;
-
+	
 		(function($) {
 			if ($(window).width() < 768) {
 	             $('body').addClass("mobile-screen");
