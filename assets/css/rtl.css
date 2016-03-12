@@ -859,7 +859,8 @@ h4 {
   font-size: 1.0625rem;
   font-family: "Gotham";
   font-weight: 500;
-  transition: all .3s; }
+  transition: all .3s;
+  border: 0; }
   .button:hover, #load-more:hover {
     background-color: #9D4446;
     text-decoration: none; }
