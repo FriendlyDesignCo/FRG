@@ -17,11 +17,10 @@ get_header(); ?>
 		<?php if( have_rows('press') ): ?>
 		<?php while( have_rows('press') ): the_row(); ?>
 		<div class="press-item">
-			<a href="">
+			<a href="<?php the_sub_field('press_link'); ?>">
 				<h4 class="publication"><?php the_sub_field('publication'); ?></h4>
 				<h3 class="headline"><?php the_sub_field('headline'); ?></h3>
 				<p class="quote"><?php the_sub_field('quote'); ?></p>
-				<p class="date"><?php the_sub_field('date'); ?></p>
 			</a>
 		</div>
 		<?php endwhile; ?>
