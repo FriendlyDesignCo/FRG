@@ -45,7 +45,7 @@ get_header(); ?>
 				$(".mobile-screen #career-trigger4").css("top", slide_height_4+"px");
 				$(".mobile-screen #career-trigger5").css("top", slide_height_5+"px");
 				$(".mobile-screen #career-trigger6").css("top", slide_height_6+"px");
-				$(".mobile-screen .careers-section.last-slide").css("top", last_slide_height+"px");
+				
 
 
 			});
@@ -340,5 +340,5 @@ get_header(); ?>
 
 	</section>
 </div><!-- .page-wrap -->
-
+<?php get_footer(); ?>
 

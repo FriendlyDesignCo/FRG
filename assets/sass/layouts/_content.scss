@@ -665,7 +665,7 @@ ul.positions {
     }
 }
 .slide-wrap {
-    height: 700vh;
+    //height: 700vh;
 }
 .career-wrap {
     height: 100vh;
@@ -750,42 +750,42 @@ ul.positions {
 }
 
 #career-trigger2 {
-    top: 250vh;
+    //top: 250vh;
     @include media($md) {
         top: 250vh;
     }
 }
 
 #career-trigger3 {
-    top: 350vh;
+    //top: 350vh;
     @include media($md) {
         top: 350vh;
     }
 }
 
 #career-trigger4 {
-    top: 450vh;
+    //top: 450vh;
     @include media($md) {
         top: 450vh;
     }
 }
 
 #career-trigger5 {
-    top: 550vh;
+    //top: 550vh;
     @include media($md) {
         top: 550vh;
     }
 }
 
 #career-trigger6 {
-    top: 650vh;
+    //top: 650vh;
     @include media($md) {
         top: 650vh;
     }
 }
 
 #career-trigger7 {
-    top: 750vh;
+    //top: 750vh;
     @include media($md) {
         top: 750vh;
     }
@@ -824,19 +824,22 @@ ul.positions {
         min-height: none;    
     }
     &.last-slide {
-        position: absolute;
+        //position: absolute;
+        position: relative;
+        float: left;
         height: calc(100vh - 63px);
         text-align: center;
         min-height: initial;
-        top: 650vh;
+        //top: 650vh;
         @include media($md) {
-            top: 750vh;
+            //top: 750vh;
             padding-top: 30vh;
         }
     }
     &.slide-wrap {
+        height: 500vh;
         @include media($md) {
-            height: 700vh;   
+            height: 650vh;   
         }
     }
 }

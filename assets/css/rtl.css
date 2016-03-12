@@ -2139,9 +2139,6 @@ ul.positions {
       font-size: 19px;
       font-size: 1.1875rem; } }
 
-.slide-wrap {
-  height: 700vh; }
-
 .career-wrap {
   height: 100vh;
   width: 100%;
@@ -2210,41 +2207,29 @@ ul.positions {
   #career-trigger1 {
     top: 150vh; } }
 
-#career-trigger2 {
-  top: 250vh; }
-  @media screen and (min-width: 48em) {
-    #career-trigger2 {
-      top: 250vh; } }
+@media screen and (min-width: 48em) {
+  #career-trigger2 {
+    top: 250vh; } }
 
-#career-trigger3 {
-  top: 350vh; }
-  @media screen and (min-width: 48em) {
-    #career-trigger3 {
-      top: 350vh; } }
+@media screen and (min-width: 48em) {
+  #career-trigger3 {
+    top: 350vh; } }
 
-#career-trigger4 {
-  top: 450vh; }
-  @media screen and (min-width: 48em) {
-    #career-trigger4 {
-      top: 450vh; } }
+@media screen and (min-width: 48em) {
+  #career-trigger4 {
+    top: 450vh; } }
 
-#career-trigger5 {
-  top: 550vh; }
-  @media screen and (min-width: 48em) {
-    #career-trigger5 {
-      top: 550vh; } }
+@media screen and (min-width: 48em) {
+  #career-trigger5 {
+    top: 550vh; } }
 
-#career-trigger6 {
-  top: 650vh; }
-  @media screen and (min-width: 48em) {
-    #career-trigger6 {
-      top: 650vh; } }
+@media screen and (min-width: 48em) {
+  #career-trigger6 {
+    top: 650vh; } }
 
-#career-trigger7 {
-  top: 750vh; }
-  @media screen and (min-width: 48em) {
-    #career-trigger7 {
-      top: 750vh; } }
+@media screen and (min-width: 48em) {
+  #career-trigger7 {
+    top: 750vh; } }
 
 .career-slide-1 {
   z-index: 7; }
@@ -2272,18 +2257,19 @@ ul.positions {
       height: 100vh;
       min-height: none; } }
   .careers-section.last-slide, .beverages-section.last-slide {
-    position: absolute;
+    position: relative;
+    float: left;
     height: calc(100vh - 63px);
     text-align: center;
-    min-height: initial;
-    top: 650vh; }
+    min-height: initial; }
     @media screen and (min-width: 48em) {
       .careers-section.last-slide, .beverages-section.last-slide {
-        top: 750vh;
         padding-top: 30vh; } }
-  @media screen and (min-width: 48em) {
-    .careers-section.slide-wrap, .beverages-section.slide-wrap {
-      height: 700vh; } }
+  .careers-section.slide-wrap, .beverages-section.slide-wrap {
+    height: 500vh; }
+    @media screen and (min-width: 48em) {
+      .careers-section.slide-wrap, .beverages-section.slide-wrap {
+        height: 650vh; } }
 
 .beverages-page {
   padding-top: 100px; }

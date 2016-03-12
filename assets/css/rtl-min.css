@@ -255,7 +255,7 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 @media screen and (min-width:48em){ul.positions{font-size:17px;font-size:1.0625rem}
 }ul.positions li{position:relative !important;line-height:1.2em}.positions-header{font-family:"Gotham";text-transform:uppercase;font-size:16px;font-size:1rem;font-weight:600;margin-bottom:0}
 @media screen and (min-width:48em){.positions-header{font-size:19px;font-size:1.1875rem}
-}.slide-wrap{height:700vh}.career-wrap{height:100vh;width:100%;top:0;left:0}.career-slide-wrap{height:auto;position:relative;white-space:nowrap;padding:0}
+}.career-wrap{height:100vh;width:100%;top:0;left:0}.career-slide-wrap{height:auto;position:relative;white-space:nowrap;padding:0}
 .career-slide{height:100vh;display:block;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);white-space:normal;width:100%;top:0;left:0;position:absolute;padding:70px 5% 5vh;background-size:cover}
 .career-slide:before{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(255,231,204,0.7);z-index:0}
 @media screen and (min-width:48em){.career-slide{padding:25vh 0 0}}@media screen and (min-width:64em){.career-slide{padding:30vh 0 0}
@@ -263,19 +263,16 @@ button#load-more.done{display:none}.spacer{position:absolute;height:100px}.space
 @media screen and (min-width:48em){.career-slide p{font-size:20px;font-size:1.25rem}
 }@media screen and (min-width:64em){.career-slide p{font-size:24px;font-size:1.5rem}
 }.career-slide.active-slide{z-index:8}#career-trigger1,#career-trigger2,#career-trigger3,#career-trigger4,#career-trigger5,#career-trigger6,#career-trigger7{position:absolute}
-@media screen and (min-width:48em){#career-trigger1{top:150vh}}#career-trigger2{top:250vh}
-@media screen and (min-width:48em){#career-trigger2{top:250vh}}#career-trigger3{top:350vh}
-@media screen and (min-width:48em){#career-trigger3{top:350vh}}#career-trigger4{top:450vh}
-@media screen and (min-width:48em){#career-trigger4{top:450vh}}#career-trigger5{top:550vh}
-@media screen and (min-width:48em){#career-trigger5{top:550vh}}#career-trigger6{top:650vh}
-@media screen and (min-width:48em){#career-trigger6{top:650vh}}#career-trigger7{top:750vh}
-@media screen and (min-width:48em){#career-trigger7{top:750vh}}.career-slide-1{z-index:7}
+@media screen and (min-width:48em){#career-trigger1{top:150vh}}@media screen and (min-width:48em){#career-trigger2{top:250vh}
+}@media screen and (min-width:48em){#career-trigger3{top:350vh}}@media screen and (min-width:48em){#career-trigger4{top:450vh}
+}@media screen and (min-width:48em){#career-trigger5{top:550vh}}@media screen and (min-width:48em){#career-trigger6{top:650vh}
+}@media screen and (min-width:48em){#career-trigger7{top:750vh}}.career-slide-1{z-index:7}
 .career-slide-2{z-index:6}.career-slide-3{z-index:5}.career-slide-4{z-index:4}.career-slide-5{z-index:3}
 .career-slide-6{z-index:2}.careers-section,.beverages-section{text-align:left;min-height:100vh}
 @media screen and (min-width:48em){.careers-section,.beverages-section{height:100vh;min-height:none}
-}.careers-section.last-slide,.beverages-section.last-slide{position:absolute;height:calc(100vh - 63px);text-align:center;min-height:initial;top:650vh}
-@media screen and (min-width:48em){.careers-section.last-slide,.beverages-section.last-slide{top:750vh;padding-top:30vh}
-}@media screen and (min-width:48em){.careers-section.slide-wrap,.beverages-section.slide-wrap{height:700vh}
+}.careers-section.last-slide,.beverages-section.last-slide{position:relative;float:left;height:calc(100vh - 63px);text-align:center;min-height:initial}
+@media screen and (min-width:48em){.careers-section.last-slide,.beverages-section.last-slide{padding-top:30vh}
+}.careers-section.slide-wrap,.beverages-section.slide-wrap{height:500vh}@media screen and (min-width:48em){.careers-section.slide-wrap,.beverages-section.slide-wrap{height:650vh}
 }.beverages-page{padding-top:100px}@media screen and (min-width:48em){.beverages-page{padding-top:0}
 }.careers-wrap{padding-top:100px}@media screen and (min-width:48em){.careers-wrap{padding-top:0}
 }.careers-wrap .slide-1 h2{margin:0;text-align:left}.careers-wrap .slide-1 p{text-align:left;line-height:1.4em}
