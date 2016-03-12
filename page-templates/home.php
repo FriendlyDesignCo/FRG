@@ -316,20 +316,26 @@ get_header(); ?>
 
 	<section class="home-section slide-6">
 		<div id="ingredient-bold-trigger"></div>
+		<div id="cookie-header-trigger"></div>
+		<h2><?php the_field('slide_7_header'); ?></h2>
 		<script>
+			new ScrollMagic.Scene({triggerElement: "#cookie-header-trigger", duration: "100%"})
+					.setPin(".slide-6 h2")
+					.addTo(controller);	
 			new ScrollMagic.Scene({triggerElement: "#ingredient-trigger"})
 						.setTween(".ingredients-row p", {opacity: .2, borderColor: "rgba(255,231,204, 0.2)" })
 						.addTo(controller);		
 			new ScrollMagic.Scene({triggerElement: "#ingredient-trigger"})
 						.setTween("p.highlighted", {fontWeight: "bold", opacity: 1})
-						.addTo(controller);							
+						.addTo(controller);	
+								
 		</script>
 	</section>
 
 	<section class="home-section slide-7">
 		<div class="home-section-inner">
 			<div id="ingredient-position-trigger"></div>
-			<h2><?php the_field('slide_7_header'); ?></h2>
+			
 			<script>
 			// desktop and mobile 
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
