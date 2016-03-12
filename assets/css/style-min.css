@@ -57,7 +57,7 @@ ul:nth-child(n+2){margin-bottom:0}ol:nth-child(n+2){margin-bottom:0}.entry-title
 .entry-content p,.entry-content ul,.entry-content li{font-size:18px;font-size:1.125rem}
 @media screen and (min-width:48em){.entry-content p,.entry-content ul,.entry-content li{font-size:20px;font-size:1.25rem}
 }p{line-height:1.58em}.blog-item .category{font-size:18px;font-size:1.125rem;font-weight:bold;text-transform:uppercase;margin-bottom:10px}
-.blog-item .category a{color:#8b2332}.blog-item .category ul{padding:0;margin:0}.blog-item .category li{list-style-type:none}
+.blog-item .category a{color:#8b2332}.blog-item .category ul{padding:0;margin:0}.blog-item .category li{list-style-type:none;float:left;margin-right:10px}
 @media screen and (min-width:48em){.blog-item .entry-title{font-size:48px;font-size:3rem}
 }.blog-item .sub-title{color:black}@media screen and (min-width:48em){.blog-item .sub-title{font-size:20px;font-size:1.25rem}
 }.body-text,.entry-content p,.entry-content ul,.entry-content li{font-family:"GothamNarrow";font-weight:300}

@@ -261,9 +261,10 @@ p {
             margin: 0;
         }
         li {
-            list-style-type: none;    
+            list-style-type: none;  
+            float: left;
+            margin-right: 10px;  
         }
-        
     }
     .entry-title {
         @include media($md) {

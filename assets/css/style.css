@@ -758,7 +758,9 @@ p {
     padding: 0;
     margin: 0; }
   .blog-item .category li {
-    list-style-type: none; }
+    list-style-type: none;
+    float: left;
+    margin-right: 10px; }
 
 @media screen and (min-width: 48em) {
   .blog-item .entry-title {
