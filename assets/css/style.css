@@ -1902,7 +1902,8 @@ button#load-more.done {
   margin-top: 40px;
   text-align: center;
   position: absolute;
-  width: 90%; }
+  width: 90%;
+  bottom: -275px; }
   @media screen and (min-width: 48em) {
     .flip-icons {
       bottom: 30vh;

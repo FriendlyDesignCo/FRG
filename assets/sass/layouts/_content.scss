@@ -383,6 +383,7 @@ button#load-more.done {
     text-align: center;
     position: absolute;
     width: 90%;
+    bottom: -275px;
     @include media($md) {
         
         bottom: 30vh;
