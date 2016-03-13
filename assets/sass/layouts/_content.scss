@@ -2685,7 +2685,7 @@ select.source {
 }
 
 .location-item {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     .location-name {
         text-transform: uppercase;
         font-family: "Gotham";
@@ -2695,6 +2695,7 @@ select.source {
     }
     p {
         margin: 0;
+        line-height: 1.2em;
         font-family: "GothamNarrow";
         @include fontSize(20px); 
     }

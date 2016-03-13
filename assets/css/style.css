@@ -3939,7 +3939,7 @@ select.source {
   position: relative; }
 
 .location-item {
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
   .location-item .location-name {
     text-transform: uppercase;
     font-family: "Gotham";
@@ -3949,6 +3949,7 @@ select.source {
     margin: 0; }
   .location-item p {
     margin: 0;
+    line-height: 1.2em;
     font-family: "GothamNarrow";
     font-size: 20px;
     font-size: 1.25rem; }
