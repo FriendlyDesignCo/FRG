@@ -4195,7 +4195,9 @@ footer {
       margin: 0;
       right: 0;
       border-radius: 0 0px 8px 8px;
-      bottom: 0; }
+      bottom: 0;
+      font-size: 13px;
+      font-size: 0.8125rem; }
       @media screen and (min-width: 48em) {
         footer .footer-right .gform_button {
           border-radius: 0 8px 8px 0;

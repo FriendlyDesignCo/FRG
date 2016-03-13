@@ -537,7 +537,7 @@ footer .sign-up-text{position:absolute;left:0;top:0;width:100%;height:100%;backg
 footer .footer-left{margin-bottom:40px;margin-top:30px;padding:10px;text-align:left}
 @media screen and (min-width:48em){footer .footer-left{float:left;width:50%}}footer .footer-right{position:relative;margin-top:30px;margin-bottom:40px;padding:10px}
 footer .footer-right .gform_wrapper{width:100%}footer .footer-right .gform_wrapper label{display:none}
-footer .footer-right .gform_button{background-color:#ffe7cc;color:#8b2332 !important;text-align:center;padding:0;height:42px;width:100%;text-transform:uppercase;font-weight:bold;margin:0;right:0;border-radius:0 0 8px 8px;bottom:0}
+footer .footer-right .gform_button{background-color:#ffe7cc;color:#8b2332 !important;text-align:center;padding:0;height:42px;width:100%;text-transform:uppercase;font-weight:bold;margin:0;right:0;border-radius:0 0 8px 8px;bottom:0;font-size:13px;font-size:.8125rem}
 @media screen and (min-width:48em){footer .footer-right .gform_button{border-radius:0 8px 8px 0;position:absolute;width:75px;float:right;top:0}
 }footer .footer-right input{background-color:#9d4446;color:#ffe7cc;font-weight:400;font-size:16px;font-size:1rem}
 footer .footer-right input::-webkit-input-placeholder{color:#ffe7cc;text-transform:uppercase}

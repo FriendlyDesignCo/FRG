@@ -93,6 +93,7 @@ footer {
             right: 0;
             border-radius: 0 0px 8px 8px;
             bottom: 0;
+            @include fontSize(13px);
             @include media($md) {
                 border-radius: 0 8px 8px 0;
                 position: absolute;
