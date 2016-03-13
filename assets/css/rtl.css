@@ -3842,6 +3842,7 @@ select.source {
 .gform_title {
   font-family: "adobe-caslon-pro";
   font-style: italic;
+  font-weight: bold;
   font-size: 32px;
   font-size: 2rem; }
   @media screen and (min-width: 48em) {

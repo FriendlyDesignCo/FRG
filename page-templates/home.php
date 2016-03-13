@@ -319,8 +319,12 @@ get_header(); ?>
 		<div id="cookie-header-trigger"></div>
 		<h2><?php the_field('slide_7_header'); ?></h2>
 		<script>
+			new ScrollMagic.Scene({triggerElement: "#cookie-header-trigger", duration: "100%", offset: "-50"})
+					.setPin(".mobile-screen .slide-6 h2")
+					.addIndicators()
+					.addTo(controller);	
 			new ScrollMagic.Scene({triggerElement: "#cookie-header-trigger", duration: "100%"})
-					.setPin(".slide-6 h2")
+					.setPin(".desktop-screen .slide-6 h2")
 					.addTo(controller);	
 			new ScrollMagic.Scene({triggerElement: "#ingredient-trigger"})
 						.setTween(".ingredients-row p", {opacity: .2, borderColor: "rgba(255,231,204, 0.2)" })

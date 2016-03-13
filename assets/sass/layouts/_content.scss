@@ -2566,6 +2566,7 @@ select.source {
 .gform_title {
     font-family: $caslon;
     font-style: italic;
+    font-weight: bold;
     @include fontSize(32px);
     @include media($md) {
         @include fontSize(62px);
