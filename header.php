@@ -132,6 +132,7 @@
 								        $(this).parent().parent().children(".source").val(24712);
 								        // change to dc photo
 								        selected_restaurant = 0;
+								        $(".phone-number").text("202-822-8783");
 								        switchImages("url_1", reservation_images[0]["image"]);
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[0]["image"] );
 								        break;
@@ -141,6 +142,7 @@
 								        // change to moco photo
 								        selected_restaurant = 1;
 								        switchImages("url_1", reservation_images[1]["image"] );
+								        $(".phone-number").text("301-340-8783");
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[1]["image"] );
 								        break;
 								    case "Founding Farmers Tysons":
@@ -148,6 +150,7 @@
 								        // change to tysons photo
 								        selected_restaurant = 2;
 								        switchImages("url_1", reservation_images[2]["image"] );
+								        $(".phone-number").text("703-442-8783");
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[2]["image"] );
 								        break;
 								    case "Farmers Fishers Bakers":
@@ -155,10 +158,12 @@
 								        // change to ffb photo
 								        selected_restaurant = 3;
 								        switchImages("url_1", reservation_images[3]["image"] );
+								        $(".phone-number").text("202-298-8783");
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[3]["image"] );
 								        break;
 								    default:
 								        $(this).parent().parent().children(".source").val(text);
+								        $(".phone-number").text("");
 								}
 
 								if($(this).parent().hasClass("time-list")) {
@@ -407,7 +412,7 @@
 								</div>
 
 							</form>	
-							<h3 class="contact-text">Can’t get the reservation time you’re looking for online? Please call us, we might be able to help. <span class="phone-number">202-555-5555</span></h3>
+							<h3 class="contact-text">Can’t get the reservation time you’re looking for online? Please call us, we might be able to help. <span class="phone-number"></span></h3>
 							<script>
 					
 								(function($) {

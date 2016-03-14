@@ -2600,6 +2600,7 @@ select.source {
         cursor: pointer;
         line-height: 1em;
         transition: all .3s;
+        @include fontSize(18px);
         &:hover {
             background-color: $light-red;
         }
@@ -2860,6 +2861,6 @@ select.source {
 .gforms_confirmation_message {
     font-family: "Gotham";
     color: $dark-red;
-    
+
 }
 

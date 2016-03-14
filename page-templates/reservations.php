@@ -126,7 +126,7 @@ get_header(); ?>
 						</div>
 
 					</form>		
-					<h3 class="contact-text">Can’t get the reservation time you’re looking for online? Please call us, we might be able to help. <span class="phone-number">202-555-5555</span></h3>
+					<h3 class="contact-text">Can’t get the reservation time you’re looking for online? Please call us, we might be able to help. <span class="phone-number"></span></h3>
 				</div>
 			</div>
 			<div class="form_wrap-inner reservation_image_wrap right">
@@ -145,6 +145,9 @@ get_header(); ?>
 							debug: true
 						});
 						    
+						$(".location-picker").change(function() {
+
+						});
 					})(jQuery);
 			</script>
 			<div class="hide">
