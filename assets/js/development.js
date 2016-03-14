@@ -21,12 +21,6 @@
 			
 		});
 		
-		
-		
-		$(".footer-right #field_2_2").change(function() {
-			alert("here");
-		});
-
 		$("#secondary-nav .reservation-widget a.reservation").click(function(e) {
 			e.preventDefault();
 			$(this).parent().children(".widget-wrap").toggle();

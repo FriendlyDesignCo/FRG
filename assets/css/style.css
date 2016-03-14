@@ -3822,6 +3822,8 @@ select.source {
     .contact-form-wrap {
       width: 70%;
       padding: 0 50px; } }
+  .contact-form-wrap .validation_error {
+    display: none; }
 
 .contact-field.field-half-width {
   width: 100%;
