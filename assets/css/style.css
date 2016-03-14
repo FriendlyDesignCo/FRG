@@ -760,10 +760,10 @@ p {
 .blog-item .category {
   font-size: 18px;
   font-size: 1.125rem;
-  font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px; }
   .blog-item .category a {
+    font-weight: bold;
     color: #8B2332; }
   .blog-item .category ul {
     padding: 0;
@@ -2961,7 +2961,7 @@ ul.job-list-dots {
     font-size: 0.6875rem; }
 
 .article-share {
-  margin: 50px 0 30px; }
+  margin: 50px 0; }
   .article-share h4 {
     font-family: "Gotham";
     font-weight: bold;
@@ -3005,6 +3005,10 @@ ul.job-list-dots {
     text-align: center; }
   .share-button .dashicons {
     line-height: 40px; }
+
+.see-more-posts {
+  border-top: 1px solid #8B2332;
+  padding-top: 20px; }
 
 .beverages-section h2 {
   font-size: 28px;

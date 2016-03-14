@@ -260,10 +260,11 @@ p {
 .blog-item {
     .category {
         @include fontSize(18px);
-        font-weight: bold;
+        
         text-transform: uppercase;
         margin-bottom: 10px;
         a {
+            font-weight: bold;
             color: $dark-red;
         }
         ul {

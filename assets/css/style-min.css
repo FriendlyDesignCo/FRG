@@ -57,9 +57,9 @@ ul:nth-child(n+2){margin-bottom:0}ol:nth-child(n+2){margin-bottom:0}.entry-title
 .entry-content p,.entry-content ul,.entry-content li{font-size:18px;font-size:1.125rem}
 @media screen and (min-width:48em){.entry-content p,.entry-content ul,.entry-content li{font-size:20px;font-size:1.25rem}
 }p{line-height:1.58em}.entry-content .wp-caption-text{margin:0;color:#8b2332;line-height:1.2em;font-size:13px;font-size:.8125rem;font-weight:500;font-family:"Gotham";border-bottom:1px solid #8b2332;padding-bottom:10px}
-.blog-item .category{font-size:18px;font-size:1.125rem;font-weight:bold;text-transform:uppercase;margin-bottom:10px}
-.blog-item .category a{color:#8b2332}.blog-item .category ul{padding:0;margin:0}.blog-item .category li{list-style-type:none;float:left;margin-right:10px}
-@media screen and (min-width:48em){.blog-item .entry-title{font-size:48px;font-size:3rem}
+.blog-item .category{font-size:18px;font-size:1.125rem;text-transform:uppercase;margin-bottom:10px}
+.blog-item .category a{font-weight:bold;color:#8b2332}.blog-item .category ul{padding:0;margin:0}
+.blog-item .category li{list-style-type:none;float:left;margin-right:10px}@media screen and (min-width:48em){.blog-item .entry-title{font-size:48px;font-size:3rem}
 }.blog-item .sub-title{color:black}@media screen and (min-width:48em){.blog-item .sub-title{font-size:20px;font-size:1.25rem}
 }.body-text,.entry-content p,.entry-content ul,.entry-content li{font-family:"GothamNarrow";font-weight:300}
 .text-red{color:#8b2332}.center-text{text-align:center}.medium{font-weight:500}h2{font-family:"adobe-caslon-pro";font-weight:bold;font-style:italic}
@@ -366,12 +366,12 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 @media screen and (min-width:48em){.sidebar-text .twitter-icon{display:block}}.quote-attribution{margin-top:10px}
 .quote-attribution p{margin:0;line-height:1.2em}.quote-attribution .name{font-family:"Gotham";font-weight:500;font-style:normal;font-size:14px;font-size:.875rem}
 .quote-attribution .position{font-family:"Gotham";font-weight:500;font-style:normal;font-size:11px;font-size:.6875rem}
-.article-share{margin:50px 0 30px}.article-share h4{font-family:"Gotham";font-weight:bold;font-size:18px;font-size:1.125rem;text-transform:uppercase}
+.article-share{margin:50px 0}.article-share h4{font-family:"Gotham";font-weight:bold;font-size:18px;font-size:1.125rem;text-transform:uppercase}
 .article-share ul{padding:0;margin:0;width:100%;list-style-type:none}.article-share a{color:#ffe7cc;font-family:"Gotham";font-weight:500;text-transform:uppercase;font-size:14px;font-size:.875rem;display:block}
 .article-share a:hover{text-decoration:none}.share-button{display:inline-block;background-color:#8b2332;padding:5px 50px 5px 10px;position:relative;border-radius:8px;overflow:hidden;transition:all .2s;margin-right:5px}
 .share-button:hover{background-color:#9d4446}.share-button .icon{background-color:#9d4446;position:absolute;right:0;top:0;width:40px;height:100%;text-align:center}
-.share-button .dashicons{line-height:40px}.beverages-section h2{font-size:28px;font-size:1.75rem}
-@media screen and (min-width:48em){.beverages-section h2{font-size:62px;font-size:3.875rem}
+.share-button .dashicons{line-height:40px}.see-more-posts{border-top:1px solid #8b2332;padding-top:20px}
+.beverages-section h2{font-size:28px;font-size:1.75rem}@media screen and (min-width:48em){.beverages-section h2{font-size:62px;font-size:3.875rem}
 }.beverages-section.slide-1 p{color:#8b2332;line-height:1.4em}.beverage-image{background-size:contain;background-repeat:no-repeat;background-position:center;width:30%;float:left;height:200px}
 @media screen and (min-width:48em){.beverage-image{transition:all 1.5s;-webkit-transform:translateY(-150px);transform:translateY(-150px);opacity:0;height:100%;width:25%}
 }.beverage-image.slide-down{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}

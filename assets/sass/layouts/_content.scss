@@ -1602,7 +1602,7 @@ ul.job-list-dots {
 }
 
 .article-share {
-    margin: 50px 0 30px;
+    margin: 50px 0;
     h4 {
         font-family: "Gotham";
         font-weight: bold;
@@ -1655,6 +1655,11 @@ ul.job-list-dots {
         line-height: 40px;
 
     }
+}
+
+.see-more-posts {
+    border-top: 1px solid $dark-red;
+    padding-top: 20px;
 }
 
 .beverages-section {

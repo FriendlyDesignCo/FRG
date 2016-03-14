@@ -36,6 +36,17 @@
 				</li>
 			</ul>
 		</div>
+		<div class="see-more-posts">
+			<?php query_posts('posts_per_page=3'); ?> 
+				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?> 
+					<div class="blog-item">
+						<h3 class="category"><?php the_category(); ?></h3>
+						<h2 class="entry-title small" itemprop="name" ><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+						<h3 class="sub-title"><?php the_field('subheader'); ?></h3>
+					</div>
+				<?php endwhile; ?> 
+			<?php wp_reset_query(); ?> 
+		</div>
 	</div><!-- .entry-content -->
 
 	
