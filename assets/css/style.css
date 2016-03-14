@@ -4093,6 +4093,21 @@ select.source {
   font-family: "Gotham";
   color: #8B2332; }
 
+.error-404 {
+  padding-top: 100px; }
+  .error-404 h2 {
+    font-size: 40px;
+    font-size: 2.5rem; }
+    @media screen and (min-width: 48em) {
+      .error-404 h2 {
+        font-size: 77px;
+        font-size: 4.8125rem; } }
+
+.image-404 {
+  max-width: 800px;
+  float: none;
+  margin: 0 auto 50px; }
+
 /*--------------------------------------------------------------
     6.4 Page Templates
     --------------------------------------------------------------*/
