@@ -10,18 +10,17 @@
 		});
 
 
-
 		$("#gform_submit_button_2").click(function() {
 			setTimeout(function(){ 
-				if($(".footer-right #field_2_2").hasClass("gfield_error")) {
-					$(".footer-right .ginput_container_email input").attr("placeholder", $("#field_2_2 .validation_message").text());
-					$(".footer-right .ginput_container_email input").css("background-color","#8B2332")
-					//alert($(".ginput_container_email .validation_message").text());
-					console.log("msg: "+$("#field_2_2 .validation_message").text());
+				if($(".footer-right .email-field").hasClass("gfield_error")) {
+					$(".footer-right .ginput_container_email input").attr("placeholder", $(".email-field .validation_message").text());
+					$(".footer-right .ginput_container_email input").css("background-color","#8B2332");
+					console.log("msg: "+$(".email-field .validation_message").text());
 				}
-			}, 500);
+			}, 300);
 			
 		});
+		
 		
 		
 		$(".footer-right #field_2_2").change(function() {
