@@ -1407,11 +1407,14 @@ ul.job-list-dots {
 #content {
     .hero-image {
         margin-bottom: 35px;
-        height: 391px;
+        height: 170px;
         overflow: hidden;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        @include media($md) {
+            height: 391px;
+        }
     }
     .sub-title {
         border-bottom: 1px solid $dark-red;
@@ -1465,10 +1468,10 @@ ul.job-list-dots {
 }
 
 .single-post {
-    .site-main {
-        //padding-top: 100px;
+    .site-content {
+        padding-top: 50px;
         @include media($md) {
-            padding-top: 0;
+            padding-top: 150px;
         }
     }
 }
