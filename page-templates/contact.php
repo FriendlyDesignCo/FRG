@@ -26,6 +26,18 @@ get_header(); ?>
 			</div>
 			<?php endwhile; ?>
 			<?php endif; ?>
+
+			<?php if( have_rows('coming_soon_locations') ): ?>
+			<?php while( have_rows('coming_soon_locations') ): the_row(); ?>
+			<h3 class="coming-soon-header">Coming Soon!</h3>
+			<div class="location-item">
+				<h3 class="location-name"><a class="text-red" href="<?php the_sub_field('location_link'); ?>"><?php the_sub_field('location_name'); ?></a></h3>
+				<p class="phone-number text-red"><?php the_sub_field('phone_number'); ?></p>
+				<p class="address"><?php the_sub_field('address_line_1'); ?></p>
+				<p class="address"><?php the_sub_field('address_line_2'); ?></p>
+			</div>
+			<?php endwhile; ?>
+			<?php endif; ?>
 		</div>
 	</div><!-- #content -->
 </div>

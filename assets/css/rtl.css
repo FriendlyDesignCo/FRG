@@ -4039,6 +4039,13 @@ select.source {
 .dropdown-arrow-style {
   position: relative; }
 
+.coming-soon-header {
+  font-family: "Gotham";
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1.125rem;
+  border-top: 1px solid #8B2332; }
+
 .location-item {
   margin-bottom: 30px; }
   .location-item .location-name {
@@ -4082,6 +4089,10 @@ select.source {
     height: 100%;
     width: 30px;
     background-color: #9D4446; }
+
+.gforms_confirmation_message {
+  font-family: "Gotham";
+  color: #8B2332; }
 
 /*--------------------------------------------------------------
     6.4 Page Templates

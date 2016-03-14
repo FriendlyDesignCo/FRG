@@ -2802,6 +2802,13 @@ select.source {
     position: relative;
 }
 
+.coming-soon-header {
+    font-family: "Gotham";
+    font-weight: bold;
+    @include fontSize(18px);
+    border-top: 1px solid $dark-red;
+}
+
 .location-item {
     margin-bottom: 30px;
     .location-name {
@@ -2850,5 +2857,9 @@ select.source {
     }
 }
 
-
+.gforms_confirmation_message {
+    font-family: "Gotham";
+    color: $dark-red;
+    
+}
 

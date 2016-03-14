@@ -509,11 +509,13 @@ input.datepicker{position:relative}.datepicker{font-size:16px;font-size:1rem}@me
 .gform_button.button{width:200px}@media screen and (min-width:48em){.gform_button.button{float:right;margin-top:-50px}
 }.locations-list-wrap{width:100%}@media screen and (min-width:48em){.locations-list-wrap{float:left;width:30%}
 }.ginput_container_select{position:relative}.ginput_container_select .drop{background-color:#f5d8c0;border:2px solid #8b2332;border-radius:5px;color:#8b2332;margin-bottom:5px;height:48px;padding:5px 10px;line-height:48px}
-.dropdown-arrow-style{position:relative}.location-item{margin-bottom:30px}.location-item .location-name{text-transform:uppercase;font-family:"Gotham";font-weight:bold;font-size:18px;font-size:1.125rem;margin:0}
+.dropdown-arrow-style{position:relative}.coming-soon-header{font-family:"Gotham";font-weight:bold;font-size:18px;font-size:1.125rem;border-top:1px solid #8b2332}
+.location-item{margin-bottom:30px}.location-item .location-name{text-transform:uppercase;font-family:"Gotham";font-weight:bold;font-size:18px;font-size:1.125rem;margin:0}
 .location-item p{margin:0;line-height:1.2em;font-family:"GothamNarrow";font-size:20px;font-size:1.25rem}
 .location-item .phone-number{font-weight:400}.location-item .address{font-weight:300}
 .validation_message{background-color:#8b2332;color:#ffe7cc;padding-left:30px;position:relative;font-family:"Gotham";float:left;padding:0 10px 0 40px;border-radius:7px;font-size:14px;font-size:.875rem}
 .validation_message:before{content:"!";font-family:"Gotham";font-weight:bold;text-align:center;border-radius:7px;position:absolute;left:0;top:0;height:100%;width:30px;background-color:#9d4446}
+.gforms_confirmation_message{font-family:"Gotham";color:#8b2332}
 .page-template-page-templatestemplate-left-col-php h1.entry-title{margin:0;text-align:right}
 @media screen and (min-width:48em){.page-template-page-templatestemplate-left-col-php #main{display:-webkit-flex;display:-ms-flexbox;display:flex}
 }@media screen and (min-width:0){.page-template-page-templatestemplate-left-col-php #main #primary{float:left;display:block;margin-right:14.28571%;width:214.28571%}
