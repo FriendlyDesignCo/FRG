@@ -2,6 +2,31 @@
 
 
 	$(document).ready(function() {
+		$('.footer-right').on('DOMNodeInserted', function(e) {
+		    if ($(e.target).is('.gfield_description.validation_message')) {
+		       //DoSomething($(e.target));
+		       alert("added");
+		    }
+		});
+
+
+
+		$("#gform_submit_button_2").click(function() {
+			setTimeout(function(){ 
+				if($(".footer-right #field_2_2").hasClass("gfield_error")) {
+					$(".footer-right .ginput_container_email input").attr("placeholder", $("#field_2_2 .validation_message").text());
+					$(".footer-right .ginput_container_email input").css("background-color","#8B2332")
+					//alert($(".ginput_container_email .validation_message").text());
+					console.log("msg: "+$("#field_2_2 .validation_message").text());
+				}
+			}, 500);
+			
+		});
+		
+		
+		$(".footer-right #field_2_2").change(function() {
+			alert("here");
+		});
 
 		$("#secondary-nav .reservation-widget a.reservation").click(function(e) {
 			e.preventDefault();

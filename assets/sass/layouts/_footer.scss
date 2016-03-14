@@ -28,7 +28,9 @@ footer {
     }
     .gform_wrapper {
         
-
+        .validation_message {
+            display: none !important;
+        }
         input {
             height: 40px;
             margin: 0;

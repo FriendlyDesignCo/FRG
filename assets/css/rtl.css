@@ -4142,6 +4142,8 @@ footer {
       footer .gform_body {
         height: 42px;
         border-radius: 8px; } }
+  footer .gform_wrapper .validation_message {
+    display: none !important; }
   footer .gform_wrapper input {
     height: 40px;
     margin: 0;
