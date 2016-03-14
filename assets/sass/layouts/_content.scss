@@ -1406,7 +1406,7 @@ ul.job-list-dots {
 
 #content {
     .hero-image {
-        margin-bottom: 35px;
+        //margin-bottom: 35px;
         height: 170px;
         overflow: hidden;
         background-size: cover;
@@ -1469,9 +1469,15 @@ ul.job-list-dots {
 
 .single-post {
     .site-content {
-        padding-top: 50px;
+        padding-top: 100px;
         @include media($md) {
             padding-top: 150px;
+        }
+    }
+    .entry-content {
+        padding: 60px 5% 0;
+        @include media($md) {
+
         }
     }
 }
@@ -1499,29 +1505,45 @@ ul.job-list-dots {
     }
 
 .sidebar-text {
-    background-color: $light-red;
-    color: $tan;
-    border-radius: 20px;
+    
+    color: $dark-red;
+    
     line-height: 1.2em;
     font-family: $caslon;
     font-style: italic;
     position: relative;
+    border-top: 1px solid $dark-red;
+    border-bottom: 1px solid $dark-red;
     @include media($md) {
+        border: none;
+        border-radius: 20px;
+        color: $tan;
+        background-color: $light-red;
         width: 250px;
     }
     a {
         display: block;
-        padding: 20px 20px 50px;
-        color: $tan;
+        padding: 20px 0;
+        
+        color: $dark-red;
+        @include media($md) {
+            padding: 20px 20px 50px;
+            color: $tan;
+        }
     }
     &.right {
-        margin-left: 20px;
+        @include media($md) {
+            margin-left: 20px;    
+        }
+        
     }
     &.left {
-        margin-right: 20px;
+        @include media($md) {
+            margin-right: 20px;    
+        }
     }
     .twitter-icon {
-        content: "";
+        
         position: absolute;
         width: 20px;
         height: 20px;
@@ -1530,6 +1552,10 @@ ul.job-list-dots {
         //background-color: black;
         right: 20px;
         bottom: 10px;
+        display: none;
+        @include media($md) {
+            display: block;
+        }
     }
 }
 

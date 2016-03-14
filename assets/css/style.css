@@ -2795,7 +2795,6 @@ ul.job-list-dots {
 
 /********* post **********/
 #content .hero-image {
-  margin-bottom: 35px;
   height: 170px;
   overflow: hidden;
   background-size: cover;
@@ -2848,10 +2847,13 @@ ul.job-list-dots {
       top: 150px; } }
 
 .single-post .site-content {
-  padding-top: 50px; }
+  padding-top: 100px; }
   @media screen and (min-width: 48em) {
     .single-post .site-content {
       padding-top: 150px; } }
+
+.single-post .entry-content {
+  padding: 60px 5% 0; }
 
 @media screen and (min-width: 48em) {
   .blog-list {
@@ -2874,33 +2876,46 @@ ul.job-list-dots {
       font-size: 1.25rem; } }
 
 .sidebar-text {
-  background-color: #9D4446;
-  color: #FFE7CC;
-  border-radius: 20px;
+  color: #8B2332;
   line-height: 1.2em;
   font-family: "adobe-caslon-pro";
   font-style: italic;
-  position: relative; }
+  position: relative;
+  border-top: 1px solid #8B2332;
+  border-bottom: 1px solid #8B2332; }
   @media screen and (min-width: 48em) {
     .sidebar-text {
+      border: none;
+      border-radius: 20px;
+      color: #FFE7CC;
+      background-color: #9D4446;
       width: 250px; } }
   .sidebar-text a {
     display: block;
-    padding: 20px 20px 50px;
-    color: #FFE7CC; }
-  .sidebar-text.right {
-    margin-left: 20px; }
-  .sidebar-text.left {
-    margin-right: 20px; }
+    padding: 20px 0;
+    color: #8B2332; }
+    @media screen and (min-width: 48em) {
+      .sidebar-text a {
+        padding: 20px 20px 50px;
+        color: #FFE7CC; } }
+  @media screen and (min-width: 48em) {
+    .sidebar-text.right {
+      margin-left: 20px; } }
+  @media screen and (min-width: 48em) {
+    .sidebar-text.left {
+      margin-right: 20px; } }
   .sidebar-text .twitter-icon {
-    content: "";
     position: absolute;
     width: 20px;
     height: 20px;
     background-size: cover;
     background-position: center;
     right: 20px;
-    bottom: 10px; }
+    bottom: 10px;
+    display: none; }
+    @media screen and (min-width: 48em) {
+      .sidebar-text .twitter-icon {
+        display: block; } }
 
 .quote-attribution {
   margin-top: 10px; }
