@@ -3887,8 +3887,9 @@ select.source {
   background-image: none !important;
   background-color: #FFE7CC !important; }
 
-.reservation-page .form-wrap {
-  padding: 0 10vw; }
+@media screen and (min-width: 48em) {
+  .reservation-page .form-wrap {
+    padding: 0 10vw; } }
 
 .reservation_image_wrap {
   width: 100%; }

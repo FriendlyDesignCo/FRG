@@ -2620,7 +2620,10 @@ select.source {
 
 .reservation-page {
     .form-wrap {
-        padding: 0 10vw;
+        
+        @include media($md) {
+            padding: 0 10vw;    
+        }
     }
 }
 

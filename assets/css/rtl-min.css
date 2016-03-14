@@ -491,8 +491,8 @@ input.datepicker{position:relative}.datepicker{font-size:16px;font-size:1rem}@me
 .dropdown-list li{padding:20px 30px;cursor:pointer;line-height:1em;transition:all .3s}
 .dropdown-list li:hover{background-color:#9d4446}.date-input{display:block}.date-input input{padding-left:30px}
 .datepicker table tr td.today{background-image:none !important;background-color:#ffe7cc !important}
-.reservation-page .form-wrap{padding:0 10vw}.reservation_image_wrap{width:100%}@media screen and (min-width:48em){.reservation_image_wrap{width:50%}
-}.contact-page-text h3{font-family:"GothamNarrow";font-weight:400;font-size:26px;font-size:1.625rem}
+@media screen and (min-width:48em){.reservation-page .form-wrap{padding:0 10vw}}.reservation_image_wrap{width:100%}
+@media screen and (min-width:48em){.reservation_image_wrap{width:50%}}.contact-page-text h3{font-family:"GothamNarrow";font-weight:400;font-size:26px;font-size:1.625rem}
 .contact-page-text p{font-family:"GothamNarrow";font-weight:300;font-size:20px;font-size:1.25rem}
 .contact-form-wrap{position:relative;float:left;width:100%;margin-bottom:30px}@media screen and (min-width:48em){.contact-form-wrap{width:70%;padding:0 50px}
 }.contact-form-wrap .validation_error{display:none}.contact-field.field-half-width{width:100%;float:left;height:130px}

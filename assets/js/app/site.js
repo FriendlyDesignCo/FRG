@@ -2,13 +2,6 @@
 
 
 	$(document).ready(function() {
-		$('.footer-right').on('DOMNodeInserted', function(e) {
-		    if ($(e.target).is('.gfield_description.validation_message')) {
-		       //DoSomething($(e.target));
-		       alert("added");
-		    }
-		});
-
 
 		$("#gform_submit_button_2").click(function() {
 			setTimeout(function(){ 
@@ -93,7 +86,6 @@
 
 
 		$( ".form-group select" ).change(function() {
-		  alert( "Handler for .change() called." );
 		  var index = $(this).index();
 
 		  if($(this).parent().hasClass("time-list")) {
