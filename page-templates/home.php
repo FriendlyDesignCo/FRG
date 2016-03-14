@@ -321,7 +321,6 @@ get_header(); ?>
 		<script>
 			new ScrollMagic.Scene({triggerElement: "#cookie-header-trigger", duration: "100%", offset: "-50"})
 					.setPin(".mobile-screen .slide-6 h2")
-					.addIndicators()
 					.addTo(controller);	
 			new ScrollMagic.Scene({triggerElement: "#cookie-header-trigger", duration: "100%"})
 					.setPin(".desktop-screen .slide-6 h2")
@@ -399,22 +398,22 @@ get_header(); ?>
 						.setTween(".mobile-screen p#highlighted2", { x: "-106%", y: "90%", scale: 1.4 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p#highlighted6", { x: "15%", y: "170%", scale: 2 })
+						.setTween(".mobile-screen p#highlighted6", { x: "18%", y: "170%", scale: 2 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p#highlighted9", { x: "80%", y: "100%", scale: 1.44 })
+						.setTween(".mobile-screen p#highlighted9", { x: "90%", y: "100%", scale: 1.44 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".mobile-screen p#highlighted20", { x: "-135%", y: "-350%", scale: 1.66 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p#highlighted21", { x: "-178%", y: "-130%", scale: 1.66 })
+						.setTween(".mobile-screen p#highlighted21", { x: "-173%", y: "-130%", scale: 1.66 })
 						.addTo(controller);	
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p.hidden-1", { x: "244%", y: "-296%", scale: 1.3 })
+						.setTween(".mobile-screen p.hidden-1", { x: "259%", y: "-296%", scale: 1.3 })
 						.addTo(controller);		
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p.hidden-2", { x: "174%", y: "-455%", scale: 1.3 })
+						.setTween(".mobile-screen p.hidden-2", { x: "180%", y: "-455%", scale: 1.3 })
 						.addTo(controller);							
 		</script>
 		</div>
