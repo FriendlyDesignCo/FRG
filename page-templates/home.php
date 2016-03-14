@@ -350,25 +350,25 @@ get_header(); ?>
 			
 			// desktop 
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".desktop-screen p#highlighted2", { x: "-135%", y: "20%", scale: 1.4 })
+						.setTween(".desktop-screen p#highlighted2", { x: "-133%", y: "20%", scale: 1.4 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".desktop-screen p#highlighted6", { x: "10%", y: "60%", scale: 1.86 })
+						.setTween(".desktop-screen p#highlighted6", { x: "16%", y: "60%", scale: 1.86 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".desktop-screen p#highlighted9", { x: "80%", y: "70%", scale: 1.44 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".desktop-screen p#highlighted20", { x: "-156%", y: "-210%", scale: 1.66 })
+						.setTween(".desktop-screen p#highlighted20", { x: "-149%", y: "-210%", scale: 1.66 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".desktop-screen p#highlighted21", { x: "-170%", y: "-50%", scale: 1.66 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".desktop-screen p.hidden-1", { x: "280%", y: "-150%", scale: 1.3 })
+						.setTween(".desktop-screen p.hidden-1", { x: "291%", y: "-150%", scale: 1.3 })
 						.addTo(controller);		
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".desktop-screen p.hidden-2", { x: "200%", y: "-280%", scale: 1.3 })
+						.setTween(".desktop-screen p.hidden-2", { x: "207%", y: "-280%", scale: 1.3 })
 						.addTo(controller);		
 
 			// tablet 	
@@ -385,7 +385,7 @@ get_header(); ?>
 						.setTween(".tablet-screen p#highlighted20", { x: "-104%", y: "-224%", scale: 1.66 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".tablet-screen p#highlighted21", { x: "-145%", y: "-50%", scale: 1.66 })
+						.setTween(".tablet-screen p#highlighted21", { x: "-167%", y: "-50%", scale: 1.66 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".tablet-screen p.hidden-1", { x: "292%", y: "-190%", scale: 1.2 })

@@ -117,6 +117,22 @@
 							var	selected_time = "t1";
 							var	selected_party_size = "s1";
 
+							$(".location-picker").change(function() {
+								
+								var selected_location = $( ".location-picker option:selected").val();
+								if(selected_location == 24712) {
+									$(".phone-number").text("202-822-8783");
+
+								} else if(selected_location == 70411) {
+									$(".phone-number").text("301-340-8783");
+								} else if(selected_location == 150769) {
+									$(".phone-number").text("703-442-8783");
+								} else if(selected_location == 93802) {
+									$(".phone-number").text("202-298-8783");
+								}
+							});	
+
+
 							$('.dropdown ul li').click(function() {
 								// variables for what is selected
 								
@@ -163,7 +179,7 @@
 								        break;
 								    default:
 								        $(this).parent().parent().children(".source").val(text);
-								        $(".phone-number").text("");
+								        //$(".phone-number").text("");
 								}
 
 								if($(this).parent().hasClass("time-list")) {
@@ -315,7 +331,7 @@
 						            <ul class="dropdown-list list-unstyled" style="display: none;"></ul>
 							     
 							          
-									<select name="RestaurantID" class="source form-control selectpicker" onchange="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value">
+									<select name="RestaurantID" class="source form-control selectpicker location-picker" onchange="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value">
 										<option value="0" class="hidden">LOCATION</option>
 										<option value="24712">Founding Farmers DC</option>
 										<option value="70411">MoCo’s Founding Farmers</option>

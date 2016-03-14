@@ -86,7 +86,6 @@
 
 
 		$( ".form-group select" ).change(function() {
-		  alert( "Handler for .change() called." );
 		  var index = $(this).index();
 
 		  if($(this).parent().hasClass("time-list")) {
