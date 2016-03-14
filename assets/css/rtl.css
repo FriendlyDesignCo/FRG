@@ -746,6 +746,17 @@ ol:nth-child(n+2) {
 p {
   line-height: 1.58em; }
 
+.entry-content .wp-caption-text {
+  margin: 0;
+  color: #8B2332;
+  line-height: 1.2em;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  font-family: "Gotham";
+  border-bottom: 1px solid #8B2332;
+  padding-bottom: 10px; }
+
 .blog-item .category {
   font-size: 18px;
   font-size: 1.125rem;
@@ -1607,6 +1618,20 @@ header label {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+
+@media screen and (min-width: 48em) {
+  .alignleft {
+    float: left; } }
+
+@media screen and (min-width: 48em) {
+  .alignright {
+    float: right; } }
+
+.wp-caption.alignleft {
+  margin-right: 10px; }
+
+.wp-caption.alignright {
+  margin-left: 10px; }
 
 .glyphicon {
   position: relative;
@@ -2937,6 +2962,52 @@ ul.job-list-dots {
     font-style: normal;
     font-size: 11px;
     font-size: 0.6875rem; }
+
+.article-share {
+  margin: 50px 0 30px; }
+  .article-share h4 {
+    font-family: "Gotham";
+    font-weight: bold;
+    font-size: 18px;
+    font-size: 1.125rem;
+    text-transform: uppercase; }
+  .article-share ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style-type: none; }
+  .article-share a {
+    color: #FFE7CC;
+    font-family: "Gotham";
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-size: 0.875rem;
+    display: block; }
+    .article-share a:hover {
+      text-decoration: none; }
+
+.share-button {
+  display: inline-block;
+  background-color: #8B2332;
+  padding: 5px 50px 5px 10px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all .2s;
+  margin-right: 5px; }
+  .share-button:hover {
+    background-color: #9D4446; }
+  .share-button .icon {
+    background-color: #9D4446;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    text-align: center; }
+  .share-button .dashicons {
+    line-height: 40px; }
 
 .beverages-section h2 {
   font-size: 28px;

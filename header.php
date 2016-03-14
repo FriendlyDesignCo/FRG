@@ -40,6 +40,21 @@
 	<script src="https://use.typekit.net/zwk6xpd.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+
+
+	<meta property="og:url"           content="<?php the_permalink (); ?>" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="<?php bloginfo('name'); ?> | <?php the_title( $ID ); ?>" />
+    <meta property="og:description"   content="<?php bloginfo('description'); ?>" />
+    
+    <?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' ) ?>
+	<meta property="og:image" content="<?php echo $image_url[0] ?>" />
+    
+    <meta property="og:image" content="<?php echo get_site_url(); ?>/wp-content/uploads/logos/frg-logo-dark.svg" />
+
+    
+ 
+
 	<link rel="stylesheet" id="dashicons-css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.css" type="text/css" media="all">
 	<link rel="stylesheet" id="" href="<?php echo get_template_directory_uri(); ?>/assets/css/unslider.css " type="text/css" media="all">
 	<link rel="stylesheet" id="" href="<?php echo get_template_directory_uri(); ?>/assets/css/unslider-dots.css " type="text/css" media="all">
@@ -236,6 +251,23 @@
 </head>
 
 <body <?php body_class(); ?>>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1578831835770878',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <?php tha_body_top(); ?>
 
 <div id="page" class="hfeed site">

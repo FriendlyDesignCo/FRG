@@ -4,6 +4,28 @@
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+
+.alignleft {
+    @include media($md) {
+        float: left;
+    }
+}
+
+.alignright {
+    @include media($md) {
+        float: right;
+    }
+}
+
+.wp-caption {
+    &.alignleft {
+        margin-right: 10px;
+    }
+    &.alignright {
+        margin-left: 10px;
+    }
+}
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -1576,6 +1598,62 @@ ul.job-list-dots {
         font-weight: 500;
         font-style: normal;
         @include fontSize(11px);
+    }
+}
+
+.article-share {
+    margin: 50px 0 30px;
+    h4 {
+        font-family: "Gotham";
+        font-weight: bold;
+        @include fontSize(18px);
+        text-transform: uppercase;
+
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        list-style-type: none;
+    }
+    a {
+        color: $tan;
+        font-family: "Gotham";
+        font-weight: 500;
+        text-transform: uppercase;
+        @include fontSize(14px);
+        display: block;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+}
+
+.share-button {
+    display: inline-block;
+    background-color: $dark-red;
+    padding: 5px 50px 5px 10px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all .2s;
+    margin-right: 5px;
+    &:hover {
+        background-color: $light-red;
+    }
+    .icon {
+        background-color: $light-red;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 100%;
+        text-align: center;
+    }
+    .dashicons {
+        line-height: 40px;
+
     }
 }
 

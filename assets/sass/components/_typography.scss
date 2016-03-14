@@ -246,6 +246,16 @@ p {
     line-height: 1.58em;
 }
 
+.entry-content .wp-caption-text {
+    margin: 0;
+    color: $dark-red;
+    line-height: 1.2em;
+    @include fontSize(13px);
+    font-weight: 500;
+    font-family: "Gotham";
+    border-bottom: 1px solid $dark-red;
+    padding-bottom: 10px;
+  }
 
 .blog-item {
     .category {
