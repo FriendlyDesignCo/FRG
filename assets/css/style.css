@@ -3691,6 +3691,10 @@ input.datepicker {
 
 @media screen and (min-width: 48em) {
   .form_wrap-inner.left {
+    padding: 0 10px; } }
+
+@media screen and (min-width: 64em) {
+  .form_wrap-inner.left {
     padding: 0 40px; } }
 
 .OT_searchWrapperAll {
@@ -3883,15 +3887,24 @@ select.source {
   background-image: none !important;
   background-color: #FFE7CC !important; }
 
-@media screen and (min-width: 48em) {
-  .reservation-page .form-wrap {
-    padding: 0 10vw; } }
+.reservation-page .form-wrap {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px; }
+  @media screen and (min-width: 64em) {
+    .reservation-page .form-wrap {
+      padding: 0 10vw; } }
 
 .reservation_image_wrap {
   width: 100%; }
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 64em) {
     .reservation_image_wrap {
       width: 50%; } }
+  .reservation_image_wrap img {
+    margin-top: -30px; }
+    @media screen and (min-width: 64em) {
+      .reservation_image_wrap img {
+        max-height: 530px; } }
 
 .contact-page-text h3 {
   font-family: "GothamNarrow";

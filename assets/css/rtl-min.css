@@ -462,7 +462,8 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .tooltip.tooltip-no-border:after{content:"";position:absolute;top:100%;left:50%;width:0;height:0;border-top:.5em solid #8b2332;border-left:.5em solid transparent;border-right:.5em solid transparent;margin-left:-0.5em}
 .tooltip.tooltip-no-border:before{content:"";position:absolute;top:100%;left:50%;width:0;height:0;border-top:.5em solid false;border-left:.5em solid transparent;border-right:.5em solid transparent;margin-left:-0.5em}
 input.datepicker{position:relative}.datepicker{font-size:16px;font-size:1rem}@media screen and (min-width:48em){.form_wrap-inner{width:50%}
-}@media screen and (min-width:48em){.form_wrap-inner.left{padding:0 40px}}.OT_searchWrapperAll{width:100%;background-color:#9d4446;padding:20px 20px 5px;font-size:22px;font-size:1.375rem;font-family:"Gotham"}
+}@media screen and (min-width:48em){.form_wrap-inner.left{padding:0 10px}}@media screen and (min-width:64em){.form_wrap-inner.left{padding:0 40px}
+}.OT_searchWrapperAll{width:100%;background-color:#9d4446;padding:20px 20px 5px;font-size:22px;font-size:1.375rem;font-family:"Gotham"}
 .OT_searchWrapperAll .form-header{font-family:"Gotham";font-size:22px;font-size:1.375rem;color:#ffe7cc;font-style:normal;text-align:center;font-weight:400;text-transform:uppercase}
 .OT_searchWrapperAll .contact-text{color:#ffe7cc;font-size:16px;font-size:1rem;line-height:1.2em;text-align:center;text-transform:none}
 .OT_searchWrapperAll form{margin-bottom:30px}.OT_searchWrapperAll .phone-number{display:block;font-size:18px;font-size:1.125rem;margin-top:20px;font-weight:500}
@@ -488,8 +489,10 @@ input.datepicker{position:relative}.datepicker{font-size:16px;font-size:1rem}@me
 .dropdown-list li{padding:20px 30px;cursor:pointer;line-height:1em;transition:all .3s;font-size:18px;font-size:1.125rem}
 .dropdown-list li:hover{background-color:#9d4446}.date-input{display:block}.date-input input{padding-left:30px}
 .datepicker table tr td.today{background-image:none !important;background-color:#ffe7cc !important}
-@media screen and (min-width:48em){.reservation-page .form-wrap{padding:0 10vw}}.reservation_image_wrap{width:100%}
-@media screen and (min-width:48em){.reservation_image_wrap{width:50%}}.contact-page-text h3{font-family:"GothamNarrow";font-weight:400;font-size:26px;font-size:1.625rem}
+.reservation-page .form-wrap{float:left;width:100%;margin-bottom:40px}@media screen and (min-width:64em){.reservation-page .form-wrap{padding:0 10vw}
+}.reservation_image_wrap{width:100%}@media screen and (min-width:64em){.reservation_image_wrap{width:50%}
+}.reservation_image_wrap img{margin-top:-30px}@media screen and (min-width:64em){.reservation_image_wrap img{max-height:530px}
+}.contact-page-text h3{font-family:"GothamNarrow";font-weight:400;font-size:26px;font-size:1.625rem}
 .contact-page-text p{font-family:"GothamNarrow";font-weight:300;font-size:20px;font-size:1.25rem}
 .contact-form-wrap{position:relative;float:left;width:100%;margin-bottom:30px}@media screen and (min-width:48em){.contact-form-wrap{width:70%;padding:0 50px}
 }.contact-form-wrap .validation_error{display:none}.contact-field.field-half-width{width:100%;float:left;height:130px}
