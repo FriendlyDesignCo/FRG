@@ -38,7 +38,8 @@ table{border-collapse:collapse;border-spacing:0}@font-face{font-family:'Gotham';
 @font-face{font-family:'GothamNarrow';src:url("../fonts/GothamNarrow-MediumItalic.eot?#iefix") format("embedded-opentype"),url("../fonts/GothamNarrow-MediumItalic.otf") format("opentype"),url("../fonts/GothamNarrow-MediumItalic.woff") format("woff"),url("../fonts/GothamNarrow-MediumItalic.ttf") format("truetype"),url("../fonts/GothamNarrow-MediumItalic.svg#GothamNarrow-MediumItalic") format("svg");font-weight:500;font-style:italic}
 @font-face{font-family:'Gotham';src:url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"),url("../fonts/Gotham-Bold.otf") format("opentype"),url("../fonts/Gotham-Bold.woff") format("woff"),url("../fonts/Gotham-Bold.ttf") format("truetype"),url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");font-weight:bold;font-style:normal}
 @font-face{font-family:'Gotham';src:url("../fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"),url("../fonts/Gotham-Book.otf") format("opentype"),url("../fonts/Gotham-Book.woff") format("woff"),url("../fonts/Gotham-Book.ttf") format("truetype"),url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg");font-weight:normal;font-style:normal}
-html{font-size:100%}body{font-size:20px;font-size:1.25rem;color:#000}h1,h2,h3,h4,h5,h6{clear:both;float:none;line-height:1.25em;margin-bottom:20px;color:#8b2332;margin-top:0}
+html{font-size:100%}body{font-size:20px;font-size:1.25rem;color:#000;font-family:"Gotham"}
+h1,h2,h3,h4,h5,h6{clear:both;float:none;line-height:1.25em;margin-bottom:20px;color:#8b2332;margin-top:0}
 h1::after,h2::after,h3::after,h4::after,h5::after,h6::after{clear:both;content:"";display:table}
 h1{font-size:75px;font-size:4.6875rem}h2{font-size:50px;font-size:3.125rem}h3{font-size:35px;font-size:2.1875rem}
 h4{font-size:24px;font-size:1.5rem}h5{font-size:20px;font-size:1.25rem}h6{font-size:18px;font-size:1.125rem}

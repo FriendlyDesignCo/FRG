@@ -642,7 +642,8 @@ html {
 body {
   font-size: 20px;
   font-size: 1.25rem;
-  color: #000; }
+  color: #000;
+  font-family: "Gotham"; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;

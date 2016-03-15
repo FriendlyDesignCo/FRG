@@ -139,6 +139,7 @@ html {
 body {
     @include fontSize($base-font-size);
     color: $primary-font-color;
+    font-family: "Gotham";
 }
 h1, h2, h3, h4, h5, h6 {
     @include clearfix;
