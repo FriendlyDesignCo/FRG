@@ -285,10 +285,16 @@ ul.sub-menu {
             padding: 10px;
         }
     }
+    .phone-number a {
+        background-color: $light-red;
+    }
     &:hover {
         a {
             background-color: $dark-red;
             text-decoration: none;
+        }
+        .phone-number a {
+            background-color: $light-red;
         }
     }
 }

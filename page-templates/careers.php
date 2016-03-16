@@ -16,7 +16,7 @@ get_header(); ?>
 		(function($) {
 			if ($(window).width() < 768) {
 	             $('body').addClass("mobile-screen");
-	             animation_duration = 400;
+	             animation_duration = 300;
 	        }
 	        else if ($(window).width() < 1024) {
 	             $('body').addClass("tablet-screen");
@@ -268,6 +268,7 @@ get_header(); ?>
 							.setTween(".career-slide-<?php echo $slide_number+1;?>", { opacity:1, delay: 0.5,zIndex:8})
 							.addTo(controller);
 				
+				
 				// sprinkler animations
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
 							//.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .water", { scale: 1.4, opacity: 0})
@@ -304,6 +305,7 @@ get_header(); ?>
 
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>", duration: "100%"})
 							.setClassToggle(".dot-<?php echo $slide_number;?>", "active") // add class toggle
+							.addIndicators()
 							.addTo(controller);
 			</script>
 		
@@ -335,8 +337,7 @@ get_header(); ?>
 	<section class="section careers-section last-slide section-wrap">
 		<div class="section-inner">
 			<h2 class="small">Ready to start your journey?</h2>
-			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '3');" href="<?php the_field('apply_link') ?>">Apply</a>
-
+			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '3');" href="<?php the_field('apply_link') ?>" target="_blank">Apply</a>
 	</section>
 </div><!-- .page-wrap -->
 <?php get_footer(); ?>

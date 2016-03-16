@@ -102,6 +102,9 @@ button#load-more.done {
     font-size: 22vw;
     margin: 0;
     color: #FFFDD4;
+    font-family: "Numbers Claimcheck A", "Numbers Claimcheck B" !important;
+    font-style: normal;
+    font-weight: 400;
     @include media($md) {
         @include fontSize(177px);    
     }
@@ -781,42 +784,42 @@ ul.positions {
 #career-trigger2 {
     //top: 250vh;
     @include media($md) {
-        top: 250vh;
+        top: 200vh;
     }
 }
 
 #career-trigger3 {
     //top: 350vh;
     @include media($md) {
-        top: 350vh;
+        top: 300vh;
     }
 }
 
 #career-trigger4 {
     //top: 450vh;
     @include media($md) {
-        top: 450vh;
+        top: 400vh;
     }
 }
 
 #career-trigger5 {
     //top: 550vh;
     @include media($md) {
-        top: 550vh;
+        top: 500vh;
     }
 }
 
 #career-trigger6 {
     //top: 650vh;
     @include media($md) {
-        top: 650vh;
+        top: 600vh;
     }
 }
 
 #career-trigger7 {
     //top: 750vh;
     @include media($md) {
-        top: 750vh;
+        top: 700vh;
     }
 }
 
@@ -869,7 +872,7 @@ ul.positions {
         }
     }
     &.slide-wrap {
-        height: 500vh;
+        height: 400vh;
         @include media($mdbg) {
             height: 650vh;   
         }
@@ -1026,7 +1029,7 @@ h2.career-title {
 .case-study-card-blurb {
     float: right;
     width: 75%;
-    padding: 15px;
+    padding: 13px;
     @include media($md) {
         padding: 10px;
     }
@@ -2630,6 +2633,9 @@ select.source {
         @include fontSize(18px);
         &:hover {
             background-color: $light-red;
+        }
+        &:first-of-type {
+            display: none;
         }
     }
 }

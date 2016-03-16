@@ -1236,9 +1236,13 @@ ul.sub-menu {
     @media screen and (min-width: 64em) {
       .reservation-widget a {
         padding: 10px; } }
+  .reservation-widget .phone-number a {
+    background-color: #9D4446; }
   .reservation-widget:hover a {
     background-color: #8B2332;
     text-decoration: none; }
+  .reservation-widget:hover .phone-number a {
+    background-color: #9D4446; }
 
 #primary-nav {
   display: none; }
@@ -1685,7 +1689,10 @@ button#load-more.done {
 .numbers-counting {
   font-size: 22vw;
   margin: 0;
-  color: #FFFDD4; }
+  color: #FFFDD4;
+  font-family: "Numbers Claimcheck A", "Numbers Claimcheck B" !important;
+  font-style: normal;
+  font-weight: 400; }
   @media screen and (min-width: 48em) {
     .numbers-counting {
       font-size: 177px;
@@ -2240,27 +2247,27 @@ ul.positions {
 
 @media screen and (min-width: 48em) {
   #career-trigger2 {
-    top: 250vh; } }
+    top: 200vh; } }
 
 @media screen and (min-width: 48em) {
   #career-trigger3 {
-    top: 350vh; } }
+    top: 300vh; } }
 
 @media screen and (min-width: 48em) {
   #career-trigger4 {
-    top: 450vh; } }
+    top: 400vh; } }
 
 @media screen and (min-width: 48em) {
   #career-trigger5 {
-    top: 550vh; } }
+    top: 500vh; } }
 
 @media screen and (min-width: 48em) {
   #career-trigger6 {
-    top: 650vh; } }
+    top: 600vh; } }
 
 @media screen and (min-width: 48em) {
   #career-trigger7 {
-    top: 750vh; } }
+    top: 700vh; } }
 
 .career-slide-1 {
   z-index: 7; }
@@ -2301,7 +2308,7 @@ ul.positions {
       .careers-section.last-slide, .beverages-section.last-slide {
         padding-top: 30vh; } }
   .careers-section.slide-wrap, .beverages-section.slide-wrap {
-    height: 500vh; }
+    height: 400vh; }
     @media screen and (min-width: 64em) {
       .careers-section.slide-wrap, .beverages-section.slide-wrap {
         height: 650vh; } }
@@ -2440,7 +2447,7 @@ h2.career-title {
 .case-study-card-blurb {
   float: right;
   width: 75%;
-  padding: 15px; }
+  padding: 13px; }
   @media screen and (min-width: 48em) {
     .case-study-card-blurb {
       padding: 10px; } }
@@ -3908,6 +3915,8 @@ select.source {
     font-size: 1.125rem; }
     .dropdown-list li:hover {
       background-color: #9D4446; }
+    .dropdown-list li:first-of-type {
+      display: none; }
 
 .date-input {
   display: block; }

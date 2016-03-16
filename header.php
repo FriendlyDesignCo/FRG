@@ -15,6 +15,24 @@
 
     <?php tha_head_top(); ?>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/favicon-16x16.png">
+	<link rel="manifest" href="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="<?php echo get_site_url(); ?>/wp-content/uploads/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -40,6 +58,7 @@
 	<script src="https://use.typekit.net/zwk6xpd.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7451292/7375352/css/fonts.css" />
 
 
 	<meta property="og:url"           content="<?php the_permalink (); ?>" />
@@ -121,13 +140,13 @@
 									
 									var selected_location = $( ".location-picker option:selected").val();
 									if(selected_location == 24712) {
-										$(".phone-number").html("<a href='tel:1-202-822-8783'>202-822-8783</a>");
+										$(".contact-text .phone-number").html("<a href='tel:1-202-822-8783'>202-822-8783</a>");
 									} else if(selected_location == 70411) {
-										$(".phone-number").html("<a href='tel:1-301-340-8783'>301-340-8783</a>");
+										$(".contact-text .phone-number").html("<a href='tel:1-301-340-8783'>301-340-8783</a>");
 									} else if(selected_location == 150769) {
-										$(".phone-number").html("<a href='tel:1-703-442-8783'>703-442-8783</a>");
+										$(".contact-text .phone-number").html("<a href='tel:1-703-442-8783'>703-442-8783</a>");
 									} else if(selected_location == 93802) {
-										$(".phone-number").html("<a href='tel:1-202-298-8783'>202-298-8783</a>");
+										$(".contact-text .phone-number").html("<a href='tel:1-202-298-8783'>202-298-8783</a>");
 									}
 							});	
 
@@ -148,7 +167,7 @@
 								        // change to dc photo
 								        console.log("dc");
 								        selected_restaurant = 0;
-								        $(".phone-number").html("<a href='tel:1-202-822-8783'>202-822-8783</a>");
+								        $(".contact-text .phone-number").html("<a href='tel:1-202-822-8783'>202-822-8783</a>");
 								        switchImages("url_1", reservation_images[0]["image"]);
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[0]["image"] );
 								        break;
@@ -157,7 +176,7 @@
 								        $(this).parent().parent().children(".source").val(70411);
 								        // change to moco photo
 								        selected_restaurant = 1;
-								        $(".phone-number").html("<a href='tel:1-301-340-8783'>301-340-8783</a>");
+								        $(".contact-text .phone-number").html("<a href='tel:1-301-340-8783'>301-340-8783</a>");
 								        switchImages("url_1", reservation_images[1]["image"] );
 								        
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[1]["image"] );
@@ -167,7 +186,7 @@
 								        // change to tysons photo
 								        console.log("tysons");
 								        selected_restaurant = 2;
-								        $(".phone-number").html("<a href='tel:1-703-442-8783'>703-442-8783</a>");
+								        $(".contact-text .phone-number").html("<a href='tel:1-703-442-8783'>703-442-8783</a>");
 								        switchImages("url_1", reservation_images[2]["image"] );
 								        
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[2]["image"] );
@@ -177,7 +196,7 @@
 								        // change to ffb photo
 								        console.log("ffb");
 								        selected_restaurant = 3;
-								        $(".phone-number").html("<a href='tel:1-202-298-8783'>202-298-8783</a>");
+								        $(".contact-text .phone-number").html("<a href='tel:1-202-298-8783'>202-298-8783</a>");
 								        switchImages("url_1", reservation_images[3]["image"] );
 								        
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[3]["image"] );

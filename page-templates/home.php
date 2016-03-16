@@ -429,7 +429,7 @@ get_header(); ?>
 				<?php if( have_rows('slide_8_block') ): ?>
 					<?php while( have_rows('slide_8_block') ): the_row(); ?>
 					<div class="slide-8-block" style="background-image:url('<?php the_sub_field('block_background'); ?>')">
-						<a href="<?php the_sub_field('block_link'); ?>" targer="_blank">
+						<a href="<?php the_sub_field('block_link'); ?>" target="_blank">
 						<div class="slide-8-block-inner">
 							<div class="slide-8-header">
 								<img class="" src="<?php the_sub_field('block_icon'); ?>">
