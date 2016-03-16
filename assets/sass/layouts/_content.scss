@@ -197,7 +197,7 @@ button#load-more.done {
     width: 100%;
     position: relative;
     
-    padding: 10vh 5%;
+    padding: 120px 5%;
     @include media($mdbg) {
         text-align: center;
         padding: 15vh 10px;    
@@ -251,7 +251,7 @@ button#load-more.done {
     z-index: 4;
     position: relative;
     
-    @include media($md) {
+    @include media($mdbg) {
         @include background-image(linear-gradient(to top, $tan 90%, transparent));
         padding-top: 20vh;    
     }
@@ -282,6 +282,7 @@ button#load-more.done {
     //height: 550px;
     float: none;
     margin-bottom: 20px;
+    vertical-align: top;
     @include media($md) {
         
         width: 32%;
@@ -406,6 +407,7 @@ button#load-more.done {
     position: absolute;
     width: 90%;
     bottom: -275px;
+    transform: translate3d(0,0,0);
     @include media($md) {
         
         bottom: 30vh;
@@ -841,6 +843,9 @@ ul.positions {
 }
 
 
+.translate-3d {
+    transform: translate3d(0,0,0);
+}
 
 .careers-section, .beverages-section {
 
@@ -865,7 +870,7 @@ ul.positions {
     }
     &.slide-wrap {
         height: 500vh;
-        @include media($md) {
+        @include media($mdbg) {
             height: 650vh;   
         }
     }
@@ -934,6 +939,7 @@ h2.career-title {
     @include media($md) {
        width: 250px;
        float: right;
+       margin-bottom: 50px;
     }
     .compensation-header {
         font-family: "Gotham";
@@ -979,7 +985,7 @@ h2.career-title {
     font-weight: 700;
     //position: relative;
     display: none;
-    @include media($md) {
+    @include media($mdbg) {
         display: block;
         width: 48%;
         float: right;
@@ -992,6 +998,9 @@ h2.career-title {
         @include fontSize(14px);
         margin: 0;
         @include media($md) {
+            @include fontSize(18px);
+        }
+        @include media($mdbg) {
             @include fontSize(14px);
         }
     }
@@ -1045,11 +1054,16 @@ h2.career-title {
     }
     @include media($md) {
         left: 100px;
-        bottom: 0;
-        padding: 140px 70px 0;
-        height: auto;
+        bottom: -200px;
+        padding: 140px 20px 0;
+        height: 70vh;
         width: 75vw;
         overflow: visible;
+    }
+    @include media($mdbg) {
+        bottom: 0;
+        width: 75vw;
+        height: auto;
     }
     &.expanded {
         transform: scale(1);
@@ -1080,6 +1094,14 @@ h2.career-title {
         margin-bottom: 40px;
         padding: 10px;
         @include media($md) {
+            @include fontSize(20px);
+            margin-bottom: 0px;
+            font-weight: 500;
+            width: 40%;   
+            padding: 20px 20px 20px 30px; 
+            //height: 175px;
+        }
+        @include media($mdbg) {
             @include fontSize(20px);
             margin-bottom: 0px;
             font-weight: 500;
@@ -1382,10 +1404,12 @@ ul.job-list-dots {
     }
     @include media($md) {
         display: block;
-        @include outer-container(768px);   
+        @include outer-container(768px);  
+        padding: 0 15px; 
     }
     @include media($mdbg) {
         @include outer-container(1060px);   
+        padding: 0;
     }
 }
 .nav-dots ul {
@@ -2636,12 +2660,16 @@ select.source {
 
 .reservation_image_wrap {
     width: 100%;
-    @include media($mdbg) {
+    @include media($md) {
         width: 50%;
     }
     img {
         
         margin-top: -30px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
         @include media($mdbg) {
             max-height: 530px;
         }

@@ -424,7 +424,7 @@
 									<input type="hidden" id="RestaurantReferralID" name="RestaurantReferralID" value="0">
 									<input type="hidden" name="txtDateFormat" value="MM/dd/yyyy">
 									<input type="hidden" name="widget" value="reservpage">
-									<input type="submit" name="submit" value="SEARCH" class="button btn btn-submit" onmousedown="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value;fbq('track', 'Lead');" />
+									<input type="submit" name="submit" value="SEARCH" class="button btn btn-submit" onmousedown="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value;fbq('track', 'Lead'); ga('send', 'event', 'reserve', 'click', 'widget');" />
 								</div>
 
 							</form>	

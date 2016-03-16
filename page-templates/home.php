@@ -168,7 +168,7 @@ get_header(); ?>
 			<?php the_field('slide_3_paragraph'); ?>
 			
 			<script>
-				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%",offset: "-50"})
+				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%",offset: "-200"})
 							.setPin(".tablet-screen .flip-icons")
 							.addTo(controller);
 				new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "100%"})
@@ -317,10 +317,13 @@ get_header(); ?>
 	<section class="home-section slide-6">
 		<div id="ingredient-bold-trigger"></div>
 		<div id="cookie-header-trigger"></div>
-		<h2><?php the_field('slide_7_header'); ?></h2>
+		<h2 class="translate-3d"><?php the_field('slide_7_header'); ?></h2>
 		<script>
 			new ScrollMagic.Scene({triggerElement: "#cookie-header-trigger", duration: "100%", offset: "-50"})
 					.setPin(".mobile-screen .slide-6 h2")
+					.addTo(controller);	
+			new ScrollMagic.Scene({triggerElement: "#cookie-header-trigger", duration: "100%",offset: "-50"})
+					.setPin(".tablet-screen .slide-6 h2")
 					.addTo(controller);	
 			new ScrollMagic.Scene({triggerElement: "#cookie-header-trigger", duration: "100%"})
 					.setPin(".desktop-screen .slide-6 h2")
@@ -376,29 +379,29 @@ get_header(); ?>
 						.setTween(".tablet-screen p#highlighted2", { x: "-100%", y: "20%", scale: 1.4 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".tablet-screen p#highlighted6", { x: "77%", y: "70%", scale: 2.08 })
+						.setTween(".tablet-screen p#highlighted6", { x: "65%", y: "70%", scale: 2.08 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".tablet-screen p#highlighted9", { x: "95%", y: "70%", scale: 1.44 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".tablet-screen p#highlighted20", { x: "-104%", y: "-224%", scale: 1.66 })
+						.setTween(".tablet-screen p#highlighted20", { x: "-110%", y: "-242%", scale: 1.66 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".tablet-screen p#highlighted21", { x: "-167%", y: "-50%", scale: 1.66 })
+						.setTween(".tablet-screen p#highlighted21", { x: "-153%", y: "-50%", scale: 1.66 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".tablet-screen p.hidden-1", { x: "292%", y: "-190%", scale: 1.2 })
+						.setTween(".tablet-screen p.hidden-1", { x: "295%", y: "-190%", scale: 1.2 })
 						.addTo(controller);		
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".tablet-screen p.hidden-2", { x: "207%", y: "-310%", scale: 1.2 })
+						.setTween(".tablet-screen p.hidden-2", { x: "203%", y: "-310%", scale: 1.2 })
 						.addTo(controller);
 			// mobile 	
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".mobile-screen p#highlighted2", { x: "-106%", y: "90%", scale: 1.4 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p#highlighted6", { x: "18%", y: "170%", scale: 2 })
+						.setTween(".mobile-screen p#highlighted6", { x: "19%", y: "150%", scale: 2.1 })
 						.addTo(controller);			
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".mobile-screen p#highlighted9", { x: "90%", y: "100%", scale: 1.44 })
@@ -410,10 +413,10 @@ get_header(); ?>
 						.setTween(".mobile-screen p#highlighted21", { x: "-173%", y: "-130%", scale: 1.66 })
 						.addTo(controller);	
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p.hidden-1", { x: "259%", y: "-296%", scale: 1.3 })
+						.setTween(".mobile-screen p.hidden-1", { x: "262%", y: "-296%", scale: 1.3 })
 						.addTo(controller);		
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p.hidden-2", { x: "180%", y: "-455%", scale: 1.3 })
+						.setTween(".mobile-screen p.hidden-2", { x: "183%", y: "-455%", scale: 1.3 })
 						.addTo(controller);							
 		</script>
 		</div>

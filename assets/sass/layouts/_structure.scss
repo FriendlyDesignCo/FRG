@@ -86,9 +86,11 @@ html {
     }
     @include media($md) {
         @include outer-container(768px);   
+        padding: 0 15px;
     }
     @include media($mdbg) {
         @include outer-container(1024px);   
+        padding: 0;
     }
     .case-study {
         position: relative;
