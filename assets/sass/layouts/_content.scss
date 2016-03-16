@@ -197,7 +197,7 @@ button#load-more.done {
     width: 100%;
     position: relative;
     
-    padding: 120px 5%;
+    padding: 115px 5%;
     @include media($mdbg) {
         text-align: center;
         padding: 15vh 10px;    
@@ -884,7 +884,7 @@ ul.positions {
 }
 
 .careers-wrap {
-    padding-top: 100px;
+    //padding-top: 100px;
     @include media($md) {
         padding-top: 0;
     }
@@ -1106,7 +1106,7 @@ h2.career-title {
             margin-bottom: 0px;
             font-weight: 500;
             width: 40%;   
-            padding: 20px 20px 20px 30px; 
+            padding: 20px 20px 20px 70px; 
             height: 175px;
         }
     }

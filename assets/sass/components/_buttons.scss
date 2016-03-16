@@ -16,6 +16,9 @@
     background-color: $light-red;
     text-decoration: none;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 input[type="submit"] {

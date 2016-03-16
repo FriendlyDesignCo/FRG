@@ -19,7 +19,12 @@ get_header(); ?>
 			<?php if( have_rows('locations') ): ?>
 			<?php while( have_rows('locations') ): the_row(); ?>
 			<div class="location-item">
-				<h3 class="location-name"><a class="text-red" href="<?php the_sub_field('location_link'); ?>"><?php the_sub_field('location_name'); ?></a></h3>
+				<?php if(get_sub_field('location_link') != null) {?>
+					<h3 class="location-name"><a class="text-red" href="<?php the_sub_field('location_link'); ?>" target="_blank"><?php the_sub_field('location_name'); ?></a></h3>
+				<?php } else { ?>
+					<h3 class="location-name"><?php the_sub_field('location_name'); ?></h3>
+				<?php } ?>
+				
 				<p class="phone-number text-red"><?php the_sub_field('phone_number'); ?></p>
 				<p class="address"><?php the_sub_field('address_line_1'); ?></p>
 				<p class="address"><?php the_sub_field('address_line_2'); ?></p>

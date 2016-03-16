@@ -118,18 +118,18 @@
 							var	selected_party_size = "s1";
 
 							$(".location-picker").change(function() {
-								
-								var selected_location = $( ".location-picker option:selected").val();
-								if(selected_location == 24712) {
-									$(".phone-number").text("202-822-8783");
+									console.log("here");
+									var selected_location = $( ".location-picker option:selected").val();
+									if(selected_location == 24712) {
+										$(".phone-number").html("<a href='tel:1-202-822-8783'>202-822-8783</a>");
 
-								} else if(selected_location == 70411) {
-									$(".phone-number").text("301-340-8783");
-								} else if(selected_location == 150769) {
-									$(".phone-number").text("703-442-8783");
-								} else if(selected_location == 93802) {
-									$(".phone-number").text("202-298-8783");
-								}
+									} else if(selected_location == 70411) {
+										$(".phone-number").html("<a href='tel:1-301-340-8783'>301-340-8783</a>");
+									} else if(selected_location == 150769) {
+										$(".phone-number").html("703-442-8783");
+									} else if(selected_location == 93802) {
+										$(".phone-number").html("202-298-8783");
+									}
 							});	
 
 

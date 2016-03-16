@@ -695,7 +695,7 @@ strong, b {
 
 a, a:visited {
   text-decoration: none;
-  color: #8B2332; }
+  color: inherit; }
   a:hover, a:visited:hover {
     text-decoration: underline; }
 
@@ -871,6 +871,8 @@ h4 {
   .button:hover, #load-more:hover {
     background-color: #9D4446;
     text-decoration: none; }
+  .button:focus, #load-more:focus {
+    outline: none; }
 
 input[type="submit"] {
   -webkit-appearance: none;
@@ -1764,7 +1766,7 @@ button#load-more.done {
   float: left;
   width: 100%;
   position: relative;
-  padding: 120px 5%; }
+  padding: 115px 5%; }
   @media screen and (min-width: 64em) {
     .home-section, .section-wrap {
       text-align: center;
@@ -2310,17 +2312,17 @@ ul.positions {
     .beverages-page {
       padding-top: 0; } }
 
-.careers-wrap {
-  padding-top: 100px; }
-  @media screen and (min-width: 48em) {
-    .careers-wrap {
-      padding-top: 0; } }
-  .careers-wrap .slide-1 h2 {
-    margin: 0;
-    text-align: left; }
-  .careers-wrap .slide-1 p {
-    text-align: left;
-    line-height: 1.4em; }
+@media screen and (min-width: 48em) {
+  .careers-wrap {
+    padding-top: 0; } }
+
+.careers-wrap .slide-1 h2 {
+  margin: 0;
+  text-align: left; }
+
+.careers-wrap .slide-1 p {
+  text-align: left;
+  line-height: 1.4em; }
 
 h2.career-title {
   font-style: normal;
@@ -2521,7 +2523,7 @@ h2.career-title {
         margin-bottom: 0px;
         font-weight: 500;
         width: 40%;
-        padding: 20px 20px 20px 30px;
+        padding: 20px 20px 20px 70px;
         height: 175px; } }
   .case-study-card-expanded .case-study-paragraph {
     float: right;
