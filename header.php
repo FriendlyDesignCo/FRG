@@ -118,17 +118,16 @@
 							var	selected_party_size = "s1";
 
 							$(".location-picker").change(function() {
-									console.log("here");
+									
 									var selected_location = $( ".location-picker option:selected").val();
 									if(selected_location == 24712) {
 										$(".phone-number").html("<a href='tel:1-202-822-8783'>202-822-8783</a>");
-
 									} else if(selected_location == 70411) {
 										$(".phone-number").html("<a href='tel:1-301-340-8783'>301-340-8783</a>");
 									} else if(selected_location == 150769) {
-										$(".phone-number").html("703-442-8783");
+										$(".phone-number").html("<a href='tel:1-703-442-8783'>703-442-8783</a>");
 									} else if(selected_location == 93802) {
-										$(".phone-number").html("202-298-8783");
+										$(".phone-number").html("<a href='tel:1-202-298-8783'>202-298-8783</a>");
 									}
 							});	
 
@@ -147,8 +146,9 @@
 								    case "Founding Farmers DC":
 								        $(this).parent().parent().children(".source").val(24712);
 								        // change to dc photo
+								        console.log("dc");
 								        selected_restaurant = 0;
-								        $(".phone-number").text("202-822-8783");
+								        $(".phone-number").html("<a href='tel:1-202-822-8783'>202-822-8783</a>");
 								        switchImages("url_1", reservation_images[0]["image"]);
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[0]["image"] );
 								        break;
@@ -157,24 +157,29 @@
 								        $(this).parent().parent().children(".source").val(70411);
 								        // change to moco photo
 								        selected_restaurant = 1;
+								        $(".phone-number").html("<a href='tel:1-301-340-8783'>301-340-8783</a>");
 								        switchImages("url_1", reservation_images[1]["image"] );
-								        $(".phone-number").text("301-340-8783");
+								        
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[1]["image"] );
 								        break;
 								    case "Founding Farmers Tysons":
 								        $(this).parent().parent().children(".source").val(150769);
 								        // change to tysons photo
+								        console.log("tysons");
 								        selected_restaurant = 2;
+								        $(".phone-number").html("<a href='tel:1-703-442-8783'>703-442-8783</a>");
 								        switchImages("url_1", reservation_images[2]["image"] );
-								        $(".phone-number").text("703-442-8783");
+								        
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[2]["image"] );
 								        break;
 								    case "Farmers Fishers Bakers":
 								        $(this).parent().parent().children(".source").val(93802);
 								        // change to ffb photo
+								        console.log("ffb");
 								        selected_restaurant = 3;
+								        $(".phone-number").html("<a href='tel:1-202-298-8783'>202-298-8783</a>");
 								        switchImages("url_1", reservation_images[3]["image"] );
-								        $(".phone-number").text("202-298-8783");
+								        
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[3]["image"] );
 								        break;
 								    default:
