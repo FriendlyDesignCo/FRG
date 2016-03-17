@@ -316,6 +316,7 @@
 <?php tha_body_top(); ?>
 
 <div id="page" class="hfeed site">
+	<div class="vertical-line"></div>
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'some-like-it-neat' ); ?></a>
 
 	<?php tha_header_before(); ?>
