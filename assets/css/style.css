@@ -1697,18 +1697,6 @@ button#load-more.done {
   .spacer.s5 {
     top: 60%; }
 
-.numbers-counting {
-  font-size: 22vw;
-  margin: 0;
-  color: #FFFDD4;
-  font-family: "Numbers Claimcheck A", "Numbers Claimcheck B" !important;
-  font-style: normal;
-  font-weight: 400; }
-  @media screen and (min-width: 48em) {
-    .numbers-counting {
-      font-size: 177px;
-      font-size: 11.0625rem; } }
-
 .home-wrap .slide-1 {
   height: auto; }
   @media screen and (min-width: 48em) {
@@ -1819,6 +1807,19 @@ button#load-more.done {
     color: #FFFDD4;
     text-transform: uppercase;
     margin: 0; }
+
+h3.numbers-counting {
+  font-size: 22vw;
+  color: #FFFDD4;
+  font-family: "Numbers Claimcheck A", "Numbers Claimcheck B" !important;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: -20px;
+  margin-bottom: 15px; }
+  @media screen and (min-width: 48em) {
+    h3.numbers-counting {
+      font-size: 177px;
+      font-size: 11.0625rem; } }
 
 .slide-8 {
   z-index: 4;
@@ -4114,8 +4115,10 @@ select.source {
 .coming-soon-header {
   font-family: "Gotham";
   font-weight: bold;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  padding-top: 5px;
   border-top: 1px solid #8B2332; }
 
 .location-item {
@@ -4186,9 +4189,12 @@ select.source {
   width: 20px;
   position: absolute;
   right: 10px;
-  top: 0;
-  bottom: 0;
-  margin: auto 0; }
+  bottom: 10px; }
+  @media screen and (min-width: 48em) {
+    .gform_ajax_spinner {
+      top: 0;
+      bottom: 0;
+      margin: auto 0; } }
 
 /*--------------------------------------------------------------
     6.4 Page Templates
@@ -4349,8 +4355,8 @@ footer {
         border-radius: 8px; } }
   footer .gform_wrapper .validation_message {
     position: absolute;
-    -webkit-transform: translateY(86px);
-            transform: translateY(86px); }
+    -webkit-transform: translateY(54px);
+            transform: translateY(54px); }
     @media screen and (min-width: 48em) {
       footer .gform_wrapper .validation_message {
         position: relative;

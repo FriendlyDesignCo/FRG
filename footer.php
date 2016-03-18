@@ -36,7 +36,7 @@
 							'items_wrap' => '<ul data-breakpoint=" '. esc_attr( get_theme_mod( 'some_like_it_neat_mobile_min_width', '768' ) ) .' " id="%1$s" class="%2$s">%3$s</ul>', // Adding data-breakpoint for FlexNav
 						)
 					); ?>
-					<p class="copyright">Copyright &#169; <?php echo date("Y") ?> Farmers Restaurant Group | <a href="http://www.vsag.com" target="_blank">Restaurant Consulting</a> | <a href="/reservations">Reserve a table</a></p>
+					<p class="copyright">Copyright &#169; <?php echo date("Y") ?> Farmers Restaurant Group | <a href="http://www.vsag.com" target="_blank">Restaurant Consulting</a> | <a href="<?php echo get_site_url(); ?>/reservations">Reserve a table</a></p>
 				</div>
 			</section><!-- .site-info -->
 

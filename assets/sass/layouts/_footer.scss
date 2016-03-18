@@ -31,7 +31,7 @@ footer {
         .validation_message {
             //display: none !important;
             position: absolute;
-            transform: translateY(86px);
+            transform: translateY(54px);
             @include media($md) {
                 position: relative;
                 bottom: -6px;

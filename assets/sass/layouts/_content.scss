@@ -109,18 +109,7 @@ button#load-more.done {
     }
 }
 
-.numbers-counting {
-    //@include fontSize(70px);
-    font-size: 22vw;
-    margin: 0;
-    color: #FFFDD4;
-    font-family: "Numbers Claimcheck A", "Numbers Claimcheck B" !important;
-    font-style: normal;
-    font-weight: 400;
-    @include media($md) {
-        @include fontSize(177px);    
-    }
-}
+
 
 .home-wrap {
     //padding-top: 100px;
@@ -259,6 +248,20 @@ button#load-more.done {
         color: #FFFDD4;
         text-transform: uppercase;
         margin: 0;
+    }
+}
+
+h3.numbers-counting {
+    //@include fontSize(70px);
+    font-size: 22vw;
+    color: #FFFDD4;
+    font-family: "Numbers Claimcheck A", "Numbers Claimcheck B" !important;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: -20px;
+    margin-bottom: 15px;
+    @include media($md) {
+        @include fontSize(177px);    
     }
 }
 
@@ -2878,7 +2881,9 @@ select.source {
 .coming-soon-header {
     font-family: "Gotham";
     font-weight: bold;
-    @include fontSize(18px);
+    @include fontSize(25px);
+    text-transform: uppercase;
+    padding-top: 5px;
     border-top: 1px solid $dark-red;
 }
 
@@ -2958,7 +2963,11 @@ select.source {
     width: 20px;
     position: absolute;
     right: 10px;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
+    
+    bottom: 10px;
+    @include media($md) {
+        top: 0;
+        bottom: 0;
+        margin: auto 0;    
+    }
 }
