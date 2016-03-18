@@ -29,7 +29,14 @@ footer {
     .gform_wrapper {
         
         .validation_message {
-            display: none !important;
+            //display: none !important;
+            position: absolute;
+            transform: translateY(86px);
+            @include media($md) {
+                position: relative;
+                bottom: -6px;
+                transform: translateY(0);
+            }
         }
         input {
             height: 40px;

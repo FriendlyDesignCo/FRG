@@ -4343,7 +4343,15 @@ footer {
         height: 42px;
         border-radius: 8px; } }
   footer .gform_wrapper .validation_message {
-    display: none !important; }
+    position: absolute;
+    -webkit-transform: translateY(86px);
+            transform: translateY(86px); }
+    @media screen and (min-width: 48em) {
+      footer .gform_wrapper .validation_message {
+        position: relative;
+        bottom: -6px;
+        -webkit-transform: translateY(0);
+                transform: translateY(0); } }
   footer .gform_wrapper input {
     height: 40px;
     margin: 0;

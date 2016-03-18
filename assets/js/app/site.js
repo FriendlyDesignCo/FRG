@@ -3,7 +3,7 @@
 
 	$(document).ready(function() {
 
-		$("#gform_submit_button_2").click(function() {
+		/*$("#gform_submit_button_2").click(function() {
 			setTimeout(function(){ 
 				if($(".footer-right .email-field").hasClass("gfield_error")) {
 					$(".footer-right .ginput_container_email input").attr("placeholder", $(".email-field .validation_message").text());
@@ -12,7 +12,7 @@
 				}
 			}, 1000);
 			
-		});
+		});*/
 		
 		$("#secondary-nav .reservation-widget a.reservation").click(function(e) {
 			e.preventDefault();
