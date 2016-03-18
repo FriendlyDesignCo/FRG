@@ -1932,7 +1932,8 @@ button#load-more.done {
     height: 100%;
     width: 100%;
     z-index: 3;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     @media screen and (min-width: 64em) {
       .slide-8-block .slide-8-block-inner {
         padding: 20px;
@@ -2756,7 +2757,11 @@ ul.job-list-dots {
       opacity: 0; }
     .sprinkler-animation .corn.before {
       z-index: 2;
-      opacity: 1; }
+      opacity: 1;
+      display: none; }
+      @media screen and (min-width: 48em) {
+        .sprinkler-animation .corn.before {
+          display: block; } }
   .sprinkler-animation.step-1 {
     opacity: 1; }
   .sprinkler-animation.step-6 {
@@ -2771,7 +2776,7 @@ ul.job-list-dots {
           background-size: 70%;
           bottom: 0; } }
       .sprinkler-animation.step-6 .corn.before {
-        width: 100%;
+        width: 50%;
         height: 100%;
         left: 0;
         right: 0;
@@ -2783,6 +2788,12 @@ ul.job-list-dots {
             width: 100%;
             background-size: 150px;
             height: 80%; } }
+
+.step-3 .corn, .step-4 .corn, .step-5 .corn {
+  width: 70%; }
+  @media screen and (min-width: 48em) {
+    .step-3 .corn, .step-4 .corn, .step-5 .corn {
+      width: 100%; } }
 
 .nav-dots-inner {
   border-top: 2px solid #8B2332;
@@ -4170,6 +4181,10 @@ select.source {
   float: none;
   margin: 0 auto 50px; }
 
+.gform_ajax_spinner {
+  height: 20px;
+  width: 20px; }
+
 /*--------------------------------------------------------------
     6.4 Page Templates
     --------------------------------------------------------------*/
@@ -4429,7 +4444,8 @@ footer {
     font-family: "Gotham";
     text-align: center;
     background-color: #9D4446;
-    border-radius: 8px; }
+    border-radius: 8px;
+    color: #FFE7CC; }
   footer a {
     color: #FFE7CC; }
 

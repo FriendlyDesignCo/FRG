@@ -406,6 +406,7 @@ button#load-more.done {
         width: 100%;
         z-index: 3;
         position: relative;
+        overflow: hidden;
         @include media($mdbg) {
             padding: 20px;
             position: absolute;
@@ -1250,6 +1251,8 @@ ul.job-list-dots {
     background: $light-red;
 }
 
+
+
 .sprinkler-animation {
     position: absolute;
     right: 5vw;
@@ -1350,6 +1353,10 @@ ul.job-list-dots {
         &.before {
             z-index: 2;
             opacity: 1;
+            display: none;
+            @include media($md) {
+                display: block;
+            }
         }
     }
     &.step-1 {
@@ -1368,7 +1375,7 @@ ul.job-list-dots {
                 bottom: 0;
             }
             &.before {
-                width: 100%;
+                width: 50%;
                 height: 100%;
                 left: 0;
                 right: 0;
@@ -1381,6 +1388,15 @@ ul.job-list-dots {
                     height: 80%;
                 }
             }
+        }
+    }
+}
+
+.step-3, .step-4, .step-5 {
+    .corn {
+        width: 70%;
+        @include media($md) {
+            width: 100%;
         }
     }
 }
@@ -2936,4 +2952,8 @@ select.source {
 
 .reservation_image_wrap {
     
+}
+.gform_ajax_spinner {
+    height: 20px;
+    width: 20px;
 }

@@ -410,5 +410,5 @@ add_filter('upload_mimes', 'cc_mime_types');
 
 add_filter( 'gform_ajax_spinner_url', 'spinner_url', 10, 2 );
 function spinner_url( $image_src, $form ) {
-    return "<?php echo get_site_url(); ?>/wp-content/uploads/spinner.gif";
+    return get_site_url()."/wp-content/uploads/spinner.gif";
 }

@@ -267,7 +267,7 @@ get_header(); ?>
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number+1;?>",duration:"20px" })
 							.setTween(".career-slide-<?php echo $slide_number+1;?>", { opacity:1, delay: 0.5,zIndex:8})
 							.addTo(controller);
-				
+
 				
 				// sprinkler animations
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
@@ -281,11 +281,19 @@ get_header(); ?>
 							//.addIndicators()
 							.addTo(controller);	
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
-							.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .corn.after", { delay: 1, opacity: 1})
+							.setTween(".mobile-screen .sprinkler-animation.step-<?php echo $slide_number;?> .corn.after", { opacity: 1})
 							//.addIndicators()
 							.addTo(controller);	
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
-							.setTween(".sprinkler-animation.step-<?php echo $slide_number;?> .corn.before", { delay: .8, opacity: 0})
+							.setTween(".tablet-screen .sprinkler-animation.step-<?php echo $slide_number;?> .corn.after", { opacity: 1})
+							//.addIndicators()
+							.addTo(controller);	
+				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
+							.setTween(".desktop-screen .sprinkler-animation.step-<?php echo $slide_number;?> .corn.after", { delay: 1, opacity: 1})
+							//.addIndicators()
+							.addTo(controller);	
+				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>" })
+							.setTween(".desktop-screen .sprinkler-animation.step-<?php echo $slide_number;?> .corn.before", { delay: .8, opacity: 0})
 							//.addIndicators()
 							.addTo(controller);	
 
