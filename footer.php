@@ -15,7 +15,7 @@
 
 		<?php tha_footer_before(); ?>
 
-		<footer id="colophon" class="beverages-section site-footer wrap" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+		<footer id="colophon" class="site-footer wrap" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 
 		<?php tha_footer_top(); ?>
 
