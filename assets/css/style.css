@@ -3047,7 +3047,8 @@ ul.job-list-dots {
   border-radius: 8px;
   overflow: hidden;
   transition: all .2s;
-  margin-right: 5px; }
+  margin-right: 5px;
+  margin-bottom: 10px; }
   .share-button:hover {
     background-color: #9D4446; }
   .share-button .icon {

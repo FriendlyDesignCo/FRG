@@ -374,7 +374,7 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 .quote-attribution .position{font-family:"Gotham";font-weight:500;font-style:normal;font-size:11px;font-size:.6875rem}
 .article-share{margin:50px 0}.article-share h4{font-family:"Gotham";font-weight:bold;font-size:18px;font-size:1.125rem;text-transform:uppercase}
 .article-share ul{padding:0;margin:0;width:100%;list-style-type:none}.article-share a{color:#ffe7cc;font-family:"Gotham";font-weight:500;text-transform:uppercase;font-size:14px;font-size:.875rem;display:block}
-.article-share a:hover{text-decoration:none}.share-button{display:inline-block;background-color:#8b2332;padding:5px 50px 5px 10px;position:relative;border-radius:8px;overflow:hidden;transition:all .2s;margin-right:5px}
+.article-share a:hover{text-decoration:none}.share-button{display:inline-block;background-color:#8b2332;padding:5px 50px 5px 10px;position:relative;border-radius:8px;overflow:hidden;transition:all .2s;margin-right:5px;margin-bottom:10px}
 .share-button:hover{background-color:#9d4446}.share-button .icon{background-color:#9d4446;position:absolute;right:0;top:0;width:40px;height:100%;text-align:center}
 .share-button .dashicons{line-height:40px}.see-more-posts{border-top:1px solid #8b2332;padding-top:20px}
 .beverages-section h2{font-size:28px;font-size:1.75rem}@media screen and (min-width:48em){.beverages-section h2{font-size:62px;font-size:3.875rem}

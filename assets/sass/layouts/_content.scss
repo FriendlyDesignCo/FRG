@@ -1697,6 +1697,7 @@ ul.job-list-dots {
     overflow: hidden;
     transition: all .2s;
     margin-right: 5px;
+    margin-bottom: 10px;
     &:hover {
         background-color: $light-red;
     }

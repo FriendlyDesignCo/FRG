@@ -313,7 +313,7 @@ get_header(); ?>
 
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number;?>", duration: "100%"})
 							.setClassToggle(".dot-<?php echo $slide_number;?>", "active") // add class toggle
-							.addIndicators()
+							//.addIndicators()
 							.addTo(controller);
 			</script>
 		

@@ -23,7 +23,7 @@ get_header(); ?>
 		        }
 			   	 $('.desktop-screen #fullpage').fullpage({
 			   	 	verticalCentered: false,
-			   	 	sectionSelector: '.beverages-section',
+			   	 	sectionSelector: '.fp-section',
 			   	 	onLeave: function(index, nextIndex, direction){
 			            var leavingSection = $(this);
 
@@ -61,7 +61,7 @@ get_header(); ?>
 		}
 	</style>
 	<div id="fullpage">
-		<section class="section beverages-section section-wrap slide-1">
+		<section class="section fp-section beverages-section section-wrap slide-1">
 			<div class="section-inner ">
 				<h2 class="small"><?php the_field('hero_header'); ?></h2>
 				<?php the_field('hero_paragraph'); ?>
@@ -76,7 +76,7 @@ get_header(); ?>
 		<?php if( have_rows('drinks') ): ?>
 		<?php $slide_number = 2; ?>
 		<?php while( have_rows('drinks') ): the_row(); ?>
-		<section class="section beverages-section beverage-slide section-wrap slide-<?php echo $slide_number ?>"  style="background-image:url('<?php echo the_sub_field('background_image'); ?>')">
+		<section class="section fp-section beverages-section beverage-slide section-wrap slide-<?php echo $slide_number ?>"  style="background-image:url('<?php echo the_sub_field('background_image'); ?>')">
 			<div class="section-inner ">
 				<div class="beverage-image" style="background-image:url('<?php echo the_sub_field('drink_image'); ?>')">
 				</div>
@@ -115,8 +115,48 @@ get_header(); ?>
 		</section>
 		<?php ++$slide_number; endwhile; ?>
 		<?php endif; ?>
+		<footer id="colophon" class="fp-section fp-auto-height site-footer wrap" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+
+		<?php tha_footer_top(); ?>
+
+			<section class="site-info">
+				<div class="footer-right">
+
+					<?php echo do_shortcode("[gravityform id='2' title='false' description='false' ajax='true']");  ?>	
+					<!--<div class="sign-up-text">
+						Sign up for a monthley newsletter from our restaurants
+					</div>-->
+				</div>
+				<div class="footer-left">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'footer-navigation',
+							'menu_class' => 'hide-scroll menu-list', //Adding the class for FlexNav
+							'items_wrap' => '<ul data-breakpoint=" '. esc_attr( get_theme_mod( 'some_like_it_neat_mobile_min_width', '768' ) ) .' " id="%1$s" class="%2$s">%3$s</ul>', // Adding data-breakpoint for FlexNav
+						)
+					); ?>
+					<p class="copyright">Copyright &#169; <?php echo date("Y") ?> Farmers Restaurant Group | <a href="http://www.vsag.com" target="_blank">Restaurant Consulting</a> | <a href="<?php echo get_site_url(); ?>/reservations">Reservations</a></p>
+				</div>
+			</section><!-- .site-info -->
+
+		</footer><!-- #colophon -->
 	</div>
 </div>
 
 
-<?php get_footer(); ?>
+<?php tha_content_bottom(); ?>
+
+		</main><!-- #main -->
+
+		<?php tha_content_after(); ?>
+
+
+	</div><!-- .wrap -->
+
+</div><!-- #page -->
+
+<?php tha_body_bottom(); ?>
+
+</body>
+</html>
