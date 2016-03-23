@@ -208,12 +208,15 @@ header#masthead {
 .menu-list {
     position: relative;
     li:hover {
+        a {
+            text-decoration: none;
+        }
         .sub-menu {
             display: block;
         }
     }
     
-    li {
+    li:not(.menu-item-has-children) {
         &:hover {
            > a {
                 color: $tan;

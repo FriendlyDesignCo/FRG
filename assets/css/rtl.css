@@ -917,8 +917,7 @@ body {
 
 #main {
   float: left;
-  width: 100%;
-  margin-bottom: 50px; }
+  width: 100%; }
 
 #primary {
   margin: 0 auto;
@@ -1021,6 +1020,10 @@ body {
   @media screen and (min-width: 48em) {
     .entry-content, .mobile-padding {
       padding: 0; } }
+
+@media screen and (min-width: 48em) {
+  .entry-content {
+    padding-bottom: 50px; } }
 
 .interior-page {
   padding-top: 100px;
@@ -1179,9 +1182,11 @@ header#masthead {
 
 .menu-list {
   position: relative; }
+  .menu-list li:hover a {
+    text-decoration: none; }
   .menu-list li:hover .sub-menu {
     display: block; }
-  .menu-list li:hover > a {
+  .menu-list li:not(.menu-item-has-children):hover > a {
     color: #FFE7CC;
     font-weight: bold;
     text-decoration: none; }
@@ -1675,6 +1680,14 @@ body {
 
 @media screen and (min-width: 48em) {
   .right {
+    float: right; } }
+
+@media screen and (min-width: 64em) {
+  .left-mdbg {
+    float: left; } }
+
+@media screen and (min-width: 64em) {
+  .right-mdbg {
     float: right; } }
 
 ul.alm-listing {
@@ -2329,12 +2342,6 @@ ul.positions {
       .careers-section.slide-wrap, .beverages-section.slide-wrap {
         height: 650vh; } }
 
-.beverages-page {
-  padding-top: 100px; }
-  @media screen and (min-width: 48em) {
-    .beverages-page {
-      padding-top: 0; } }
-
 @media screen and (min-width: 48em) {
   .careers-wrap {
     padding-top: 0; } }
@@ -2930,7 +2937,8 @@ ul.job-list-dots {
       top: 150px; } }
 
 .single-post .site-content {
-  padding-top: 100px; }
+  padding-top: 100px;
+  padding-bottom: 50px; }
   @media screen and (min-width: 48em) {
     .single-post .site-content {
       padding-top: 150px; } }
@@ -3051,7 +3059,7 @@ ul.job-list-dots {
   overflow: hidden;
   transition: all .2s;
   margin-right: 5px;
-  margin-bottom: 10px; }
+  margin-bottom: 5px; }
   .share-button:hover {
     background-color: #9D4446; }
   .share-button .icon {
@@ -3909,7 +3917,8 @@ select.source {
 
 .form-group input::-moz-placeholder {
   /* Firefox 19+ */
-  color: #8B2332; }
+  color: #8B2332;
+  opacity: 1; }
 
 .form-group input:-ms-input-placeholder {
   /* IE 10+ */
@@ -4072,15 +4081,15 @@ select.source {
     font-size: 16px;
     font-size: 1rem; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
   .gfield.half-width {
     width: 50%; } }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
   .gfield.name-field {
     width: 40%; } }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
   .gfield.email-field {
     width: 60%; } }
 
@@ -4089,7 +4098,7 @@ select.source {
 
 .gform_button.button {
   width: 200px; }
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 64em) {
     .gform_button.button {
       float: right;
       margin-top: -50px; } }
@@ -4199,6 +4208,9 @@ select.source {
       top: 0;
       bottom: 0;
       margin: auto 0; } }
+
+.blog-page .site-content {
+  padding-bottom: 50px; }
 
 /*--------------------------------------------------------------
     6.4 Page Templates
@@ -4353,7 +4365,7 @@ footer {
   footer .gform_body {
     border: 1px solid #FFE7CC;
     border-radius: 8px 8px 0 0; }
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 64em) {
       footer .gform_body {
         height: 42px;
         border-radius: 8px; } }
@@ -4375,7 +4387,7 @@ footer {
     border-bottom: 1px solid #FFE7CC;
     overflow: hidden;
     border-radius: 8px 8px 0px 0; }
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 64em) {
       footer .gform_wrapper #field_2_4 .ginput_container {
         border-radius: 8px 0px 0px 8px;
         border-bottom: none;
@@ -4426,7 +4438,7 @@ footer {
       bottom: 0;
       font-size: 13px;
       font-size: 0.8125rem; }
-      @media screen and (min-width: 48em) {
+      @media screen and (min-width: 64em) {
         footer .footer-right .gform_button {
           border-radius: 0 8px 8px 0;
           position: absolute;

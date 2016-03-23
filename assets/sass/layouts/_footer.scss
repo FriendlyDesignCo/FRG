@@ -1,6 +1,7 @@
 footer {
     @include float(left);
     margin: 0 auto;
+    //margin-top: 50px;
     padding: 0 40px;
     width: 100%;
     background-color: $dark-red;
@@ -21,7 +22,7 @@ footer {
         border-radius: 8px 8px 0 0;
         //height: 42px;
         //overflow: hidden;
-        @include media($md) {
+        @include media($mdbg) {
             height: 42px;
             border-radius: 8px;    
         }
@@ -47,7 +48,7 @@ footer {
             border-bottom: 1px solid $tan;
             overflow: hidden;
             border-radius: 8px 8px 0px 0;
-            @include media($md) {
+            @include media($mdbg) {
                 border-radius: 8px 0px 0px 8px;
                 border-bottom: none;
                 border-right: 1px solid $tan;
@@ -103,7 +104,7 @@ footer {
             border-radius: 0 0px 8px 8px;
             bottom: 0;
             @include fontSize(13px);
-            @include media($md) {
+            @include media($mdbg) {
                 border-radius: 0 8px 8px 0;
                 position: absolute;
                 width: 75px;
@@ -156,6 +157,7 @@ footer {
     a {
         color: $tan;
     }
+
 }
 
 

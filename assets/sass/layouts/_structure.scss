@@ -40,7 +40,7 @@ html {
 #main {
     float: left;
     width: 100%;
-    margin-bottom: 50px;
+    ///margin-bottom: 50px;
 }
 
 #primary {
@@ -113,6 +113,12 @@ html {
     padding: 0 5%;
     @include media($md) {
         padding: 0;
+    }
+}
+
+.entry-content {
+    @include media($md) {
+        padding-bottom: 50px;
     }
 }
 

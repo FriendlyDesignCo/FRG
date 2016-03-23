@@ -60,7 +60,7 @@
 
 	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7451292/7375352/css/fonts.css" />
 
-
+	<!--
 	<meta property="og:url"           content="<?php the_permalink (); ?>" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="<?php bloginfo('name'); ?> | <?php the_title( $ID ); ?>" />
@@ -70,6 +70,7 @@
 	<meta property="og:image" content="<?php echo $image_url[0] ?>" />
     
     <meta property="og:image" content="<?php echo get_site_url(); ?>/wp-content/uploads/logos/frg-logo-dark.svg" />
+    -->
 
     
  
@@ -449,7 +450,7 @@
 									<input type="hidden" id="RestaurantReferralID" name="RestaurantReferralID" value="0">
 									<input type="hidden" name="txtDateFormat" value="MM/dd/yyyy">
 									<input type="hidden" name="widget" value="reservpage">
-									<input type="submit" name="submit" value="SEARCH" class="button btn btn-submit" onmousedown="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value;fbq('track', 'Lead'); ga('send', 'event', 'reserve', 'click', 'widget');" />
+									<input type="submit" name="submit" value="SEARCH" class="button btn btn-submit" onmousedown="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value;ga('send', 'event', 'reserve', 'click', 'widget');" />
 								</div>
 
 							</form>	
