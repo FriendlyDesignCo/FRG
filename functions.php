@@ -226,14 +226,14 @@ if ( ! function_exists( 'some_like_it_neat_styles' ) ) :
 		if ( SCRIPT_DEBUG || WP_DEBUG ) :
 			wp_register_style(
 				'some_like_it_neat-style', // handle name
-				get_template_directory_uri() . '/assets/css/style.css', '', '1.2', 'screen'
+				get_template_directory_uri() . '/assets/css/style.css', '', '1.3', 'screen'
 			);
 			wp_enqueue_style( 'some_like_it_neat-style' );
 
 			else :
 			wp_register_style(
 				'some_like_it_neat-style', // handle name
-				get_template_directory_uri() . '/assets/css/style-min.css', '', '1.2', 'screen'
+				get_template_directory_uri() . '/assets/css/style-min.css', '', '1.3', 'screen'
 			);
 			wp_enqueue_style( 'some_like_it_neat-style' );
 		endif;
@@ -267,7 +267,7 @@ if ( ! function_exists( 'dg_add_flexnav' ) ) :
 	function dg_add_flexnav()
 	{
 	?>
-		
+
 	<?php
 	}
 	add_action( 'wp_footer', 'dg_add_flexnav' );
@@ -308,7 +308,7 @@ if ( ! function_exists( 'some_like_it_neat_optional_scripts' ) ) :
 		// Link Color
 		if ( '' != get_theme_mod( 'some_like_it_neat_add_link_color' )  ) {
 		} ?>
-			
+
 		<?php
 	}
 	add_action( 'wp_head', 'some_like_it_neat_optional_scripts' );
@@ -320,7 +320,7 @@ if ( ! function_exists( 'some_like_it_neat_mobile_styles' ) ) :
 		$value = get_theme_mod( 'some_like_it_neat_mobile_hide_arrow' );
 
 		if ( 0 == get_theme_mod( 'some_like_it_neat_mobile_hide_arrow' ) ) { ?>
-			
+
 		<?php } else {
 
 		}
@@ -377,7 +377,7 @@ function sidebar_text( $atts, $content = null ) {
 	else {
 		$sidebar_content_trimed =  $sidebar_content;
 	}
-	
+
 	if(get_field('quote_attribution_name', $blog_ID) != "") {
 		$quote_attribution_name = get_field('quote_attribution_name', $blog_ID);
 		$quote_attribution_position = get_field('quote_attribution_position', $blog_ID);
@@ -387,7 +387,7 @@ function sidebar_text( $atts, $content = null ) {
 	else {
 		return '<div class="sidebar-text right">'.$sidebar_content.'</div>';
 	}
-    
+
 }
 add_shortcode("sidebar_text", "sidebar_text");
 
