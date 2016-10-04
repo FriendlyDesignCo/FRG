@@ -151,7 +151,7 @@ ol {
     list-style-type: disc;
     margin-bottom: 0.75em;
     padding-left: 1.5em; }
-  
+
   ol {
     list-style-type: decimal;
     margin-bottom: 0.75em;
@@ -166,7 +166,6 @@ dl {
     margin: 0; }
 
 table {
-  -webkit-font-feature-settings: "kern", "liga", "tnum";
   -ms-font-feature-settings: "kern", "liga", "tnum";
   font-feature-settings: "kern", "liga", "tnum";
   border-collapse: collapse;
@@ -1032,8 +1031,7 @@ body {
     6.1 Layout and Structure
     --------------------------------------------------------------*/
 body:not(.home) #secondary-nav {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px); }
+  transform: translateY(0px); }
 
 body.home header#masthead.not-scrolled {
   position: fixed; }
@@ -1081,11 +1079,8 @@ header#masthead {
   float: left;
   width: 100%;
   position: fixed;
-  transition: -webkit-transform .4s;
   transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   top: 0;
   left: 0;
   z-index: 999; }
@@ -1278,8 +1273,7 @@ ul.sub-menu {
   box-shadow: 0 5px 14px -6px black; }
   @media screen and (min-width: 64em) {
     #secondary-nav {
-      -webkit-transform: translateY(-140px);
-              transform: translateY(-140px); } }
+      transform: translateY(-140px); } }
   #secondary-nav .reservation-widget {
     width: 100%;
     left: 0;
@@ -1315,8 +1309,7 @@ ul.sub-menu {
       display: block;
       height: 100%; }
   #secondary-nav.slide-down {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); }
+    transform: translateY(0px); }
   #secondary-nav .menu-menu-1-container {
     width: 80%;
     background-color: #9D4446;
@@ -1325,13 +1318,11 @@ ul.sub-menu {
     top: 50px;
     right: 0;
     transition: all .3s;
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
+    transform: translateX(100vw);
     box-shadow: 0 14px 20px -19px black; }
     @media screen and (min-width: 64em) {
       #secondary-nav .menu-menu-1-container {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
+        transform: translateX(0);
         top: 0px;
         background-color: #8B2332;
         height: auto; } }
@@ -1371,8 +1362,7 @@ header label {
   display: none; }
 
 #showblock:checked + .menu-menu-1-container {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px); }
+  transform: translateX(0px); }
 
 /*--------------------------------------------------------------
     6.2 Navigation
@@ -1769,8 +1759,7 @@ button#load-more.done {
   display: block;
   margin: 0 auto;
   z-index: 2;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0); }
   @media screen and (min-width: 48em) {
     .home-wrap .slide-4 .image-cookie {
       width: 50%; } }
@@ -1899,17 +1888,14 @@ h3.numbers-counting {
         font-size: 1.4375rem; } }
   @media screen and (min-width: 64em) {
     .slide-8-block .move-text {
-      -webkit-transform: translateY(150%);
-              transform: translateY(150%);
+      transform: translateY(150%);
       transition: all .3s; } }
   @media screen and (min-width: 64em) {
     .slide-8-block:hover:before {
       transition: all .3s;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%); }
+      transform: translateY(-50%); }
     .slide-8-block:hover .move-text {
-      -webkit-transform: translateY(0%);
-              transform: translateY(0%); }
+      transform: translateY(0%); }
     .slide-8-block:hover .slide-8-header {
       top: 0%; } }
   .slide-8-block:before {
@@ -1961,8 +1947,7 @@ h3.numbers-counting {
   position: absolute;
   width: 90%;
   bottom: -275px;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0); }
   @media screen and (min-width: 48em) {
     .flip-icons {
       bottom: 30vh;
@@ -1972,8 +1957,7 @@ h3.numbers-counting {
 
 /* entire container, keeps perspective */
 .flip-icon-wrap {
-  -webkit-perspective: 1000;
-          perspective: 1000;
+  perspective: 1000;
   display: inline-block; }
 
 /* flip the pane when hovered */
@@ -2007,8 +1991,7 @@ h3.numbers-counting {
 
 /* flip speed goes here */
 .flip-icon {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   position: relative; }
 
 /* hide back of pane during swap */
@@ -2023,8 +2006,7 @@ h3.numbers-counting {
 .front {
   z-index: 2;
   /* for firefox 31 */
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+  transform: rotateY(0deg);
   background-color: #9D4446;
   background-size: auto 60%;
   background-position: center;
@@ -2036,8 +2018,7 @@ h3.numbers-counting {
 
 /* back, initially hidden pane */
 .back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   background-color: #9D4446; }
 
 .slide-5 h2 {
@@ -2080,8 +2061,7 @@ h3.numbers-counting {
       display: table; } }
 
 .hidden-ingredient {
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   position: absolute; }
 
 #ingredient-trigger {
@@ -2155,11 +2135,11 @@ h3.numbers-counting {
         font-size: 27px;
         font-size: 1.6875rem; } }
   .ingredients-row:nth-of-type(7) p {
-    font-size: 3.9vw; }
+    font-size: 2.4vw; }
     @media screen and (min-width: 64em) {
       .ingredients-row:nth-of-type(7) p {
-        font-size: 39px;
-        font-size: 2.4375rem; } }
+        font-size: 25px;
+        font-size: 1.57rem; } }
   .ingredients-row:nth-of-type(8) p {
     font-size: 3.57vw; }
     @media screen and (min-width: 64em) {
@@ -2168,8 +2148,7 @@ h3.numbers-counting {
         font-size: 2.125rem; } }
   .ingredients-row .hidden-1, .ingredients-row .hidden-2 {
     font-size: 3.57vw;
-    -webkit-transform: scale(0);
-            transform: scale(0); }
+    transform: scale(0); }
     @media screen and (min-width: 64em) {
       .ingredients-row .hidden-1, .ingredients-row .hidden-2 {
         font-size: 34px;
@@ -2218,8 +2197,7 @@ ul.positions {
 .career-slide {
   height: 100vh;
   display: block;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   white-space: normal;
   width: 100%;
   top: 0;
@@ -2314,8 +2292,7 @@ ul.positions {
   z-index: 2; }
 
 .translate-3d {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); }
+  transform: translate3d(0, 0, 0); }
 
 .careers-section, .beverages-section {
   text-align: left;
@@ -2461,8 +2438,7 @@ h2.career-title {
   .case-study-card .case-study-card-image, .case-study-card .case-study-card-blurb {
     cursor: pointer; }
   .case-study-card:nth-of-type(2n) .case-study-card-expanded {
-    -webkit-transform-origin: bottom center;
-            transform-origin: bottom center; }
+    transform-origin: bottom center; }
 
 .case-study-card-blurb {
   float: right;
@@ -2481,10 +2457,8 @@ h2.career-title {
   bottom: 0;
   z-index: 99;
   transition: all .3s;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
+  transform: scale(0);
+  transform-origin: bottom left;
   padding: 70px 20px 50px;
   height: 75vh;
   width: 90vw;
@@ -2510,8 +2484,7 @@ h2.career-title {
       width: 75vw;
       height: auto; } }
   .case-study-card-expanded.expanded {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    transform: scale(1); }
   .case-study-card-expanded .case-study-card-image {
     position: absolute;
     top: 0;
@@ -2645,21 +2618,11 @@ ul.job-list-dots {
   ul.job-list-dots li:last-of-type:after {
     content: none; }
 
-@-webkit-keyframes sprinklerAnimation {
-  50% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  100% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px); } }
-
 @keyframes sprinklerAnimation {
   50% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
+    transform: translateY(0); }
   100% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px); } }
+    transform: translateY(50px); } }
 
 .nav-dots ul li.active {
   background: #8B2332;
@@ -2692,10 +2655,8 @@ ul.job-list-dots {
     background-repeat: no-repeat;
     height: 400px;
     width: 100%;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transform-origin: center bottom;
-            transform-origin: center bottom;
+    transform: scale(0);
+    transform-origin: center bottom;
     position: absolute;
     display: none;
     bottom: 10%;
@@ -2707,8 +2668,7 @@ ul.job-list-dots {
         width: 70%;
         left: 30%; } }
     .sprinkler-animation .water.animated {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+      transform: scale(1);
       opacity: 0; }
   .sprinkler-animation .sprinkler {
     background-position: center bottom;
@@ -2720,14 +2680,10 @@ ul.job-list-dots {
     bottom: 0;
     left: 30%;
     transition: all .3s;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px); }
+    transform: translateY(50px); }
     .sprinkler-animation .sprinkler.animated {
-      -webkit-animation-name: sprinklerAnimation;
       animation-name: sprinklerAnimation;
-      -webkit-animation-duration: 1.2s;
       animation-duration: 1.2s;
-      -webkit-animation-timing-function: ease;
       animation-timing-function: ease; }
     @media screen and (min-width: 48em) {
       .sprinkler-animation .sprinkler {
@@ -3096,14 +3052,12 @@ ul.job-list-dots {
   @media screen and (min-width: 48em) {
     .beverage-image {
       transition: all 1.5s;
-      -webkit-transform: translateY(-150px);
-              transform: translateY(-150px);
+      transform: translateY(-150px);
       opacity: 0;
       height: 100%;
       width: 25%; } }
   .beverage-image.slide-down {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
     opacity: 1; }
 
 .beverage-slide {
@@ -3202,46 +3156,24 @@ ul.job-list-dots {
       margin-bottom: 10px; } }
 
 .arrow-1 {
-  -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
 .arrow-2 {
-  -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s; }
 
 .arrow-3 {
-  -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s; }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  33% {
-    opacity: 0; }
-  66% {
-    opacity: 1; } }
 
 @keyframes fadeOut {
   0% {
@@ -3570,8 +3502,7 @@ ul.job-list-dots {
   background-color: #FFE7CC;
   z-index: 100;
   transition: all .3s;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   padding: 50px 10px;
   overflow-y: scroll; }
   @media screen and (min-width: 48em) {
@@ -3591,8 +3522,7 @@ ul.job-list-dots {
       .team-member-expanded:before {
         height: 120px; } }
   .team-member-expanded.expanded {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    transform: scale(1); }
   .team-member-expanded .image {
     height: 350px;
     position: relative;
@@ -3644,31 +3574,18 @@ ul.job-list-dots {
         font-size: 20px;
         font-size: 1.25rem; } }
 
-@-webkit-keyframes slide-up {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(1em);
-    transform: translateY(1em); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-
 @keyframes slide-up {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(1em);
     transform: translateY(1em); }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
 .tooltip-attached {
   position: relative; }
   .tooltip-attached:hover .tooltip {
     visibility: visible;
-    -webkit-animation: slide-up 0.3s;
     animation: slide-up 0.3s; }
 
 .tooltip {
@@ -4218,7 +4135,6 @@ select.source {
 
 @media screen and (min-width: 48em) {
   .page-template-page-templatestemplate-left-col-php #main {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; } }
 
@@ -4237,9 +4153,8 @@ select.source {
     display: block;
     margin-right: 3.22581%;
     width: 48.3871%;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2; }
+    -ms-flex-order: 2;
+        order: 2; }
     .page-template-page-templatestemplate-left-col-php #main #primary:last-child {
       margin-right: 0; } }
 
@@ -4259,9 +4174,8 @@ select.source {
       display: block;
       margin-right: 3.22581%;
       width: 22.58065%;
-      -webkit-order: 1;
-          -ms-flex-order: 1;
-              order: 1; }
+      -ms-flex-order: 1;
+          order: 1; }
       .page-template-page-templatestemplate-left-col-php #main #secondary:last-child {
         margin-right: 0; } }
 
@@ -4368,14 +4282,12 @@ footer {
         border-radius: 8px; } }
   footer .gform_wrapper .validation_message {
     position: absolute;
-    -webkit-transform: translateY(54px);
-            transform: translateY(54px); }
+    transform: translateY(54px); }
     @media screen and (min-width: 48em) {
       footer .gform_wrapper .validation_message {
         position: relative;
         bottom: -6px;
-        -webkit-transform: translateY(0);
-                transform: translateY(0); } }
+        transform: translateY(0); } }
   footer .gform_wrapper input {
     height: 40px;
     margin: 0;
