@@ -419,7 +419,7 @@ get_header(); ?>
 						.setTween(".mobile-screen p#highlighted7", { x: "-88%", y: "270%", scale: 2.1 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p#highlighted9", { x: "90%", y: "120%", scale: 1.44 })
+						.setTween(".mobile-screen p#highlighted9", { x: "90%", y: "135%", scale: 1.44 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".mobile-screen p#highlighted20", { x: "-125%", y: "-320%", scale: 1.66 })
@@ -431,7 +431,7 @@ get_header(); ?>
 						.setTween(".mobile-screen p#highlighted22", { x: "123%", y: "-180%", scale: 1.66 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
-						.setTween(".mobile-screen p.hidden-1", { x: "258%", y: "-196%", scale: 1.3 })
+						.setTween(".mobile-screen p.hidden-1", { x: "258%", y: "-188%", scale: 1.3 })
 						.addTo(controller);
 			new ScrollMagic.Scene({triggerElement: "#ingredient-position-trigger"})
 						.setTween(".mobile-screen p.hidden-2", { x: "179%", y: "-315%", scale: 1.3 })
