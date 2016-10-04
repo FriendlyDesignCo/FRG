@@ -108,7 +108,7 @@ button#load-more.done {
         }
     }
     &.s2 {
-        top: 45%;   
+        top: 45%;
     }
     &.s3 {
         top: 50%;
@@ -133,20 +133,20 @@ button#load-more.done {
         h2 {
             @include fontSize(31px);
             @include media($md) {
-                @include fontSize(51px);    
+                @include fontSize(51px);
             }
             @include media($hg) {
-                @include fontSize(71px);    
+                @include fontSize(71px);
             }
         }
     }
     .slide-2 {
-        
+
         background-size: cover;
         background-repeat: no-repeat;
         height: auto;
         @include media($md) {
-            padding-top: 10vh;    
+            padding-top: 10vh;
             height: 100vh;
         }
         &:before {
@@ -175,8 +175,8 @@ button#load-more.done {
         }
     }
 
-    .slide-3 { 
-        
+    .slide-3 {
+
         //height: 140vh;
         padding-top: 300px;
         height: auto;
@@ -212,11 +212,11 @@ button#load-more.done {
     float: left;
     width: 100%;
     position: relative;
-    
+
     padding: 115px 5%;
     @include media($mdbg) {
         text-align: center;
-        padding: 15vh 10px;    
+        padding: 15vh 10px;
     }
     p {
         font-family: "Gotham";
@@ -233,17 +233,17 @@ button#load-more.done {
 .home-section {
     height: 100vh;
     @include media($md) {
-        
+
     }
     h2 {
-        
+
     }
-    
+
     &.hero {
         background-repeat: no-repeat;
         background-size: cover;
         @include media($md) {
-            background-position: center;    
+            background-position: center;
             //background-size: 110%;
         }
     }
@@ -273,17 +273,17 @@ h3.numbers-counting {
     margin-top: -20px;
     margin-bottom: 15px;
     @include media($md) {
-        @include fontSize(177px);    
+        @include fontSize(177px);
     }
 }
 
 .slide-8 {
     z-index: 4;
     position: relative;
-    
+
     @include media($mdbg) {
         @include background-image(linear-gradient(to top, $tan 90%, transparent));
-        padding-top: 20vh;    
+        padding-top: 20vh;
     }
     height: auto;
     h2 {
@@ -303,7 +303,7 @@ h3.numbers-counting {
     }
 }
 .slide-8-block {
-    
+
     display: inline-block;
     overflow: hidden;
     background-size: cover;
@@ -314,9 +314,9 @@ h3.numbers-counting {
     margin-bottom: 20px;
     vertical-align: top;
     @include media($md) {
-        
+
         width: 32%;
-        
+
     }
     @include media($mdbg) {
         height: 0;
@@ -328,19 +328,19 @@ h3.numbers-counting {
     .slide-8-header {
         transition: all .3s;
         position: relative;
-        
+
         @include media($mdbg) {
-            top: 60%;    
+            top: 60%;
         }
     }
     img {
         position: relative;
         z-index: 2;
         width: 40px;
-        float: left; 
+        float: left;
         margin-bottom: 15px;
         @include media($md) {
-               
+
         }
     }
     h4 {
@@ -352,9 +352,9 @@ h3.numbers-counting {
         }
     }
     .move-text {
-        
+
         @include media($mdbg) {
-            transform: translateY(150%);   
+            transform: translateY(150%);
             transition: all .3s;
         }
     }
@@ -366,7 +366,7 @@ h3.numbers-counting {
                 transform: translateY(-50%);
             }
             .move-text {
-                transform: translateY(0%);   
+                transform: translateY(0%);
             }
             .slide-8-header {
                 top: 0%;
@@ -395,15 +395,15 @@ h3.numbers-counting {
         z-index: 2;
         text-align: left;
     }
-    
+
     &:nth-of-type(1) {
         @include media($md) {
-            //float: left;    
+            //float: left;
         }
     }
     &:nth-of-type(3) {
         @include media($md) {
-            //float: right;    
+            //float: right;
         }
     }
     p {
@@ -426,7 +426,7 @@ h3.numbers-counting {
             padding: 20px;
             position: absolute;
             left: 0;
-            top: 0;    
+            top: 0;
         }
     }
 }
@@ -440,7 +440,7 @@ h3.numbers-counting {
     bottom: -275px;
     transform: translate3d(0,0,0);
     @include media($md) {
-        
+
         bottom: 30vh;
         width: 100%;
         left: 0;
@@ -469,12 +469,12 @@ h3.numbers-counting {
     @include media($md) {
         padding: 10px;
         width: 120px;
-        height: 120px;   
+        height: 120px;
     }
     @include media($mdbg) {
         padding: 10px;
         width: 70px;
-        height: 70px;   
+        height: 70px;
     }
     &:first-of-type {
         //margin-left: 3%;
@@ -548,12 +548,12 @@ h3.numbers-counting {
     left: 0;
     z-index: 4;
     @include media($md) {
-        
-        padding: 20px 0;    
+
+        padding: 20px 0;
     }
     @include media($mdbg) {
         top: 25vh;
-        padding: 50px 0;    
+        padding: 50px 0;
     }
 }
 
@@ -573,7 +573,7 @@ h3.numbers-counting {
 
 .ingredients-inner {
     @include media($md) {
-        @include outer-container(900px);   
+        @include outer-container(900px);
     }
 }
 
@@ -626,13 +626,13 @@ h3.numbers-counting {
         p {
             font-size: 3.14vw;
             @include media($mdbg) {
-                @include fontSize(32px);   
+                @include fontSize(32px);
             }
         }
     }
     &:nth-of-type(2) {
         p {
-            font-size: 2.1vw;   
+            font-size: 2.1vw;
             @include media($mdbg) {
                 @include fontSize(24px);
             }
@@ -640,7 +640,7 @@ h3.numbers-counting {
     }
     &:nth-of-type(3) {
         p {
-            font-size: 3.05vw;   
+            font-size: 3.05vw;
             @include media($mdbg) {
                 @include fontSize(31px);
             }
@@ -664,7 +664,7 @@ h3.numbers-counting {
     }
     &:nth-of-type(6) {
         p {
-            font-size: 2.6vw;   
+            font-size: 2.6vw;
             @include media($mdbg) {
                 @include fontSize(27px);
             }
@@ -672,28 +672,28 @@ h3.numbers-counting {
     }
     &:nth-of-type(7) {
         p {
-            font-size: 3.9vw;
+            font-size: 2.4vw;
             @include media($mdbg) {
-                @include fontSize(39px);
+                @include fontSize(25px);
             }
         }
     }
     &:nth-of-type(8) {
         p {
-            font-size: 3.57vw;   
+            font-size: 3.57vw;
             @include media($mdbg) {
                 @include fontSize(34px);
             }
         }
     }
     .hidden-1, .hidden-2 {
-        
-            font-size: 3.57vw;   
+
+            font-size: 3.57vw;
             transform: scale(0);
             @include media($mdbg) {
                 @include fontSize(34px);
             }
-        
+
     }
 }
 
@@ -737,7 +737,7 @@ ul.positions {
 .career-slide-wrap {
     height: auto;
     position: relative;
-    
+
     white-space: nowrap;
     padding: 0;
 }
@@ -756,7 +756,7 @@ ul.positions {
     //background-color: $tan;
     position: absolute;
     padding: 70px 5% 5vh;
-    
+
     background-size: cover;
     &:before {
         content: "";
@@ -884,7 +884,7 @@ ul.positions {
     min-height: 100vh;
     @include media($md) {
         height: 100vh;
-        min-height: none;    
+        min-height: none;
     }
     &.last-slide {
         //position: absolute;
@@ -902,7 +902,7 @@ ul.positions {
     &.slide-wrap {
         height: 400vh;
         @include media($mdbg) {
-            height: 650vh;   
+            height: 650vh;
         }
     }
 }
@@ -924,7 +924,7 @@ ul.positions {
         }
     }
     .careers-section {
-        
+
     }
 }
 
@@ -946,7 +946,7 @@ h2.career-title {
     margin-bottom: 20px;
     @include media($md) {
         float: left;
-        width: 50%; 
+        width: 50%;
     }
 }
 
@@ -959,7 +959,7 @@ h2.career-title {
     text-transform: uppercase;
     text-align: center;
     color: $dark-red;
-    width: 50%; 
+    width: 50%;
     @include media($md) {
        width: 250px;
        float: right;
@@ -1108,7 +1108,7 @@ h2.career-title {
             height: 175px;
         }
     }
-    
+
     .inner-blurb {
         float: left;
         font-family: $caslon;
@@ -1121,16 +1121,16 @@ h2.career-title {
             @include fontSize(20px);
             margin-bottom: 0px;
             font-weight: 500;
-            width: 40%;   
-            padding: 20px 20px 20px 30px; 
+            width: 40%;
+            padding: 20px 20px 20px 30px;
             //height: 175px;
         }
         @include media($mdbg) {
             @include fontSize(20px);
             margin-bottom: 0px;
             font-weight: 500;
-            width: 40%;   
-            padding: 20px 20px 20px 70px; 
+            width: 40%;
+            padding: 20px 20px 20px 70px;
             height: 175px;
         }
     }
@@ -1140,7 +1140,7 @@ h2.career-title {
         font-weight: 300;
 
         @include media($md) {
-            width: 60%;    
+            width: 60%;
             @include fontSize(17px);
             line-height: 1.4em;
             padding: 0 20px 0 50px;
@@ -1176,7 +1176,7 @@ ul.job-list-dots {
         display: table;
     }
     li {
-        
+
         position: relative;
         @include fontSize(14px);
         text-transform: uppercase;
@@ -1208,7 +1208,7 @@ ul.job-list-dots {
                 top: -45px;
                 width: 30px;
                 height: 30px;
-                margin: 0 auto 25px;     
+                margin: 0 auto 25px;
             }
         }
     }
@@ -1237,7 +1237,7 @@ ul.job-list-dots {
             }
         }
     }
-    
+
 }
 
 @keyframes sprinklerAnimation {
@@ -1291,7 +1291,7 @@ ul.job-list-dots {
         @include media($md) {
             display: block;
             width: 70%;
-            left: 30%;    
+            left: 30%;
         }
         &.animated {
             transform: scale(1);
@@ -1334,7 +1334,7 @@ ul.job-list-dots {
         background-position: center;
         background-repeat: no-repeat;
     }
-    
+
     .step-2 {
         opacity: 0;
     }
@@ -1348,7 +1348,7 @@ ul.job-list-dots {
         margin: 0 auto;
         background-position: center bottom;
         background-repeat: no-repeat;
-        
+
         @include media($md) {
             bottom: 0;
             width: 100%;
@@ -1443,11 +1443,11 @@ ul.job-list-dots {
     }
     @include media($md) {
         display: block;
-        @include outer-container(768px);  
-        padding: 0 15px; 
+        @include outer-container(768px);
+        padding: 0 15px;
     }
     @include media($mdbg) {
-        @include outer-container(1060px);   
+        @include outer-container(1060px);
         padding: 0;
     }
 }
@@ -1461,7 +1461,7 @@ ul.job-list-dots {
   //overflow: hidden;
   //text-indent: -999em;
   cursor: pointer;
-  vertical-align: middle; 
+  vertical-align: middle;
 }
 
 .dot-anchor {
@@ -1548,7 +1548,7 @@ ul.job-list-dots {
         width: 295px;
         position: absolute;
         left: 0;
-        top: 150px;    
+        top: 150px;
     }
 }
 
@@ -1580,7 +1580,7 @@ ul.job-list-dots {
     .category a {
         color: $light-red;
     }
-    
+
 }
 
 .sub-title {
@@ -1591,9 +1591,9 @@ ul.job-list-dots {
     }
 
 .sidebar-text {
-    
+
     color: $dark-red;
-    
+
     line-height: 1.2em;
     font-family: $caslon;
     font-style: italic;
@@ -1610,7 +1610,7 @@ ul.job-list-dots {
     a {
         display: block;
         padding: 20px 0;
-        
+
         color: $dark-red;
         @include media($md) {
             padding: 20px 20px 50px;
@@ -1619,17 +1619,17 @@ ul.job-list-dots {
     }
     &.right {
         @include media($md) {
-            margin-left: 20px;    
+            margin-left: 20px;
         }
-        
+
     }
     &.left {
         @include media($md) {
-            margin-right: 20px;    
+            margin-right: 20px;
         }
     }
     .twitter-icon {
-        
+
         position: absolute;
         width: 20px;
         height: 20px;
@@ -1749,14 +1749,14 @@ ul.job-list-dots {
     width: 30%;
     float: left;
     height: 200px;
-    
+
     @include media($md) {
         transition: all 1.5s;
         transform: translateY(-150px);
         opacity: 0;
         height: 100%;
         width: 25%;
-        
+
     }
     &.slide-down {
         transform: translateY(0px);
@@ -1850,15 +1850,15 @@ ul.job-list-dots {
     }
     &:nth-of-type(3n-1) {
         @include media($md) {
-            margin-left: 2%;    
+            margin-left: 2%;
         }
-        
+
     }
     &:nth-of-type(3n) {
         @include media($md) {
-            margin-left: 2%;    
+            margin-left: 2%;
         }
-        
+
     }
     h4 {
         margin-bottom: 0;
@@ -1998,7 +1998,7 @@ ul.job-list-dots {
         }
     }
     img {
-        
+
         position: absolute;
         top: 0;
         left: 0;
@@ -2037,7 +2037,7 @@ ul.job-list-dots {
         @include media($md) {
             background-color: $tan;
             width: 20px;
-            
+
         }
     }
     .vertical {
@@ -2053,7 +2053,7 @@ ul.job-list-dots {
         @include media($md) {
             background-color: $tan;
             height: 20px;
-            
+
         }
         transition: opacity .3s;
     }
@@ -2073,7 +2073,7 @@ ul.job-list-dots {
 }
 
 .qa-list-item {
-    list-style-type: none; 
+    list-style-type: none;
     margin-left: 0;
     padding-left: 0;
     position: relative;
@@ -2090,7 +2090,7 @@ ul.job-list-dots {
             padding-left: 60px;
             @include fontSize(24px);
         }
-        
+
     }
     &.active {
        // font-family: "Gotham";
@@ -2113,14 +2113,14 @@ ul.job-list-dots {
 }
 
 .press-item {
-    
+
     display: inline-block;
     vertical-align: top;
     text-align: center;
     margin-bottom: 25px;
     @include media($md) {
         padding: 0 50px;
-        width: 49%;    
+        width: 49%;
     }
     transition: all .1s;
     &:hover {
@@ -2154,7 +2154,7 @@ ul.job-list-dots {
         }
 
         &:after {
-            bottom: 0;   
+            bottom: 0;
         }
     }
     .publication {
@@ -2164,7 +2164,7 @@ ul.job-list-dots {
         color: $light-red;
         @include fontSize(16px);
         @include media($md) {
-            
+
             @include fontSize(22px);
         }
     }
@@ -2174,7 +2174,7 @@ ul.job-list-dots {
         font-style: italic;
         @include fontSize(20px);
         @include media($md) {
-            
+
             @include fontSize(33px);
         }
     }
@@ -2183,8 +2183,8 @@ ul.job-list-dots {
         font-weight: 300;
         @include fontSize(16px);
         @include media($md) {
-            
-            
+
+
         }
     }
     .date {
@@ -2194,8 +2194,8 @@ ul.job-list-dots {
         color: $light-red;
         @include fontSize(12px);
         @include media($md) {
-            
-            
+
+
         }
     }
 }
@@ -2219,7 +2219,7 @@ ul.job-list-dots {
     }
     &:nth-of-type(4n), &:nth-of-type(4n-1),&:nth-of-type(4n-2) {
         @include media($md) {
-            margin-left: 1%;    
+            margin-left: 1%;
         }
     }
     &:hover {
@@ -2259,7 +2259,7 @@ ul.job-list-dots {
         margin-bottom: 0;
         @include fontSize(16px);
         @include media($md) {
-            
+
             @include fontSize(18px);
         }
     }
@@ -2270,7 +2270,7 @@ ul.job-list-dots {
         margin: 0;
         @include fontSize(16px);
         @include media($md) {
-            
+
             @include fontSize(15px);
         }
     }
@@ -2315,7 +2315,7 @@ ul.job-list-dots {
         z-index: 2;
         @include media($md) {
             width: 30%;
-            float: left;    
+            float: left;
         }
     }
     .text {
@@ -2325,7 +2325,7 @@ ul.job-list-dots {
         text-align: left;
         @include media($md) {
             width: 70%;
-            float: right;  
+            float: right;
             padding-top: 0;
         }
     }
@@ -2355,7 +2355,7 @@ ul.job-list-dots {
         font-weight: 300;
         @include fontSize(18px);
         @include media($md) {
-            
+
             @include fontSize(20px);
         }
     }
@@ -2373,14 +2373,14 @@ ul.job-list-dots {
                $arrow-length: 1em,
                $border-width: 0,
                $border-color: false) {
-  
+
   position: absolute;
   box-sizing: border-box;
   margin-bottom: $arrow-length;
   background-color: $background-color;
   cursor: default;
   visibility: hidden;
-  
+
   &:after {
     content: "";
     position: absolute;
@@ -2391,10 +2391,10 @@ ul.job-list-dots {
     border-right: ($arrow-base / 2 - $border-width) solid transparent;
     margin-left: ($border-width - $arrow-base / 2);
   }
-  
+
   @if $border-width {
     border: $border-width solid $border-color;
-    
+
     &:before {
       content: "";
       position: absolute;
@@ -2402,7 +2402,7 @@ ul.job-list-dots {
       width: 0; height: 0;
       border-top: $arrow-length solid $border-color;
       border-left: ($arrow-base / 2) solid transparent;
-      border-right: ($arrow-base / 2) solid transparent;    
+      border-right: ($arrow-base / 2) solid transparent;
       margin-left: ($arrow-base / -2);
     }
   }
@@ -2414,7 +2414,7 @@ ul.job-list-dots {
   @-webkit-keyframes #{$animation-name} {
     @content;
   }
-  
+
   @keyframes #{$animation-name} {
     @content;
   }
@@ -2448,7 +2448,7 @@ ul.job-list-dots {
 
 .tooltip-attached {
   position: relative;
-  
+
   &:hover {
     .tooltip {
       visibility: visible;
@@ -2473,7 +2473,7 @@ ul.job-list-dots {
     @include tooltip(white, 1.5em, .75em, .1em, #ccc);
     color: #333;
   }
-  
+
   &.tooltip-no-border {
     @include tooltip($dark-red, 1em, .5em);
     color: $tan;
@@ -2625,7 +2625,7 @@ select.source {
         overflow: hidden;
         height: 45px;
     }
-    
+
 }
 .drop {
     padding-left: 30px;
@@ -2699,7 +2699,7 @@ select.source {
         width: 100%;
         margin-bottom: 40px;
         @include media($mdbg) {
-            padding: 0 10vw;  
+            padding: 0 10vw;
 
         }
     }
@@ -2711,7 +2711,7 @@ select.source {
         width: 50%;
     }
     img {
-        
+
         margin-top: -30px;
         float: none;
         margin-left: auto;
@@ -2727,7 +2727,7 @@ select.source {
     h3 {
         font-family: "GothamNarrow";
         font-weight: 400;
-        @include fontSize(26px); 
+        @include fontSize(26px);
     }
     p {
         font-family: "GothamNarrow";
@@ -2743,7 +2743,7 @@ select.source {
     margin-bottom: 30px;
     @include media($md) {
         width: 70%;
-        padding: 0 50px;    
+        padding: 0 50px;
     }
     .validation_error {
         display: none;
@@ -2786,7 +2786,7 @@ select.source {
         font-family: "Gotham";
         font-weight: bold;
     }
-    
+
     select, input {
         height: 48px;
         padding: 5px 10px;
@@ -2823,12 +2823,12 @@ select.source {
     .gchoice_1_8_1{
         input {
             margin-top: 5px;
-            float: left;   
+            float: left;
         }
         label {
-            @include fontSize(16px);    
+            @include fontSize(16px);
         }
-        
+
     }
 }
 
@@ -2857,7 +2857,7 @@ select.source {
 
 .gform_button.button {
     @include media($mdbg) {
-        float: right;    
+        float: right;
         margin-top: -50px;
     }
     width: 200px;
@@ -2910,7 +2910,7 @@ select.source {
         margin: 0;
         line-height: 1.2em;
         font-family: "GothamNarrow";
-        @include fontSize(20px); 
+        @include fontSize(20px);
     }
     .phone-number {
         font-weight: 400;
@@ -2966,19 +2966,19 @@ select.source {
 }
 
 .reservation_image_wrap {
-    
+
 }
 .gform_ajax_spinner {
     height: 20px;
     width: 20px;
     position: absolute;
     right: 10px;
-    
+
     bottom: 10px;
     @include media($md) {
         top: 0;
         bottom: 0;
-        margin: auto 0;    
+        margin: auto 0;
     }
 }
 
