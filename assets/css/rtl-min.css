@@ -254,7 +254,7 @@ h3.numbers-counting{font-size:22vw;color:#fffdd4;font-family:"Numbers Claimcheck
 }.ingredients-row:nth-of-type(4) p{font-size:2.54vw}@media screen and (min-width:64em){.ingredients-row:nth-of-type(4) p{font-size:27px;font-size:1.6875rem}
 }.ingredients-row:nth-of-type(5) p{font-size:3.85vw}@media screen and (min-width:64em){.ingredients-row:nth-of-type(5) p{font-size:37px;font-size:2.3125rem}
 }.ingredients-row:nth-of-type(6) p{font-size:2.6vw}@media screen and (min-width:64em){.ingredients-row:nth-of-type(6) p{font-size:27px;font-size:1.6875rem}
-}.ingredients-row:nth-of-type(7) p{font-size:3.9vw}@media screen and (min-width:64em){.ingredients-row:nth-of-type(7) p{font-size:39px;font-size:2.4375rem}
+}.ingredients-row:nth-of-type(7) p{font-size:2.4vw}@media screen and (min-width:64em){.ingredients-row:nth-of-type(7) p{font-size:25px;font-size:1.5625rem}
 }.ingredients-row:nth-of-type(8) p{font-size:3.57vw}@media screen and (min-width:64em){.ingredients-row:nth-of-type(8) p{font-size:34px;font-size:2.125rem}
 }.ingredients-row .hidden-1,.ingredients-row .hidden-2{font-size:3.57vw;-webkit-transform:scale(0);transform:scale(0)}
 @media screen and (min-width:64em){.ingredients-row .hidden-1,.ingredients-row .hidden-2{font-size:34px;font-size:2.125rem}
