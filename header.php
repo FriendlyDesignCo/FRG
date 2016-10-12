@@ -148,6 +148,8 @@
 										$(".contact-text .phone-number").html("<a href='tel:1-703-442-8783'>703-442-8783</a>");
 									} else if(selected_location == 93802) {
 										$(".contact-text .phone-number").html("<a href='tel:1-202-298-8783'>202-298-8783</a>");
+									} else if(selected_location == 231226) {
+										$(".contact-text .phone-number").html("<a href='tel:1-202-464-3001'>202-464-3001</a>");
 									}
 							});	
 
@@ -163,6 +165,15 @@
 							    $(this).parent().parent().children().children("h3").html(text);
 							    console.log("text "+ text);
 							    switch(text) {
+							    	case "Farmers and Distillers":
+								        $(this).parent().parent().children(".source").val(231226);
+								        // change to dc photo
+								        console.log("f and d");
+								        selected_restaurant = 0;
+								        $(".contact-text .phone-number").html("<a href='tel:1-202-464-3001'>202-464-3001</a>");
+								        switchImages("url_1", reservation_images[0]["image"]);
+								        //$(".reservation_image_wrap img").attr("src", reservation_images[0]["image"] );
+								        break;
 								    case "Founding Farmers DC":
 								        $(this).parent().parent().children(".source").val(24712);
 								        // change to dc photo
@@ -362,7 +373,8 @@
 										<option value="24712">Founding Farmers DC</option>
 										<option value="70411">MoCo’s Founding Farmers</option>
 										<option value="150769">Founding Farmers Tysons</option>
-										<option value="93802" class="ffb">FARMERS FISHERS BAKERS</option>
+										<option value="93802" class="ffb">Farmers Fishers Bakers</option>
+										<option value="231226">Farmers and Distillers</option>
 									</select>
 								</div>
 								<div class="form-group">
