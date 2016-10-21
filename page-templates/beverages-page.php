@@ -110,6 +110,9 @@ get_header(); ?>
 					<?php endwhile; ?>
 					</div>
 					<?php endif; ?>
+					<?php if(get_sub_field('html') != "") { ?> 
+						<?php the_sub_field("html") ?>
+					<?php } ?>
 				</div>
 			</div>
 		</section>
