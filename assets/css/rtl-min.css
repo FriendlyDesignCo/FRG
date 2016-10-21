@@ -280,7 +280,8 @@ h3.numbers-counting{font-size:22vw;color:#fffdd4;font-family:"Numbers Claimcheck
 }.careers-section.last-slide,.beverages-section.last-slide{position:relative;float:left;height:calc(100vh - 63px);text-align:center;min-height:initial}
 @media screen and (min-width:48em){.careers-section.last-slide,.beverages-section.last-slide{padding-top:30vh}
 }.careers-section.slide-wrap,.beverages-section.slide-wrap{height:400vh}@media screen and (min-width:64em){.careers-section.slide-wrap,.beverages-section.slide-wrap{height:650vh}
-}@media screen and (min-width:48em){.careers-wrap{padding-top:0}}.careers-wrap .slide-1 h2{margin:0;text-align:left}
+}.careers-section.last-slide{height:auto;padding-top:10vh}.careers-section.last-slide .button{margin-bottom:50px}
+@media screen and (min-width:48em){.careers-wrap{padding-top:0}}.careers-wrap .slide-1 h2{margin:0;text-align:left}
 .careers-wrap .slide-1 p{text-align:left;line-height:1.4em}h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';font-weight:500;font-size:20px;font-size:1.25rem}
 @media screen and (min-width:48em){h2.career-title{font-size:35px;font-size:2.1875rem}
 }@media screen and (min-width:64em){h2.career-title{font-size:42px;font-size:2.625rem}
