@@ -60,6 +60,9 @@
 
 	<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7451292/7375352/css/fonts.css" />
 
+	
+
+
 	<!--
 	<meta property="og:url"           content="<?php the_permalink (); ?>" />
     <meta property="og:type"          content="website" />
@@ -100,6 +103,8 @@
     <script type='text/javascript' src='http://www.wearefoundingfarmers.com/wp-content/themes/Founding-Farmers/assets/js/moment.js'></script>
 	<link rel="stylesheet" id="" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css" type="text/css" media="all">
 	<script src="http://www.wearefoundingfarmers.com/wp-content/themes/Founding-Farmers/assets/js/bootstrap-datetimepicker.min.js"></script>
+
+
 
 	<script>
 	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

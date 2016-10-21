@@ -280,7 +280,7 @@ h3.numbers-counting{font-size:22vw;color:#fffdd4;font-family:"Numbers Claimcheck
 }.careers-section.last-slide,.beverages-section.last-slide{position:relative;float:left;height:calc(100vh - 63px);text-align:center;min-height:initial}
 @media screen and (min-width:48em){.careers-section.last-slide,.beverages-section.last-slide{padding-top:30vh}
 }.careers-section.slide-wrap,.beverages-section.slide-wrap{height:400vh}@media screen and (min-width:64em){.careers-section.slide-wrap,.beverages-section.slide-wrap{height:650vh}
-}.careers-section.last-slide{height:auto;padding-top:10vh}.careers-section.last-slide .button{margin-bottom:50px}
+}.careers-section.last-slide{padding-top:10vh}.careers-section.last-slide .button{margin-bottom:50px}
 @media screen and (min-width:48em){.careers-wrap{padding-top:0}}.careers-wrap .slide-1{height:auto}
 .careers-wrap .slide-1 h2{margin:0;text-align:left;line-height:1em}.careers-wrap .slide-1 p{text-align:left;line-height:1.3em}
 .careers-wrap .arrow-wrap{margin-top:30px}h2.career-title{font-style:normal;text-transform:uppercase;font-family:'Gotham';font-weight:500;font-size:20px;font-size:1.25rem}
@@ -531,7 +531,11 @@ input.datepicker{position:relative}.datepicker{font-size:16px;font-size:1rem}@me
 .error-404{padding-top:100px}.error-404 h2{font-size:40px;font-size:2.5rem}@media screen and (min-width:48em){.error-404 h2{font-size:77px;font-size:4.8125rem}
 }.image-404{max-width:800px;float:none;margin:0 auto 50px}.gform_ajax_spinner{height:20px;width:20px;position:absolute;right:10px;bottom:10px}
 @media screen and (min-width:48em){.gform_ajax_spinner{top:0;bottom:0;margin:auto 0}
-}.blog-page .site-content{padding-bottom:50px}.page-template-page-templatestemplate-left-col-php h1.entry-title{margin:0;text-align:right}
+}.blog-page .site-content{padding-bottom:50px}.play-button{background-color:#9d4446;height:70px;width:70px;border-radius:50%;display:block;position:absolute;top:0;float:none;margin:0 auto;transition:all .3s}
+.play-button:after{content:"";position:absolute;width:0;height:0;border-style:solid;border-width:20px 0 20px 29px;border-color:transparent transparent transparent #ffe7cc;left:0;right:0;top:0;bottom:0;margin:auto;-webkit-transform:translateX(5px);transform:translateX(5px)}
+.play-button-wrapper{position:relative;display:block;width:70px;height:70px;float:none;margin:0 auto}
+.play-button-wrapper:hover .play-button{background-color:#8b2332;-webkit-transform:scale(1.1,1.1);transform:scale(1.1,1.1)}
+.page-template-page-templatestemplate-left-col-php h1.entry-title{margin:0;text-align:right}
 @media screen and (min-width:48em){.page-template-page-templatestemplate-left-col-php #main{display:-webkit-flex;display:-ms-flexbox;display:flex}
 }@media screen and (min-width:0){.page-template-page-templatestemplate-left-col-php #main #primary{float:left;display:block;margin-right:14.28571%;width:214.28571%}
 .page-template-page-templatestemplate-left-col-php #main #primary:last-child{margin-right:0}

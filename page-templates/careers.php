@@ -350,6 +350,32 @@ get_header(); ?>
 				<p class="text-red"><a href="<?php the_field('apply_link_hourly'); ?>">Apply for hourly restaurant crew positions here</a></p>
 			<?php } ?> 
 			
+			
+			<script src="//fast.wistia.com/embed/medias/rrassautyq.jsonp" async></script>
+			<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+			<div class="play-button-wrapper">
+
+				<span class="wistia_embed wistia_async_rrassautyq popover=true popoverAnimateThumbnail=true" style="display: block;
+    opacity: 0;
+    height: 70px;
+    width: 70px;
+    z-index: 1;
+    position: relative;"></span>
+				<a class="play-button" href="#test" style=""></a>
+			</div>
+			
+			<script>
+				(function($) {
+
+					$(document).ready(function() {
+						//$('.image-lightbox').featherlight();
+						$(".play-button").click(function(e) {
+							e.preventDefault();
+							$(".wistia_embed").mousedown();
+						})
+					});
+				})( jQuery );
+			</script>
 	</section>
 </div><!-- .page-wrap -->
 <?php get_footer(); ?>

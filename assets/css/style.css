@@ -2340,7 +2340,6 @@ ul.positions {
         height: 650vh; } }
 
 .careers-section.last-slide {
-  height: auto;
   padding-top: 10vh; }
   .careers-section.last-slide .button {
     margin-bottom: 50px; }
@@ -4219,6 +4218,45 @@ select.source {
 
 .blog-page .site-content {
   padding-bottom: 50px; }
+
+.play-button {
+  background-color: #9D4446;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  float: none;
+  margin: 0 auto;
+  transition: all .3s; }
+  .play-button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 29px;
+    border-color: transparent transparent transparent #FFE7CC;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px); }
+
+.play-button-wrapper {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 70px;
+  float: none;
+  margin: 0 auto; }
+  .play-button-wrapper:hover .play-button {
+    background-color: #8B2332;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1); }
 
 /*--------------------------------------------------------------
     6.4 Page Templates
