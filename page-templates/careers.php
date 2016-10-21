@@ -361,7 +361,7 @@ get_header(); ?>
     width: 70px;
     z-index: 1;
     position: relative;"></span>
-				<a class="play-button" href="#test" style=""></a>
+				<a class="play-button" href="" style=""></a>
 			</div>
 			
 			<script>
