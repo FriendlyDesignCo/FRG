@@ -118,7 +118,7 @@ get_header(); ?>
 		}
 		
 	</style>
-	<section class="section careers-section slide-1 section-wrap">
+	<section class="section careers-section header-slide slide-1 section-wrap">
 		<div class="section-inner">
 
 			<h2 class="small"><?php the_field('hero_header_line_1'); ?></h2>
@@ -346,6 +346,9 @@ get_header(); ?>
 		<div class="section-inner">
 			<h2 class="small">Ready to start your journey?</h2>
 			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '3');" href="<?php the_field('apply_link') ?>" target="_blank">Apply</a>
+			<?php if(get_field('apply_link_hourly') != '' ) { ?>
+				<p class="text-red"><a href="<?php the_field('apply_link_hourly'); ?>">Apply for hourly restaurant crew positions here</a></p>
+			<?php } ?>
 			<script src="//fast.wistia.com/embed/medias/rrassautyq.jsonp" async></script><script src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_rrassautyq videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
 	</section>
 </div><!-- .page-wrap -->
