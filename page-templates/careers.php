@@ -355,7 +355,7 @@ get_header(); ?>
 			<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
 			<div class="play-button-wrapper">
 
-				<span class="wistia_embed wistia_async_rrassautyq popover=true popoverAnimateThumbnail=true" style="display: block;opacity: 0;height: 70px; width: 70px; z-index: 1; position: relative;"></span>
+				<span class="wistia_embed wistia_async_rrassautyq popover=true popoverAnimateThumbnail=true" style=""></span>
 				<a class="play-button" href="" style=""></a>
 			</div>
 			

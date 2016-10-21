@@ -4229,7 +4229,11 @@ select.source {
   top: 0;
   float: none;
   margin: 0 auto;
-  transition: all .3s; }
+  transition: all .3s;
+  display: none; }
+  @media screen and (min-width: 48em) {
+    .play-button {
+      display: block; } }
   .play-button:after {
     content: "";
     position: absolute;
@@ -4249,14 +4253,30 @@ select.source {
 .play-button-wrapper {
   position: relative;
   display: block;
-  width: 70px;
-  height: 70px;
+  margin: 0 auto;
   float: none;
-  margin: 0 auto; }
+  width: 350px;
+  height: 170px; }
+  @media screen and (min-width: 48em) {
+    .play-button-wrapper {
+      width: 70px;
+      height: 70px; } }
   .play-button-wrapper:hover .play-button {
     background-color: #8B2332;
     -webkit-transform: scale(1.1, 1.1);
             transform: scale(1.1, 1.1); }
+
+.wistia_embed {
+  display: block;
+  width: 350px;
+  height: 170px; }
+  @media screen and (min-width: 48em) {
+    .wistia_embed {
+      opacity: 0;
+      height: 70px;
+      width: 70px;
+      z-index: 1;
+      position: relative; } }
 
 /*--------------------------------------------------------------
     6.4 Page Templates
