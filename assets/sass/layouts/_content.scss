@@ -912,6 +912,7 @@ ul.positions {
     padding-top: 10vh;
     .button {
         margin-bottom: 50px;
+        margin-top: 30px;
     }
 }
 
@@ -922,11 +923,14 @@ ul.positions {
     }
     .slide-1 {
         //padding-top: 0;
-        height: auto;
+        //height: auto;
         h2 {
             margin: 0;
             text-align: left;
             line-height: 1em;
+            @include media($md) {
+                @include fontSize(58px);
+            }
         }
         p {
             text-align: left;
@@ -3032,25 +3036,42 @@ select.source {
     }
 }
 
+
+.play-wrap {
+    font-family: "Gotham";
+    color: $dark-red;
+}
 .play-button-wrapper {
     position: relative;
-    display: block;
-    margin: 0 auto;  
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;  
     float: none;
     width: 350px;
     height: 170px;
+
     @include media($md) {
         width: 70px;
         height: 70px;
-        
+        @include animation-name(playButtonAnimation);
+        @include animation-duration(3s);
+        @include animation-timing-function(ease);
+        @include animation-iteration-count(infinite);
           
     }
     &:hover {
         .play-button {
             background-color: $dark-red;
-            transform: scale(1.1,1.1);
+
         }
     }
+}
+
+@keyframes playButtonAnimation {
+    0% {transform: scale(1,1);}
+    10% {transform: scale(1.1,1.1);}
+    20% {transform: scale(.9,.9);}
+    30% {transform: scale(1,1);}
 }
 
 .wistia_embed {

@@ -126,7 +126,16 @@ get_header(); ?>
 			<p class="text-red"><?php the_field('hero_paragraph'); ?></p>
 			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '2');" target="_blank" href="<?php the_field('apply_link'); ?>">Apply</a>
 			<p class="text-red medium"><?php the_field('scroll_more_text'); ?></p>
-
+			<script src="//fast.wistia.com/embed/medias/rrassautyq.jsonp" async></script>
+			<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+			<div class="play-wrap">
+				
+				<div class="play-button-wrapper">
+					<span class="wistia_embed wistia_async_rrassautyq popover=true popoverAnimateThumbnail=true" style=""></span>
+					<a class="play-button" href="" style=""></a>
+				</div>
+				Why Farmers Restaurant Group
+			</div>
 			<div class="arrow-wrap"><a class="arrow-link" href="#career-anchor-1">
 				<div class="arrow arrow-red arrow-1"></div>
 				<div class="arrow arrow-red arrow-2"></div>
@@ -345,19 +354,24 @@ get_header(); ?>
 	<section class="section careers-section last-slide section-wrap">
 		<div class="section-inner">
 			<h2 class="small">Ready to start your journey?</h2>
+			<script src="//fast.wistia.com/embed/medias/rrassautyq.jsonp" async></script>
+			<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+			<div class="play-wrap">
+				
+				<div class="play-button-wrapper">
+					<span class="wistia_embed wistia_async_rrassautyq popover=true popoverAnimateThumbnail=true" style=""></span>
+					<a class="play-button" href="" style=""></a>
+				</div>
+				Why Farmers Restaurant Group
+			</div>
+			
 			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '3');" href="<?php the_field('apply_link') ?>" target="_blank">Apply</a>
 			<?php if(get_field('apply_link_hourly') != '' ) { ?>
 				<p class="text-red"><a href="<?php the_field('apply_link_hourly'); ?>">Apply for hourly restaurant crew positions here</a></p>
 			<?php } ?> 
 			
 			
-			<script src="//fast.wistia.com/embed/medias/rrassautyq.jsonp" async></script>
-			<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-			<div class="play-button-wrapper">
-
-				<span class="wistia_embed wistia_async_rrassautyq popover=true popoverAnimateThumbnail=true" style=""></span>
-				<a class="play-button" href="" style=""></a>
-			</div>
+			
 			
 	</section>
 </div><!-- .page-wrap -->

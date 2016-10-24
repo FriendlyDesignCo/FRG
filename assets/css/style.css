@@ -2342,21 +2342,25 @@ ul.positions {
 .careers-section.last-slide {
   padding-top: 10vh; }
   .careers-section.last-slide .button {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    margin-top: 30px; }
 
 @media screen and (min-width: 48em) {
   .careers-wrap {
     padding-top: 0; } }
 
-.careers-wrap .slide-1 {
-  height: auto; }
-  .careers-wrap .slide-1 h2 {
-    margin: 0;
-    text-align: left;
-    line-height: 1em; }
-  .careers-wrap .slide-1 p {
-    text-align: left;
-    line-height: 1.3em; }
+.careers-wrap .slide-1 h2 {
+  margin: 0;
+  text-align: left;
+  line-height: 1em; }
+  @media screen and (min-width: 48em) {
+    .careers-wrap .slide-1 h2 {
+      font-size: 58px;
+      font-size: 3.625rem; } }
+
+.careers-wrap .slide-1 p {
+  text-align: left;
+  line-height: 1.3em; }
 
 .careers-wrap .arrow-wrap {
   margin-top: 30px; }
@@ -4250,21 +4254,60 @@ select.source {
     -webkit-transform: translateX(5px);
             transform: translateX(5px); }
 
+.play-wrap {
+  font-family: "Gotham";
+  color: #8B2332; }
+
 .play-button-wrapper {
   position: relative;
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
   float: none;
   width: 350px;
   height: 170px; }
   @media screen and (min-width: 48em) {
     .play-button-wrapper {
       width: 70px;
-      height: 70px; } }
+      height: 70px;
+      -webkit-animation-name: playButtonAnimation;
+      animation-name: playButtonAnimation;
+      -webkit-animation-duration: 3s;
+      animation-duration: 3s;
+      -webkit-animation-timing-function: ease;
+      animation-timing-function: ease;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite; } }
   .play-button-wrapper:hover .play-button {
-    background-color: #8B2332;
+    background-color: #8B2332; }
+
+@-webkit-keyframes playButtonAnimation {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  10% {
     -webkit-transform: scale(1.1, 1.1);
             transform: scale(1.1, 1.1); }
+  20% {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9); }
+  30% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
+
+@keyframes playButtonAnimation {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  10% {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1); }
+  20% {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9); }
+  30% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
 
 .wistia_embed {
   display: block;
