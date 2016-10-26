@@ -882,6 +882,7 @@ ul.positions {
 
     text-align: left;
     min-height: 100vh;
+    overflow: hidden;
     @include media($md) {
         height: 100vh;
         min-height: none;

@@ -2319,7 +2319,8 @@ ul.positions {
 
 .careers-section, .beverages-section {
   text-align: left;
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow: hidden; }
   @media screen and (min-width: 48em) {
     .careers-section, .beverages-section {
       height: 100vh;
