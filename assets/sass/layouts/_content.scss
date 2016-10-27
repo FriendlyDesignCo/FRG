@@ -3015,7 +3015,8 @@ select.source {
     float: none;
     margin: 0 auto;
     transition: all .3s;
-    display: none;
+    //display: none;
+    display: block;
     @include media($md) {
         display: block;
     }
@@ -3044,21 +3045,27 @@ select.source {
 }
 .play-button-wrapper {
     position: relative;
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     margin: 0 10px;  
     float: none;
-    width: 350px;
-    height: 170px;
-
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
     @include media($md) {
-        width: 70px;
-        height: 70px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 0px;
+        
         @include animation-name(playButtonAnimation);
         @include animation-duration(3s);
         @include animation-timing-function(ease);
         @include animation-iteration-count(infinite);
           
+    }
+    &.center {
+        float: none;
+        margin-left:  auto;
+        margin-right: auto;
     }
     &:hover {
         .play-button {
@@ -3074,17 +3081,26 @@ select.source {
     20% {transform: scale(.9,.9);}
     30% {transform: scale(1,1);}
 }
+.touch .wistia_popover_embed {
+    visibility: hidden !important;
+}
 
+.touch .wistia_popover_overlay {
+    display: none !important;
+}
 .wistia_embed {
     display: block;
-    width: 350px;
-    height: 170px;
+    //width: 350px;
+    //height: 170px;
+    opacity: 0;
+    height: 70px;
+    width: 70px;
+    z-index: 1;
+    position: relative;    
     @include media($md) {
         
-        opacity: 0;
-        height: 70px;
-        width: 70px;
-        z-index: 1;
-        position: relative;    
+        
+        
+        
     }
 }

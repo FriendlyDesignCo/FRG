@@ -129,12 +129,12 @@ get_header(); ?>
 			<script src="//fast.wistia.com/embed/medias/rrassautyq.jsonp" async></script>
 			<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
 			<div class="play-wrap">
-				
+				Why Farmers Restaurant Group? Watch our video:
 				<div class="play-button-wrapper">
 					<span class="wistia_embed wistia_async_rrassautyq popover=true popoverAnimateThumbnail=true" style=""></span>
 					<a class="play-button" href="" style=""></a>
 				</div>
-				Why Farmers Restaurant Group
+				
 			</div>
 			<div class="arrow-wrap"><a class="arrow-link" href="#career-anchor-1">
 				<div class="arrow arrow-red arrow-1"></div>
@@ -357,12 +357,12 @@ get_header(); ?>
 			<script src="//fast.wistia.com/embed/medias/rrassautyq.jsonp" async></script>
 			<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
 			<div class="play-wrap">
-				
-				<div class="play-button-wrapper">
+				Why Farmers Restaurant Group? Watch our video:
+				<div class="play-button-wrapper center">
 					<span class="wistia_embed wistia_async_rrassautyq popover=true popoverAnimateThumbnail=true" style=""></span>
-					<a class="play-button" href="" style=""></a>
+					<a class="play-button " href="" style=""></a>
 				</div>
-				Why Farmers Restaurant Group
+
 			</div>
 			
 			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '3');" href="<?php the_field('apply_link') ?>" target="_blank">Apply</a>

@@ -9,7 +9,8 @@
  */
 
 get_header(); ?>
-
+<script src="//fast.wistia.com/embed/medias/h670xgceu8.jsonp" async></script>
+<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
 <div id="" class="beverages-page content-area">
 	<script>
 		(function($) {

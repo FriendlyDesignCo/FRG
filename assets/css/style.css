@@ -4235,7 +4235,7 @@ select.source {
   float: none;
   margin: 0 auto;
   transition: all .3s;
-  display: none; }
+  display: block; }
   @media screen and (min-width: 48em) {
     .play-button {
       display: block; } }
@@ -4261,16 +4261,17 @@ select.source {
 
 .play-button-wrapper {
   position: relative;
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   margin: 0 10px;
   float: none;
-  width: 350px;
-  height: 170px; }
+  width: 70px;
+  height: 70px;
+  margin-top: 30px; }
   @media screen and (min-width: 48em) {
     .play-button-wrapper {
-      width: 70px;
-      height: 70px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 0px;
       -webkit-animation-name: playButtonAnimation;
       animation-name: playButtonAnimation;
       -webkit-animation-duration: 3s;
@@ -4279,6 +4280,10 @@ select.source {
       animation-timing-function: ease;
       -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite; } }
+  .play-button-wrapper.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto; }
   .play-button-wrapper:hover .play-button {
     background-color: #8B2332; }
 
@@ -4310,17 +4315,19 @@ select.source {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1); } }
 
+.touch .wistia_popover_embed {
+  visibility: hidden !important; }
+
+.touch .wistia_popover_overlay {
+  display: none !important; }
+
 .wistia_embed {
   display: block;
-  width: 350px;
-  height: 170px; }
-  @media screen and (min-width: 48em) {
-    .wistia_embed {
-      opacity: 0;
-      height: 70px;
-      width: 70px;
-      z-index: 1;
-      position: relative; } }
+  opacity: 0;
+  height: 70px;
+  width: 70px;
+  z-index: 1;
+  position: relative; }
 
 /*--------------------------------------------------------------
     6.4 Page Templates
