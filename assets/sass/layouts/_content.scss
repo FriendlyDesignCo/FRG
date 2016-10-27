@@ -1748,7 +1748,7 @@ ul.job-list-dots {
 .beverages-section {
     h2 {
         @include fontSize(28px);
-        line-height: 1..09em;
+        line-height: 1.09em;
         @include media($md) {
             @include fontSize(62px);
         }
