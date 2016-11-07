@@ -1290,7 +1290,7 @@ ul.job-list-dots {
     @include media($md) {
         right: initial;
         left: 70vw;
-        height: 70%;
+        height: 80%;
         bottom: 30vh;
     }
     .water {
@@ -1398,7 +1398,7 @@ ul.job-list-dots {
             bottom: 40px;
             @include media($md) {
                 background-size: 70%;
-                bottom: 0;
+                bottom: 50px;
             }
             &.before {
                 width: 50%;

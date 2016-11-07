@@ -332,7 +332,7 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 100%{-webkit-transform:translateY(50px);transform:translateY(50px)}}.nav-dots ul li.active{background:#8b2332;width:20px;height:20px}
 .nav-dots ul li{border:0;width:15px;height:15px;border-radius:50%;background:#9d4446}
 .sprinkler-animation{position:absolute;right:5vw;top:0;height:80%;width:30vw;z-index:2;overflow-y:hidden}
-@media screen and (min-width:48em){.sprinkler-animation{right:initial;left:70vw;height:70%;bottom:30vh}
+@media screen and (min-width:48em){.sprinkler-animation{right:initial;left:70vw;height:80%;bottom:30vh}
 }.sprinkler-animation .water{background-position:center;background-repeat:no-repeat;height:400px;width:100%;-webkit-transform:scale(0);transform:scale(0);-webkit-transform-origin:center bottom;transform-origin:center bottom;position:absolute;display:none;bottom:10%;transition:all 2.5s;transition-delay:.2s}
 @media screen and (min-width:48em){.sprinkler-animation .water{display:block;width:70%;left:30%}
 }.sprinkler-animation .water.animated{-webkit-transform:scale(1);transform:scale(1);opacity:0}
@@ -345,7 +345,7 @@ ul.job-list-dots{width:70%;display:table;margin-bottom:70px;list-style-type:none
 }.sprinkler-animation .corn.after{opacity:0}.sprinkler-animation .corn.before{z-index:2;opacity:1;display:none}
 @media screen and (min-width:48em){.sprinkler-animation .corn.before{display:block}
 }.sprinkler-animation.step-1{opacity:1}.sprinkler-animation.step-6{top:10vh}.sprinkler-animation.step-6 .corn{background-position:center;height:400px;background-size:120%;bottom:40px}
-@media screen and (min-width:48em){.sprinkler-animation.step-6 .corn{background-size:70%;bottom:0}
+@media screen and (min-width:48em){.sprinkler-animation.step-6 .corn{background-size:70%;bottom:50px}
 }.sprinkler-animation.step-6 .corn.before{width:50%;height:100%;left:0;right:0;bottom:20%;margin:0 auto}
 @media screen and (min-width:48em){.sprinkler-animation.step-6 .corn.before{bottom:0;width:100%;background-size:150px;height:80%}
 }.step-3 .corn,.step-4 .corn,.step-5 .corn{width:70%}@media screen and (min-width:48em){.step-3 .corn,.step-4 .corn,.step-5 .corn{width:100%}
