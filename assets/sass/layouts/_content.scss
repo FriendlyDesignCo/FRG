@@ -772,7 +772,7 @@ ul.positions {
         padding: 25vh 0 0;
     }
     @include media($mdbg) {
-        padding: 30vh 0 0;
+        padding: 24vh 0 0;
     }
     p {
         font-family: "Gotham";
@@ -782,7 +782,7 @@ ul.positions {
             @include fontSize(20px);
         }
         @include media($mdbg) {
-            @include fontSize(24px);
+            @include fontSize(20px);
         }
     }
     &.active-slide {
@@ -956,7 +956,7 @@ h2.career-title {
         @include fontSize(35px);
     }
     @include media($mdbg) {
-        @include fontSize(42px);
+        @include fontSize(40px);
     }
 }
 

@@ -2241,7 +2241,7 @@ ul.positions {
       padding: 25vh 0 0; } }
   @media screen and (min-width: 64em) {
     .career-slide {
-      padding: 30vh 0 0; } }
+      padding: 24vh 0 0; } }
   .career-slide p {
     font-family: "Gotham";
     font-size: 14px;
@@ -2253,8 +2253,8 @@ ul.positions {
         font-size: 1.25rem; } }
     @media screen and (min-width: 64em) {
       .career-slide p {
-        font-size: 24px;
-        font-size: 1.5rem; } }
+        font-size: 20px;
+        font-size: 1.25rem; } }
   .career-slide.active-slide {
     z-index: 8; }
 
@@ -2379,8 +2379,8 @@ h2.career-title {
       font-size: 2.1875rem; } }
   @media screen and (min-width: 64em) {
     h2.career-title {
-      font-size: 42px;
-      font-size: 2.625rem; } }
+      font-size: 40px;
+      font-size: 2.5rem; } }
 
 .position-wrap {
   margin-bottom: 20px; }
