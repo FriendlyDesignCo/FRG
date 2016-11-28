@@ -120,6 +120,7 @@
 	<script>
 					
 					(function($) {
+						var inputActive = 0;
 
 						$(function() {
 						  $('a[href*="#"]:not([href="#"])').click(function() {
@@ -161,12 +162,47 @@
 
 							$('.dropdown ul li').click(function() {
 								// variables for what is selected
-								
-
 								var text = $(this).text();
 								var index = $(this).index();
 
 								console.log(index);
+
+
+								
+								if($(this).parent().parent().hasClass("form-group--location")) {
+
+									if(index>0) {
+										inputActive += 1;
+										console.log("change location");
+									}
+									else {
+										inputActive -= 1;
+									}
+								}
+
+								if($(this).parent().parent().hasClass("form-group--size")) {
+									
+									if(index>0) {
+										inputActive += 1;
+										console.log("change size");
+									}
+									else {
+										inputActive -= 1;
+									}
+
+								}
+								if($(this).parent().parent().hasClass("form-group--time")) {
+									if(index>0) {
+										inputActive += 1;
+										console.log("change time");
+									}
+									else {
+										inputActive -= 1;
+									}
+
+								}
+
+								
 							    $(this).parent().parent().children().children("h3").html(text);
 							    console.log("text "+ text);
 							    switch(text) {
@@ -223,6 +259,9 @@
 								        //$(".phone-number").text("");
 								}
 
+
+								
+
 								if($(this).parent().hasClass("time-list")) {
 									console.log("time list");
 									if(index > 18) {
@@ -274,7 +313,9 @@
 									});
 								});
 
-							});
+								checkToDisable();
+
+							}); // end $('.dropdown ul li').click(function()
 
 							function switchImages(url_1, url_2) {
 								var $img = $(".reservation_image_wrap img");
@@ -293,18 +334,58 @@
 								});
 								//$img.attr("src", url_2);
 							}
-						});
-					
-					   	$('input.datepicker').datetimepicker({
+
+
+							$(".form-group--date").click(function() {
+								$(".form-group--date td").click(function() {
+									
+									inputActive += 1;
+									console.log("change date");
+									checkToDisable();
+								})
+							})
 							
-							format: 'MM/DD/YYYY',
-							useCurrent: false,
-							defaultDate: false,
-							debug: true
+							// if($(".location-picker").change()) {
+							// 	console.log("location-picker");
+							// }
+							$(".location-picker").change(function() {
+								console.log("location-picker");
+								inputActive += 1;
+								checkToDisable();
+							});
+							$(".date-mobile").change(function() {
+								console.log("date-picker");
+								inputActive += 1;
+								checkToDisable();
+							});
+							$(".res-time").change(function() {
+								console.log("location-picker");
+								inputActive += 1;
+								checkToDisable();
+							});
+							$(".party-size").change(function() {
+								console.log("party-size");
+								inputActive += 1;
+								checkToDisable();
+							});
+						
+						   	$('input.datepicker').datetimepicker({
+								
+								format: 'MM/DD/YYYY',
+								useCurrent: false,
+								defaultDate: false,
+								debug: true
+							});
+							//$('span.date-input').click();
+							function checkToDisable() {
+								if (inputActive > 3) {
+									$(".reserve-modal-button").prop("disabled",false);
+								}
+							}
+
 						});
-						//$('span.date-input').click();
 
-
+							
 
 						
 						    
@@ -365,7 +446,7 @@
 					<div class="widget-wrap">
 						<div class="OT_searchWrapperAll">
 							<form name="ism" id="ism" class="clearfix" method="post" target="_blank" action="http://www.opentable.com/restaurant-search.aspx">
-								<div class="form-group dropdown">
+								<div class="form-field-container form-group dropdown form-group--location">
 									
 						            <div class="drop"  style="">
 						            	<h3 class="">LOCATION</h3>
@@ -382,13 +463,13 @@
 										<option value="231226">Farmers and Distillers</option>
 									</select>
 								</div>
-								<div class="form-group">
+								<div class="form-group form-group--date">
 									<span class="date-input">
-										<input type="text" name="startDate" class="form-control datepicker" placeholder="DATE" autocomplete="off"/>
+										<input type="text" name="startDate" class="form-control datepicker date-mobile" placeholder="DATE" autocomplete="off"/>
 										<span class="btn-caret"><i class="fa fa-angle-down"></i></span>
 									</span>
 								</div>
-								<div class="form-group dropdown">
+								<div class="form-group dropdown form-group--time">
 									<div class="drop"  style="">
 						            	<h3 class="">TIME</h3>
 						            </div>
@@ -433,7 +514,7 @@
 										<option value="12:00 AM">12:00 AM</option>
 									</select>
 								</div>
-								<div class="form-group dropdown">
+								<div class="form-group dropdown form-group--size">
 									<div class="drop"  style="">
 						            	<h3 class="">SIZE</h3>
 						            </div>
@@ -467,7 +548,7 @@
 									<input type="hidden" id="RestaurantReferralID" name="RestaurantReferralID" value="0">
 									<input type="hidden" name="txtDateFormat" value="MM/dd/yyyy">
 									<input type="hidden" name="widget" value="reservpage">
-									<input type="submit" name="submit" value="SEARCH" class="button btn btn-submit" onmousedown="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value;ga('send', 'event', 'reserve', 'click', 'widget');" />
+									<input type="submit" name="submit" value="SEARCH" class="button btn btn-submit reserve-modal-button" onmousedown="document.ism.RestaurantReferralID.value = document.ism.RestaurantID.value;ga('send', 'event', 'reserve', 'click', 'widget');" disabled>
 								</div>
 
 							</form>	

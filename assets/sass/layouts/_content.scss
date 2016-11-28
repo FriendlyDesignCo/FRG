@@ -5,6 +5,11 @@
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
+input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 .vertical-line {
     height: 100%;
     position: fixed;
@@ -216,7 +221,7 @@ button#load-more.done {
     padding: 115px 5%;
     @include media($mdbg) {
         text-align: center;
-        padding: 15vh 10px;
+        padding: 119px 10px;
     }
     p {
         font-family: "Gotham";
@@ -908,6 +913,10 @@ ul.positions {
     }
 }
 
+.careers-section.slide-1 {
+
+}
+
 .careers-section.last-slide {
     //height: auto;
     padding-top: 10vh;
@@ -929,8 +938,14 @@ ul.positions {
             margin: 0;
             text-align: left;
             line-height: 1em;
-            @include media($md) {
-                @include fontSize(58px);
+            @include media($smbg) {
+                @include fontSize(46px);
+            }
+            @include media($mdbg) {
+                @include fontSize(40px);
+            }
+            @include media($hg) {
+                @include fontSize(50px);
             }
         }
         p {
@@ -956,7 +971,7 @@ h2.career-title {
         @include fontSize(35px);
     }
     @include media($mdbg) {
-        @include fontSize(40px);
+       // @include fontSize(40px);
     }
 }
 
