@@ -359,7 +359,7 @@ h3.numbers-counting {
     .move-text {
 
         @include media($mdbg) {
-            transform: translateY(150%);
+            transform: translateY(230px);
             transition: all .3s;
         }
     }

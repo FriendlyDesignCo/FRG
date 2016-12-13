@@ -1903,8 +1903,8 @@ h3.numbers-counting {
         font-size: 1.4375rem; } }
   @media screen and (min-width: 64em) {
     .slide-8-block .move-text {
-      -webkit-transform: translateY(150%);
-              transform: translateY(150%);
+      -webkit-transform: translateY(230px);
+              transform: translateY(230px);
       transition: all .3s; } }
   @media screen and (min-width: 64em) {
     .slide-8-block:hover:before {
