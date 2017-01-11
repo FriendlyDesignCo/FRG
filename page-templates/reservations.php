@@ -19,7 +19,7 @@ get_header(); ?>
 					<h2 class="form-header">Reserve a Table</h2>
 					
 				
-					<form name="ism" id="ism" class="clearfix" method="post" target="_blank" action="http://www.opentable.com/restaurant-search.aspx">
+					<form name="ism" id="ism" class="clearfix" method="get" target="_blank" action="http://www.opentable.com/restaurant-search.aspx">
 						<div class="form-group dropdown form-group--location">
 							
 				            <div class="drop"  style="">

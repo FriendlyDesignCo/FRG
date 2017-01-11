@@ -445,7 +445,7 @@
 					<a class="reservation" ="r" href="">Reserve A Table</a>
 					<div class="widget-wrap">
 						<div class="OT_searchWrapperAll">
-							<form name="ism" id="ism" class="clearfix" method="post" target="_blank" action="http://www.opentable.com/restaurant-search.aspx">
+							<form name="ism" id="ism" class="clearfix" method="get" target="_blank" action="http://www.opentable.com/restaurant-search.aspx">
 								<div class="form-field-container form-group dropdown form-group--location">
 									
 						            <div class="drop"  style="">
