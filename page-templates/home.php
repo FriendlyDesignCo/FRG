@@ -44,7 +44,7 @@ get_header(); ?>
 			    $(document).ready(function() {
 
 				    // home counter
-				    var homeCount = new CountUp("home-count", 0, 42387, 0, 3);
+				    var homeCount = new CountUp("home-count", 0, 47553, 0, 3);
 					homeCount.start();
 
 					// scroll check for menu
