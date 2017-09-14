@@ -345,15 +345,12 @@
 								//$img.attr("src", url_2);
 							}
 
-
-							$(".form-group--date").click(function() {
-								$(".form-group--date td").click(function() {
-									
+							$(".datepicker").on("dp.change", function() {
 									inputActive += 1;
 									console.log("change date");
 									checkToDisable();
-								})
-							})
+							 });
+							
 							
 							// if($(".location-picker").change()) {
 							// 	console.log("location-picker");
