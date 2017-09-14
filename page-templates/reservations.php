@@ -42,7 +42,6 @@ get_header(); ?>
 							<span class="date-input">
 								<input type="text" name="startDate" class="form-control datepicker date-mobile" placeholder="DATE" autocomplete="off"/>
 								<!--<input type="date" name="bday" min="2000-01-02">-->
-								<span class="btn-caret"><i class="fa fa-angle-down"></i></span>
 							</span>
 						</div>
 						<div class="form-group dropdown form-group--time">
