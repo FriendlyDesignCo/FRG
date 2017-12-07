@@ -17,8 +17,8 @@ get_header(); ?>
 			<img src="<?php the_field('cookbook_logo'); ?>">
 		</div>
 		<div class="cookbook-text">
-			<p class="text-left"><?php the_field('paragraph_text_left'); ?></p>
-			<p class="text-right"><?php the_field('paragraph_text_right'); ?></p>
+			<div class="text-left"><?php the_field('paragraph_text_left'); ?></div>
+			<div class="text-right"><?php the_field('paragraph_text_right'); ?></div>
 			<a class="button " onmousedown="ga('send', 'event', 'cookbook', 'click', 'button');" href="<?php the_field('buy_link'); ?>" target="_blank"><?php the_field('buy_button_text'); ?></a>
 		</div>
 		<div class="images-wrap">
