@@ -264,6 +264,16 @@
 								        
 								        //$(".reservation_image_wrap img").attr("src", reservation_images[3]["image"] );
 								        break;
+									case "Founding Farmers Reston":
+								        $(this).parent().parent().children(".source").val(231247);
+								        // change to ffb photo
+								        console.log("reston");
+								        selected_restaurant = 3;
+								        $(".contact-text .phone-number").html("<a href='tel:1-484-808-4008'>484-808-4008</a>");
+								        switchImages("url_1", reservation_images[3]["image"] );
+								        
+								        //$(".reservation_image_wrap img").attr("src", reservation_images[3]["image"] );
+								        break;
 								    default:
 								        $(this).parent().parent().children(".source").val(text);
 								        //$(".phone-number").text("");
@@ -467,6 +477,7 @@
 										<option value="70411">MoCo’s Founding Farmers</option>
 										<option value="150769">Founding Farmers Tysons</option>
 										<option value="845425">Founding Farmers King of Prussia</option>
+										<option value="231247">Founding Farmers Reston</option>
 										<option value="93802" class="ffb">Farmers Fishers Bakers</option>
 										<option value="231226">Farmers and Distillers</option>
 									</select>
