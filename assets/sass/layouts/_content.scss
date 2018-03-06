@@ -34,6 +34,10 @@ input[type="submit"]:disabled {
     }
 }
 
+.clear-float {
+    @include clearfix;
+}
+
 .wp-caption {
     &.alignleft {
         margin-right: 10px;
@@ -2623,6 +2627,8 @@ select.source {
 
 .form-group {
     position: relative;
+    width: 100%;
+    float: left;
 }
 
 .dropdown {
@@ -2784,21 +2790,30 @@ select.source {
     }
 }
 
-.contact-field{
+.gfield{
+    float: left;
+    padding: 0 5px;
     &.field-half-width {
          width: 100%;
-         float: left;
+         
          height: 130px;
          @include media($md) {
-            width: 49%;
+            width: 50%;
+            
          }
          &:nth-of-type(2n) {
-             float: right;
+             //float: right;
+            //  padding: 0 0 0 5px;
          }
      }
      &.field-full-width {
         width: 100%;
      }
+}
+
+.checkbox-field {
+    float: left;
+    width: 100%;
 }
 
 .gform_title {
@@ -2824,6 +2839,7 @@ select.source {
     select, input {
         height: 48px;
         padding: 5px 10px;
+        
     }
     input[type="checkbox"] {
         height: 20px;
@@ -2845,6 +2861,7 @@ select.source {
         }
     }
     select, input, textarea {
+        width: 100%;
         @include appearance(none);
         font-family: "Gotham";
         font-weight: 500;

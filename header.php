@@ -42,7 +42,7 @@
 		.twitter-icon {
 			background-image: url('<?php echo get_site_url(); ?>/wp-content/uploads/icons/twitter-icon.svg');
 		}
-		.form-group:after, .ginput_container_select:after {
+		.dropdown:after, .form-group--date:after, .ginput_container_select:after {
 			content: "";
 			position: absolute;
 			right: 10px;
