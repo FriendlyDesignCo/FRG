@@ -20,19 +20,19 @@
 		});
 
 		$(".case-study-card-image").click(function(){
-			$(".nav-dots").css("opacity","0");
+			$(".nav-dots").css("visibility","hidden");
 			$(".sprinkler-animation").css("opacity","0");
 			$(this).parent().children(".modal-bg").addClass("open");
 			$(this).parent().children(".case-study-card-expanded").addClass("expanded");
 		});
 		$(".case-study-card-blurb").click(function(){
-			$(".nav-dots").css("opacity","0");
+			$(".nav-dots").css("visibility","hidden");
 			$(".sprinkler-animation").css("opacity","0");
 			$(this).parent().children(".modal-bg").addClass("open");
 			$(this).parent().children(".case-study-card-expanded").addClass("expanded");
 		});
 		$(".close-button").click(function(){
-			$(".nav-dots").css("opacity","1");
+			$(".nav-dots").css("visibility","visible");
 			$(".sprinkler-animation").css("opacity","1");
 			$(".modal-bg").removeClass("open");
 			$(".case-study-card-expanded").removeClass("expanded");
@@ -40,7 +40,7 @@
 			$(".team-member-expanded").removeClass("expanded");
 		});
 		$(".modal-bg").click(function() {
-			$(".nav-dots").css("opacity","1");
+			$(".nav-dots").css("visibility","visible");
 			$(".sprinkler-animation").css("opacity","1");
 			$(".modal-bg").removeClass("open");
 			$(".case-study-card-expanded").removeClass("expanded");
