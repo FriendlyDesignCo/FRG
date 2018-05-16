@@ -272,7 +272,7 @@ get_header(); ?>
 			<script>
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number+1;?>" })
 							.setTween(".career-slide-<?php echo $slide_number;?>", {opacity: 1})
-							.addIndicators()
+							// .addIndicators()
 							.addTo(controller);
 				new ScrollMagic.Scene({triggerElement: "#career-trigger<?php echo $slide_number+1;?>",duration:"20px" })
 							.setTween(".career-slide-<?php echo $slide_number;?>", { zIndex:0})
