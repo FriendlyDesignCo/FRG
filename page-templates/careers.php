@@ -124,7 +124,11 @@ get_header(); ?>
 			<h2 class="small"><?php the_field('hero_header_line_1'); ?></h2>
 			<h2 class="small"><?php the_field('hero_header_line_2'); ?></h2>
 			<p class="text-red"><?php the_field('hero_paragraph'); ?></p>
-			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '2');" target="_blank" href="<?php the_field('apply_link'); ?>">Apply</a>
+			<?php if( have_rows('apply_button') ): ?>
+			<?php while( have_rows('apply_button') ): the_row(); ?>
+			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '2');" target="_blank" href="<?php the_sub_field('apply_link'); ?>"><?php the_sub_field('apply_button_text'); ?></a>	
+			<?php endwhile; ?>
+			<?php endif; ?>
 			<p class="text-red medium"><?php the_field('scroll_more_text'); ?></p>
 			<script src="//fast.wistia.com/embed/medias/rrassautyq.jsonp" async></script>
 			<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
@@ -364,8 +368,13 @@ get_header(); ?>
 				</div>
 
 			</div>
+
+			<?php if( have_rows('apply_button') ): ?>
+			<?php while( have_rows('apply_button') ): the_row(); ?>
+			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '2');" target="_blank" href="<?php the_sub_field('apply_link'); ?>"><?php the_sub_field('apply_button_text'); ?></a>	
+			<?php endwhile; ?>
+			<?php endif; ?>
 			
-			<a class="button" onmousedown="ga('send', 'event', 'apply', 'click', '3');" href="<?php the_field('apply_link') ?>" target="_blank">Apply</a>
 			<?php if(get_field('apply_link_hourly') != '' ) { ?>
 				<p class="text-red"><a href="<?php the_field('apply_link_hourly'); ?>">Apply for hourly restaurant crew positions here</a></p>
 			<?php } ?> 

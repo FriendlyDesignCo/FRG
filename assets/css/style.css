@@ -856,6 +856,7 @@ h4 {
 --------------------------------------------------------------*/
 .button, #load-more {
   border-radius: 5px;
+  text-align: center;
   background-color: #8B2332;
   color: #FFE7CC !important;
   text-transform: uppercase;
@@ -881,6 +882,12 @@ input[type="submit"] {
   appearance: none;
   border: 0;
   width: 100%; }
+
+.button + .button {
+  margin-top: 10px; }
+  @media screen and (min-width: 48em) {
+    .button + .button {
+      margin-top: 0; } }
 
 /* Hides navigation links and site footer when infinite scroll is active */
 .infinite-scroll #navigation,

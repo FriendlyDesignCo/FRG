@@ -68,10 +68,11 @@ h2.large{font-size:36px;font-size:2.25rem}@media screen and (min-width:64em){h2.
 }h3{font-size:36px;font-size:2.25rem;font-family:"GothamNarrow";font-weight:300}
 h4{font-family:"Gotham"}h4.large{font-size:24px;font-size:1.5rem}
 h4.small{font-size:16px;font-size:1rem}.text-featured{color:#8b2332;font-family:"GothamNarrow"}
-#content h4{text-transform:uppercase}.button,#load-more{border-radius:5px;background-color:#8b2332;color:#ffe7cc !important;text-transform:uppercase;display:inline-block;padding:15px 40px;font-size:17px;font-size:1.0625rem;font-family:"Gotham";font-weight:500;transition:all .3s;border:0}
+#content h4{text-transform:uppercase}.button,#load-more{border-radius:5px;text-align:center;background-color:#8b2332;color:#ffe7cc !important;text-transform:uppercase;display:inline-block;padding:15px 40px;font-size:17px;font-size:1.0625rem;font-family:"Gotham";font-weight:500;transition:all .3s;border:0}
 .button:hover,#load-more:hover{background-color:#9d4446;text-decoration:none}.button:focus,#load-more:focus{outline:0}
 input[type="submit"]{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;border:0;width:100%}
-.infinite-scroll #navigation,.infinite-scroll.neverending #footer{display:none}.infinity-end.neverending #footer{display:block}
+.button+.button{margin-top:10px}@media screen and (min-width:48em){.button+.button{margin-top:0}
+}.infinite-scroll #navigation,.infinite-scroll.neverending #footer{display:none}.infinity-end.neverending #footer{display:block}
 body{background-color:#fff;color:#000;font-family:"Georgia","Cambria","Times New Roman","Times",serif;line-height:1.5em;word-break:break-word;direction:rtl;unicode-bidi:embed}
 #page{max-width:100%;margin-left:auto;margin-right:auto;overflow:hidden}@media screen and (min-width:48em){#page{padding-top:0}
 }#main{float:left;width:100%}#primary{margin:0 auto;width:100%}#primary::after{clear:both;content:"";display:table}

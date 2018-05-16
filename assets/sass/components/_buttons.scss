@@ -2,6 +2,7 @@
 
 .button, #load-more {
   border-radius: 5px;
+  text-align: center;
   background-color: $dark-red;
   color: $tan !important;
   text-transform: uppercase;
@@ -12,6 +13,7 @@
   font-weight: 500;
   transition: all .3s;
   border: 0;
+  
   &:hover {
     background-color: $light-red;
     text-decoration: none;
@@ -25,4 +27,11 @@ input[type="submit"] {
   @include appearance(none);
   border: 0;
   width: 100%;
+}
+
+.button + .button {
+  margin-top: 10px;
+  @include media($md) {
+    margin-top: 0;
+  }
 }
