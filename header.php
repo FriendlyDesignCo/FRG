@@ -459,7 +459,7 @@
 		<nav id="secondary-nav" class="secondary-nav">
 			<?php if(!is_page( 'Reservations' ) && !is_page( 'Careers' )  ) { ?>
 				<div class="reservation-widget">
-					<a class="reservation" ="r" href="">Reserve A Table</a>
+					<a class="reservation" href="">Reserve A Table</a>
 					<div class="widget-wrap">
 						<div class="OT_searchWrapperAll">
 							<form name="ism" id="ism" class="clearfix" method="get" target="_blank" action="http://www.opentable.com/restaurant-search.aspx">
