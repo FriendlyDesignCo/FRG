@@ -303,3 +303,5 @@ Bi-App-Sass
 - License: the MIT License
 - License URI: https://github.com/anasnakawa/bi-app-sass/blob/master/LICENSE
 
+Integrations
+- Open Table
